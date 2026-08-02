@@ -38,4 +38,6 @@ urlpatterns = [
 
     path("api/pos/", include("pos.urls")),
 
+    path("api/", include("translator.urls")),
+
 ]
