@@ -120,28 +120,36 @@ The platform includes AI-assisted functionality to improve accessibility and usa
 ## 📁 Project Structure
 
 ```text
-AI-FOOD-REDISTRIBUTION-SYSTEM/
+FoodRedistributionSystem/
 │
-├── accounts/              # User authentication and account management
-├── config/                # Django project configuration
-├── inventory/             # Food inventory management
-├── pos/                   # Donation and transaction-related functionality
-├── translator/            # Translation services and APIs
+├── backend/               # Django REST Framework backend
+│   ├── accounts/          # User authentication and account management
+│   ├── config/            # Django project configuration (settings, URLs, WSGI/ASGI)
+│   ├── inventory/         # Food inventory and donation management
+│   ├── pos/               # POS transactions and imports
+│   ├── translator/        # Translation services and APIs
+│   ├── manage.py          # Django management utility
+│   └── requirements.txt   # Backend-specific dependencies
 │
 ├── frontend/              # React frontend application
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── context/
-│       ├── hooks/
-│       ├── pages/
-│       ├── services/
-│       ├── styles/
-│       └── utils/
+│   ├── public/            # Static assets and PWA manifest
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── context/       # React Context providers
+│   │   ├── hooks/         # Custom React hooks
+│   │   ├── i18n/          # Internationalization locales
+│   │   ├── pages/         # Application pages and dashboards
+│   │   ├── services/      # Axios API instances and services
+│   │   ├── styles/        # CSS stylesheets
+│   │   ├── translations/  # Translation dictionaries
+│   │   └── utils/         # Utility functions
+│   ├── package.json       # React dependencies and scripts
+│   └── package-lock.json
 │
-├── manage.py              # Django management utility
-├── requirements.txt       # Python dependencies
-├── package.json           # Project-level npm configuration
+├── .env                   # Environment variables (private)
+├── .gitignore             # Git ignore configuration
+├── db.sqlite3             # Development SQLite database
+├── requirements.txt       # Project-level Python dependencies
 └── README.md              # Project documentation
 ```
 
@@ -176,9 +184,10 @@ Install the required Python dependencies:
 pip install -r requirements.txt
 ```
 
-Run the Django development server:
+Navigate to the backend and run the Django development server:
 
 ```bash
+cd backend
 python manage.py runserver
 ```
 
