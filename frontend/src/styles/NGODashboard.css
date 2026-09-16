@@ -1,0 +1,624 @@
+/* =========================================
+        FoodBridge AI - NGO Dashboard
+        Soft Pastel Lavender / Blue Theme
+========================================= */
+
+
+/* =========================================
+        MAIN DASHBOARD
+========================================= */
+
+.ngo-dashboard{
+
+    margin-left:260px;
+
+    padding:20px 24px;
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #f5f7ff 0%,
+        #f7f5ff 50%,
+        #f3f8ff 100%
+    );
+
+    transition:.3s ease;
+
+}
+
+
+/* =========================================
+        HEADER
+========================================= */
+
+.ngo-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-bottom:20px;
+
+}
+
+
+.ngo-title{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#6259a8;
+
+    margin:0;
+
+}
+
+
+.ngo-subtitle{
+
+    color:#667085;
+
+    margin-top:5px;
+
+    margin-bottom:0;
+
+    font-size:15px;
+
+}
+
+
+/* =========================================
+        ACTIVE DONATIONS BADGE
+========================================= */
+
+.ngo-badge{
+
+    background:linear-gradient(
+        135deg,
+        #8d86d1,
+        #aaa5df
+    );
+
+    color:#ffffff;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    box-shadow:
+        0 8px 18px rgba(98,89,168,.16);
+
+}
+
+
+/* =========================================
+        NGO PROFILE
+========================================= */
+
+.ngo-profile{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:22px 24px;
+
+    box-shadow:
+        0 8px 22px rgba(72,66,130,.08);
+
+    margin-bottom:20px;
+
+    border:1px solid #eeeafd;
+
+}
+
+
+/* =========================================
+        NGO AVATAR
+========================================= */
+
+.ngo-avatar{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #8f87d4,
+        #b3afe5
+    );
+
+    color:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    margin:auto;
+
+}
+
+
+/* =========================================
+        PROFILE TEXT
+========================================= */
+
+.ngo-profile h3{
+
+    color:#6259a8 !important;
+
+    font-size:25px;
+
+    margin-bottom:8px;
+
+}
+
+
+.ngo-profile p{
+
+    margin-bottom:8px;
+
+    color:#5f6f78;
+
+    font-size:14px;
+
+}
+
+
+/* =========================================
+        DASHBOARD CARDS
+========================================= */
+
+.ngo-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(72,66,130,.08);
+
+    transition:.25s ease;
+
+    min-height:145px;
+
+}
+
+
+.ngo-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 14px 28px rgba(72,66,130,.13);
+
+}
+
+
+/* =========================================
+        NOTIFICATIONS
+========================================= */
+
+.notification-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 8px 20px rgba(72,66,130,.08);
+
+    background:#ffffff;
+
+}
+
+
+.notification-card .card-header{
+
+    background:linear-gradient(
+        135deg,
+        #ddd8f3,
+        #ebe8f8
+    ) !important;
+
+    color:#514993 !important;
+
+    font-weight:700;
+
+    border:none !important;
+
+    padding:11px 16px;
+
+    font-size:15px;
+
+}
+
+
+/* =========================================
+        NOTIFICATION ALERTS
+========================================= */
+
+.notification-card .alert{
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    padding:11px 14px;
+
+    font-size:14px;
+
+}
+
+
+/* Soft pastel blue */
+
+.notification-card .alert-primary{
+
+    background:#e5efff;
+
+    border:1px solid #c9dcfa;
+
+    color:#355a86;
+
+}
+
+
+/* Soft pastel green */
+
+.notification-card .alert-success{
+
+    background:#e5f5ed;
+
+    border:1px solid #c7e7d6;
+
+    color:#3d7057;
+
+}
+
+
+/* Soft pastel cyan */
+
+.notification-card .alert-info{
+
+    background:#e3f5f8;
+
+    border:1px solid #c5e7ed;
+
+    color:#3d6f78;
+
+}
+
+
+/* Soft pastel yellow */
+
+.notification-card .alert-warning{
+
+    background:#fff4d9;
+
+    border:1px solid #f4dfaa;
+
+    color:#806a35;
+
+}
+
+
+/* =========================================
+        DONATION SECTION
+========================================= */
+
+.donation-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:
+        0 8px 22px rgba(72,66,130,.08);
+
+    border:1px solid #eeeafd;
+
+}
+
+
+/* =========================================
+        DONATION TABLE
+========================================= */
+
+.donation-table{
+
+    margin:0;
+
+}
+
+
+.donation-table thead{
+
+    background:linear-gradient(
+        135deg,
+        #8d86d1,
+        #aaa5df
+    );
+
+    color:#ffffff;
+
+}
+
+
+.donation-table thead th{
+
+    border:none;
+
+    padding:12px 14px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.donation-table tbody td{
+
+    padding:12px 14px;
+
+    vertical-align:middle;
+
+    font-size:14px;
+
+    color:#4f5f68;
+
+}
+
+
+.donation-table tbody tr{
+
+    transition:.2s ease;
+
+}
+
+
+.donation-table tbody tr:hover{
+
+    background:#f6f5ff;
+
+}
+
+
+/* =========================================
+        ACCEPT BUTTON
+========================================= */
+
+.accept-btn{
+
+    border-radius:10px;
+
+    padding:7px 14px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    background:#7186d5;
+
+    border:none;
+
+    transition:.25s ease;
+
+}
+
+
+.accept-btn:hover{
+
+    background:#6259a8;
+
+    transform:translateY(-1px);
+
+}
+
+
+/* =========================================
+        DONATION HEADER
+========================================= */
+
+.ngo-dashboard .text-primary{
+
+    color:#6259a8 !important;
+
+}
+
+
+/* =========================================
+        BADGES INSIDE TABLE
+========================================= */
+
+.donation-table .badge{
+
+    font-size:12px;
+
+    padding:6px 9px;
+
+    border-radius:8px;
+
+}
+
+
+/* =========================================
+        RESPONSIVE - TABLET
+========================================= */
+
+@media(max-width:992px){
+
+    .ngo-dashboard{
+
+        margin-left:0;
+
+        padding:85px 18px 20px;
+
+    }
+
+    .ngo-title{
+
+        font-size:28px;
+
+    }
+
+    .ngo-profile{
+
+        padding:20px;
+
+    }
+
+}
+
+
+/* =========================================
+        RESPONSIVE - MOBILE
+========================================= */
+
+@media(max-width:576px){
+
+    .ngo-dashboard{
+
+        padding:80px 12px 18px;
+
+    }
+
+
+    .ngo-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        margin-bottom:16px;
+
+    }
+
+
+    .ngo-title{
+
+        font-size:24px;
+
+        line-height:1.3;
+
+    }
+
+
+    .ngo-subtitle{
+
+        font-size:14px;
+
+    }
+
+
+    .ngo-badge{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:9px 16px;
+
+    }
+
+
+    .ngo-profile{
+
+        padding:18px;
+
+        border-radius:16px;
+
+    }
+
+
+    .ngo-avatar{
+
+        width:68px;
+
+        height:68px;
+
+        font-size:28px;
+
+        margin-bottom:12px;
+
+    }
+
+
+    .ngo-profile h3{
+
+        font-size:21px;
+
+    }
+
+
+    .ngo-profile p{
+
+        font-size:13px;
+
+    }
+
+
+    .ngo-card{
+
+        min-height:130px;
+
+    }
+
+
+    .donation-card{
+
+        padding:10px;
+
+        border-radius:15px;
+
+    }
+
+
+    .donation-table thead th{
+
+        padding:10px;
+
+        font-size:12px;
+
+    }
+
+
+    .donation-table tbody td{
+
+        padding:10px;
+
+        font-size:12px;
+
+    }
+
+}

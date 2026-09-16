@@ -1,0 +1,485 @@
+/* ==========================================
+   FoodBridge AI - Individual Dashboard
+   Soft Green / Mint Theme
+========================================== */
+
+.individual-page {
+    margin-left: 260px;
+    padding: 25px;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(91, 190, 139, 0.12),
+            transparent 24rem
+        ),
+        linear-gradient(
+            135deg,
+            #eef9f3 0%,
+            #e7f5ee 50%,
+            #f1faf5 100%
+        );
+
+    color: #143f34;
+}
+
+
+/* ==========================================
+   DASHBOARD BANNER
+========================================== */
+
+.individual-banner {
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(255, 255, 255, 0.42),
+            transparent 18rem
+        ),
+        linear-gradient(
+            135deg,
+            #cfeedd 0%,
+            #c2e8d4 50%,
+            #d9f2e4 100%
+        );
+
+    border: 1px solid rgba(22, 131, 75, 0.16);
+    border-radius: 24px;
+
+    padding: 35px;
+    margin: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    color: #124c3f;
+
+    box-shadow:
+        0 14px 32px rgba(22, 110, 70, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.individual-title {
+    margin: 0;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #124c3f;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.individual-subtitle {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: #397062;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   KINDNESS BADGE
+========================================== */
+
+.individual-badge {
+    background: rgba(255, 255, 255, 0.82);
+
+    color: #17684f;
+
+    padding: 12px 24px;
+
+    border: 1px solid rgba(22, 131, 75, 0.16);
+    border-radius: 30px;
+
+    font-weight: 700;
+    font-size: 15px;
+
+    box-shadow: 0 6px 18px rgba(22, 110, 70, 0.08);
+
+    transition: all 0.25s ease;
+}
+
+.individual-badge:hover {
+    transform: translateY(-2px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 22px rgba(22, 110, 70, 0.12);
+}
+
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.individual-section {
+    margin: 30px 0 25px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #124c3f;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.individual-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fbfefc 0%,
+            #f2faf6 100%
+        );
+
+    border: 1px solid #cce6da;
+    border-top: 5px solid #55b98a;
+
+    border-radius: 22px;
+
+    padding: 22px;
+
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(22, 110, 70, 0.08),
+        0 2px 6px rgba(22, 110, 70, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* CARD HOVER */
+
+.individual-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #a8d8c3;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #eef9f3 100%
+        );
+
+    box-shadow:
+        0 18px 36px rgba(22, 110, 70, 0.14),
+        0 5px 12px rgba(22, 110, 70, 0.06);
+}
+
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.individual-card h5 {
+    color: #42685d;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+    font-size: 22px;
+
+    line-height: 1.25;
+}
+
+
+/* ==========================================
+   CARD NUMBER
+========================================== */
+
+.individual-card h2 {
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: 16px;
+
+    line-height: 1;
+}
+
+
+/* ==========================================
+   CARD LINK
+========================================== */
+
+.individual-card small {
+    color: #68877c;
+
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.individual-card:hover small {
+    color: #16834b;
+}
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal-content {
+    border: 1px solid #cce6da !important;
+
+    border-radius: 20px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f4fbf7
+        );
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+.modal-header {
+    border-bottom: 1px solid #dceee5;
+}
+
+
+.modal-header h4 {
+    color: #124c3f;
+
+    font-weight: 700;
+}
+
+
+.modal-footer {
+    border-top: 1px solid #dceee5;
+}
+
+
+.modal-footer .btn-primary {
+    background: #16834b;
+
+    border-color: #16834b;
+
+    border-radius: 10px;
+
+    padding: 9px 22px;
+
+    font-weight: 600;
+}
+
+.modal-footer .btn-primary:hover {
+    background: #0b693d;
+
+    border-color: #0b693d;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .individual-page {
+        margin-left: 260px;
+        padding: 22px;
+    }
+
+    .individual-title {
+        font-size: 34px;
+    }
+
+    .individual-card {
+        min-height: 175px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .individual-page {
+        margin-left: 0;
+
+        padding:
+            90px
+            16px
+            25px;
+    }
+
+    .individual-title {
+        font-size: 30px;
+    }
+
+    .individual-banner {
+        padding: 28px;
+
+        margin-top: 20px;
+    }
+
+    .individual-section {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .individual-page {
+        padding:
+            85px
+            14px
+            20px;
+    }
+
+    .individual-banner {
+        padding: 24px;
+
+        border-radius: 20px;
+
+        text-align: left;
+    }
+
+    .individual-title {
+        font-size: 27px;
+    }
+
+    .individual-subtitle {
+        font-size: 15px;
+    }
+
+    .individual-badge {
+        padding: 10px 18px;
+
+        font-size: 14px;
+    }
+
+    .individual-section {
+        margin: 25px 0 20px;
+
+        font-size: 24px;
+    }
+
+    .individual-card {
+        min-height: 170px;
+
+        padding: 20px;
+    }
+
+    .individual-card h5 {
+        font-size: 20px;
+    }
+
+    .individual-card h2 {
+        font-size: 44px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .individual-page {
+        padding:
+            80px
+            12px
+            18px;
+    }
+
+    .individual-banner {
+        padding: 22px;
+
+        border-radius: 18px;
+
+        gap: 16px;
+    }
+
+    .individual-title {
+        font-size: 24px;
+    }
+
+    .individual-subtitle {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+    .individual-badge {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .individual-section {
+        font-size: 22px;
+    }
+
+    .individual-card {
+        min-height: 160px;
+
+        border-radius: 18px;
+    }
+
+    .individual-card h5 {
+        font-size: 19px;
+
+        margin-bottom: 14px;
+    }
+
+    .individual-card h2 {
+        font-size: 42px;
+
+        margin-bottom: 14px;
+    }
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .individual-card,
+    .individual-badge {
+        transition: none;
+    }
+}

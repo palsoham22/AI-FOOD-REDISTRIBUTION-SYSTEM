@@ -1,0 +1,235 @@
+/* ===================================
+   Business Donations
+=================================== */
+
+.donation-page{
+
+    margin-left:260px;
+    padding:24px;
+    min-height:100vh;
+    background:#f5f7fb;
+
+}
+
+.donation-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:25px;
+
+}
+
+.donation-title{
+
+    font-size:34px;
+    font-weight:700;
+    color:#198754;
+    margin:0;
+
+}
+
+.donation-subtitle{
+
+    color:#6c757d;
+    margin-top:6px;
+
+}
+
+/* ===========================
+      Summary Cards
+=========================== */
+
+.donation-summary{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:25px;
+
+}
+
+.summary-card{
+
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.25s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.summary-card h6{
+
+    color:#6c757d;
+    margin-bottom:12px;
+
+}
+
+.summary-card h2{
+
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+
+}
+
+.summary-green{
+
+    border-left:5px solid #198754;
+
+}
+
+.summary-blue{
+
+    border-left:5px solid #0d6efd;
+
+}
+
+.summary-warning{
+
+    border-left:5px solid #ffc107;
+
+}
+
+.summary-purple{
+
+    border-left:5px solid #6f42c1;
+
+}
+
+/* ===========================
+        Table Card
+=========================== */
+
+.donation-card{
+
+    background:white;
+    border-radius:20px;
+    padding:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.donation-table{
+
+    margin:0;
+
+}
+
+.donation-table thead{
+
+    background:#198754;
+    color:white;
+
+}
+
+.donation-table thead th{
+
+    border:none;
+    padding:16px;
+
+}
+
+.donation-table tbody td{
+
+    padding:16px;
+    vertical-align:middle;
+
+}
+
+.donation-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.donation-table tbody tr:hover{
+
+    background:#f4fff8;
+
+}
+
+/* ===========================
+      Status Badge
+=========================== */
+
+.status-badge{
+
+    padding:8px 14px;
+    border-radius:20px;
+    color:white;
+    font-weight:600;
+    display:inline-block;
+
+}
+
+.status-donated{
+
+    background:#198754;
+
+}
+
+.status-accepted{
+
+    background:#0d6efd;
+
+}
+
+.status-pending{
+
+    background:#ffc107;
+    color:#222;
+
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.donation-page{
+
+margin-left:0;
+padding:85px 16px 20px;
+
+}
+
+.donation-summary{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.donation-card{
+
+overflow-x:auto;
+
+}
+
+.donation-table{
+
+min-width:900px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.donation-summary{
+
+grid-template-columns:1fr;
+
+}
+
+}

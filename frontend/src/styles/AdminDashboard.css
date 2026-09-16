@@ -1,0 +1,136 @@
+/* ==========================================
+   FoodBridge AI - Admin Dashboard
+========================================== */
+
+.admin-page{
+
+    margin-left:var(--admin-width);
+    padding:25px;
+    min-height:100vh;
+    transition:.3s;
+
+    background:linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef6ff
+    );
+
+}
+
+.admin-banner{
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+
+    color:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.admin-title{
+
+    font-size:38px;
+    font-weight:700;
+
+    color:#ffffff !important;
+
+}
+
+.admin-subtitle{
+
+    color:rgba(255,255,255,.85);
+    margin-top:10px;
+    font-size:16px;
+
+}
+
+.admin-badge{
+
+    background:#06b6d4;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+.admin-section-title{
+
+    margin:30px 0 25px;
+
+    color:#0f172a;
+
+    font-size:26px;
+
+    font-weight:700;
+
+}
+
+.admin-card{
+
+    transition:.3s;
+
+}
+
+.admin-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+@media(max-width:992px){
+
+.admin-page{
+
+margin-left:0;
+
+padding:90px 16px 20px;
+
+}
+
+.admin-banner{
+
+padding:25px;
+
+}
+
+.admin-title{
+
+font-size:30px;
+
+}
+
+}
+
+.admin-sidebar.collapsed ~ .admin-page{
+
+margin-left:var(--admin-collapse);
+
+}

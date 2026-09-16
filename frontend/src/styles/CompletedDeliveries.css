@@ -1,0 +1,325 @@
+
+.completed-page {
+    margin-left: 260px;
+    padding: 28px;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff 0%,
+            #f5f8ff 55%,
+            #edf3ff 100%
+        );
+
+    color: #344b70;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.completed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #d7e2f5;
+}
+
+
+.completed-title {
+    margin: 0;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #2f55a4;
+
+    letter-spacing: -0.5px;
+}
+
+
+.completed-subtitle {
+    color: #647895;
+
+    margin: 7px 0 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   COMPLETED BADGE
+========================================= */
+
+.completed-badge {
+    background:
+        linear-gradient(
+            135deg,
+            #6d8fe8,
+            #5278df
+        );
+
+    color: #ffffff;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 6px 16px rgba(82,120,223,0.18);
+}
+
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.completed-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+
+.completed-card {
+    background: rgba(255,255,255,0.97);
+
+    border: 1px solid #dce6f7;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 8px 22px rgba(54,83,130,0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.completed-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 26px rgba(54,83,130,0.12);
+}
+
+
+.completed-card h6 {
+    margin: 0;
+
+    color: #647895;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.completed-card h2 {
+    color: #5278df;
+
+    font-size: 34px;
+
+    margin: 10px 0 0;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.completed-table-card {
+    background: rgba(255,255,255,0.97);
+
+    border: 1px solid #dce6f7;
+
+    border-radius: 22px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 8px 24px rgba(54,83,130,0.08);
+}
+
+
+.completed-table {
+    margin-bottom: 0;
+
+    color: #344b70;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.completed-table thead {
+    background:
+        linear-gradient(
+            135deg,
+            #c8d7f5,
+            #d7e3fa
+        );
+
+    color: #2f55a4;
+}
+
+
+.completed-table th {
+    border: none;
+
+    padding: 15px 16px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.completed-table td {
+    padding: 16px;
+
+    vertical-align: middle;
+
+    border-color: #e3eaf6;
+
+    color: #405674;
+}
+
+
+.completed-table tbody tr {
+    transition:
+        background 0.2s ease;
+}
+
+
+.completed-table tbody tr:hover {
+    background: #f1f5ff;
+}
+
+
+/* =========================================
+   SUCCESS STATUS
+========================================= */
+
+.completed-table .badge.bg-success {
+    background: #d9f3e5 !important;
+
+    color: #16834b !important;
+
+    border: 1px solid #bfe6d0;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.completed-table .text-center {
+    color: #71839d;
+
+    padding: 34px 16px;
+}
+
+
+/* =========================================
+   MOBILE / TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .completed-page {
+        margin-left: 0;
+
+        padding:
+            90px
+            16px
+            24px;
+    }
+
+
+    .completed-header {
+        margin-bottom: 22px;
+    }
+
+
+    .completed-title {
+        font-size: 28px;
+    }
+
+
+    .completed-summary {
+        grid-template-columns: 1fr;
+    }
+
+
+    .completed-table-card {
+        padding: 16px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+    .completed-page {
+        padding:
+            82px
+            12px
+            20px;
+    }
+
+
+    .completed-title {
+        font-size: 24px;
+    }
+
+
+    .completed-subtitle {
+        font-size: 14px;
+    }
+
+
+    .completed-badge {
+        padding: 9px 16px;
+    }
+
+
+    .completed-card {
+        padding: 18px;
+    }
+}

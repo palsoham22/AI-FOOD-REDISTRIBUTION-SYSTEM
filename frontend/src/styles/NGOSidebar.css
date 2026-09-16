@@ -1,0 +1,503 @@
+/* ===================================
+        FoodBridge AI - NGO Sidebar
+        Soft Pastel Lavender Theme
+=================================== */
+
+:root{
+
+    --ngo-sidebar-width:260px;
+    --ngo-sidebar-collapse:80px;
+
+    /* NGO Pastel Theme */
+
+    --ngo-primary:#8178c9;
+    --ngo-primary-dark:#6f67b4;
+    --ngo-primary-light:#9b94d7;
+
+    --ngo-active:#ffffff;
+
+    --ngo-text:#ffffff;
+
+    --ngo-hover:rgba(255,255,255,.14);
+
+    --ngo-border:rgba(255,255,255,.20);
+
+}
+
+
+/* ===================================
+        SIDEBAR
+=================================== */
+
+.ngo-sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:var(--ngo-sidebar-width);
+
+    height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #8178c9 0%,
+        #8b82cf 50%,
+        #756dbb 100%
+    );
+
+    color:var(--ngo-text);
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.35s ease;
+
+    z-index:2000;
+
+    box-shadow:
+        8px 0 25px rgba(79,70,150,.14);
+
+}
+
+
+/* ===================================
+        COLLAPSED DESKTOP
+=================================== */
+
+.ngo-sidebar.collapsed{
+
+    width:var(--ngo-sidebar-collapse);
+
+}
+
+
+/* ===================================
+        HEADER
+=================================== */
+
+.ngo-header{
+
+    padding:18px 16px;
+
+    text-align:center;
+
+    border-bottom:
+        1px solid var(--ngo-border);
+
+    min-height:110px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.ngo-logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    letter-spacing:.2px;
+
+    white-space:nowrap;
+
+}
+
+
+/* ===================================
+        MENU
+=================================== */
+
+.ngo-links{
+
+    flex:1;
+
+    padding:10px 12px;
+
+    overflow-y:hidden;
+
+}
+
+
+/* Scrollbar */
+
+.ngo-links::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+.ngo-links::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.ngo-links::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:10px;
+
+}
+
+
+/* ===================================
+        MENU LINK
+=================================== */
+
+.ngo-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    padding:9px 13px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.25s ease;
+
+    margin-bottom:3px;
+
+}
+
+
+/* Icon */
+
+.ngo-link span:first-child{
+
+    width:23px;
+
+    min-width:23px;
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+
+/* Hover */
+
+.ngo-link:hover{
+
+    background:var(--ngo-hover);
+
+    color:#ffffff;
+
+    transform:translateX(3px);
+
+}
+
+
+/* Active */
+
+.ngo-link.active{
+
+    background:#ffffff;
+
+    color:#6259a8;
+
+    font-weight:700;
+
+    box-shadow:
+        0 5px 15px rgba(50,45,120,.10);
+
+}
+
+
+/* Active icon */
+
+.ngo-link.active span:first-child{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ===================================
+        COLLAPSED MENU
+=================================== */
+
+.ngo-sidebar.collapsed .link-text{
+
+    display:none;
+
+}
+
+
+.ngo-sidebar.collapsed .ngo-link{
+
+    justify-content:center;
+
+    padding:13px 8px;
+
+}
+
+
+.ngo-sidebar.collapsed .ngo-link span:first-child{
+
+    margin:0;
+
+}
+
+
+/* ===================================
+        FOOTER
+=================================== */
+
+.ngo-footer{
+
+    padding:10px 14px;
+
+    margin-top:auto;
+
+    border-top:
+        1px solid var(--ngo-border);
+
+}
+
+
+/* ===================================
+        USER
+=================================== */
+
+.ngo-user{
+
+    text-align:center;
+
+    margin-bottom:12px;
+
+    font-size:14px;
+
+    color:#ffffff;
+
+}
+
+
+.ngo-user strong{
+
+    font-size:15px;
+
+}
+
+
+.ngo-user small{
+
+    display:block;
+
+    font-size:12px;
+
+    opacity:.88;
+
+    margin-top:3px;
+
+}
+
+
+/* ===================================
+        LOGOUT
+=================================== */
+
+.logout-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ffffff;
+
+    color:#6259a8;
+
+    border-radius:13px;
+
+    padding:11px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.25s ease;
+
+    box-shadow:
+        0 5px 15px rgba(50,45,120,.08);
+
+}
+
+
+.logout-btn:hover{
+
+    background:#f5f3ff;
+
+    color:#514993;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===================================
+        COLLAPSED LOGOUT
+=================================== */
+
+.ngo-sidebar.collapsed .logout-btn{
+
+    font-size:18px;
+
+    padding:11px 5px;
+
+}
+
+
+/* ===================================
+        TOGGLE BUTTON
+=================================== */
+
+.ngo-toggle{
+
+    position:fixed;
+
+    top:18px;
+
+    left:20px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#6f67b4;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:2500;
+
+    box-shadow:
+        0 8px 18px rgba(79,70,150,.20);
+
+    transition:.25s ease;
+
+}
+
+
+.ngo-toggle:hover{
+
+    background:#6259a8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===================================
+        OVERLAY
+=================================== */
+
+.ngo-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(55,48,100,.22);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s ease;
+
+    z-index:1900;
+
+}
+
+
+.ngo-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===================================
+        MOBILE
+=================================== */
+
+@media(max-width:992px){
+
+    .ngo-sidebar{
+
+        transform:translateX(-100%);
+
+        box-shadow:
+            10px 0 30px rgba(50,45,120,.18);
+
+    }
+
+
+    .ngo-sidebar.open{
+
+        transform:translateX(0);
+
+    }
+
+
+    .ngo-toggle{
+
+        top:18px;
+
+        left:18px;
+
+    }
+
+}
+
+
+/* ===================================
+        DESKTOP
+=================================== */
+
+@media(min-width:993px){
+
+    .ngo-overlay{
+
+        display:none;
+
+    }
+
+}

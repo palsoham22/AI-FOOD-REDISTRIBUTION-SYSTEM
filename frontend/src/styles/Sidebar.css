@@ -1,0 +1,461 @@
+/* ===========================
+   FoodBridge AI - Business Sidebar
+   Pastel Sage Green Theme
+=========================== */
+
+.fb-sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:260px;
+    height:100vh;
+
+    background: linear-gradient(180deg, #3F8F6B 0%, #347A5A 100%);
+
+    color:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:
+        4px 0 20px rgba(63,125,98,.14);
+
+    transition:
+        width .3s ease,
+        transform .3s ease;
+
+    z-index:1200;
+
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.sidebar-header{
+
+    padding:22px 20px 16px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.18);
+
+}
+
+
+.sidebar-header h3{
+
+    margin:0;
+
+    font-size:1.65rem;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+
+/* ===========================
+   MENU
+=========================== */
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    padding:14px 13px;
+
+    flex:1;
+
+}
+
+
+/* ===========================
+   MENU LINK
+=========================== */
+
+.sidebar-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    padding:10px 13px;
+
+    border-radius:12px;
+
+    transition:.25s ease;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+/* ===========================
+   ICON
+=========================== */
+
+.sidebar-icon{
+
+    width:25px;
+
+    min-width:25px;
+
+    text-align:center;
+
+    font-size:19px;
+
+}
+
+
+/* ===========================
+   HOVER
+=========================== */
+
+.sidebar-link:hover{
+
+    background:
+        rgba(255,255,255,.13);
+
+    transform:translateX(3px);
+
+    color:#ffffff;
+
+}
+
+
+/* ===========================
+   ACTIVE
+=========================== */
+
+.sidebar-link.active{
+
+    background: #DDF1E7;
+
+    color: #246247;
+
+    box-shadow:
+        0 5px 14px rgba(38,107,74,.12);
+
+    font-weight:700;
+
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.sidebar-footer{
+
+    border-top:
+        1px solid rgba(255,255,255,.18);
+
+    padding:12px 14px;
+
+}
+
+
+/* ===========================
+   LOGOUT
+=========================== */
+
+.logout-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ffffff;
+
+    color:#3f7d62;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    transition:.25s ease;
+
+    margin-bottom:10px;
+
+}
+
+
+.logout-btn:hover{
+
+    background:#f1f8f4;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+   USER INFO
+=========================== */
+
+.user-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3px;
+
+    font-size:13px;
+
+    color:#eef8f2;
+
+}
+
+
+.user-box strong{
+
+    font-size:15px;
+
+}
+
+
+/* ===========================
+   MOBILE TOGGLE
+=========================== */
+
+.sidebar-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:fixed;
+
+    top:18px;
+
+    left:18px;
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#4C9973;
+
+    color:#ffffff;
+
+    font-size:23px;
+
+    cursor:pointer;
+
+    z-index:1500;
+
+    box-shadow:
+        0 7px 18px rgba(63,125,98,.20);
+
+    transition:.25s ease;
+
+}
+
+
+.sidebar-toggle:hover{
+
+    background:#428B68;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+   OVERLAY
+=========================== */
+
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(38,65,52,.22);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s ease;
+
+    z-index:1100;
+
+}
+
+
+.sidebar-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+    .fb-sidebar{
+
+        transform:translateX(-100%);
+
+        width:260px;
+
+    }
+
+
+    .fb-sidebar.open{
+
+        transform:translateX(0);
+
+    }
+
+
+    .sidebar-toggle{
+
+        top:18px;
+
+        left:18px;
+
+    }
+
+}
+
+
+/* ===========================
+   DESKTOP
+=========================== */
+
+@media(min-width:993px){
+
+    .fb-sidebar{
+
+        transform:none !important;
+
+    }
+
+
+    .sidebar-overlay{
+
+        display:none;
+
+    }
+
+}
+
+
+/* ===========================
+   DESKTOP COLLAPSED
+=========================== */
+
+.fb-sidebar.collapsed{
+
+    width:80px;
+
+}
+
+
+.fb-sidebar.collapsed .sidebar-header h3{
+
+    display:none;
+
+}
+
+
+.fb-sidebar.collapsed .sidebar-link{
+
+    justify-content:center;
+
+}
+
+
+.fb-sidebar.collapsed .sidebar-link span:last-child{
+
+    display:none;
+
+}
+
+
+.fb-sidebar.collapsed .sidebar-icon{
+
+    margin:0;
+
+}
+
+
+.fb-sidebar.collapsed .logout-btn{
+
+    font-size:0;
+
+    padding:10px;
+
+}
+
+
+.fb-sidebar.collapsed .logout-btn::before{
+
+    content:"🚪";
+
+    font-size:18px;
+
+}
+
+
+.fb-sidebar.collapsed .user-box{
+
+    display:none;
+
+}
+
+
+/* ===========================
+   BODY SIDEBAR WIDTH
+=========================== */
+
+body.sidebar-collapsed{
+
+    --sidebar-width:80px;
+
+}
+
+
+body{
+
+    --sidebar-width:260px;
+
+}

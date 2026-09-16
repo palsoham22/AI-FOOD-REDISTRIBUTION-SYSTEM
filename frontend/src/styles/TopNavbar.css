@@ -1,0 +1,283 @@
+/* ===================================
+   FoodBridge AI - Modern Top Navbar
+=================================== */
+
+.fb-top-navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    padding:18px 28px;
+
+    background:rgba(255,255,255,.9);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    border:1px solid rgba(25,135,84,.12);
+
+    position:sticky;
+
+    top:15px;
+
+    z-index:999;
+
+}
+
+.fb-top-left{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.fb-top-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* =========================
+      Notification
+========================= */
+
+.fb-notification{
+
+    position:relative;
+
+}
+
+.fb-icon-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f4fbf7;
+
+    color:#198754;
+
+    font-size:22px;
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+.fb-icon-btn:hover{
+
+    background:#198754;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+.fb-badge{
+
+    position:absolute;
+
+    top:-6px;
+
+    right:-6px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#dc3545;
+
+    color:white;
+
+    font-size:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+}
+
+/* =========================
+      Dropdown
+========================= */
+
+.fb-dropdown{
+
+    position:absolute;
+
+    top:58px;
+
+    right:0;
+
+    width:330px;
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    z-index:9999;
+
+}
+
+.fb-dropdown-body{
+
+    max-height:320px;
+
+    overflow-y:auto;
+
+}
+
+/* =========================
+      Language
+========================= */
+
+.fb-language select{
+
+    width:170px;
+
+    border-radius:12px;
+
+    border:2px solid #198754;
+
+    font-weight:600;
+
+    padding:8px 14px;
+
+}
+
+/* =========================
+      User
+========================= */
+
+.fb-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.fb-user .fw-bold{
+
+    font-size:18px;
+
+}
+
+.fb-user small{
+
+    color:#6c757d;
+
+}
+
+/* =========================
+      Logout
+========================= */
+
+.btn-outline-danger{
+
+    border-radius:12px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+      Responsive
+========================= */
+
+@media(max-width:992px){
+
+.fb-top-navbar{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:18px;
+
+}
+
+.fb-top-right{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:14px;
+
+}
+
+.fb-language select{
+
+    width:100%;
+
+}
+
+.btn-outline-danger{
+
+    width:100%;
+
+}
+
+.fb-dropdown{
+
+    width:100%;
+
+    right:0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.fb-top-navbar{
+
+    margin-top:15px;
+
+}
+
+.fb-user{
+
+    width:100%;
+
+    justify-content:space-between;
+
+}
+
+}

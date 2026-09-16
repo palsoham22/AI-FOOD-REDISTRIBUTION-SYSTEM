@@ -1,0 +1,278 @@
+/* =========================================================
+   DELIVERY PARTNER DASHBOARD
+   Pastel Blue Theme
+   ========================================================= */
+
+.delivery-page {
+    margin-left: var(--delivery-width);
+    padding: 25px;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #f5f8ff 0%,
+        #eef4ff 50%,
+        #f8fbff 100%
+    );
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.delivery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.delivery-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3156b3;
+    margin-bottom: 0;
+}
+
+.delivery-subtitle {
+    color: #66758f;
+    margin-top: 6px;
+}
+
+
+/* =========================
+   ACTIVE DRIVER BADGE
+   ========================= */
+
+.delivery-badge {
+    background: linear-gradient(
+        135deg,
+        #5d83ff,
+        #4f6fe8
+    );
+
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+
+    box-shadow: 0 6px 16px rgba(79, 124, 255, 0.20);
+}
+
+
+/* =========================
+   MAIN CARDS
+   ========================= */
+
+.profile-card,
+.notification-card,
+.map-card {
+    background: #ffffff;
+
+    border: 1px solid #dfe7f5;
+
+    border-radius: 22px;
+
+    box-shadow: 0 10px 25px rgba(55, 85, 130, 0.08);
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+.profile-card .card-body,
+.notification-card .card-body,
+.map-card .card-body {
+    padding: 24px;
+}
+
+
+/* =========================
+   PROFILE CARD
+   ========================= */
+
+.profile-title {
+    color: #3156b3;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* Profile horizontal line */
+.profile-card hr {
+    border-color: #dce5f5;
+    opacity: 1;
+}
+
+
+/* =========================
+   NOTIFICATION + MAP HEADERS
+   ========================= */
+
+.notification-card .card-header,
+.map-card .card-header {
+    background: linear-gradient(
+        135deg,
+        #dce6ff,
+        #eaf0ff
+    );
+
+    color: #3156b3;
+
+    font-weight: 700;
+
+    border: none;
+
+    padding: 18px 22px;
+}
+
+
+/* =========================
+   NOTIFICATIONS
+   ========================= */
+
+.notification-card ul {
+    margin-bottom: 0;
+}
+
+.notification-card .list-group-item {
+    border: none;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+
+    background: #f4f7ff;
+
+    color: #40516b;
+
+    transition: 0.25s;
+}
+
+.notification-card .list-group-item:hover {
+    transform: translateX(5px);
+
+    background: #eaf0ff;
+}
+
+
+/* =========================
+   MAP
+   ========================= */
+
+.map-card {
+    border-color: #dce5f5;
+}
+
+.map-card .card-body {
+    background: #ffffff;
+}
+
+
+/* =========================
+   DASHBOARD CARD SOFT EFFECT
+   ========================= */
+
+.delivery-page .card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.delivery-page .card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(55, 85, 130, 0.10);
+}
+
+
+/* =========================
+   STATUS BADGES
+   ========================= */
+
+/* Keep status meaning, but soften the appearance */
+
+.delivery-page .bg-success {
+    background-color: #6fcf97 !important;
+}
+
+.delivery-page .bg-warning {
+    background-color: #ffd76a !important;
+}
+
+.delivery-page .bg-secondary {
+    background-color: #aeb9cc !important;
+}
+
+
+/* =========================
+   MOBILE / TABLET
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .delivery-page {
+        margin-left: 0;
+        padding: 90px 16px 20px;
+    }
+
+    .delivery-title {
+        font-size: 28px;
+    }
+
+    .delivery-header {
+        margin-bottom: 20px;
+    }
+
+    .delivery-badge {
+        padding: 9px 18px;
+    }
+}
+
+
+/* =========================
+   COLLAPSED SIDEBAR
+   ========================= */
+
+.delivery-sidebar.collapsed ~ .delivery-page {
+    margin-left: var(--delivery-collapse);
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .delivery-page {
+        padding: 80px 12px 20px;
+    }
+
+    .delivery-title {
+        font-size: 24px;
+    }
+
+    .delivery-subtitle {
+        font-size: 14px;
+    }
+
+    .delivery-badge {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-card .card-body,
+    .notification-card .card-body,
+    .map-card .card-body {
+        padding: 18px;
+    }
+}

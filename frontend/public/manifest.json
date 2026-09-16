@@ -1,0 +1,23 @@
+{
+  "short_name": "FoodBridge",
+  "name": "FoodBridge AI",
+  "icons": [
+    {
+      "src": "foodbridge-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "foodbridge-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#198754",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}

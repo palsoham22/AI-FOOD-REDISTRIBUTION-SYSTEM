@@ -1,0 +1,401 @@
+/* ===========================================
+   FoodBridge AI - Delivery Sidebar
+   Pastel Blue Theme
+   =========================================== */
+
+:root {
+    --delivery-width: 260px;
+    --delivery-collapse: 80px;
+
+    /* Main palette */
+    --delivery-primary: #4F7CFF;
+    --delivery-secondary: #6D8EFF;
+    --delivery-accent: #3156B3;
+
+    --delivery-sidebar-bg: #C8D7F5;
+--delivery-sidebar-soft: #D4E0F8;
+--delivery-sidebar-border: #C4D3F2;
+
+--delivery-text: #344B70;
+--delivery-heading: #2F55A4;
+
+--delivery-active-bg: #AFC6F5;
+--delivery-hover-bg: #BED1F7;
+}
+
+
+/* ===========================================
+   SIDEBAR
+   =========================================== */
+
+.delivery-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: var(--delivery-width);
+    height: 100vh;
+
+    background: linear-gradient(
+    180deg,
+    #C8D7F5 0%,
+    #D0DDF7 55%,
+    #D8E4FA 100%
+);
+
+    color: var(--delivery-text);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        width .3s ease,
+        transform .3s ease;
+
+    z-index: 1200;
+
+    border-right: 1px solid var(--delivery-sidebar-border);
+
+    box-shadow:
+        8px 0 28px rgba(63, 91, 145, .08);
+}
+
+
+/* Collapsed desktop sidebar */
+
+.delivery-sidebar.collapsed {
+    width: var(--delivery-collapse);
+}
+
+
+/* ===========================================
+   HEADER / LOGO
+   =========================================== */
+
+.delivery-header {
+    padding: 24px 20px;
+
+    border-bottom:
+        1px solid var(--delivery-sidebar-border);
+}
+
+.delivery-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--delivery-heading);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ===========================================
+   NAVIGATION
+   =========================================== */
+
+.delivery-links {
+    flex: 1;
+
+    padding: 18px 12px;
+}
+
+.delivery-link {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 13px 16px;
+
+    margin-bottom: 8px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: var(--delivery-text);
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Hover */
+
+.delivery-link:hover {
+    background: var(--delivery-hover-bg);
+
+    color: var(--delivery-heading);
+
+    transform: translateX(4px);
+}
+
+
+/* Active */
+
+.delivery-link.active {
+    background: var(--delivery-active-bg);
+
+    color: var(--delivery-heading);
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 14px rgba(79, 124, 255, .10);
+}
+
+
+/* ===========================================
+   COLLAPSED SIDEBAR
+   =========================================== */
+
+.delivery-sidebar.collapsed .link-text {
+    display: none;
+}
+
+.delivery-sidebar.collapsed .delivery-logo span {
+    display: none;
+}
+
+.delivery-sidebar.collapsed .delivery-link {
+    justify-content: center;
+}
+
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+
+.delivery-footer {
+    padding: 18px;
+
+    background: var(--delivery-sidebar-soft);
+
+    border-top:
+        1px solid var(--delivery-sidebar-border);
+}
+
+
+/* User information */
+
+.delivery-user {
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    color: var(--delivery-text);
+}
+
+.delivery-user strong {
+    color: var(--delivery-heading);
+}
+
+.delivery-user small {
+    display: block;
+
+    opacity: .85;
+
+    margin-top: 4px;
+}
+
+
+/* ===========================================
+   LOGOUT BUTTON
+   =========================================== */
+
+.logout-btn {
+    width: 100%;
+
+    border:
+        1px solid #D3DFF2;
+
+    border-radius: 14px;
+
+    padding: 12px;
+
+    background: #FFFFFF;
+
+    color: var(--delivery-heading);
+
+    font-weight: 700;
+
+    transition: .25s ease;
+
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: var(--delivery-active-bg);
+
+    border-color: #BFCFF0;
+
+    color: #3156B3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 14px rgba(79, 124, 255, .10);
+}
+
+
+/* Collapsed logout */
+
+.delivery-sidebar.collapsed .logout-btn {
+    padding: 12px 0;
+
+    font-size: 18px;
+}
+
+
+/* ===========================================
+   MENU TOGGLE
+   Desktop + Mobile
+   =========================================== */
+
+.delivery-toggle {
+    position: fixed;
+
+    top: 20px;
+    left: 14px;
+
+    width: 48px;
+    height: 48px;
+
+    border:
+        1px solid #C9D7F2;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5D83FF,
+            #4F6FE8
+        );
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1400;
+
+    box-shadow:
+        0 8px 20px rgba(79, 124, 255, .18);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.delivery-toggle:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(79, 124, 255, .24);
+}
+
+
+/* ===========================================
+   MOBILE OVERLAY
+   =========================================== */
+
+.delivery-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(49, 86, 179, .14);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 1190;
+}
+
+.delivery-overlay.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* ===========================================
+   TABLET / MOBILE
+   =========================================== */
+
+@media (max-width: 992px) {
+
+    .delivery-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .delivery-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .delivery-toggle {
+        left: 14px;
+    }
+}
+
+
+/* ===========================================
+   DESKTOP
+   =========================================== */
+
+@media (min-width: 993px) {
+
+    .delivery-sidebar {
+        transform: none !important;
+    }
+}
+
+
+/* ===========================================
+   SMALL MOBILE
+   =========================================== */
+
+@media (max-width: 576px) {
+
+    .delivery-sidebar {
+        width: 245px;
+    }
+
+    .delivery-link {
+        padding: 12px 14px;
+
+        font-size: 15px;
+
+        gap: 14px;
+    }
+
+    .delivery-header {
+        padding: 22px 18px;
+    }
+
+    .delivery-toggle {
+        width: 46px;
+        height: 46px;
+
+        font-size: 22px;
+    }
+}
