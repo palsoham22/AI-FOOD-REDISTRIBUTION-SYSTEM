@@ -37,7 +37,7 @@ function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="fb-desktop-nav" aria-label="Main Navigation">
+        <nav className="fb-desktop-nav" aria-label={t("Main Navigation")}>
           <ul className="fb-nav-links">
             <li>
               <button
@@ -91,7 +91,7 @@ function Navbar() {
         <div className="fb-nav-controls fb-desktop-controls">
           <select
             className="form-select form-select-sm fb-lang-select"
-            aria-label="Language Selector"
+            aria-label={t("Language Selector")}
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
           >
@@ -117,7 +117,7 @@ function Navbar() {
         <button
           type="button"
           className="fb-mobile-toggle"
-          aria-label="Toggle navigation menu"
+          aria-label={t("Toggle navigation menu")}
           aria-expanded={isMobileOpen}
           onClick={() => setIsMobileOpen(!isMobileOpen)}
         >
@@ -170,7 +170,7 @@ function Navbar() {
             </label>
             <select
               className="form-select form-select-sm fb-lang-select w-100"
-              aria-label="Language Selector Mobile"
+              aria-label={t("Language Selector Mobile")}
               value={language}
               onChange={(e) => {
                 setLanguage(e.target.value);

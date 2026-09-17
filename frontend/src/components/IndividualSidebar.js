@@ -434,7 +434,7 @@ function IndividualSidebar() {
             <button
                 className="sidebar-mobile-button"
                 onClick={() => setMobileOpen(true)}
-                aria-label="Open sidebar"
+                aria-label={t("Open sidebar")}
             >
                 ☰
             </button>
@@ -477,7 +477,7 @@ function IndividualSidebar() {
                         <h3 className="sidebar-title">
                             <br />
                             <br />
-                            👤 Individual
+                            👤 {t("Individual")}
                         </h3>
 
                     )}
@@ -486,7 +486,7 @@ function IndividualSidebar() {
                     <button
                         className="sidebar-toggle sidebar-desktop-toggle"
                         onClick={() => setCollapsed(!collapsed)}
-                        aria-label="Toggle sidebar"
+                        aria-label={t("Toggle sidebar")}
                     >
                         ☰
                     </button>

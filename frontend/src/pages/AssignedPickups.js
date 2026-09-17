@@ -77,7 +77,7 @@ function AssignedPickups() {
 
         setPickups(JSON.parse(cached));
 
-        alert("📶 Offline Mode: Showing last synced assigned pickups.");
+        alert(t("📶 Offline Mode: Showing last synced assigned pickups."));
 
     }
 

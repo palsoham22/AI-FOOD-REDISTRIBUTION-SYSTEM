@@ -139,7 +139,7 @@ Delivery OTP: ${response.data.delivery_otp}`
 
         console.log(error);
 
-        alert("Scheduling Failed");
+        alert(t("Scheduling Failed"));
 
     }
 

@@ -153,7 +153,7 @@ const loadNotifications = () => {
 useEffect(() => {
 
     if (!navigator.geolocation) {
-        alert("Geolocation is not supported.");
+        alert(t("Geolocation is not supported."));
         return;
     }
 

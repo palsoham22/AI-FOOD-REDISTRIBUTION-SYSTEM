@@ -1,11 +1,12 @@
-function DashboardCard({
+import { useTranslate } from "../hooks/useTranslate";
 
+function DashboardCard({
     title,
     value,
     color,
     onClick
-
 }) {
+    const t = useTranslate();
 
     return (
 
@@ -58,65 +59,37 @@ function DashboardCard({
             >
 
                 <h5
-
                     className="fw-semibold"
-
                     style={{
-
                         marginBottom:"18px",
-
                         color:"#334155",
-
                         lineHeight:"1.4"
-
                     }}
-
                 >
-
-                    {title}
-
+                    {t(title)}
                 </h5>
 
                 <h1
-
                     className="fw-bold"
-
                     style={{
-
                         color:color,
-
                         fontSize:"42px"
-
                     }}
-
                 >
-
                     {value}
-
                 </h1>
 
                 {
-
                     onClick &&
-
                     <small
-
                         style={{
-
                             marginTop:"14px",
-
                             color:"#6b7280",
-
                             fontWeight:"600"
-
                         }}
-
                     >
-
-                        Click to View →
-
+                        {t("Click to View")} →
                     </small>
-
                 }
 
             </div>

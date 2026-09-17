@@ -682,7 +682,7 @@ function DonateFood() {
                                 <input
                                     type="text"
                                     className="donate-input"
-                                    placeholder="e.g. Fresh vegetables"
+                                    placeholder={t("e.g. Fresh vegetables")}
                                     value={foodName}
                                     onChange={(e) =>
                                         setFoodName(e.target.value)
@@ -704,7 +704,7 @@ function DonateFood() {
                                 <input
                                     type="text"
                                     className="donate-input"
-                                    placeholder="e.g. Vegetables"
+                                    placeholder={t("e.g. Vegetables")}
                                     value={category}
                                     onChange={(e) =>
                                         setCategory(e.target.value)
@@ -727,7 +727,7 @@ function DonateFood() {
                                     type="number"
                                     min="1"
                                     className="donate-input"
-                                    placeholder="Enter quantity in Kg"
+                                    placeholder={t("Enter quantity in Kg")}
                                     value={quantity}
                                     onChange={(e) =>
                                         setQuantity(e.target.value)
@@ -769,7 +769,7 @@ function DonateFood() {
 
                                 <textarea
                                     className="donate-textarea"
-                                    placeholder="Enter the complete pickup address"
+                                    placeholder={t("Enter the complete pickup address")}
                                     rows="3"
                                     value={pickupAddress}
                                     onChange={(e) =>
@@ -792,7 +792,7 @@ function DonateFood() {
                                 <input
                                     type="text"
                                     className="donate-input"
-                                    placeholder="Enter contact number"
+                                    placeholder={t("Enter contact number")}
                                     value={contactNumber}
                                     onChange={(e) =>
                                         setContactNumber(e.target.value)
@@ -813,7 +813,7 @@ function DonateFood() {
 
                                 <textarea
                                     className="donate-textarea"
-                                    placeholder="Add any additional information"
+                                    placeholder={t("Add any additional information")}
                                     rows="3"
                                     value={description}
                                     onChange={(e) =>
@@ -833,8 +833,7 @@ function DonateFood() {
                         <div className="donate-form-footer">
 
                             <p className="donate-note">
-                                💚 Your donation can help reduce food waste
-                                and support someone in need.
+                                💚 {t("Your donation can help reduce food waste and support someone in need.")}
                             </p>
 
                             <button

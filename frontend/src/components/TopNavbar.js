@@ -170,7 +170,7 @@ notifications.length===0
 
 <p className="text-center mt-3">
 
-🎉 You're all caught up!
+{t("🎉 You're all caught up!")}
 
 </p>
 

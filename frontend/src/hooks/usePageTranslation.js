@@ -1,79 +1,24 @@
 import { useEffect } from "react";
 import { useTranslationContext } from "../context/TranslationContext";
-import { translatePage } from "../services/translationService";
+import i18n from "../i18n";
 
 export function usePageTranslation(labels) {
-
     const {
-
         language,
-        translations,
         setTranslations,
         setLoading
-
     } = useTranslationContext();
 
     useEffect(() => {
-
-        let cancelled = false;
-
-        async function loadTranslations() {
-
-            if (language === "en-IN") {
-
-                return;
-
-            }
-
-            setLoading(true);
-
-            try {
-
-                const result = await translatePage(labels, language);
-
-                console.log("RESULT FROM DJANGO:", result);
-
-                if (cancelled) return;
-
-                if (
-                    JSON.stringify(result) !==
-                    JSON.stringify(translations)
-                ) {
-
-                    console.log("SETTING TRANSLATIONS");
-
-                    setTranslations(result);
-
-                }
-
-            }
-
-            catch (error) {
-
-                console.log(error);
-
-            }
-
-            finally {
-
-                if (!cancelled) {
-
-                    setLoading(false);
-
-                }
-
-            }
-
+        // Purely local translation resolution via i18next; no remote API dependencies
+        if (labels && Array.isArray(labels)) {
+            const bundle = i18n.getResourceBundle(language, "translation") || {};
+            const result = {};
+            labels.forEach((text) => {
+                result[text] = bundle[text] || text;
+            });
+            setTranslations(result);
         }
-
-        loadTranslations();
-
-        return () => {
-
-            cancelled = true;
-
-        };
-
-    }, [language]);
-
+        setLoading(false);
+    }, [language, labels, setTranslations, setLoading]);
 }

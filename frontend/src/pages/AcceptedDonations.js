@@ -80,7 +80,7 @@ function AvailableDonations() {
 
         setDonations(JSON.parse(cached));
 
-        alert("📶 Offline Mode: Showing last synced accepted donations.");
+        alert(t("📶 Offline Mode: Showing last synced accepted donations."));
 
     }
 

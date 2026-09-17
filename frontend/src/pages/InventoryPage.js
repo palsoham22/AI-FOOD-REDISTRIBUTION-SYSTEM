@@ -69,7 +69,7 @@ function InventoryPage() {
 
         setProducts(JSON.parse(cachedInventory));
 
-        alert("📶 Offline Mode: Showing last synced inventory.");
+        alert(t("📶 Offline Mode: Showing last synced inventory."));
 
     }
 

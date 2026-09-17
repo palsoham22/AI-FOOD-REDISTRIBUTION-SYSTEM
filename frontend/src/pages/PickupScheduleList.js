@@ -76,7 +76,7 @@ function PickupScheduleList() {
 
         setPickups(JSON.parse(cached));
 
-        alert("📶 Offline Mode: Showing last synced pickup schedule.");
+        alert(t("📶 Offline Mode: Showing last synced pickup schedule."));
 
     }
 

@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useEffect, useState } from "react";
 import L from "leaflet";
+import { useTranslate } from "../hooks/useTranslate";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -14,7 +15,7 @@ L.Icon.Default.mergeOptions({
 });
 
 function DriverMap() {
-
+    const t = useTranslate();
     const [position, setPosition] = useState([22.5726, 88.3639]);
 
     useEffect(() => {
@@ -65,11 +66,8 @@ function DriverMap() {
             <Marker position={position}>
 
                 <Popup>
-
-                    🚚 Delivery Partner <br />
-
-                    Live Location
-
+                    🚚 {t("Delivery Partner")} <br />
+                    {t("Live Location")}
                 </Popup>
 
             </Marker>

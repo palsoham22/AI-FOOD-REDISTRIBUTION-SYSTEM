@@ -70,7 +70,7 @@ function Login() {
           <div className="fb-auth-header-controls">
             <select
               className="form-select form-select-sm fb-lang-select"
-              aria-label="Language Selector"
+              aria-label={t("Language Selector")}
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
             >

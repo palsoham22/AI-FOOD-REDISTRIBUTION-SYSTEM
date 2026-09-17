@@ -76,7 +76,7 @@ function DonationHistory() {
 
         setHistory(JSON.parse(cached));
 
-        alert("📶 Offline Mode: Showing last synced donation history.");
+        alert(t("📶 Offline Mode: Showing last synced donation history."));
 
     }
 

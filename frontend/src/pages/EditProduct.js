@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
+import { useTranslate } from "../hooks/useTranslate";
 
 function EditProduct() {
-
+    const t = useTranslate();
     const { id } = useParams();
 
     const navigate = useNavigate();
@@ -97,7 +98,7 @@ await axios.put(
 
 );
 
-            alert("Product Updated Successfully 🎉");
+            alert(t("Product Updated Successfully 🎉"));
 
             navigate("/business-dashboard");
 
@@ -127,7 +128,7 @@ await axios.put(
 
                             <h2 className="mb-4">
 
-                                ✏ Edit Product
+                                {t("✏ Edit Product")}
 
                             </h2>
 
@@ -135,7 +136,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Product Name</label>
+                                    <label>{t("Product Name")}</label>
 
                                     <input
 
@@ -151,7 +152,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Category</label>
+                                    <label>{t("Category")}</label>
 
                                     <select
 
@@ -163,13 +164,13 @@ await axios.put(
 
                                     >
 
-                                        <option>Dairy</option>
+                                        <option value="Dairy">{t("Dairy")}</option>
 
-                                        <option>Bakery</option>
+                                        <option value="Bakery">{t("Bakery")}</option>
 
-                                        <option>Fruits</option>
+                                        <option value="Fruits">{t("Fruits")}</option>
 
-                                        <option>Vegetables</option>
+                                        <option value="Vegetables">{t("Vegetables")}</option>
 
                                     </select>
 
@@ -177,7 +178,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Quantity</label>
+                                    <label>{t("Quantity")}</label>
 
                                     <input
 
@@ -195,7 +196,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Unit</label>
+                                    <label>{t("Unit")}</label>
 
                                     <select
 
@@ -207,13 +208,13 @@ await axios.put(
 
                                     >
 
-                                        <option>Kg</option>
+                                        <option value="Kg">{t("Kg")}</option>
 
-                                        <option>Piece</option>
+                                        <option value="Piece">{t("Piece")}</option>
 
-                                        <option>Packet</option>
+                                        <option value="Packet">{t("Packet")}</option>
 
-                                        <option>Litre</option>
+                                        <option value="Litre">{t("Litre")}</option>
 
                                     </select>
 
@@ -221,7 +222,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Expiry Date</label>
+                                    <label>{t("Expiry Date")}</label>
 
                                     <input
 
@@ -239,7 +240,7 @@ await axios.put(
 
                                 <div className="mb-3">
 
-                                    <label>Storage Type</label>
+                                    <label>{t("Storage Type")}</label>
 
                                     <select
 
@@ -251,11 +252,11 @@ await axios.put(
 
                                     >
 
-                                        <option>Refrigerated</option>
+                                        <option value="Refrigerated">{t("Refrigerated")}</option>
 
-                                        <option>Frozen</option>
+                                        <option value="Frozen">{t("Frozen")}</option>
 
-                                        <option>Room Temperature</option>
+                                        <option value="Room Temperature">{t("Room Temperature")}</option>
 
                                     </select>
 
@@ -267,7 +268,7 @@ await axios.put(
 
                                 >
 
-                                    💾 Update Product
+                                    💾 {t("Update Product")}
 
                                 </button>
 

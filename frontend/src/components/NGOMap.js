@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useTranslate } from "../hooks/useTranslate";
 
 // Fix Leaflet marker icons
 delete L.Icon.Default.prototype._getIconUrl;
@@ -27,7 +28,7 @@ function ChangeMapView({ position }) {
 }
 
 function NGOMap({ driverId }) {
-
+    const t = useTranslate();
     const [driver, setDriver] = useState(null);
 
     useEffect(() => {
@@ -69,7 +70,7 @@ function NGOMap({ driverId }) {
 
         return (
             <h5 className="text-center">
-                Waiting for driver's location...
+                {t("Waiting for driver's location...")}
             </h5>
         );
 
