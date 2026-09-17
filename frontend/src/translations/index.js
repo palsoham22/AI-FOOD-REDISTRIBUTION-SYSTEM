@@ -217,7 +217,15 @@ REGISTER: [
 
     "Create your account",
 
-    "Get started with FoodBridge AI in a few simple steps."
+    "Get started with FoodBridge AI in a few simple steps.",
+
+    "Home",
+
+    "Multi-Stakeholder Coordination",
+
+    "Expiry Date Monitoring",
+
+    "Structured Food Redistribution"
 
 ],
 
