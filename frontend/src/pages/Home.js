@@ -1,923 +1,777 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
 import { LABELS } from "../translations";
+import "../styles/Home.css";
 
 function Home() {
   const t = useTranslate();
   usePageTranslation(LABELS.HOME);
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="foodbridge-home min-vh-100 d-flex flex-column">
-
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
-
-        /* =========================
-           GLOBAL
-        ========================= */
-
-        .foodbridge-home {
-          --fb-ink: #123025;
-          --fb-green: #16834b;
-          --fb-deep: #075b36;
-          --fb-soft: #e8f6ed;
-          --fb-pastel: #dff3e7;
-          --fb-line: rgba(18, 77, 46, .12);
-
-          color: var(--fb-ink);
-
-          background:
-            linear-gradient(
-              135deg,
-              #f3fbf6 0%,
-              #e8f6ed 45%,
-              #f2faf5 100%
-            );
-
-          font-family: Inter, sans-serif;
-          overflow-x: hidden;
-        }
-
-        .foodbridge-home main {
-          overflow: hidden;
-        }
-
-
-        /* =========================
-           HERO SECTION
-        ========================= */
-
-        .foodbridge-home .fb-hero {
-          position: relative;
-          isolation: isolate;
-
-          padding: clamp(3rem, 5vw, 4.5rem) 0;
-
-          background:
-            radial-gradient(
-              circle at 5% 15%,
-              rgba(112, 198, 139, .18),
-              transparent 18rem
-            ),
-
-            radial-gradient(
-              circle at 95% 75%,
-              rgba(170, 224, 184, .28),
-              transparent 20rem
-            ),
-
-            linear-gradient(
-              135deg,
-              #f3fbf6 0%,
-              #e8f6ed 50%,
-              #f2faf5 100%
-            );
-        }
-
-
-        /* Decorative shapes */
-
-        .foodbridge-home .fb-hero::before {
-          content: "";
-
-          position: absolute;
-
-          width: 13rem;
-          height: 7rem;
-
-          right: -3rem;
-          bottom: -2rem;
-
-          border-radius: 50%;
-
-          background: rgba(73, 178, 108, .12);
-
-          transform: rotate(-25deg);
-
-          z-index: -1;
-        }
-
-
-        .foodbridge-home .fb-hero::after {
-          content: "";
-
-          position: absolute;
-
-          width: 6rem;
-          height: 6rem;
-
-          left: 3%;
-          bottom: 8%;
-
-          border-radius: 50%;
-
-          background: rgba(247, 214, 105, .13);
-
-          z-index: -1;
-        }
-
-
-        .foodbridge-home .fb-hero .container {
-          width: min(100% - 3rem, 1250px);
-        }
-
-
-        /* =========================
-           HERO CONTENT
-        ========================= */
-
-        .foodbridge-home .fb-hero-content {
-
-          display: grid;
-
-          grid-template-columns:
-            minmax(0, 1fr)
-            220px;
-
-          align-items: center;
-
-          gap: clamp(2rem, 5vw, 5rem);
-
-          text-align: left;
-        }
-
-
-        /* =========================
-           HERO LEFT
-        ========================= */
-
-        .foodbridge-home .fb-hero-main {
-          max-width: 850px;
-        }
-
-
-        .foodbridge-home .fb-eyebrow {
-
-          display: inline-flex;
-
-          align-items: center;
-
-          gap: .5rem;
-
-          padding: .45rem .8rem;
-
-          border: 1px solid rgba(22, 131, 75, .16);
-
-          border-radius: 999px;
-
-          color: var(--fb-deep);
-
-          background: rgba(255, 255, 255, .68);
-
-          box-shadow:
-            0 .4rem 1rem rgba(22, 95, 56, .04);
-
-          font-size: .74rem;
-
-          font-weight: 700;
-
-          letter-spacing: .06em;
-
-          text-transform: uppercase;
-        }
-
-
-        .foodbridge-home .fb-pulse {
-
-          width: .5rem;
-          height: .5rem;
-
-          border-radius: 50%;
-
-          background: #2eb96b;
-
-          box-shadow:
-            0 0 0 .22rem rgba(46, 185, 107, .14);
-
-          animation: fb-pulse 2.4s infinite;
-        }
-
-
-        /* =========================
-           HERO TITLE
-        ========================= */
-
-        .foodbridge-home .fb-title {
-
-          max-width: 900px;
-
-          margin: .85rem 0 .65rem;
-
-          color: var(--fb-ink);
-
-          font-family: Poppins, sans-serif;
-
-          font-size:
-            clamp(2.35rem, 4.6vw, 4.25rem);
-
-          font-weight: 800;
-
-          letter-spacing: -.055em;
-
-          line-height: 1.06;
-        }
-
-
-        .foodbridge-home .fb-lead {
-
-          max-width: 620px;
-
-          margin: 0;
-
-          color: #527264;
-
-          font-size:
-            clamp(.98rem, 1.4vw, 1.12rem);
-
-          line-height: 1.6;
-        }
-
-
-        .foodbridge-home .fb-proof {
-
-          margin: 1rem 0 0;
-
-          color: #678075;
-
-          font-size: .82rem;
-
-          font-weight: 600;
-        }
-
-
-        .foodbridge-home .fb-proof strong {
-
-          color: var(--fb-deep);
-        }
-
-
-        /* =========================
-           REGISTER / LOGIN
-        ========================= */
-
-        .foodbridge-home .fb-actions {
-
-          display: flex;
-
-          flex-direction: column;
-
-          gap: .8rem;
-
-          align-items: stretch;
-
-          padding: 0;
-
-          background: transparent;
-
-          border: none;
-
-          box-shadow: none;
-        }
-
-
-        .foodbridge-home .fb-actions::before {
-
-          display: none;
-        }
-
-
-        .foodbridge-home .fb-actions .btn {
-
-          width: 180px;
-
-          padding: .75rem 1.2rem;
-
-          border-radius: .7rem;
-
-          font-size: .95rem;
-
-          font-weight: 700;
-
-          transition:
-            transform .2s ease,
-            box-shadow .2s ease,
-            background .2s ease;
-        }
-
-
-        /* Register */
-
-        .foodbridge-home .fb-actions .btn-success {
-
-          border-color: var(--fb-green);
-
-          background: var(--fb-green);
-
-          box-shadow:
-            0 .5rem 1rem rgba(16, 113, 61, .16);
-        }
-
-
-        /* Login */
-
-        .foodbridge-home .fb-actions .btn-outline-success {
-
-          color: var(--fb-deep);
-
-          border-color: #9bcfb0;
-
-          background: rgba(255, 255, 255, .65);
-        }
-
-
-        /* Button hover */
-
-        .foodbridge-home .fb-actions .btn:hover {
-
-          transform: translateY(-2px);
-
-          box-shadow:
-            0 .75rem 1.5rem rgba(16, 113, 61, .18);
-        }
-
-
-        .foodbridge-home .fb-actions .btn-outline-success:hover {
-
-          color: #fff;
-
-          background: var(--fb-deep);
-
-          border-color: var(--fb-deep);
-        }
-
-
-        /* =========================
-           FEATURES SECTION
-        ========================= */
-
-        .foodbridge-home .fb-features {
-
-          padding:
-            clamp(3rem, 4vw, 4rem) 0;
-
-          background:
-            linear-gradient(
-              180deg,
-              #e8f6ed 0%,
-              #f0f9f3 50%,
-              #e6f5eb 100%
-            );
-        }
-
-
-        .foodbridge-home .fb-features .container {
-
-          width: min(100% - 3rem, 1250px);
-        }
-
-
-        .foodbridge-home .fb-features .mb-5 {
-
-          margin-bottom: 1.75rem !important;
-        }
-
-
-        /* Section small heading */
-
-        .foodbridge-home .fb-section-kicker {
-
-          color: var(--fb-green);
-
-          font-size: .72rem;
-
-          font-weight: 800;
-
-          letter-spacing: .1em;
-
-          text-transform: uppercase;
-        }
-
-
-        /* Section title */
-
-        .foodbridge-home .fb-section-title {
-
-          max-width: 720px;
-
-          margin: .45rem auto 0;
-
-          color: var(--fb-ink);
-
-          font-family: Poppins, sans-serif;
-
-          font-size:
-            clamp(1.65rem, 3vw, 2.35rem);
-
-          font-weight: 700;
-
-          letter-spacing: -.04em;
-
-          line-height: 1.15;
-        }
-
-
-        /* =========================
-           FEATURE CARDS
-        ========================= */
-
-        .foodbridge-home .fb-card {
-
-          height: 100%;
-
-          padding: 1.4rem;
-
-          border:
-            1px solid rgba(23, 83, 51, .12);
-
-          border-radius: 1rem;
-
-          /* Slight transparent effect */
-
-          background:
-            rgba(255, 255, 255, .48);
-
-          box-shadow:
-            0 .6rem 1.6rem rgba(15, 75, 42, .045);
-
-          transition:
-            transform .25s ease,
-            box-shadow .25s ease,
-            border-color .25s ease;
-        }
-
-
-        .foodbridge-home .fb-card:hover {
-
-          transform: translateY(-5px);
-
-          border-color:
-            rgba(22, 131, 75, .25);
-
-          box-shadow:
-            0 1rem 2rem rgba(15, 75, 42, .09);
-        }
-
-
-        /* Feature icon */
-
-        .foodbridge-home .fb-icon {
-
-          display: grid;
-
-          place-items: center;
-
-          width: 2.7rem;
-          height: 2.7rem;
-
-          margin-bottom: .8rem;
-
-          border-radius: .85rem;
-
-          color: var(--fb-deep);
-
-          background:
-            linear-gradient(
-              135deg,
-              #dff3e5,
-              #eef8f0
-            );
-
-          font-size: 1.15rem;
-        }
-
-
-        .foodbridge-home .fb-card h3 {
-
-          margin-bottom: .4rem;
-
-          color: var(--fb-ink);
-
-          font-family: Poppins, sans-serif;
-
-          font-size: 1rem;
-
-          font-weight: 700;
-        }
-
-
-        .foodbridge-home .fb-card p {
-
-          margin: 0;
-
-          color: #6b8176;
-
-          font-size: .86rem;
-
-          line-height: 1.55;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        .foodbridge-home .fb-footer {
-
-          margin-top: auto;
-
-          padding: .8rem 0;
-
-          border-top:
-            1px solid var(--fb-line);
-
-          color: #71877c;
-
-          background:
-            #e4f3e9;
-
-          font-size: .78rem;
-        }
-
-
-        .foodbridge-home .fb-footer-name {
-
-          color: var(--fb-deep);
-
-          font-weight: 800;
-        }
-
-
-        /* =========================
-           ANIMATION
-        ========================= */
-
-        @keyframes fb-pulse {
-
-          50% {
-
-            box-shadow:
-              0 0 0 .4rem rgba(46, 185, 107, .05);
-          }
-        }
-
-
-        /* =========================
-           TABLET / MOBILE
-        ========================= */
-
-        @media (max-width: 767.98px) {
-
-          .foodbridge-home .fb-hero {
-
-            padding:
-              2.5rem 0 2.75rem;
-          }
-
-
-          .foodbridge-home .fb-hero-content {
-
-            grid-template-columns: 1fr;
-
-            gap: 1.75rem;
-
-            text-align: center;
-          }
-
-
-          .foodbridge-home .fb-hero-main {
-
-            max-width: 100%;
-          }
-
-
-          .foodbridge-home .fb-title {
-
-            margin-left: auto;
-
-            margin-right: auto;
-
-            font-size:
-              clamp(2.25rem, 9vw, 3.3rem);
-          }
-
-
-          .foodbridge-home .fb-lead {
-
-            margin-left: auto;
-
-            margin-right: auto;
-          }
-
-
-          .foodbridge-home .fb-proof {
-
-            margin-left: auto;
-
-            margin-right: auto;
-          }
-
-
-          .foodbridge-home .fb-actions {
-
-            width: min(100%, 320px);
-
-            margin: 0 auto;
-
-            align-items: center;
-          }
-
-
-          .foodbridge-home .fb-actions .btn {
-
-            width: 180px;
-          }
-        }
-
-
-        @media (max-width: 575.98px) {
-
-          .foodbridge-home .fb-hero .container,
-          .foodbridge-home .fb-features .container {
-
-            width:
-              min(100% - 2rem, 1250px);
-          }
-
-
-          .foodbridge-home .fb-title {
-
-            font-size: 2.15rem;
-
-            letter-spacing: -.045em;
-          }
-
-
-          .foodbridge-home .fb-actions {
-
-            padding: 0;
-          }
-
-
-          .foodbridge-home .fb-card {
-
-            padding: 1.25rem;
-          }
-        }
-
-
-        /* =========================
-           REDUCED MOTION
-        ========================= */
-
-        @media (prefers-reduced-motion: reduce) {
-
-          .foodbridge-home *,
-          .foodbridge-home *::before,
-          .foodbridge-home *::after {
-
-            animation-duration:
-              .01ms !important;
-
-            transition-duration:
-              .01ms !important;
-          }
-        }
-
-      `}</style>
-
-
+    <div className="fb-landing min-vh-100 d-flex flex-column" id="home">
+      {/* 1. Header / Navbar */}
       <Navbar />
 
-
       <main>
-
-        {/* =========================
-            HERO
-        ========================= */}
-
-        <section className="fb-hero">
-
-          <div className="container position-relative">
-
-            <div className="fb-hero-content">
-
-              {/* LEFT SIDE */}
-
-              <div className="fb-hero-main">
-
-                <div className="fb-eyebrow">
-
-                  <span className="fb-pulse"></span>
-
-                  {t("Food redistribution, reimagined")}
-
+        {/* ==================================================================
+            2. HERO SECTION
+           ================================================================== */}
+        <section className="fb-hero-section">
+          <div className="container">
+            <div className="row align-items-center g-4 g-lg-5">
+              {/* Left Column: Headline, Value Prop & CTAs */}
+              <div className="col-lg-6">
+                <div className="fb-hero-eyebrow">
+                  <span className="fb-pulse-dot" aria-hidden="true"></span>
+                  <span>{t("Food redistribution, reimagined")}</span>
                 </div>
 
-
-                <h1 className="fb-title">
-
-                  {t(
-                    "AI-Powered Food Redistribution System"
-                  )}
-
+                <h1 className="fb-hero-title">
+                  {t("Reduce Food Waste.")} <br />
+                  <span className="fb-highlight">{t("Redistribute Surplus.")}</span> <br />
+                  {t("Create Impact.")}
                 </h1>
 
-
-                <p className="fb-lead">
-
+                <p className="fb-hero-lead">
                   {t(
-                    "Reduce Food Waste. Feed Communities."
+                    "FoodBridge AI connects food businesses with NGOs and recipient networks to identify surplus early, prevent avoidable food waste, and coordinate prompt, dignified redistribution through structured inventory management."
                   )}
-
                 </p>
 
+                <div className="fb-hero-ctas">
+                  <Link to="/register" className="fb-btn-hero-primary">
+                    <span>{t("Get Started")}</span>
+                    <i className="bi bi-arrow-right" aria-hidden="true"></i>
+                  </Link>
 
-                <p className="fb-proof">
+                  <button
+                    type="button"
+                    className="fb-btn-hero-secondary"
+                    onClick={() => handleScroll("features")}
+                  >
+                    <span>{t("Explore Features")}</span>
+                    <i className="bi bi-chevron-down" aria-hidden="true"></i>
+                  </button>
+                </div>
 
-                  <strong>
-    {t("One shared mission:")}
-</strong>{" "}
-
-{t("turn surplus into support for every community.")}
-
-                </p>
-
+                <div className="fb-hero-proof">
+                  <div className="fb-proof-item">
+                    <i className="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>{t("Multi-Stakeholder Coordination")}</span>
+                  </div>
+                  <div className="fb-proof-item">
+                    <i className="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>{t("Expiry Date Monitoring")}</span>
+                  </div>
+                  <div className="fb-proof-item">
+                    <i className="bi bi-check-circle-fill" aria-hidden="true"></i>
+                    <span>{t("Structured Food Redistribution")}</span>
+                  </div>
+                </div>
               </div>
 
+              {/* Right Column: Interactive Platform Mockup */}
+              <div className="col-lg-6">
+                <div className="fb-hero-card">
+                  <div className="fb-mock-topbar">
+                    <div className="d-flex align-items-center gap-2">
+                      <i className="bi bi-hdd-network-fill text-primary"></i>
+                      <span className="fw-bold small text-dark">
+                        {t("Surplus Inventory Coordination")}
+                      </span>
+                    </div>
+                    <span className="fb-mock-badge">
+                      <span className="fb-mock-badge-dot"></span>
+                      {t("Platform Active")}
+                    </span>
+                  </div>
 
-              {/* RIGHT SIDE */}
+                  {/* Mock Item 1 */}
+                  <div className="fb-mock-item">
+                    <div className="fb-mock-item-left">
+                      <div className="fb-mock-icon amber" aria-hidden="true">
+                        <i className="bi bi-cup-straw"></i>
+                      </div>
+                      <div>
+                        <div className="fw-bold small text-dark">
+                          {t("Organic Whole Milk (50L)")}
+                        </div>
+                        <div className="text-secondary small">
+                          {t("Dairy • 50 Units")} &bull; Metro Supermarket
+                        </div>
+                      </div>
+                    </div>
+                    <span className="fb-pill-expiry">
+                      <i className="bi bi-clock-history"></i>
+                      {t("Expires in 18 hrs")}
+                    </span>
+                  </div>
 
-              <div className="fb-actions">
+                  {/* Mock Item 2 */}
+                  <div className="fb-mock-item">
+                    <div className="fb-mock-item-left">
+                      <div className="fb-mock-icon teal" aria-hidden="true">
+                        <i className="bi bi-basket2"></i>
+                      </div>
+                      <div>
+                        <div className="fw-bold small text-dark">
+                          {t("Bakery Surplus Assortment")}
+                        </div>
+                        <div className="text-secondary small">
+                          {t("Bakery • 30 kg")} &bull; Artisan Breads Co.
+                        </div>
+                      </div>
+                    </div>
+                    <span className="fb-pill-matched">
+                      <i className="bi bi-check2-circle"></i>
+                      {t("Claimed by City Kitchen")}
+                    </span>
+                  </div>
 
-                <a
-                  href="/register"
-                  className="btn btn-success"
-                >
-                  {t("Register")}
-                </a>
+                  {/* Mock Item 3 */}
+                  <div className="fb-mock-item">
+                    <div className="fb-mock-item-left">
+                      <div className="fb-mock-icon blue" aria-hidden="true">
+                        <i className="bi bi-truck"></i>
+                      </div>
+                      <div>
+                        <div className="fw-bold small text-dark">
+                          {t("Fresh Produce Batch")}
+                        </div>
+                        <div className="text-secondary small">
+                          {t("Produce • 80 kg")} &bull; Green Valley Market
+                        </div>
+                      </div>
+                    </div>
+                    <span className="fb-pill-completed">
+                      <i className="bi bi-calendar-check"></i>
+                      {t("Scheduled for Pickup")}
+                    </span>
+                  </div>
 
-
-                <a
-                  href="/login"
-                  className="btn btn-outline-success"
-                >
-                  {t("Login")}
-                </a>
-
+                  {/* Mock Bottom Metrics */}
+                  <div className="pt-2 d-flex justify-content-between text-secondary small border-top mt-2">
+                    <div className="d-flex align-items-center gap-1">
+                      <i className="bi bi-heart-pulse-fill text-danger"></i>
+                      <span>{t("Community Food Recovery")}</span>
+                    </div>
+                    <div className="d-flex align-items-center gap-1">
+                      <i className="bi bi-boxes text-primary"></i>
+                      <span>{t("Inventory Tracking System")}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-
             </div>
-
           </div>
-
         </section>
 
-
-        {/* =========================
-            FEATURES
-        ========================= */}
-
-        <section className="fb-features">
-
+        {/* ==================================================================
+            3. ABOUT SECTION
+           ================================================================== */}
+        <section className="fb-about-section" id="about">
           <div className="container">
-
-            <div className="text-center mb-5">
-
-              <div className="fb-section-kicker">
-    {t("Better food systems")}
-</div>
-
-
+            <div className="text-center fb-section-header">
+              <span className="fb-section-tag teal">
+                <i className="bi bi-info-circle-fill me-1"></i>
+                {t("About FoodBridge AI")}
+              </span>
               <h2 className="fb-section-title">
-    {t("Connecting surplus food with the people who need it most.")}
-</h2>
-
+                {t("Bridging the Gap Between Surplus Food and Local Need")}
+              </h2>
+              <p className="fb-section-subtitle">
+                {t(
+                  "Connecting surplus food with communities through practical technology and organized coordination."
+                )}
+              </p>
             </div>
 
-
-            <div className="row g-4">
-
-
-              {/* CARD 1 */}
-
-              <div className="col-md-4">
-
-                <article className="fb-card">
-
-                  <div
-                    className="fb-icon"
-                    aria-hidden="true"
-                  >
-                    &#9851;
-                  </div>
-
-
-                  <h3>
-    {t("Reduce waste")}
-</h3>
-
-<p>
-    {t("Make every good meal count by giving surplus food a meaningful next destination.")}
-</p>
-
-                </article>
-
+            {/* Narrative 2-Column Overview */}
+            <div className="row g-3 mb-4">
+              <div className="col-md-6">
+                <div className="fb-narrative-card">
+                  <h4>
+                    <i className="bi bi-exclamation-circle text-danger me-2"></i>
+                    {t("The Challenge of Food Waste")}
+                  </h4>
+                  <p>
+                    {t(
+                      "Every day, supermarkets, restaurants, and caterers generate nutritious edible surplus that risks disposal due to tight expiry windows or lack of immediate logistics."
+                    )}
+                  </p>
+                </div>
               </div>
 
-
-              {/* CARD 2 */}
-
-              <div className="col-md-4">
-
-                <article className="fb-card">
-
-                  <div
-                    className="fb-icon"
-                    aria-hidden="true"
-                  >
-                    &#8765;
-                  </div>
-
-
-                  <h3>
-    {t("Smart matching")}
-</h3>
-
-<p>
-    {t("Use intelligent coordination to connect donors, volunteers, and recipient communities.")}
-</p>
-
-                </article>
-
+              <div className="col-md-6">
+                <div className="fb-narrative-card">
+                  <h4>
+                    <i className="bi bi-lightbulb text-primary me-2"></i>
+                    {t("The FoodBridge Solution")}
+                  </h4>
+                  <p>
+                    {t(
+                      "FoodBridge AI provides clear inventory tracking, expiry date monitoring, and direct donation coordination, turning surplus food into community nourishment."
+                    )}
+                  </p>
+                </div>
               </div>
-
-
-              {/* CARD 3 */}
-
-              <div className="col-md-4">
-
-                <article className="fb-card">
-
-                  <div
-                    className="fb-icon"
-                    aria-hidden="true"
-                  >
-                    &#9829;
-                  </div>
-
-
-                  <h3>
-    {t("Strengthen communities")}
-</h3>
-
-<p>
-    {t("Create a reliable, dignified path from available food to local impact.")}
-</p>
-
-                </article>
-
-              </div>
-
-
             </div>
 
+            {/* 3 Value Pillars */}
+            <div className="row g-3">
+              <div className="col-lg-4 col-md-6">
+                <article className="fb-pillar-card">
+                  <div className="fb-pillar-icon teal" aria-hidden="true">
+                    <i className="bi bi-shield-check"></i>
+                  </div>
+                  <h3>{t("Prevent Waste")}</h3>
+                  <p>
+                    {t(
+                      "Shelf-life tracking and risk indicators help businesses identify surplus items before they reach expiration."
+                    )}
+                  </p>
+                </article>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <article className="fb-pillar-card">
+                  <div className="fb-pillar-icon blue" aria-hidden="true">
+                    <i className="bi bi-arrow-left-right"></i>
+                  </div>
+                  <h3>{t("Connect Surplus")}</h3>
+                  <p>
+                    {t(
+                      "Direct digital connection between food businesses, registered NGOs, and local delivery partners."
+                    )}
+                  </p>
+                </article>
+              </div>
+
+              <div className="col-lg-4 col-md-12">
+                <article className="fb-pillar-card">
+                  <div className="fb-pillar-icon green" aria-hidden="true">
+                    <i className="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <h3>{t("Measure Impact")}</h3>
+                  <p>
+                    {t(
+                      "Donation records and reporting tools give donors and recipient organizations clear visibility into redistributed food."
+                    )}
+                  </p>
+                </article>
+              </div>
+            </div>
           </div>
-
         </section>
 
+        {/* ==================================================================
+            4. HOW IT WORKS SECTION
+           ================================================================== */}
+        <section className="fb-how-section" id="how-it-works">
+          <div className="container">
+            <div className="text-center fb-section-header">
+              <span className="fb-section-tag">
+                <i className="bi bi-diagram-3-fill me-1"></i>
+                {t("Step-by-Step Process")}
+              </span>
+              <h2 className="fb-section-title">
+                {t("How FoodBridge AI Coordinates Food Redistribution")}
+              </h2>
+              <p className="fb-section-subtitle">
+                {t(
+                  "A simple, reliable workflow that turns surplus inventory into timely meals for communities."
+                )}
+              </p>
+            </div>
+
+            <div className="row g-3">
+              {/* Step 1 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">01</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-box-seam"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Track Inventory")}</h3>
+                  <p>
+                    {t(
+                      "Log food items with expiry dates, categories, and batch details through direct entry, barcode scanning, or CSV upload."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">02</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-hourglass-split text-warning"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Monitor Expiry")}</h3>
+                  <p>
+                    {t(
+                      "Configurable shelf-life timelines help flag perishable inventory approaching expiration dates."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">03</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-tags text-primary"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Identify Surplus")}</h3>
+                  <p>
+                    {t(
+                      "Eligible inventory is flagged as surplus and organized into donation listings with category and quantity details."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">04</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-hand-thumbs-up text-success"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Coordinate Donation")}</h3>
+                  <p>
+                    {t(
+                      "Registered NGOs review available surplus listings and submit requests matching their community needs."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">05</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-calendar-check text-info"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Schedule Pickup")}</h3>
+                  <p>
+                    {t(
+                      "Coordinate pickup timing and logistics details between donor facilities and community partners."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 6 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-step-card">
+                  <div className="fb-step-top">
+                    <span className="fb-step-number">06</span>
+                    <div className="fb-step-icon">
+                      <i className="bi bi-award text-success"></i>
+                    </div>
+                  </div>
+                  <h3>{t("Track Impact")}</h3>
+                  <p>
+                    {t(
+                      "Log completed handoffs and maintain transparent records of rescued food and community support."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================================================================
+            5. FEATURES SECTION (Consolidated to 9 High-Impact Capabilities)
+           ================================================================== */}
+        <section className="fb-features-section" id="features">
+          <div className="container">
+            <div className="text-center fb-section-header">
+              <span className="fb-section-tag">
+                <i className="bi bi-stars me-1"></i>
+                {t("Platform Capabilities")}
+              </span>
+              <h2 className="fb-section-title">
+                {t("Built for Every Stakeholder in Food Recovery")}
+              </h2>
+              <p className="fb-section-subtitle">
+                {t(
+                  "Core tools and workflows designed to make surplus food recovery practical, efficient, and accessible."
+                )}
+              </p>
+            </div>
+
+            <div className="row g-3">
+              {/* Feature 1 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box blue">
+                    <i className="bi bi-boxes"></i>
+                  </div>
+                  <h3>{t("Inventory Management")}</h3>
+                  <p>
+                    {t(
+                      "Track stock quantities, units, categories, and storage conditions in a centralized catalog."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box amber">
+                    <i className="bi bi-clock-history"></i>
+                  </div>
+                  <h3>{t("Expiry Date Monitoring")}</h3>
+                  <p>
+                    {t(
+                      "Time-sensitive views and proactive indicators highlight perishables approaching expiry."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box teal">
+                    <i className="bi bi-grid-3x3-gap"></i>
+                  </div>
+                  <h3>{t("Product Categorization")}</h3>
+                  <p>
+                    {t(
+                      "Structured categorization across dairy, bakery, produce, prepared meals, and pantry goods."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box amber">
+                    <i className="bi bi-exclamation-triangle"></i>
+                  </div>
+                  <h3>{t("Waste Risk Assessment")}</h3>
+                  <p>
+                    {t(
+                      "Early risk flagging helps staff identify surplus items in time to prioritize donation."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box blue">
+                    <i className="bi bi-qr-code-scan"></i>
+                  </div>
+                  <h3>{t("Barcode & QR Support")}</h3>
+                  <p>
+                    {t(
+                      "Camera-based scanning enables rapid item lookup and streamlined inventory logging."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box teal">
+                    <i className="bi bi-file-earmark-spreadsheet"></i>
+                  </div>
+                  <h3>{t("CSV & POS Import")}</h3>
+                  <p>
+                    {t(
+                      "Upload product inventories in batches using standard CSV spreadsheets and POS files."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 7 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box green">
+                    <i className="bi bi-heart-fill"></i>
+                  </div>
+                  <h3>{t("Food Donation Coordination")}</h3>
+                  <p>
+                    {t(
+                      "Turn surplus stock into accessible donation listings for registered community organizations."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 8 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box blue">
+                    <i className="bi bi-person-badge"></i>
+                  </div>
+                  <h3>{t("Role-Based Portals")}</h3>
+                  <p>
+                    {t(
+                      "Dedicated dashboards for Businesses, NGOs, Delivery Drivers, Admins, and Individuals."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 9 */}
+              <div className="col-lg-4 col-md-6">
+                <div className="fb-feature-card">
+                  <div className="fb-feature-icon-box teal">
+                    <i className="bi bi-graph-up"></i>
+                  </div>
+                  <h3>{t("Analytics & Accessibility")}</h3>
+                  <p>
+                    {t(
+                      "View donation history and redistribution trends with support for 6 regional languages and PWA."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================================================================
+            6. PLATFORM ROLES SECTION
+           ================================================================== */}
+        <section className="fb-roles-section" id="roles">
+          <div className="container">
+            <div className="text-center fb-section-header">
+              <span className="fb-section-tag teal">
+                <i className="bi bi-people-fill me-1"></i>
+                {t("Platform Roles")}
+              </span>
+              <h2 className="fb-section-title">
+                {t("Empowering Every Role in the Food Recovery Network")}
+              </h2>
+              <p className="fb-section-subtitle">
+                {t(
+                  "Dedicated tools designed for donors, recipient organizations, delivery partners, and coordinators."
+                )}
+              </p>
+            </div>
+
+            <div className="row g-3">
+              {/* Role 1: Business */}
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-role-card">
+                  <span className="fb-role-badge business">{t("Donor")}</span>
+                  <h3>{t("Commercial Businesses")}</h3>
+                  <p>
+                    {t(
+                      "Supermarkets, restaurants, and caterers managing inventory, tracking expiry, and donating surplus food."
+                    )}
+                  </p>
+                  <Link to="/business-dashboard" className="fb-role-link">
+                    <span>{t("Go to Business Portal")}</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Role 2: NGO */}
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-role-card">
+                  <span className="fb-role-badge ngo">{t("Recipient")}</span>
+                  <h3>{t("NGOs & Food Banks")}</h3>
+                  <p>
+                    {t(
+                      "Community kitchens and food relief organizations reviewing surplus listings, requesting items, and managing rations."
+                    )}
+                  </p>
+                  <Link to="/ngo-dashboard" className="fb-role-link">
+                    <span>{t("Go to NGO Portal")}</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Role 3: Delivery */}
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-role-card">
+                  <span className="fb-role-badge delivery">{t("Logistics")}</span>
+                  <h3>{t("Delivery Partners")}</h3>
+                  <p>
+                    {t(
+                      "Logistics volunteers and drivers managing pickup queues and recording completed distributions."
+                    )}
+                  </p>
+                  <Link to="/delivery-dashboard" className="fb-role-link">
+                    <span>{t("Go to Delivery Portal")}</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Role 4: Individual */}
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-role-card">
+                  <span className="fb-role-badge individual">{t("Community")}</span>
+                  <h3>{t("Individual Donors")}</h3>
+                  <p>
+                    {t(
+                      "Citizens and households listing surplus food and contributing directly to local hunger relief."
+                    )}
+                  </p>
+                  <Link to="/individual" className="fb-role-link">
+                    <span>{t("Go to Individual Portal")}</span>
+                    <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================================================================
+            7. IMPACT SECTION
+           ================================================================== */}
+        <section className="fb-impact-section" id="impact">
+          <div className="container">
+            <div className="text-center fb-section-header">
+              <span className="fb-section-tag teal">
+                <i className="bi bi-heart-pulse-fill me-1"></i>
+                {t("Why It Matters")}
+              </span>
+              <h2 className="fb-section-title">
+                {t("Creating Environmental and Social Value Together")}
+              </h2>
+              <p className="fb-section-subtitle">
+                {t(
+                  "Every redirected meal addresses hunger while preventing avoidable organic waste in landfills."
+                )}
+              </p>
+            </div>
+
+            <div className="row g-3">
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-impact-card">
+                  <div className="fb-impact-icon teal">
+                    <i className="bi bi-tree-fill"></i>
+                  </div>
+                  <h3>{t("Environmental Stewardship")}</h3>
+                  <p>
+                    {t(
+                      "Diverting edible food from landfills helps reduce methane emissions and saves natural resources."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-impact-card">
+                  <div className="fb-impact-icon green">
+                    <i className="bi bi-people-fill"></i>
+                  </div>
+                  <h3>{t("Community Food Security")}</h3>
+                  <p>
+                    {t(
+                      "Redirecting surplus food supplies nutritious meals to local shelters, food banks, and families."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-impact-card">
+                  <div className="fb-impact-icon blue">
+                    <i className="bi bi-award-fill"></i>
+                  </div>
+                  <h3>{t("Corporate Responsibility")}</h3>
+                  <p>
+                    {t(
+                      "Helps businesses cut waste disposal overhead while advancing meaningful community engagement."
+                    )}
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6">
+                <div className="fb-impact-card">
+                  <div className="fb-impact-icon teal">
+                    <i className="bi bi-shield-check"></i>
+                  </div>
+                  <h3>{t("Responsible Food Logistics")}</h3>
+                  <p>
+                    {t(
+                      "Promotes structured handling, clear pickup coordination, and transparent delivery logging."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================================================================
+            8. FINAL CALL TO ACTION
+           ================================================================== */}
+        <section className="fb-cta-section">
+          <div className="container">
+            <div className="fb-cta-box">
+              <span className="fb-cta-tag">
+                <i className="bi bi-lightning-charge-fill me-1"></i>
+                {t("Join the Movement")}
+              </span>
+              <h2 className="fb-cta-title">
+                {t("Turn Surplus Food Into Shared Impact.")}
+              </h2>
+              <p className="fb-cta-lead">
+                {t(
+                  "Join FoodBridge AI today. Whether you are a business looking to reduce waste, an NGO feeding communities, or an individual wanting to help."
+                )}
+              </p>
+              <div className="fb-cta-buttons">
+                <Link to="/register" className="fb-btn-cta-primary">
+                  <span>{t("Create an Account")}</span>
+                  <i className="bi bi-arrow-right"></i>
+                </Link>
+                <Link to="/login" className="fb-btn-cta-secondary">
+                  <span>{t("Sign In to Your Dashboard")}</span>
+                  <i className="bi bi-box-arrow-in-right"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-
-      {/* =========================
-          FOOTER
-      ========================= */}
-
-      <footer className="fb-footer">
-
-        <div className="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
-
-          <span>
-
-            <span className="fb-footer-name">
-              FoodBridge AI
-            </span>
-
-            {" "}
-
-            &mdash; {t("better food, shared further.")}
-
-          </span>
-
-
-          <span>
-    {t("Reducing waste. Feeding communities.")}
-</span>
-
-        </div>
-
-      </footer>
-
+      {/* 9. Footer Component */}
+      <Footer />
     </div>
   );
 }
