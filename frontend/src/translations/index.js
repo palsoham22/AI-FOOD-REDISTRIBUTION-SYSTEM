@@ -281,7 +281,15 @@ LOGIN: [
 
     "Donate surplus food directly.",
 
-    "Manage the complete FoodBridge platform."
+    "Manage the complete FoodBridge platform.",
+
+    "Home",
+
+    "Multi-Stakeholder Coordination",
+
+    "Expiry Date Monitoring",
+
+    "Structured Food Redistribution"
 
 ],
 
