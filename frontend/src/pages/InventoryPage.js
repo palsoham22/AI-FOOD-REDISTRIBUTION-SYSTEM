@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import axios from "../services/axiosInstance";
-import Sidebar from "../components/Sidebar";
+import BusinessLayout from "../components/BusinessLayout";
 import { useNavigate } from "react-router-dom";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
@@ -149,11 +149,8 @@ const lowRisk = products.filter(
 ).length;
 
     return (
-
-<>
-    <Sidebar />
-
-    <div className="inventory-page">
+        <BusinessLayout>
+            <div className="inventory-page-content">
 
         <div className="inventory-header">
 
@@ -475,13 +472,9 @@ const lowRisk = products.filter(
             </div>
 
         </div>
-
-    </div>
-
-</>
-
-);
-
+            </div>
+        </BusinessLayout>
+    );
 }
 
 export default InventoryPage;

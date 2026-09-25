@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import axios from "axios";
-import Sidebar from "../components/Sidebar";
+import BusinessLayout from "../components/BusinessLayout";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
 import { LABELS } from "../translations";
@@ -58,11 +58,12 @@ function TransactionHistory() {
 
         .then((response)=>{
 
-    setProducts(response.data);
+    const items = Array.isArray(response.data) ? response.data : [];
+    setProducts(items);
 
     localStorage.setItem(
         "offline_transactions",
-        JSON.stringify(response.data)
+        JSON.stringify(items)
     );
 
 })
@@ -86,11 +87,8 @@ function TransactionHistory() {
     }, []);
 
     return (
-
-<>
-    <Sidebar />
-
-    <div className="transaction-page">
+        <BusinessLayout>
+            <div className="transaction-page-content">
 
         <div className="transaction-header">
 
@@ -310,13 +308,9 @@ function TransactionHistory() {
             </div>
 
         </div>
-
-    </div>
-
-</>
-
-);
-
+            </div>
+        </BusinessLayout>
+    );
 }
 
 export default TransactionHistory;

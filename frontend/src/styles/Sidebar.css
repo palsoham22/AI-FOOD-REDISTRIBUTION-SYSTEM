@@ -1,461 +1,548 @@
-/* ===========================
-   FoodBridge AI - Business Sidebar
-   Pastel Sage Green Theme
-=========================== */
+/* ==========================================================================
+   FoodBridge AI — Business Navigation Sidebar
+   Design System: Consistent Clean Light-Blue + White Professional Theme
+   Primary Blue: #2563EB | Light Blue: #EFF6FF | Border: #E2E8F0 | Text: #0F172A
+========================================================================== */
 
-.fb-sidebar{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:260px;
-    height:100vh;
-
-    background: linear-gradient(180deg, #3F8F6B 0%, #347A5A 100%);
-
-    color:#ffffff;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    box-shadow:
-        4px 0 20px rgba(63,125,98,.14);
-
-    transition:
-        width .3s ease,
-        transform .3s ease;
-
-    z-index:1200;
-
+.fb-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04) !important;
+    border-right: 1px solid #E2E8F0 !important;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1200;
+    overflow: hidden;
 }
 
+/* ==========================================================================
+   COLLAPSED STATE (Icon-Only Mode - 80px)
+========================================================================== */
 
-/* ===========================
-   HEADER
-=========================== */
-
-.sidebar-header{
-
-    padding:22px 20px 16px;
-
-    border-bottom:
-        1px solid rgba(255,255,255,.18);
-
+.fb-sidebar.collapsed {
+    width: 80px !important;
 }
 
-
-.sidebar-header h3{
-
-    margin:0;
-
-    font-size:1.65rem;
-
-    font-weight:700;
-
-    line-height:1.3;
-
+.fb-sidebar.collapsed .brand-text {
+    display: none !important;
 }
 
-
-/* ===========================
-   MENU
-=========================== */
-
-.sidebar-menu{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:6px;
-
-    padding:14px 13px;
-
-    flex:1;
-
+.fb-sidebar.collapsed .sidebar-header {
+    padding: 16px 8px !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    flex-direction: column !important;
 }
 
+.fb-sidebar.collapsed .sidebar-menu {
+    padding: 16px 8px !important;
+    align-items: center !important;
+}
 
-/* ===========================
+.fb-sidebar.collapsed .sidebar-link {
+    width: 50px !important;
+    height: 46px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    border-left: none !important;
+    transform: none !important;
+}
+
+.fb-sidebar.collapsed .sidebar-link:hover {
+    background: #EFF6FF !important;
+    color: #2563EB !important;
+}
+
+.fb-sidebar.collapsed .sidebar-link.active {
+    background: #EFF6FF !important;
+    color: #2563EB !important;
+    box-shadow: 0 0 0 2px #2563EB inset !important;
+}
+
+.fb-sidebar.collapsed .sidebar-link-text {
+    display: none !important;
+}
+
+.fb-sidebar.collapsed .sidebar-footer {
+    padding: 14px 8px !important;
+    align-items: center !important;
+}
+
+.fb-sidebar.collapsed .logout-btn {
+    width: 48px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+}
+
+.fb-sidebar.collapsed .logout-btn .sidebar-link-text {
+    display: none !important;
+}
+
+.fb-sidebar.collapsed .user-box {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.fb-sidebar.collapsed .user-details {
+    display: none !important;
+}
+
+/* ==========================================================================
+   HEADER / BRAND
+========================================================================== */
+
+.sidebar-header {
+    padding: 18px 16px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    background: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 72px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none !important;
+    color: #0F172A !important;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+    min-width: 0;
+}
+
+.brand-logo:hover {
+    color: #0F172A !important;
+}
+
+.brand-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-text {
+    font-weight: 800;
+    color: #0F172A;
+    white-space: nowrap;
+}
+
+.brand-accent {
+    color: #2563EB !important;
+}
+
+/* Collapse / Hamburger Button (Inside Header) */
+.sidebar-collapse-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #F8FAFC;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.sidebar-collapse-btn:hover {
+    background: #EFF6FF;
+    color: #2563EB;
+    border-color: #BFDBFE;
+}
+
+.sidebar-close-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    background: #F8FAFC;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sidebar-close-btn:hover {
+    background: #FEE2E2;
+    color: #DC2626;
+    border-color: #FECACA;
+}
+
+/* ==========================================================================
+   MENU LIST
+========================================================================== */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 12px !important;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
    MENU LINK
-=========================== */
+========================================================================== */
 
-.sidebar-link{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    text-decoration:none;
-
-    color:#ffffff;
-
-    padding:10px 13px;
-
-    border-radius:12px;
-
-    transition:.25s ease;
-
-    font-size:15px;
-
-    font-weight:500;
-
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none !important;
+    color: #334155 !important;
+    padding: 10px 14px !important;
+    border-radius: 10px !important;
+    transition: all 0.15s ease;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-left: 3px solid transparent !important;
 }
 
-
-/* ===========================
-   ICON
-=========================== */
-
-.sidebar-icon{
-
-    width:25px;
-
-    min-width:25px;
-
-    text-align:center;
-
-    font-size:19px;
-
+.sidebar-icon {
+    width: 24px;
+    min-width: 24px;
+    text-align: center;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748B;
+    transition: color 0.15s ease;
 }
 
-
-/* ===========================
-   HOVER
-=========================== */
-
-.sidebar-link:hover{
-
-    background:
-        rgba(255,255,255,.13);
-
-    transform:translateX(3px);
-
-    color:#ffffff;
-
+.sidebar-link:hover {
+    background: #F8FAFC !important;
+    color: #2563EB !important;
+    transform: translateX(2px);
 }
 
-
-/* ===========================
-   ACTIVE
-=========================== */
-
-.sidebar-link.active{
-
-    background: #DDF1E7;
-
-    color: #246247;
-
-    box-shadow:
-        0 5px 14px rgba(38,107,74,.12);
-
-    font-weight:700;
-
+.sidebar-link:hover .sidebar-icon {
+    color: #2563EB;
 }
 
-
-/* ===========================
-   FOOTER
-=========================== */
-
-.sidebar-footer{
-
-    border-top:
-        1px solid rgba(255,255,255,.18);
-
-    padding:12px 14px;
-
+.sidebar-link.active {
+    background: #EFF6FF !important;
+    color: #2563EB !important;
+    font-weight: 600 !important;
+    border-left: 3px solid #2563EB !important;
 }
 
-
-/* ===========================
-   LOGOUT
-=========================== */
-
-.logout-btn{
-
-    width:100%;
-
-    border:none;
-
-    background:#ffffff;
-
-    color:#3f7d62;
-
-    border-radius:12px;
-
-    padding:10px;
-
-    font-weight:700;
-
-    font-size:14px;
-
-    transition:.25s ease;
-
-    margin-bottom:10px;
-
+.sidebar-link.active .sidebar-icon {
+    color: #2563EB !important;
 }
 
-
-.logout-btn:hover{
-
-    background:#f1f8f4;
-
-    transform:translateY(-2px);
-
+.sidebar-link-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+/* ==========================================================================
+   FOOTER SECTION
+========================================================================== */
 
-/* ===========================
-   USER INFO
-=========================== */
-
-.user-box{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:3px;
-
-    font-size:13px;
-
-    color:#eef8f2;
-
+.sidebar-footer {
+    padding: 14px 12px !important;
+    border-top: 1px solid #E2E8F0 !important;
+    background: #FFFFFF !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-
-.user-box strong{
-
-    font-size:15px;
-
+/* Logout Button */
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 9px 14px !important;
+    background: transparent !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    color: #64748B !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
 }
 
-
-/* ===========================
-   MOBILE TOGGLE
-=========================== */
-
-.sidebar-toggle{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    position:fixed;
-
-    top:18px;
-
-    left:18px;
-
-    width:46px;
-
-    height:46px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#4C9973;
-
-    color:#ffffff;
-
-    font-size:23px;
-
-    cursor:pointer;
-
-    z-index:1500;
-
-    box-shadow:
-        0 7px 18px rgba(63,125,98,.20);
-
-    transition:.25s ease;
-
+.logout-btn .sidebar-icon {
+    color: #64748B;
 }
 
-
-.sidebar-toggle:hover{
-
-    background:#428B68;
-
-    transform:translateY(-2px);
-
+.logout-btn:hover {
+    background: #FEF2F2 !important;
+    color: #DC2626 !important;
+    border-color: #FECACA !important;
 }
 
-
-/* ===========================
-   OVERLAY
-=========================== */
-
-.sidebar-overlay{
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(38,65,52,.22);
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.3s ease;
-
-    z-index:1100;
-
+.logout-btn:hover .sidebar-icon {
+    color: #DC2626 !important;
 }
 
-
-.sidebar-overlay.show{
-
-    opacity:1;
-
-    visibility:visible;
-
+/* User Profile Box */
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
 }
 
+.user-avatar {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 8px;
+    background: #2563EB;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* ===========================
-   MOBILE
-=========================== */
+.user-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+}
 
-@media(max-width:992px){
+.user-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0F172A;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .fb-sidebar{
+.user-biz {
+    font-size: 11px;
+    color: #64748B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-        transform:translateX(-100%);
+.user-badge {
+    font-size: 10px;
+    font-weight: 600;
+    color: #2563EB;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
 
-        width:260px;
+/* ==========================================================================
+   MOBILE TOGGLE & BACKDROP OVERLAY
+========================================================================== */
 
+.sidebar-mobile-toggle {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 1300;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    color: #0F172A;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sidebar-mobile-toggle:hover {
+    background: #EFF6FF;
+    color: #2563EB;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 1150;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==========================================================================
+   PAGE CONTAINER MARGIN EXPANSION / COLLAPSE
+   Centrally controls all Business Module pages:
+   - BusinessDashboard (.fb-page-shell)
+   - Inventory (.inventory-page)
+   - BusinessDonations (.donation-page)
+   - Transactions (.transaction-page)
+   - Analytics (.analytics-page)
+   - Settings (.settings-page)
+   - Barcode Scanner (.scanner-page)
+========================================================================== */
+
+.fb-page-shell,
+.inventory-page,
+.donation-page,
+.transaction-page,
+.analytics-page,
+.settings-page,
+.scanner-page {
+    margin-left: 260px;
+    min-height: 100vh;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.sidebar-collapsed .fb-page-shell,
+body.sidebar-collapsed .inventory-page,
+body.sidebar-collapsed .donation-page,
+body.sidebar-collapsed .transaction-page,
+body.sidebar-collapsed .analytics-page,
+body.sidebar-collapsed .settings-page,
+body.sidebar-collapsed .scanner-page {
+    margin-left: 80px !important;
+}
+
+/* Scanner Page Core Styles */
+.scanner-page {
+    padding: 24px;
+    background: #F8FAFC;
+}
+
+.scanner-container {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.scanner-header {
+    margin-bottom: 24px;
+}
+
+.scanner-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 4px;
+}
+
+.scanner-subtitle {
+    color: #64748B;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.scanner-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.scanner-video-wrapper {
+    position: relative;
+    width: 100%;
+    background: #0F172A;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scanner-field {
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (<= 992px)
+========================================================================== */
+
+@media (max-width: 992px) {
+    .sidebar-mobile-toggle {
+        display: flex;
     }
 
-
-    .fb-sidebar.open{
-
-        transform:translateX(0);
-
+    .fb-sidebar {
+        transform: translateX(-100%);
+        width: 280px !important;
+        box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15) !important;
     }
 
-
-    .sidebar-toggle{
-
-        top:18px;
-
-        left:18px;
-
+    .fb-sidebar.open {
+        transform: translateX(0);
     }
 
-}
-
-
-/* ===========================
-   DESKTOP
-=========================== */
-
-@media(min-width:993px){
-
-    .fb-sidebar{
-
-        transform:none !important;
-
+    .fb-page-shell,
+    .inventory-page,
+    .donation-page,
+    .transaction-page,
+    .analytics-page,
+    .settings-page,
+    .scanner-page {
+        margin-left: 0 !important;
+        width: 100% !important;
     }
 
-
-    .sidebar-overlay{
-
-        display:none;
-
+    body.sidebar-collapsed .fb-page-shell,
+    body.sidebar-collapsed .inventory-page,
+    body.sidebar-collapsed .donation-page,
+    body.sidebar-collapsed .transaction-page,
+    body.sidebar-collapsed .analytics-page,
+    body.sidebar-collapsed .settings-page,
+    body.sidebar-collapsed .scanner-page {
+        margin-left: 0 !important;
+        width: 100% !important;
     }
-
-}
-
-
-/* ===========================
-   DESKTOP COLLAPSED
-=========================== */
-
-.fb-sidebar.collapsed{
-
-    width:80px;
-
-}
-
-
-.fb-sidebar.collapsed .sidebar-header h3{
-
-    display:none;
-
-}
-
-
-.fb-sidebar.collapsed .sidebar-link{
-
-    justify-content:center;
-
-}
-
-
-.fb-sidebar.collapsed .sidebar-link span:last-child{
-
-    display:none;
-
-}
-
-
-.fb-sidebar.collapsed .sidebar-icon{
-
-    margin:0;
-
-}
-
-
-.fb-sidebar.collapsed .logout-btn{
-
-    font-size:0;
-
-    padding:10px;
-
-}
-
-
-.fb-sidebar.collapsed .logout-btn::before{
-
-    content:"🚪";
-
-    font-size:18px;
-
-}
-
-
-.fb-sidebar.collapsed .user-box{
-
-    display:none;
-
-}
-
-
-/* ===========================
-   BODY SIDEBAR WIDTH
-=========================== */
-
-body.sidebar-collapsed{
-
-    --sidebar-width:80px;
-
-}
-
-
-body{
-
-    --sidebar-width:260px;
-
 }

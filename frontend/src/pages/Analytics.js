@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Sidebar from "../components/Sidebar";
+import BusinessLayout from "../components/BusinessLayout";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
 import { LABELS } from "../translations";
@@ -54,7 +54,8 @@ function Analytics() {
 
         .then((response)=>{
 
-            setProducts(response.data);
+            const items = Array.isArray(response.data) ? response.data : [];
+            setProducts(items);
 
         });
 
@@ -127,14 +128,12 @@ function Analytics() {
     { name: t("Others"), value: others }
 ];
 
-const COLORS=[
-
-"#198754",
-"#0d6efd",
-"#ffc107",
-"#dc3545",
-"#6f42c1"
-
+const COLORS = [
+    "#2563EB",
+    "#0284C7",
+    "#F59E0B",
+    "#DC2626",
+    "#8B5CF6"
 ];
 
 const barData = [
@@ -152,13 +151,9 @@ const lineData = [
     { name: t("Accepted"), value: accepted.length }
 ];
 
-    return(
-
-<>
-
-<Sidebar/>
-
-<div className="analytics-page">
+    return (
+        <BusinessLayout>
+            <div className="analytics-page-content">
 
     <div className="analytics-header">
 
@@ -539,13 +534,9 @@ width:`${products.length===0
 </div>
 
 </div>
-
-</div>
-
-</>
-
-);
-
+            </div>
+        </BusinessLayout>
+    );
 }
 
 export default Analytics;

@@ -54,6 +54,8 @@ function App() {
           path="/business-dashboard"
           element={<BusinessDashboard />}
         />
+        <Route path="/business/dashboard" element={<BusinessDashboard />}
+        />
 
         <Route
           path="/ngo-dashboard"
@@ -66,20 +68,27 @@ function App() {
         />
 
         <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/business/add-product" element={<AddProduct />} />
 
         <Route
           path="/edit-product/:id"
           element={<EditProduct />}
+        />
+        <Route path="/business/edit-product/:id" element={<EditProduct />}
         />
 
         <Route
           path="/barcode-scanner"
           element={<BarcodeScanner />}
         />
+        <Route path="/business/barcode-scanner" element={<BarcodeScanner />}
+        />
 
         <Route
           path="/inventory"
           element={<InventoryPage />}
+        />
+        <Route path="/business/inventory" element={<InventoryPage />}
         />
 
         <Route
@@ -91,15 +100,21 @@ function App() {
           path="/analytics"
           element={<Analytics />}
         />
+        <Route path="/business/analytics" element={<Analytics />}
+        />
 
         <Route
           path="/settings"
           element={<Settings />}
         />
+        <Route path="/business/settings" element={<Settings />}
+        />
 
         <Route
     path="/transactions"
     element={<TransactionHistory />}
+        />
+        <Route path="/business/transactions" element={<TransactionHistory />}
 />
 
 <Route
@@ -177,6 +192,8 @@ function App() {
 <Route
     path="/business-donations"
     element={<BusinessDonations />}
+        />
+        <Route path="/business/donations" element={<BusinessDonations />}
 />
 
 <Route

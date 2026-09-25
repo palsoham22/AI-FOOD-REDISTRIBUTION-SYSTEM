@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { saveOfflineProduct } from "../utils/offlineQueue";
 import { useTranslate } from "../hooks/useTranslate";
+import BusinessLayout from "../components/BusinessLayout";
 
 function AddProduct() {
     const t = useTranslate();
@@ -142,10 +143,24 @@ if (!navigator.onLine) {
     };
 
     return (
-        <div className="container mt-5">
-            <h2 className="mb-4">
-                {t("📦 Add New Product")}
-            </h2>
+        <BusinessLayout>
+            <div className="product-form-page">
+                <div className="container py-4">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <div className="card shadow-sm p-4 border-0" style={{ borderRadius: "16px", background: "#ffffff" }}>
+            <div className="d-flex align-items-center justify-content-between mb-4">
+                                    <h2 className="m-0 fw-bold" style={{ color: "#0F172A", fontSize: "1.5rem" }}>
+                                        {t("📦 Add New Product")}
+                                    </h2>
+                                    <button
+                                        type="button"
+                                        className="btn btn-outline-secondary btn-sm"
+                                        onClick={() => navigate("/inventory")}
+                                    >
+                                        ← {t("Back to Inventory")}
+                                    </button>
+                                </div>
 
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -270,7 +285,12 @@ if (!navigator.onLine) {
                     💾 {t("Save Product")}
                 </button>
             </form>
-        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </BusinessLayout>
     );
 }
 

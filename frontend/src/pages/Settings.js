@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Sidebar from "../components/Sidebar";
+import BusinessLayout from "../components/BusinessLayout";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
 import { LABELS } from "../translations";
@@ -44,12 +44,8 @@ function Settings() {
     };
 
     return (
-
-<>
-
-<Sidebar/>
-
-<div className="settings-page">
+        <BusinessLayout>
+            <div className="settings-page-content">
 
 <div className="settings-header">
 
@@ -272,13 +268,9 @@ onClick={saveChanges}
 </button>
 
 </div>
-
-</div>
-
-</>
-
-);
-
+            </div>
+        </BusinessLayout>
+    );
 }
 
 export default Settings;

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   BusinessLayout.css — Shared Layout System for FoodBridge AI Business Module
+   Design System: Light-Blue + Pure White SaaS Architecture
+   Primary Blue: #2563EB | Light Blue: #EFF6FF | Border: #E2E8F0 | Surface: #F8FAFC
+========================================================================== */
+
+.fb-business-app {
+    display: flex;
+    min-height: 100vh;
+    background-color: #F8FAFC !important;
+    color: #0F172A;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+.fb-business-main {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    min-height: 100vh;
+    padding: 20px 28px 48px;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #F8FAFC !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body.sidebar-collapsed .fb-business-main {
+    margin-left: 80px !important;
+    width: calc(100% - 80px) !important;
+}
+
+@media (max-width: 992px) {
+    .fb-business-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 16px 16px 36px;
+    }
+
+    body.sidebar-collapsed .fb-business-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+.fb-business-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}

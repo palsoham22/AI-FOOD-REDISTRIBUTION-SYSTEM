@@ -1,4 +1,4 @@
-import Sidebar from "../components/Sidebar";
+import BusinessLayout from "../components/BusinessLayout";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useTranslate } from "../hooks/useTranslate";
@@ -42,11 +42,8 @@ function BusinessDonations() {
     }, []);
 
     return (
-
-<>
-    <Sidebar />
-
-    <div className="donation-page">
+        <BusinessLayout>
+            <div className="donation-page-content">
 
         <div className="donation-header">
 
@@ -268,13 +265,9 @@ function BusinessDonations() {
             </div>
 
         </div>
-
-    </div>
-
-</>
-
-);
-
+            </div>
+        </BusinessLayout>
+    );
 }
 
 export default BusinessDonations;
