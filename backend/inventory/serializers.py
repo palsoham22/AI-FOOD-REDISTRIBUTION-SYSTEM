@@ -8,6 +8,23 @@ class InventorySerializer(serializers.ModelSerializer):
         source="owner.business_name",
         read_only=True
     )
+    category = serializers.CharField()
+
+    def validate_category(self, value):
+        v = (value or "").strip()
+        if v == "Other":
+            return "Others"
+        allowed = [c[0] for c in Inventory.CATEGORY_CHOICES]
+        if v not in allowed:
+            raise serializers.ValidationError(
+                f"'{v}' is not a valid choice. Allowed: {', '.join(allowed)}"
+            )
+        return v
+
+    def validate_quantity(self, value):
+        if value <= 0:
+            raise serializers.ValidationError("Quantity must be greater than 0.")
+        return value
 
     class Meta:
         model = Inventory

@@ -67,6 +67,22 @@ function EditProduct() {
 
         e.preventDefault();
 
+        if (!product_name.trim()) {
+            alert(t("Please enter a product name."));
+            return;
+        }
+
+        const qtyNum = parseInt(quantity, 10);
+        if (isNaN(qtyNum) || qtyNum <= 0) {
+            alert(t("Quantity must be a positive number."));
+            return;
+        }
+
+        if (!expiry_date) {
+            alert(t("Please select an expiry date."));
+            return;
+        }
+
         try {
 
             const token = localStorage.getItem("access");
@@ -101,7 +117,7 @@ await axios.put(
 
             alert(t("Product Updated Successfully 🎉"));
 
-            navigate("/business-dashboard");
+            navigate("/inventory");
 
         }
 
@@ -156,6 +172,8 @@ await axios.put(
                                             <option value="Bakery">{t("Bakery")}</option>
                                             <option value="Fruits">{t("Fruits")}</option>
                                             <option value="Vegetables">{t("Vegetables")}</option>
+                                            <option value="Beverages">{t("Beverages")}</option>
+                                            <option value="Others">{t("Others")}</option>
                                         </select>
                                     </div>
 
@@ -206,7 +224,7 @@ await axios.put(
                                         </select>
                                     </div>
 
-                                    <button className="btn btn-primary w-100 py-2 fw-semibold">
+                                    <button className="btn btn-primary w-100 py-2 fw-semibold" style={{ backgroundColor: "#2563EB", borderColor: "#2563EB" }}>
                                         💾 {t("Update Product")}
                                     </button>
                                 </form>

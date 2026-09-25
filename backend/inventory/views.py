@@ -192,35 +192,95 @@ class CSVUploadView(APIView):
 
         file = request.FILES["file"]
 
-        data = file.read().decode("utf-8-sig")
-        csv_file = io.StringIO(data)
-        reader = csv.DictReader(csv_file)
-
-        print("HEADERS:", reader.fieldnames)
-
-        for row in reader:
-
-            expiry = row["expiry_date"].strip()
-
-            try:
-                expiry = datetime.strptime(expiry, "%d-%m-%Y").date()
-            except:
-                expiry = datetime.strptime(expiry, "%Y-%m-%d").date()
-
-            Inventory.objects.create(
-                owner=request.user,
-                product_name=row["product_name"].strip(),
-                category=row["category"].strip(),
-                quantity=int(row["quantity"]),
-                unit=row["unit"].strip(),
-                expiry_date=expiry,
-                storage_type=row["storage_type"].strip(),
-                status="Available"
+        try:
+            data = file.read().decode("utf-8-sig")
+            csv_file = io.StringIO(data)
+            reader = csv.DictReader(csv_file)
+        except Exception as e:
+            return Response(
+                {"error": f"Invalid CSV file format: {str(e)}"},
+                status=400
             )
+
+        required_columns = {"product_name", "category", "quantity", "unit", "expiry_date", "storage_type"}
+        fieldnames = set(reader.fieldnames or [])
+        missing_columns = required_columns - fieldnames
+        if missing_columns:
+            return Response(
+                {"error": f"Missing required columns: {', '.join(sorted(missing_columns))}"},
+                status=400
+            )
+
+        created_items = []
+        errors = []
+
+        for row_num, row in enumerate(reader, start=2):
+            p_name = (row.get("product_name") or "").strip()
+            if not p_name:
+                errors.append(f"Row {row_num}: Product name is required")
+                continue
+
+            category = (row.get("category") or "").strip()
+            if category == "Other":
+                category = "Others"
+
+            raw_qty = (row.get("quantity") or "").strip()
+            try:
+                quantity = int(raw_qty)
+                if quantity <= 0:
+                    errors.append(f"Row {row_num}: Quantity must be greater than 0")
+                    continue
+            except ValueError:
+                errors.append(f"Row {row_num}: Invalid quantity '{raw_qty}'")
+                continue
+
+            unit = (row.get("unit") or "").strip() or "Kg"
+            storage_type = (row.get("storage_type") or "").strip() or "Room Temperature"
+
+            raw_expiry = (row.get("expiry_date") or "").strip()
+            expiry = None
+            for fmt in ("%Y-%m-%d", "%d-%m-%Y", "%m/%d/%Y", "%d/%m/%Y"):
+                try:
+                    expiry = datetime.strptime(raw_expiry, fmt).date()
+                    break
+                except ValueError:
+                    pass
+
+            if not expiry:
+                errors.append(f"Row {row_num}: Invalid expiry date '{raw_expiry}'. Expected YYYY-MM-DD or DD-MM-YYYY")
+                continue
+
+            created_items.append(
+                Inventory(
+                    owner=request.user,
+                    product_name=p_name,
+                    category=category if category in [c[0] for c in Inventory.CATEGORY_CHOICES] else "Others",
+                    quantity=quantity,
+                    unit=unit,
+                    expiry_date=expiry,
+                    storage_type=storage_type,
+                    status="Available"
+                )
+            )
+
+        if not created_items and errors:
+            return Response(
+                {"error": "Failed to import products", "details": errors},
+                status=400
+            )
+
+        if created_items:
+            Inventory.objects.bulk_create(created_items)
+
+        msg = f"{len(created_items)} products imported successfully"
+        if errors:
+            msg += f" ({len(errors)} rows skipped due to invalid data)"
 
         return Response(
             {
-                "message": "CSV uploaded successfully"
+                "message": msg,
+                "imported_count": len(created_items),
+                "errors": errors
             },
             status=200
         )
@@ -535,7 +595,7 @@ class BarcodeLookupView(APIView):
                 category = "Vegetables"
 
             else:
-                category = "Other"
+                category = "Others"
 
             return Response({
 

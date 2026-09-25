@@ -557,5 +557,16 @@
   "📶 Offline Mode: Showing last synced donations.": "📶 Offline Mode: Showing last synced donations.",
   "📶 Offline Mode: Showing last synced inventory.": "📶 Offline Mode: Showing last synced inventory.",
   "📶 Offline Mode: Showing last synced pickup schedule.": "📶 Offline Mode: Showing last synced pickup schedule.",
-  "📶 Offline Mode: Showing last synced transaction history.": "📶 Offline Mode: Showing last synced transaction history."
+  "📶 Offline Mode: Showing last synced transaction history.": "📶 Offline Mode: Showing last synced transaction history.",
+  "Edit Product": "Edit Product",
+  "Back to Inventory": "Back to Inventory",
+  "Beverages": "Beverages",
+  "Add your first product to get started.": "Add your first product to get started.",
+  "All": "All",
+  "Scan food product barcode to automatically populate details": "Scan food product barcode to automatically populate details",
+  "Try adjusting your search or filters.": "Try adjusting your search or filters.",
+  "Waiting for scan...": "Waiting for scan...",
+  "Please enter a product name.": "Please enter a product name.",
+  "Quantity must be a positive number.": "Quantity must be a positive number.",
+  "Please select an expiry date.": "Please select an expiry date."
 }

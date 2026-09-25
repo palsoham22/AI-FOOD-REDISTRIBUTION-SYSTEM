@@ -115,8 +115,12 @@ function Analytics() {
 
     const others = products.filter(
 
-        p=>p.category==="Others"
+        p=>p.category==="Others" || p.category==="Other"
 
+    ).length;
+
+    const beverages = products.filter(
+        p=>p.category==="Beverages"
     ).length;
 
 
@@ -125,6 +129,7 @@ function Analytics() {
     { name: t("Bakery"), value: bakery },
     { name: t("Fruits"), value: fruits },
     { name: t("Vegetables"), value: vegetables },
+    { name: t("Beverages"), value: beverages },
     { name: t("Others"), value: others }
 ];
 
@@ -133,6 +138,7 @@ const COLORS = [
     "#0284C7",
     "#F59E0B",
     "#DC2626",
+    "#0D9488",
     "#8B5CF6"
 ];
 
@@ -141,6 +147,7 @@ const barData = [
     { category: t("Bakery"), products: bakery },
     { category: t("Fruits"), products: fruits },
     { category: t("Vegetables"), products: vegetables },
+    { category: t("Beverages"), products: beverages },
     { category: t("Others"), products: others }
 ];
 

@@ -1,7 +1,8 @@
 /* ==========================================================================
    FoodBridge AI — Business Navigation Sidebar
    Design System: Consistent Clean Light-Blue + White Professional Theme
-   Primary Blue: #2563EB | Light Blue: #EFF6FF | Border: #E2E8F0 | Text: #0F172A
+   Sidebar Background: #E2ECFA | Border: #CBD5E1 | Text: #0F172A | Icon: #2563EB
+   Active Background: #2563EB | Active Text/Icon: #FFFFFF
 ========================================================================== */
 
 .fb-sidebar {
@@ -10,13 +11,13 @@
     left: 0;
     width: 260px;
     height: 100vh;
-    background: #FFFFFF !important;
+    background: #E2ECFA !important;
     color: #0F172A !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04) !important;
-    border-right: 1px solid #E2E8F0 !important;
+    box-shadow: 0 1px 4px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.06) !important;
+    border-right: 1px solid #CBD5E1 !important;
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1200;
     overflow: hidden;
@@ -39,6 +40,7 @@
     justify-content: center !important;
     gap: 8px !important;
     flex-direction: column !important;
+    background: #E2ECFA !important;
 }
 
 .fb-sidebar.collapsed .sidebar-menu {
@@ -57,14 +59,22 @@
 }
 
 .fb-sidebar.collapsed .sidebar-link:hover {
-    background: #EFF6FF !important;
-    color: #2563EB !important;
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
+}
+
+.fb-sidebar.collapsed .sidebar-link:hover .sidebar-icon {
+    color: #1D4ED8 !important;
 }
 
 .fb-sidebar.collapsed .sidebar-link.active {
-    background: #EFF6FF !important;
-    color: #2563EB !important;
-    box-shadow: 0 0 0 2px #2563EB inset !important;
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3) !important;
+}
+
+.fb-sidebar.collapsed .sidebar-link.active .sidebar-icon {
+    color: #FFFFFF !important;
 }
 
 .fb-sidebar.collapsed .sidebar-link-text {
@@ -74,6 +84,7 @@
 .fb-sidebar.collapsed .sidebar-footer {
     padding: 14px 8px !important;
     align-items: center !important;
+    background: #E2ECFA !important;
 }
 
 .fb-sidebar.collapsed .logout-btn {
@@ -107,8 +118,8 @@
 
 .sidebar-header {
     padding: 18px 16px !important;
-    border-bottom: 1px solid #E2E8F0 !important;
-    background: #FFFFFF !important;
+    border-bottom: 1px solid #CBD5E1 !important;
+    background: #E2ECFA !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
@@ -146,7 +157,7 @@
 }
 
 .brand-accent {
-    color: #2563EB !important;
+    color: #1D4ED8 !important;
 }
 
 /* Collapse / Hamburger Button (Inside Header) */
@@ -154,9 +165,9 @@
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    border: 1px solid #E2E8F0;
-    background: #F8FAFC;
-    color: #64748B;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #1D4ED8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,17 +179,17 @@
 }
 
 .sidebar-collapse-btn:hover {
-    background: #EFF6FF;
-    color: #2563EB;
-    border-color: #BFDBFE;
+    background: #2563EB;
+    color: #FFFFFF;
+    border-color: #2563EB;
 }
 
 .sidebar-close-btn {
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    border: 1px solid #E2E8F0;
-    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
     color: #64748B;
     display: flex;
     align-items: center;
@@ -217,7 +228,7 @@
     align-items: center;
     gap: 12px;
     text-decoration: none !important;
-    color: #334155 !important;
+    color: #0F172A !important;
     padding: 10px 14px !important;
     border-radius: 10px !important;
     transition: all 0.15s ease;
@@ -234,29 +245,30 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #64748B;
+    color: #2563EB;
     transition: color 0.15s ease;
 }
 
 .sidebar-link:hover {
-    background: #F8FAFC !important;
-    color: #2563EB !important;
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
     transform: translateX(2px);
 }
 
 .sidebar-link:hover .sidebar-icon {
-    color: #2563EB;
+    color: #1D4ED8 !important;
 }
 
 .sidebar-link.active {
-    background: #EFF6FF !important;
-    color: #2563EB !important;
+    background: #2563EB !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
-    border-left: 3px solid #2563EB !important;
+    border-left: 3px solid #1D4ED8 !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
 }
 
 .sidebar-link.active .sidebar-icon {
-    color: #2563EB !important;
+    color: #FFFFFF !important;
 }
 
 .sidebar-link-text {
@@ -271,8 +283,8 @@
 
 .sidebar-footer {
     padding: 14px 12px !important;
-    border-top: 1px solid #E2E8F0 !important;
-    background: #FFFFFF !important;
+    border-top: 1px solid #CBD5E1 !important;
+    background: #E2ECFA !important;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -285,10 +297,10 @@
     gap: 12px;
     width: 100%;
     padding: 9px 14px !important;
-    background: transparent !important;
-    border: 1px solid #E2E8F0 !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid #CBD5E1 !important;
     border-radius: 10px !important;
-    color: #64748B !important;
+    color: #334155 !important;
     font-size: 13px !important;
     font-weight: 600 !important;
     cursor: pointer;
@@ -297,7 +309,7 @@
 }
 
 .logout-btn .sidebar-icon {
-    color: #64748B;
+    color: #475569;
 }
 
 .logout-btn:hover {
@@ -316,8 +328,8 @@
     align-items: center;
     gap: 10px;
     padding: 10px 12px !important;
-    background: #F8FAFC !important;
-    border: 1px solid #E2E8F0 !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #CBD5E1 !important;
     border-radius: 10px !important;
 }
 
@@ -353,7 +365,7 @@
 
 .user-biz {
     font-size: 11px;
-    color: #64748B;
+    color: #475569;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -362,7 +374,7 @@
 .user-badge {
     font-size: 10px;
     font-weight: 600;
-    color: #2563EB;
+    color: #1D4ED8;
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
@@ -379,10 +391,10 @@
     width: 42px;
     height: 42px;
     border-radius: 10px;
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
+    background: #E2ECFA;
+    border: 1px solid #CBD5E1;
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-    color: #0F172A;
+    color: #1D4ED8;
     display: none;
     align-items: center;
     justify-content: center;
@@ -392,7 +404,7 @@
 }
 
 .sidebar-mobile-toggle:hover {
-    background: #EFF6FF;
+    background: #DBEAFE;
     color: #2563EB;
 }
 
@@ -517,6 +529,8 @@ body.sidebar-collapsed .scanner-page {
     .fb-sidebar {
         transform: translateX(-100%);
         width: 280px !important;
+        background: #E2ECFA !important;
+        border-right: 1px solid #CBD5E1 !important;
         box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15) !important;
     }
 

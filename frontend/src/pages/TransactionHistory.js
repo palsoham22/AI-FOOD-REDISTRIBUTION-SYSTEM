@@ -18,25 +18,15 @@ function TransactionHistory() {
 
     const { language } = useTranslationContext();
 
-    const dynamicLabels = buildDynamicLabels(
-
-    LABELS.TRANSACTIONS,
-
-    products,
-
-    [
-
-        "product_name",
-
-        "category",
-
-        "unit",
-
-        "status"
-
-    ]
-
-);
+    const dynamicLabels = useMemo(
+        () =>
+            buildDynamicLabels(
+                LABELS.TRANSACTIONS,
+                products,
+                ["product_name", "category", "unit", "status"]
+            ),
+        [products]
+    );
 
     usePageTranslation(dynamicLabels);
 
@@ -70,20 +60,20 @@ function TransactionHistory() {
 
         .catch((err)=>{
 
-    console.log(err);
+    console.warn("Transaction fetch error:", err.message);
 
-    const cached = localStorage.getItem("offline_transactions");
-
-    if(cached){
-
-        setProducts(JSON.parse(cached));
-
-        alert(t("📶 Offline Mode: Showing last synced transaction history."));
-
+    try {
+        const cached = localStorage.getItem("offline_transactions");
+        if(cached){
+            const parsed = JSON.parse(cached);
+            setProducts(Array.isArray(parsed) ? parsed : []);
+        }
+    } catch(e) {
+        console.error("Cache read error:", e);
     }
 
 });
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

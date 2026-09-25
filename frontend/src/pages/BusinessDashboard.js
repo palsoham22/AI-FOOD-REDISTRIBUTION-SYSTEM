@@ -41,7 +41,7 @@ function BusinessDashboard() {
         }
       })
       .then((response) => {
-        setProducts(response.data);
+        setProducts(Array.isArray(response.data) ? response.data : []);
       })
       .catch((error) => {
         console.error("Failed to load inventory products:", error);
@@ -92,7 +92,7 @@ function BusinessDashboard() {
 
   const foodSavedKg = useMemo(() => {
     return products
-      .filter((item) => item.status === "Donated" || item.status === "Accepted")
+      .filter((item) => item.status !== "Available" && item.status !== "Expired")
       .reduce((sum, item) => {
         const qty = parseFloat(item.quantity) || 0;
         return item.unit === "Kg" ? sum + qty : sum;

@@ -557,5 +557,16 @@
   "📶 Offline Mode: Showing last synced donations.": "📶 ऑफ़लाइन मोड: अंतिम समन्वयित दान दिखाया जा रहा है।",
   "📶 Offline Mode: Showing last synced inventory.": "📶 ऑफ़लाइन मोड: अंतिम समन्वयित इन्वेंटरी दिखाई जा रही है।",
   "📶 Offline Mode: Showing last synced pickup schedule.": "📶 ऑफ़लाइन मोड: अंतिम समन्वयित पिकअप शेड्यूल दिखाया जा रहा है।",
-  "📶 Offline Mode: Showing last synced transaction history.": "📶 ऑफ़लाइन मोड: अंतिम सिंक्रनाइज़ किए गए लेनदेन इतिहास को दिखाया जा रहा है।"
+  "📶 Offline Mode: Showing last synced transaction history.": "📶 ऑफ़लाइन मोड: अंतिम सिंक्रनाइज़ किए गए लेनदेन इतिहास को दिखाया जा रहा है।",
+  "Edit Product": "उत्पाद संपादित करें",
+  "Back to Inventory": "इन्वेंटरी पर वापस जाएं",
+  "Beverages": "पेय पदार्थ",
+  "Add your first product to get started.": "शुरू करने के लिए अपना पहला उत्पाद जोड़ें।",
+  "All": "सभी",
+  "Scan food product barcode to automatically populate details": "विवरण स्वचालित रूप से भरने के लिए खाद्य उत्पाद बारकोड स्कैन करें",
+  "Try adjusting your search or filters.": "अपनी खोज या फ़िल्टर समायोजित करने का प्रयास करें।",
+  "Waiting for scan...": "स्कैन की प्रतीक्षा है...",
+  "Please enter a product name.": "कृपया उत्पाद का नाम दर्ज करें।",
+  "Quantity must be a positive number.": "मात्रा एक धनात्मक संख्या होनी चाहिए।",
+  "Please select an expiry date.": "कृपया समाप्ति तिथि चुनें।"
 }

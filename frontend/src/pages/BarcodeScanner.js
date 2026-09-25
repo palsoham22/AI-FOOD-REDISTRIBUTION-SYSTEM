@@ -120,8 +120,8 @@ function BarcodeScanner() {
                             <input
                                 className="form-control form-control-lg text-center fw-semibold"
                                 value={barcode}
+                                onChange={(e) => setBarcode(e.target.value.trim())}
                                 placeholder={t("Waiting for scan...")}
-                                readOnly
                             />
                         </div>
 

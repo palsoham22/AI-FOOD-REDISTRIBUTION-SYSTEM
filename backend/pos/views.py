@@ -1,3 +1,4 @@
+from datetime import date, timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -8,7 +9,7 @@ class POSProductsView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-
+        today = date.today()
         products = [
 
             {
@@ -16,7 +17,7 @@ class POSProductsView(APIView):
                 "category": "Dairy",
                 "quantity": 20,
                 "unit": "Litre",
-                "expiry_date": "2026-07-20",
+                "expiry_date": (today + timedelta(days=2)).strftime("%Y-%m-%d"),
                 "storage_type": "Refrigerated"
             },
 
@@ -25,7 +26,7 @@ class POSProductsView(APIView):
                 "category": "Bakery",
                 "quantity": 15,
                 "unit": "Packet",
-                "expiry_date": "2026-07-14",
+                "expiry_date": (today + timedelta(days=4)).strftime("%Y-%m-%d"),
                 "storage_type": "Room Temperature"
             },
 
@@ -34,7 +35,7 @@ class POSProductsView(APIView):
                 "category": "Fruits",
                 "quantity": 25,
                 "unit": "Kg",
-                "expiry_date": "2026-07-18",
+                "expiry_date": (today + timedelta(days=7)).strftime("%Y-%m-%d"),
                 "storage_type": "Room Temperature"
             }
 
@@ -47,7 +48,7 @@ class ImportPOSProductsView(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
-
+        today = date.today()
         sample_products = [
 
     {
@@ -55,7 +56,7 @@ class ImportPOSProductsView(APIView):
         "category": "Dairy",
         "quantity": 15,
         "unit": "Litre",
-        "expiry_date": "2026-07-12",
+        "expiry_date": (today + timedelta(days=2)).strftime("%Y-%m-%d"),
         "storage_type": "Refrigerated"
     },
 
@@ -64,7 +65,7 @@ class ImportPOSProductsView(APIView):
         "category": "Bakery",
         "quantity": 20,
         "unit": "Packet",
-        "expiry_date": "2026-07-11",
+        "expiry_date": (today + timedelta(days=4)).strftime("%Y-%m-%d"),
         "storage_type": "Room Temperature"
     },
 
@@ -73,7 +74,7 @@ class ImportPOSProductsView(APIView):
         "category": "Dairy",
         "quantity": 10,
         "unit": "Packet",
-        "expiry_date": "2026-07-13",
+        "expiry_date": (today + timedelta(days=7)).strftime("%Y-%m-%d"),
         "storage_type": "Refrigerated"
     }
 

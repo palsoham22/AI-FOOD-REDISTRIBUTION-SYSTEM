@@ -557,5 +557,16 @@
   "📶 Offline Mode: Showing last synced donations.": "📶 ഓഫ്‌ലൈൻ മോഡ്: വിവരങ്ങൾ കാണിക്കുന്നു.",
   "📶 Offline Mode: Showing last synced inventory.": "📶 ഓഫ്‌ലൈൻ മോഡ്: സൂക്ഷിച്ച വിവരങ്ങൾ കാണിക്കുന്നു.",
   "📶 Offline Mode: Showing last synced pickup schedule.": "📶 ഓഫ്‌ലൈൻ മോഡ്: ഷെഡ്യൂൾ കാണിക്കുന്നു.",
-  "📶 Offline Mode: Showing last synced transaction history.": "📶 ഓഫ്‌ലൈൻ മോഡ്: ഇടപാട് ചരിത്രം കാണിക്കുന്നു."
+  "📶 Offline Mode: Showing last synced transaction history.": "📶 ഓഫ്‌ലൈൻ മോഡ്: ഇടപാട് ചരിത്രം കാണിക്കുന്നു.",
+  "Edit Product": "ഉൽപ്പന്നം എഡിറ്റ് ചെയ്യുക",
+  "Back to Inventory": "ഇൻവെന്ററിയിലേക്ക് മടങ്ങുക",
+  "Beverages": "പാനീയങ്ങൾ",
+  "Add your first product to get started.": "ആരംഭിക്കാൻ നിങ്ങളുടെ ആദ്യത്തെ ഉൽപ്പന്നം ചേർക്കുക.",
+  "All": "എല്ലാം",
+  "Scan food product barcode to automatically populate details": "വിവരങ്ങൾ സ്വയമേവ പൂരിപ്പിക്കുന്നതിന് ഭക്ഷ്യ ഉൽപ്പന്ന ബാർകോഡ് സ്കാൻ ചെയ്യുക",
+  "Try adjusting your search or filters.": "നിങ്ങളുടെ തിരയലോ ഫിൽട്ടറുകളോ ക്രമീകരിക്കാൻ ശ്രമിക്കുക.",
+  "Waiting for scan...": "സ്കാനിനായി കാത്തിരിക്കുന്നു...",
+  "Please enter a product name.": "ദയവായി ഉൽപ്പന്നത്തിന്റെ പേര് നൽകുക.",
+  "Quantity must be a positive number.": "അളവ് ഒരു പോസിറ്റീവ് സംഖ്യയായിരിക്കണം.",
+  "Please select an expiry date.": "ദയവായി കാലഹരണപ്പെടുന്ന തീയതി തിരഞ്ഞെടുക്കുക."
 }

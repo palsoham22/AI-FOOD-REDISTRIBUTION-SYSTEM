@@ -75,12 +75,6 @@ function Sidebar() {
             label: t("Analytics")
         },
         {
-            path: "/barcode-scanner",
-            alias: "/business/barcode-scanner",
-            icon: "bi-upc-scan",
-            label: t("Barcode Scanner")
-        },
-        {
             path: "/settings",
             alias: "/business/settings",
             icon: "bi-gear",

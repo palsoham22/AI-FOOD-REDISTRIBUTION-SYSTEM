@@ -257,7 +257,7 @@ onChange={(e)=>setBusinessType(e.target.value)}
 
 <button
 
-className="btn btn-success save-btn"
+className="btn btn-primary save-btn" style={{ backgroundColor: "#2563EB", borderColor: "#2563EB" }}
 
 onClick={saveChanges}
 

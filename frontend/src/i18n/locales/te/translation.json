@@ -557,5 +557,16 @@
   "📶 Offline Mode: Showing last synced donations.": "📶 ఆఫ్‌లైన్ మోడ్: చివరిగా సింక్ చేసిన విరాళాలను చూపుతోంది.",
   "📶 Offline Mode: Showing last synced inventory.": "📶 ఆఫ్‌లైన్ మోడ్: చివరిగా సింక్ చేసిన నిల్వలను చూపుతోంది.",
   "📶 Offline Mode: Showing last synced pickup schedule.": "📶 ఆఫ్‌లైన్ మోడ్: చివరిగా సింక్ చేసిన పికప్ షెడ్యూల్‌ను చూపుతోంది.",
-  "📶 Offline Mode: Showing last synced transaction history.": "📶 ఆఫ్‌లైన్ మోడ్: చివరిగా సింక్ చేసిన లావాదేవీల చరిత్రను చూపుతోంది."
+  "📶 Offline Mode: Showing last synced transaction history.": "📶 ఆఫ్‌లైన్ మోడ్: చివరిగా సింక్ చేసిన లావాదేవీల చరిత్రను చూపుతోంది.",
+  "Edit Product": "ఉత్పత్తిని సవరించండి",
+  "Back to Inventory": "ఇన్వెంటరీకి తిరిగి వెళ్లండి",
+  "Beverages": "పానీయాలు",
+  "Add your first product to get started.": "ప్రారంభించడానికి మీ మొదటి ఉత్పత్తిని జోడించండి.",
+  "All": "అన్నీ",
+  "Scan food product barcode to automatically populate details": "వివరాలను స్వయంచాలకంగా పూరించడానికి ఆహార ఉత్పత్తి బార్‌కోడ్‌ను స్కాన్ చేయండి",
+  "Try adjusting your search or filters.": "మీ శోధన లేదా ఫిల్టర్‌లను సర్దుబాటు చేయడానికి ప్రయత్నించండి.",
+  "Waiting for scan...": "స్కాన్ కోసం వేచి ఉంది...",
+  "Please enter a product name.": "దయచేసి ఉత్పత్తి పేరును నమోదు చేయండి.",
+  "Quantity must be a positive number.": "పరిమాణం తప్పనిసరిగా సానుకూల సంఖ్య అయి ఉండాలి.",
+  "Please select an expiry date.": "దయచేసి గడువు తేదీని ఎంచుకోండి."
 }

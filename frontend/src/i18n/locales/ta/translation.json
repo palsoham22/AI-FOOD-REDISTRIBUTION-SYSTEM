@@ -557,5 +557,16 @@
   "📶 Offline Mode: Showing last synced donations.": "📶 ஆஃப்லைன் பயன்முறை: கடைசியாக ஒத்திசைக்கப்பட்ட நன்கொடைகள் காட்டப்படுகின்றன.",
   "📶 Offline Mode: Showing last synced inventory.": "📶 ஆஃப்லைன் பயன்முறை: கடைசியாக ஒத்திசைக்கப்பட்ட சரக்கு காட்டப்படுகிறது.",
   "📶 Offline Mode: Showing last synced pickup schedule.": "📶 ஆஃப்லைன் பயன்முறை: கடைசியாக ஒத்திசைக்கப்பட்ட பிக்கப் அட்டவணை காட்டப்படுகிறது.",
-  "📶 Offline Mode: Showing last synced transaction history.": "📶 ஆஃப்லைன் பயன்முறை: கடைசியாக ஒத்திசைக்கப்பட்ட பரிவர்த்தனை வரலாற்றைக் காட்டுகிறது."
+  "📶 Offline Mode: Showing last synced transaction history.": "📶 ஆஃப்லைன் பயன்முறை: கடைசியாக ஒத்திசைக்கப்பட்ட பரிவர்த்தனை வரலாற்றைக் காட்டுகிறது.",
+  "Edit Product": "பொருளைத் திருத்து",
+  "Back to Inventory": "சரக்குக்குத் திரும்பு",
+  "Beverages": "பானங்கள்",
+  "Add your first product to get started.": "தொடங்குவதற்கு உங்கள் முதல் பொருளைச் சேர்க்கவும்.",
+  "All": "அனைத்தும்",
+  "Scan food product barcode to automatically populate details": "விவரங்களை தானாக நிரப்ப உணவுப் பொருள் பார்கோடை ஸ்கேன் செய்க",
+  "Try adjusting your search or filters.": "உங்கள் தேடல் அல்லது வடிகட்டிகளை மாற்றி முயற்சிக்கவும்.",
+  "Waiting for scan...": "ஸ்கேன் செய்ய காத்திருக்கிறது...",
+  "Please enter a product name.": "தயவுசெய்து பொருளின் பெயரை உள்ளிடவும்.",
+  "Quantity must be a positive number.": "அளவு ஒரு நேர்மறை எண்ணாக இருக்க வேண்டும்.",
+  "Please select an expiry date.": "தயவுசெய்து காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்."
 }
