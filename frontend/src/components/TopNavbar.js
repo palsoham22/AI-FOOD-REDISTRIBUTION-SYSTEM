@@ -1,3 +1,4 @@
+import ThemeToggle from "./ThemeToggle";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslationContext } from "../context/TranslationContext";
@@ -277,6 +278,9 @@ item.notification_type==="ERROR"
 }
 
 </div>
+
+{/* Theme Toggle */}
+<ThemeToggle compact={true} />
 
 {/* Language */}
 

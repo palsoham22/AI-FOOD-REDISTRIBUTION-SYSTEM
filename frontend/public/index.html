@@ -26,6 +26,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>FoodBridge AI</title>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('foodbridge_theme');
+          var theme = saved === 'dark' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

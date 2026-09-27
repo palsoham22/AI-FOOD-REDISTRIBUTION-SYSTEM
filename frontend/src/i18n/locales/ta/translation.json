@@ -568,5 +568,7 @@
   "Waiting for scan...": "ஸ்கேன் செய்ய காத்திருக்கிறது...",
   "Please enter a product name.": "தயவுசெய்து பொருளின் பெயரை உள்ளிடவும்.",
   "Quantity must be a positive number.": "அளவு ஒரு நேர்மறை எண்ணாக இருக்க வேண்டும்.",
-  "Please select an expiry date.": "தயவுசெய்து காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்."
+  "Please select an expiry date.": "தயவுசெய்து காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்.",
+  "Light Mode": "லைட் பயன்முறை",
+  "Dark Mode": "டார்க் பயன்முறை"
 }

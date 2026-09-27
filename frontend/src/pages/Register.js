@@ -1,3 +1,4 @@
+import ThemeToggle from "../components/ThemeToggle";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -65,6 +66,7 @@ function Register() {
           </Link>
 
           <div className="fb-auth-header-controls">
+            <ThemeToggle compact={true} />
             <select
               className="form-select form-select-sm fb-lang-select"
               aria-label={t("Language Selector")}

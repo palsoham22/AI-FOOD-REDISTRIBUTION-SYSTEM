@@ -568,5 +568,7 @@
   "Waiting for scan...": "स्कैन की प्रतीक्षा है...",
   "Please enter a product name.": "कृपया उत्पाद का नाम दर्ज करें।",
   "Quantity must be a positive number.": "मात्रा एक धनात्मक संख्या होनी चाहिए।",
-  "Please select an expiry date.": "कृपया समाप्ति तिथि चुनें।"
+  "Please select an expiry date.": "कृपया समाप्ति तिथि चुनें।",
+  "Light Mode": "लाइट मोड",
+  "Dark Mode": "डार्क मोड"
 }

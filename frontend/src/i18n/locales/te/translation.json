@@ -568,5 +568,7 @@
   "Waiting for scan...": "స్కాన్ కోసం వేచి ఉంది...",
   "Please enter a product name.": "దయచేసి ఉత్పత్తి పేరును నమోదు చేయండి.",
   "Quantity must be a positive number.": "పరిమాణం తప్పనిసరిగా సానుకూల సంఖ్య అయి ఉండాలి.",
-  "Please select an expiry date.": "దయచేసి గడువు తేదీని ఎంచుకోండి."
+  "Please select an expiry date.": "దయచేసి గడువు తేదీని ఎంచుకోండి.",
+  "Light Mode": "లైట్ మోడ్",
+  "Dark Mode": "డార్క్ మోడ్"
 }

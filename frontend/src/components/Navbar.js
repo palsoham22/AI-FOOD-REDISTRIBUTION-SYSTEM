@@ -1,3 +1,4 @@
+import ThemeToggle from "./ThemeToggle";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslationContext } from "../context/TranslationContext";
@@ -89,6 +90,7 @@ function Navbar() {
 
         {/* Desktop Controls (Language + Auth) */}
         <div className="fb-nav-controls fb-desktop-controls">
+          <ThemeToggle compact={true} />
           <select
             className="form-select form-select-sm fb-lang-select"
             aria-label={t("Language Selector")}
@@ -186,6 +188,9 @@ function Navbar() {
             </select>
           </div>
 
+          <div className="mt-2 mb-2 d-flex justify-content-center">
+            <ThemeToggle />
+          </div>
           <div className="fb-mobile-actions">
             <Link
               className="fb-btn-login"

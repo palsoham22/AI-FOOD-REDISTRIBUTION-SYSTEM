@@ -568,5 +568,7 @@
   "Waiting for scan...": "Waiting for scan...",
   "Please enter a product name.": "Please enter a product name.",
   "Quantity must be a positive number.": "Quantity must be a positive number.",
-  "Please select an expiry date.": "Please select an expiry date."
+  "Please select an expiry date.": "Please select an expiry date.",
+  "Light Mode": "Light Mode",
+  "Dark Mode": "Dark Mode"
 }

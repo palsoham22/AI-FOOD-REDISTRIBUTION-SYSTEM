@@ -1,0 +1,806 @@
+/* ==========================================================================
+   FoodBridge AI — Global Application-Wide Dark Theme System
+   Designed strictly with professional dark navy & slate surfaces.
+   Main: #0F172A | Secondary: #111827 | Card: #1E293B | Border: #334155
+   Text: #F8FAFC | Secondary: #CBD5E1 | Primary Blue: #60A5FA
+   ========================================================================== */
+
+/* ==========================================================================
+   1. THEME TOGGLE BUTTON STYLING (Both Light & Dark Modes)
+   ========================================================================== */
+
+.fb-theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 12px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #1E293B;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    line-height: 1;
+}
+
+.fb-theme-toggle:hover {
+    background: #EFF6FF;
+    color: #2563EB;
+    border-color: #93C5FD;
+}
+
+.fb-theme-toggle:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.fb-theme-toggle-compact {
+    width: 38px;
+    min-width: 38px;
+    padding: 0 !important;
+}
+
+.fb-theme-toggle .theme-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   2. CSS VARIABLES OVERRIDE (DARK MODE ONLY)
+   ========================================================================== */
+
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --fb-primary: #60A5FA;
+    --fb-primary-dark: #3B82F6;
+    --fb-primary-light: #1E3A5F;
+    --fb-primary-border: #1E3A5F;
+    --fb-primary-subtle: #1E3A5F;
+
+    --fb-bg: #0F172A;
+    --fb-card: #1E293B;
+    --fb-card-elevated: #243247;
+
+    --fb-text: #F8FAFC;
+    --fb-text-muted: #94A3B8;
+    --fb-secondary: #CBD5E1;
+    --fb-border: #334155;
+    --fb-border-light: #1E293B;
+
+    --fb-teal: #2DD4BF;
+    --fb-teal-light: #134E4A;
+    --fb-teal-border: #115E59;
+
+    --fb-success: #22C55E;
+    --fb-success-light: #064E3B;
+    --fb-success-border: #047857;
+
+    --fb-warning: #FBBF24;
+    --fb-warning-light: #451A03;
+    --fb-warning-border: #78350F;
+
+    --fb-danger: #F87171;
+    --fb-danger-light: #450A0A;
+    --fb-danger-border: #7F1D1D;
+
+    --fb-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --fb-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --fb-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+
+    /* NGO Pastel Theme Dark Adaptations */
+    --ngo-primary: #818CF8;
+    --ngo-text: #F8FAFC;
+    --ngo-hover: #1E293B;
+    --ngo-border: #334155;
+
+    /* Delivery Partner Theme Dark Adaptations */
+    --delivery-primary: #60A5FA;
+    --delivery-text: #F8FAFC;
+    --delivery-sidebar-bg: #111827;
+    --delivery-sidebar-border: #334155;
+    --delivery-active-bg: #1E3A5F;
+    --delivery-hover-bg: #1E293B;
+}
+
+/* Toggle in Dark Mode */
+[data-theme="dark"] .fb-theme-toggle {
+    background: #1E293B;
+    border-color: #334155;
+    color: #FBBF24;
+}
+
+[data-theme="dark"] .fb-theme-toggle:hover {
+    background: #243247;
+    border-color: #60A5FA;
+    color: #FCD34D;
+}
+
+[data-theme="dark"] .fb-theme-toggle:focus-visible {
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.35);
+}
+
+/* ==========================================================================
+   3. GLOBAL FOUNDATION & PAGE SHELLS
+   ========================================================================== */
+
+[data-theme="dark"] body,
+[data-theme="dark"] #root,
+[data-theme="dark"] .fb-landing,
+[data-theme="dark"] .fb-auth-page,
+[data-theme="dark"] .fb-business-app,
+[data-theme="dark"] .fb-business-main,
+[data-theme="dark"] .fb-page-shell,
+[data-theme="dark"] .inventory-page,
+[data-theme="dark"] .donation-page,
+[data-theme="dark"] .transaction-page,
+[data-theme="dark"] .analytics-page,
+[data-theme="dark"] .settings-page,
+[data-theme="dark"] .scanner-page,
+[data-theme="dark"] .ngo-dashboard,
+[data-theme="dark"] .ngo-page,
+[data-theme="dark"] .delivery-page,
+[data-theme="dark"] .admin-page,
+[data-theme="dark"] .individual-page,
+[data-theme="dark"] .individual-dashboard {
+    background-color: #0F172A !important;
+    background-image: none !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] span:not(.badge):not(.brand-icon):not(.theme-toggle-icon) {
+    color: inherit;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] small.text-muted,
+[data-theme="dark"] .fb-hero-subtitle,
+[data-theme="dark"] .scanner-subtitle,
+[data-theme="dark"] .settings-subtitle {
+    color: #94A3B8 !important;
+}
+
+/* ==========================================================================
+   4. TOP NAVBAR & LANDING NAVBAR
+   ========================================================================== */
+
+[data-theme="dark"] .fb-top-navbar {
+    background: #111827 !important;
+    border-color: #334155 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-navbar {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-brand,
+[data-theme="dark"] .fb-user,
+[data-theme="dark"] .fb-auth-brand-text {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-nav-link {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-nav-link:hover {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-mobile-nav {
+    background: #0F172A !important;
+    border-top: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-icon-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-icon-btn:hover {
+    background: #243247 !important;
+    color: #93C5FD !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-dropdown {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-dropdown-item {
+    color: #F8FAFC !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-dropdown-item:hover {
+    background: #243247 !important;
+}
+
+/* ==========================================================================
+   5. SIDEBARS (Business, NGO, Delivery, Admin, Individual)
+   ========================================================================== */
+
+[data-theme="dark"] .fb-sidebar,
+[data-theme="dark"] .ngo-sidebar,
+[data-theme="dark"] .delivery-sidebar,
+[data-theme="dark"] .admin-sidebar,
+[data-theme="dark"] .individual-sidebar {
+    background: #111827 !important;
+    background-image: none !important;
+    border-right: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .sidebar-header,
+[data-theme="dark"] .ngo-header,
+[data-theme="dark"] .delivery-header,
+[data-theme="dark"] .admin-header {
+    background: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .brand-logo,
+[data-theme="dark"] .brand-text,
+[data-theme="dark"] .admin-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .brand-accent {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .sidebar-collapse-btn,
+[data-theme="dark"] .sidebar-close-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .sidebar-collapse-btn:hover {
+    background: #3B82F6 !important;
+    color: #FFFFFF !important;
+    border-color: #3B82F6 !important;
+}
+
+[data-theme="dark"] .sidebar-link,
+[data-theme="dark"] .ngo-link,
+[data-theme="dark"] .delivery-link,
+[data-theme="dark"] .admin-link,
+[data-theme="dark"] .individual-sidebar a {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .sidebar-icon {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .sidebar-link:hover,
+[data-theme="dark"] .ngo-link:hover,
+[data-theme="dark"] .delivery-link:hover,
+[data-theme="dark"] .admin-link:hover,
+[data-theme="dark"] .individual-sidebar a:hover {
+    background: #1E293B !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .sidebar-link:hover .sidebar-icon {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .sidebar-link.active,
+[data-theme="dark"] .ngo-link.active,
+[data-theme="dark"] .delivery-link.active,
+[data-theme="dark"] .admin-link.active {
+    background: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-left: 3px solid #60A5FA !important;
+    box-shadow: none !important;
+}
+
+[data-theme="dark"] .sidebar-link.active .sidebar-icon {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .fb-sidebar.collapsed .sidebar-link.active {
+    background: #1E3A5F !important;
+    color: #93C5FD !important;
+    box-shadow: 0 0 0 2px #60A5FA inset !important;
+}
+
+[data-theme="dark"] .sidebar-footer,
+[data-theme="dark"] .ngo-footer,
+[data-theme="dark"] .delivery-footer,
+[data-theme="dark"] .admin-footer {
+    background: #111827 !important;
+    border-top: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .logout-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .logout-btn:hover {
+    background: #450A0A !important;
+    border-color: #7F1D1D !important;
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .user-box {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .user-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .user-biz {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .user-badge {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .sidebar-mobile-toggle {
+    background: #111827 !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+}
+
+/* ==========================================================================
+   6. CARDS, SURFACES & CONTAINERS
+   ========================================================================== */
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .fb-card,
+[data-theme="dark"] .fb-welcome-card,
+[data-theme="dark"] .fb-stat-card,
+[data-theme="dark"] .dashboard-card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .analytics-card,
+[data-theme="dark"] .scanner-card,
+[data-theme="dark"] .ngo-card,
+[data-theme="dark"] .admin-card,
+[data-theme="dark"] .driver-card,
+[data-theme="dark"] .donation-card,
+[data-theme="dark"] .pickup-card,
+[data-theme="dark"] .beneficiary-card,
+[data-theme="dark"] .report-card,
+[data-theme="dark"] .fb-auth-card,
+[data-theme="dark"] .auth-card,
+[data-theme="dark"] .fb-action-card,
+[data-theme="dark"] .banner,
+[data-theme="dark"] .ngo-banner,
+[data-theme="dark"] .admin-banner,
+[data-theme="dark"] .individual-banner {
+    background-color: #1E293B !important;
+    background-image: none !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-welcome-banner,
+[data-theme="dark"] .delivery-badge {
+    background: #1E3A5F !important;
+    color: #F8FAFC !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-stat-icon-wrapper,
+[data-theme="dark"] .stat-icon-wrapper {
+    background: #243247 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-action-card:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+}
+
+/* ==========================================================================
+   7. FORM CONTROLS & INPUTS
+   ========================================================================== */
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="password"],
+[data-theme="dark"] input[type="number"],
+[data-theme="dark"] input[type="date"],
+[data-theme="dark"] input[type="file"],
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+    color: #94A3B8 !important;
+    opacity: 1;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] input:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] textarea:focus {
+    background-color: #111827 !important;
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25) !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .form-control:disabled,
+[data-theme="dark"] .form-select:disabled,
+[data-theme="dark"] input:disabled {
+    background-color: #1E293B !important;
+    color: #64748B !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] label,
+[data-theme="dark"] .form-label {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .input-group-text {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+/* ==========================================================================
+   8. TABLES
+   ========================================================================== */
+
+[data-theme="dark"] table,
+[data-theme="dark"] .table,
+[data-theme="dark"] .fb-table {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] table th,
+[data-theme="dark"] .table th,
+[data-theme="dark"] table thead th,
+[data-theme="dark"] .table thead th {
+    background-color: #243247 !important;
+    color: #F8FAFC !important;
+    border-bottom: 2px solid #334155 !important;
+    border-top: none !important;
+}
+
+[data-theme="dark"] table td,
+[data-theme="dark"] .table td,
+[data-theme="dark"] table tbody td,
+[data-theme="dark"] .table tbody td {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] table tbody tr:hover,
+[data-theme="dark"] .table tbody tr:hover,
+[data-theme="dark"] table tbody tr:hover td,
+[data-theme="dark"] .table tbody tr:hover td {
+    background-color: #26364A !important;
+}
+
+/* ==========================================================================
+   9. MODALS, DROPDOWNS & POPOVERS
+   ========================================================================== */
+
+[data-theme="dark"] .modal-content {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-footer {
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .modal-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover,
+[data-theme="dark"] .dropdown-item:focus {
+    background-color: #243247 !important;
+    color: #60A5FA !important;
+}
+
+/* ==========================================================================
+   10. ALERTS & STATUS BADGES
+   ========================================================================== */
+
+[data-theme="dark"] .alert-success {
+    background-color: #052E16 !important;
+    border-color: #166534 !important;
+    color: #86EFAC !important;
+}
+
+[data-theme="dark"] .alert-warning {
+    background-color: #451A03 !important;
+    border-color: #854D0E !important;
+    color: #FDE047 !important;
+}
+
+[data-theme="dark"] .alert-danger {
+    background-color: #450A0A !important;
+    border-color: #991B1B !important;
+    color: #FCA5A5 !important;
+}
+
+[data-theme="dark"] .alert-info {
+    background-color: #082F49 !important;
+    border-color: #075985 !important;
+    color: #7DD3FC !important;
+}
+
+[data-theme="dark"] .risk-high,
+[data-theme="dark"] .fb-expiry-critical {
+    background-color: #450A0A !important;
+    color: #FCA5A5 !important;
+    border: 1px solid #7F1D1D !important;
+}
+
+[data-theme="dark"] .risk-medium,
+[data-theme="dark"] .fb-expiry-warning {
+    background-color: #451A03 !important;
+    color: #FDE047 !important;
+    border: 1px solid #78350F !important;
+}
+
+[data-theme="dark"] .risk-low,
+[data-theme="dark"] .fb-expiry-safe {
+    background-color: #064E3B !important;
+    color: #86EFAC !important;
+    border: 1px solid #047857 !important;
+}
+
+/* ==========================================================================
+   11. BUTTONS
+   ========================================================================== */
+
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .fb-btn-hero-primary {
+    background-color: #3B82F6 !important;
+    border-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .fb-btn-hero-primary:hover {
+    background-color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+[data-theme="dark"] .btn-outline-primary {
+    color: #60A5FA !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+    background-color: #3B82F6 !important;
+    border-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-secondary,
+[data-theme="dark"] .btn-light,
+[data-theme="dark"] .fb-btn-hero-secondary {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .btn-secondary:hover,
+[data-theme="dark"] .btn-light:hover,
+[data-theme="dark"] .fb-btn-hero-secondary:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+    color: #CBD5E1 !important;
+    border-color: #475569 !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary:hover {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .btn-outline-danger {
+    color: #F87171 !important;
+    border-color: #991B1B !important;
+}
+
+[data-theme="dark"] .btn-outline-danger:hover {
+    background-color: #450A0A !important;
+    color: #FCA5A5 !important;
+    border-color: #DC2626 !important;
+}
+
+/* ==========================================================================
+   12. LANDING PAGE & PUBLIC SECTIONS
+   ========================================================================== */
+
+[data-theme="dark"] .fb-hero-section {
+    background: linear-gradient(180deg, #0F172A 0%, #111827 100%) !important;
+}
+
+[data-theme="dark"] .fb-hero-title,
+[data-theme="dark"] .fb-section-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-hero-lead,
+[data-theme="dark"] .fb-section-desc {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-hero-stat-card,
+[data-theme="dark"] .fb-about-card,
+[data-theme="dark"] .fb-feature-card,
+[data-theme="dark"] .fb-step-card,
+[data-theme="dark"] .fb-role-card,
+[data-theme="dark"] .fb-impact-card,
+[data-theme="dark"] .fb-stat-box {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-feature-title,
+[data-theme="dark"] .fb-step-title,
+[data-theme="dark"] .fb-role-title,
+[data-theme="dark"] .fb-impact-stat {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-feature-text,
+[data-theme="dark"] .fb-step-desc,
+[data-theme="dark"] .fb-role-desc,
+[data-theme="dark"] .fb-impact-label {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-cta-card {
+    background: linear-gradient(135deg, #1E3A5F 0%, #1E293B 100%) !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-footer {
+    background-color: #111827 !important;
+    border-top: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-footer-link {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-footer-link:hover {
+    color: #60A5FA !important;
+}
+
+/* ==========================================================================
+   13. LOGIN & REGISTER
+   ========================================================================== */
+
+[data-theme="dark"] .fb-auth-header {
+    background-color: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-auth-brand-text {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-auth-nav-link {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-auth-nav-link:hover {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-auth-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-auth-brand-panel {
+    background-color: #111827 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-auth-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-auth-subtitle {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-auth-switch-text {
+    color: #94A3B8 !important;
+}
+
+/* ==========================================================================
+   14. CHARTS & RECHARTS ADAPTATIONS
+   ========================================================================== */
+
+[data-theme="dark"] .recharts-default-tooltip {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .recharts-cartesian-grid line {
+    stroke: #334155 !important;
+}
+
+[data-theme="dark"] .recharts-text,
+[data-theme="dark"] .recharts-cartesian-axis-tick text,
+[data-theme="dark"] .recharts-legend-item-text {
+    fill: #94A3B8 !important;
+    color: #94A3B8 !important;
+}

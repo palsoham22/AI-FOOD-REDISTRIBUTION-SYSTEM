@@ -568,5 +568,7 @@
   "Waiting for scan...": "স্ক্যানের জন্য অপেক্ষা করা হচ্ছে...",
   "Please enter a product name.": "অনুগ্রহ করে একটি পণ্যের নাম লিখুন।",
   "Quantity must be a positive number.": "পরিমাণ অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে।",
-  "Please select an expiry date.": "অনুগ্রহ করে মেয়াদ শেষ হওয়ার তারিখ নির্বাচন করুন।"
+  "Please select an expiry date.": "অনুগ্রহ করে মেয়াদ শেষ হওয়ার তারিখ নির্বাচন করুন।",
+  "Light Mode": "লাইট মোড",
+  "Dark Mode": "ডার্ক মোড"
 }
