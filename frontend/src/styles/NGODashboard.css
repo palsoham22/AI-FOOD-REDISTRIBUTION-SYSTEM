@@ -1,624 +1,675 @@
-/* =========================================
-        FoodBridge AI - NGO Dashboard
-        Soft Pastel Lavender / Blue Theme
-========================================= */
+/* ==========================================================================
+   FoodBridge AI — NGO Distribution Dashboard Styles
+   Theme: Light Blue + Pure White SaaS Design System
+   Primary Blue: #2563EB | Dark Blue: #1D4ED8 | Light Blue: #EFF6FF
+   Background: #F8FAFC | Card: #FFFFFF | Text: #0F172A | Border: #E2E8F0
+========================================================================== */
 
+/* ==========================================================================
+   1. WELCOME / OVERVIEW CARD
+========================================================================== */
 
-/* =========================================
-        MAIN DASHBOARD
-========================================= */
-
-.ngo-dashboard{
-
-    margin-left:260px;
-
-    padding:20px 24px;
-
-    min-height:100vh;
-
-    background:linear-gradient(
-        135deg,
-        #f5f7ff 0%,
-        #f7f5ff 50%,
-        #f3f8ff 100%
-    );
-
-    transition:.3s ease;
-
+.ngo-welcome-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-
-/* =========================================
-        HEADER
-========================================= */
-
-.ngo-header{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    gap:14px;
-
-    margin-bottom:20px;
-
+.ngo-welcome-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2563EB;
 }
 
-
-.ngo-title{
-
-    font-size:32px;
-
-    font-weight:700;
-
-    color:#6259a8;
-
-    margin:0;
-
+.ngo-welcome-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
 }
 
-
-.ngo-subtitle{
-
-    color:#667085;
-
-    margin-top:5px;
-
-    margin-bottom:0;
-
-    font-size:15px;
-
+.ngo-avatar-box {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 14px;
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
 }
 
-
-/* =========================================
-        ACTIVE DONATIONS BADGE
-========================================= */
-
-.ngo-badge{
-
-    background:linear-gradient(
-        135deg,
-        #8d86d1,
-        #aaa5df
-    );
-
-    color:#ffffff;
-
-    padding:10px 20px;
-
-    border-radius:30px;
-
-    font-weight:600;
-
-    font-size:14px;
-
-    box-shadow:
-        0 8px 18px rgba(98,89,168,.16);
-
+.ngo-welcome-info {
+    display: flex;
+    flex-direction: column;
 }
 
-
-/* =========================================
-        NGO PROFILE
-========================================= */
-
-.ngo-profile{
-
-    background:#ffffff;
-
-    border-radius:20px;
-
-    padding:22px 24px;
-
-    box-shadow:
-        0 8px 22px rgba(72,66,130,.08);
-
-    margin-bottom:20px;
-
-    border:1px solid #eeeafd;
-
+.ngo-welcome-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
 }
 
-
-/* =========================================
-        NGO AVATAR
-========================================= */
-
-.ngo-avatar{
-
-    width:78px;
-
-    height:78px;
-
-    border-radius:50%;
-
-    background:linear-gradient(
-        135deg,
-        #8f87d4,
-        #b3afe5
-    );
-
-    color:#ffffff;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:32px;
-
-    font-weight:bold;
-
-    margin:auto;
-
+.ngo-verified-badge {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 9999px;
 }
 
-
-/* =========================================
-        PROFILE TEXT
-========================================= */
-
-.ngo-profile h3{
-
-    color:#6259a8 !important;
-
-    font-size:25px;
-
-    margin-bottom:8px;
-
+.ngo-welcome-sub {
+    font-size: 0.95rem;
+    color: #64748B;
+    margin-bottom: 8px;
 }
 
-
-.ngo-profile p{
-
-    margin-bottom:8px;
-
-    color:#5f6f78;
-
-    font-size:14px;
-
+.ngo-meta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #475569;
 }
 
-
-/* =========================================
-        DASHBOARD CARDS
-========================================= */
-
-.ngo-card{
-
-    border:none;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    background:#ffffff;
-
-    box-shadow:
-        0 8px 20px rgba(72,66,130,.08);
-
-    transition:.25s ease;
-
-    min-height:145px;
-
+.ngo-meta-item {
+    display: inline-flex;
+    align-items: center;
 }
 
-
-.ngo-card:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:
-        0 14px 28px rgba(72,66,130,.13);
-
+.ngo-welcome-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-
-/* =========================================
-        NOTIFICATIONS
-========================================= */
-
-.notification-card{
-
-    border:none;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    box-shadow:
-        0 8px 20px rgba(72,66,130,.08);
-
-    background:#ffffff;
-
+.ngo-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.88rem;
 }
 
-
-.notification-card .card-header{
-
-    background:linear-gradient(
-        135deg,
-        #ddd8f3,
-        #ebe8f8
-    ) !important;
-
-    color:#514993 !important;
-
-    font-weight:700;
-
-    border:none !important;
-
-    padding:11px 16px;
-
-    font-size:15px;
-
+.ngo-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
+/* ==========================================================================
+   2. KPI STAT CARDS
+========================================================================== */
 
-/* =========================================
-        NOTIFICATION ALERTS
-========================================= */
-
-.notification-card .alert{
-
-    margin-bottom:10px;
-
-    border-radius:10px;
-
-    padding:11px 14px;
-
-    font-size:14px;
-
+.ngo-kpi-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 140px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
 }
 
-
-/* Soft pastel blue */
-
-.notification-card .alert-primary{
-
-    background:#e5efff;
-
-    border:1px solid #c9dcfa;
-
-    color:#355a86;
-
+.ngo-kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.08);
 }
 
-
-/* Soft pastel green */
-
-.notification-card .alert-success{
-
-    background:#e5f5ed;
-
-    border:1px solid #c7e7d6;
-
-    color:#3d7057;
-
+.ngo-kpi-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-
-/* Soft pastel cyan */
-
-.notification-card .alert-info{
-
-    background:#e3f5f8;
-
-    border:1px solid #c5e7ed;
-
-    color:#3d6f78;
-
+.ngo-kpi-label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
-
-/* Soft pastel yellow */
-
-.notification-card .alert-warning{
-
-    background:#fff4d9;
-
-    border:1px solid #f4dfaa;
-
-    color:#806a35;
-
+.ngo-kpi-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
 
-
-/* =========================================
-        DONATION SECTION
-========================================= */
-
-.donation-card{
-
-    background:#ffffff;
-
-    border-radius:18px;
-
-    padding:18px;
-
-    box-shadow:
-        0 8px 22px rgba(72,66,130,.08);
-
-    border:1px solid #eeeafd;
-
+.ngo-kpi-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.1;
+    margin-bottom: 8px;
 }
 
-
-/* =========================================
-        DONATION TABLE
-========================================= */
-
-.donation-table{
-
-    margin:0;
-
+.ngo-kpi-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #64748B;
 }
 
-
-.donation-table thead{
-
-    background:linear-gradient(
-        135deg,
-        #8d86d1,
-        #aaa5df
-    );
-
-    color:#ffffff;
-
+.ngo-kpi-link {
+    font-weight: 600;
+    color: #2563EB;
 }
 
-
-.donation-table thead th{
-
-    border:none;
-
-    padding:12px 14px;
-
-    font-size:14px;
-
-    font-weight:600;
-
+/* KPI Accent Variants */
+.ngo-kpi-blue {
+    border-top: 3px solid #2563EB;
+}
+.ngo-kpi-blue .ngo-kpi-icon-wrap {
+    background: #EFF6FF;
+    color: #2563EB;
 }
 
-
-.donation-table tbody td{
-
-    padding:12px 14px;
-
-    vertical-align:middle;
-
-    font-size:14px;
-
-    color:#4f5f68;
-
+.ngo-kpi-green {
+    border-top: 3px solid #16A34A;
+}
+.ngo-kpi-green .ngo-kpi-icon-wrap {
+    background: #F0FDF4;
+    color: #16A34A;
 }
 
-
-.donation-table tbody tr{
-
-    transition:.2s ease;
-
+.ngo-kpi-amber {
+    border-top: 3px solid #F59E0B;
+}
+.ngo-kpi-amber .ngo-kpi-icon-wrap {
+    background: #FFFBEB;
+    color: #F59E0B;
 }
 
-
-.donation-table tbody tr:hover{
-
-    background:#f6f5ff;
-
+.ngo-kpi-purple {
+    border-top: 3px solid #8B5CF6;
+}
+.ngo-kpi-purple .ngo-kpi-icon-wrap {
+    background: #F5F3FF;
+    color: #8B5CF6;
 }
 
+/* ==========================================================================
+   3. OPERATIONAL ALERT BANNER
+========================================================================== */
 
-/* =========================================
-        ACCEPT BUTTON
-========================================= */
-
-.accept-btn{
-
-    border-radius:10px;
-
-    padding:7px 14px;
-
-    font-weight:600;
-
-    font-size:14px;
-
-    background:#7186d5;
-
-    border:none;
-
-    transition:.25s ease;
-
+.ngo-alert-banner {
+    border-radius: 12px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
-
-.accept-btn:hover{
-
-    background:#6259a8;
-
-    transform:translateY(-1px);
-
+.ngo-alert-banner-info {
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1E40AF;
 }
 
-
-/* =========================================
-        DONATION HEADER
-========================================= */
-
-.ngo-dashboard .text-primary{
-
-    color:#6259a8 !important;
-
+.ngo-alert-banner-neutral {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    color: #334155;
 }
 
-
-/* =========================================
-        BADGES INSIDE TABLE
-========================================= */
-
-.donation-table .badge{
-
-    font-size:12px;
-
-    padding:6px 9px;
-
-    border-radius:8px;
-
+.ngo-alert-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-
-/* =========================================
-        RESPONSIVE - TABLET
-========================================= */
-
-@media(max-width:992px){
-
-    .ngo-dashboard{
-
-        margin-left:0;
-
-        padding:85px 18px 20px;
-
-    }
-
-    .ngo-title{
-
-        font-size:28px;
-
-    }
-
-    .ngo-profile{
-
-        padding:20px;
-
-    }
-
+.ngo-alert-icon-box {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 8px;
+    background: #DBEAFE;
+    color: #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
-
-/* =========================================
-        RESPONSIVE - MOBILE
-========================================= */
-
-@media(max-width:576px){
-
-    .ngo-dashboard{
-
-        padding:80px 12px 18px;
-
-    }
-
-
-    .ngo-header{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        margin-bottom:16px;
-
-    }
-
-
-    .ngo-title{
-
-        font-size:24px;
-
-        line-height:1.3;
-
-    }
-
-
-    .ngo-subtitle{
-
-        font-size:14px;
-
-    }
-
-
-    .ngo-badge{
-
-        width:100%;
-
-        text-align:center;
-
-        padding:9px 16px;
-
-    }
-
-
-    .ngo-profile{
-
-        padding:18px;
-
-        border-radius:16px;
-
-    }
-
-
-    .ngo-avatar{
-
-        width:68px;
-
-        height:68px;
-
-        font-size:28px;
-
-        margin-bottom:12px;
-
-    }
-
-
-    .ngo-profile h3{
-
-        font-size:21px;
-
-    }
-
-
-    .ngo-profile p{
-
-        font-size:13px;
-
-    }
-
-
-    .ngo-card{
-
-        min-height:130px;
-
-    }
-
-
-    .donation-card{
-
-        padding:10px;
-
-        border-radius:15px;
-
-    }
-
-
-    .donation-table thead th{
-
-        padding:10px;
-
-        font-size:12px;
-
-    }
-
-
-    .donation-table tbody td{
-
-        padding:10px;
-
-        font-size:12px;
-
-    }
-
+.ngo-alert-banner-neutral .ngo-alert-icon-box {
+    background: #E2E8F0;
+    color: #64748B;
+}
+
+.ngo-alert-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: inherit;
+}
+
+.ngo-alert-text {
+    font-size: 0.85rem;
+    color: inherit;
+}
+
+.ngo-btn-alert {
+    background: #2563EB;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 14px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.ngo-btn-alert:hover {
+    background: #1D4ED8;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   4. CONTENT CARDS & TABLES
+========================================================================== */
+
+.ngo-content-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+}
+
+.ngo-card-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.ngo-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.ngo-count-badge {
+    background: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 9999px;
+}
+
+.ngo-filter-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ngo-search-wrap {
+    position: relative;
+    min-width: 220px;
+}
+
+.ngo-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94A3B8;
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.ngo-search-input {
+    padding-left: 32px !important;
+    border-radius: 8px !important;
+    border: 1px solid #CBD5E1 !important;
+    font-size: 0.85rem !important;
+}
+
+.ngo-filter-select {
+    width: auto !important;
+    min-width: 140px;
+    border-radius: 8px !important;
+    border: 1px solid #CBD5E1 !important;
+    font-size: 0.85rem !important;
+}
+
+/* Table */
+.ngo-table {
+    margin-bottom: 0;
+}
+
+.ngo-table th {
+    background: #F8FAFC !important;
+    color: #475569 !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-top: none !important;
+}
+
+.ngo-table td {
+    padding: 14px 20px !important;
+    border-bottom: 1px solid #F1F5F9 !important;
+    font-size: 0.88rem !important;
+    color: #0F172A !important;
+}
+
+.ngo-table tbody tr:hover td {
+    background-color: #F8FAFC !important;
+}
+
+.ngo-donor-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.text-main {
+    color: #0F172A;
+}
+
+.ngo-category-badge {
+    background: #F1F5F9;
+    color: #334155;
+    border: 1px solid #E2E8F0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/* Expiry Risk Pills */
+.risk-critical {
+    background-color: #FEE2E2;
+    color: #DC2626;
+    border: 1px solid #FECACA;
+    font-weight: 600;
+}
+
+.risk-warning {
+    background-color: #FEF3C7;
+    color: #D97706;
+    border: 1px solid #FDE68A;
+    font-weight: 600;
+}
+
+.risk-safe {
+    background-color: #DCFCE7;
+    color: #16A34A;
+    border: 1px solid #BBF7D0;
+    font-weight: 600;
+}
+
+/* Status Badges */
+.ngo-status-badge {
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.status-donated {
+    background: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+}
+
+.status-accepted {
+    background: #E0E7FF;
+    color: #4338CA;
+    border: 1px solid #C7D2FE;
+}
+
+.status-scheduled {
+    background: #F0FDFA;
+    color: #0F766E;
+    border: 1px solid #CCFBF1;
+}
+
+.status-delivered {
+    background: #F0FDF4;
+    color: #16A34A;
+    border: 1px solid #DCFCE7;
+}
+
+.status-other {
+    background: #F1F5F9;
+    color: #64748B;
+    border: 1px solid #E2E8F0;
+}
+
+/* Accept Button */
+.ngo-btn-accept {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    font-weight: 600 !important;
+    font-size: 0.82rem !important;
+    padding: 6px 14px !important;
+    border-radius: 8px !important;
+    transition: all 0.15s ease !important;
+    box-shadow: 0 1px 2px 0 rgba(37, 99, 235, 0.2) !important;
+}
+
+.ngo-btn-accept:hover {
+    background: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+}
+
+/* Empty State */
+.ngo-empty-state {
+    padding: 30px 20px;
+}
+
+.ngo-empty-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.ngo-empty-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 4px;
+}
+
+.ngo-empty-sub {
+    font-size: 0.88rem;
+    color: #64748B;
+}
+
+/* ==========================================================================
+   5. SUMMARY / ACTIVITY BOXES
+========================================================================== */
+
+.ngo-summary-box {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+}
+
+.ngo-box-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.bg-primary-subtle {
+    background-color: #EFF6FF !important;
+}
+
+.bg-success-subtle {
+    background-color: #F0FDF4 !important;
+}
+
+.ngo-box-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.ngo-box-text {
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+/* ==========================================================================
+   6. DARK MODE OVERRIDES
+========================================================================== */
+
+[data-theme="dark"] .ngo-welcome-card,
+[data-theme="dark"] .ngo-kpi-card,
+[data-theme="dark"] .ngo-content-card,
+[data-theme="dark"] .ngo-summary-box {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .ngo-welcome-title,
+[data-theme="dark"] .ngo-kpi-value,
+[data-theme="dark"] .ngo-card-title,
+[data-theme="dark"] .ngo-box-title,
+[data-theme="dark"] .text-main,
+[data-theme="dark"] .ngo-empty-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-welcome-sub,
+[data-theme="dark"] .ngo-meta-row,
+[data-theme="dark"] .ngo-kpi-bottom,
+[data-theme="dark"] .ngo-box-text,
+[data-theme="dark"] .ngo-empty-sub {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .ngo-avatar-box {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-verified-badge {
+    background-color: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-color: #3B82F6 !important;
+}
+
+[data-theme="dark"] .ngo-status-pill {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-pulse-dot {
+    background-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-card-header {
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-count-badge {
+    background-color: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-table th {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-table td {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-table tbody tr:hover td {
+    background-color: #26364A !important;
+}
+
+[data-theme="dark"] .ngo-alert-banner-info {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-alert-banner-neutral {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .ngo-category-badge {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .bg-primary-subtle {
+    background-color: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .bg-success-subtle {
+    background-color: #064E3B !important;
+    color: #86EFAC !important;
 }
