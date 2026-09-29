@@ -587,5 +587,12 @@
   "Account Details": "ఖాతా వివరాలు",
   "Contact Information": "సంప్రదింపు సమాచారం",
   "Verified NGO": "ధృవీకరించబడిన ఎన్‌జీఓ",
-  "Profile information is managed through your verified FoodBridge AI account.": "ప్రొఫైల్ సమాచారం మీ ధృవీకరించబడిన FoodBridge AI ఖాతా ద్వారా నిర్వహించబడుతుంది."
+  "Profile information is managed through your verified FoodBridge AI account.": "ప్రొఫైల్ సమాచారం మీ ధృవీకరించబడిన FoodBridge AI ఖాతా ద్వారా నిర్వహించబడుతుంది.",
+  "Manage your NGO preferences and application settings.": "మీ ఎన్‌జీఓ ప్రాధాన్యతలు మరియు అప్లికేషన్ సెట్టింగ్‌లను నిర్వహించండి.",
+  "Settings Saved Successfully": "సెట్టింగ్‌లు విజయవంతంగా సేవ్ చేయబడ్డాయి",
+  "Appearance": "రూపం",
+  "Choose your preferred interface theme.": "మీకు నచ్చిన ఇంటర్‌ఫేస్ థీమ్‌ను ఎంచుకోండి.",
+  "Select your preferred language for the application.": "అప్లికేషన్ కోసం మీ ప్రాధాన్య భాషను ఎంచుకోండి.",
+  "In-App Notifications": "ఇన్-యాప్ నోటిఫికేషన్‌లు",
+  "Receive alerts regarding donations, pickups, and deliveries.": "విరాళాలు, పికప్‌లు మరియు డెలివరీలకు సంబంధించిన హెచ్చరికలను స్వీకరించండి."
 }

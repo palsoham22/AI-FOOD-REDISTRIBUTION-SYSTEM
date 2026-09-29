@@ -587,5 +587,12 @@
   "Account Details": "അക്കൗണ്ട് വിവരങ്ങൾ",
   "Contact Information": "ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ",
   "Verified NGO": "സ്ഥിരീകരിച്ച എൻ‌ജി‌ഒ",
-  "Profile information is managed through your verified FoodBridge AI account.": "പ്രൊഫൈൽ വിവരങ്ങൾ നിങ്ങളുടെ സ്ഥിരീകരിച്ച FoodBridge AI അക്കൗണ്ട് വഴിയാണ് കൈകാര്യം ചെയ്യുന്നത്."
+  "Profile information is managed through your verified FoodBridge AI account.": "പ്രൊഫൈൽ വിവരങ്ങൾ നിങ്ങളുടെ സ്ഥിരീകരിച്ച FoodBridge AI അക്കൗണ്ട് വഴിയാണ് കൈകാര്യം ചെയ്യുന്നത്.",
+  "Manage your NGO preferences and application settings.": "നിങ്ങളുടെ എൻ‌ജി‌ഒ മുൻഗണനകളും ആപ്ലിക്കേഷൻ ക്രമീകരണങ്ങളും കൈകാര്യം ചെയ്യുക.",
+  "Settings Saved Successfully": "ക്രമീകരണങ്ങൾ വിജയകരമായി സംരക്ഷിച്ചു",
+  "Appearance": "രൂപഭാവം",
+  "Choose your preferred interface theme.": "നിങ്ങൾക്ക് ഇഷ്ടമുള്ള ഇന്റർഫേസ് തീം തിരഞ്ഞെടുക്കുക.",
+  "Select your preferred language for the application.": "ആപ്ലിക്കേഷനായി നിങ്ങൾക്ക് ഇഷ്ടമുള്ള ഭാഷ തിരഞ്ഞെടുക്കുക.",
+  "In-App Notifications": "ഇൻ-ആപ്പ് അറിയിപ്പുകൾ",
+  "Receive alerts regarding donations, pickups, and deliveries.": "സംഭാവനകൾ, പിക്കപ്പുകൾ, ഡെലിവറികൾ എന്നിവയെക്കുറിച്ചുള്ള അലേർട്ടുകൾ സ്വീകരിക്കുക."
 }

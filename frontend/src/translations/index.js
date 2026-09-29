@@ -940,7 +940,21 @@ NGO_SETTINGS: [
 
     "Dark",
 
-    "Save Settings"
+    "Save Settings",
+
+    "Manage your NGO preferences and application settings.",
+
+    "Settings Saved Successfully",
+
+    "Appearance",
+
+    "Choose your preferred interface theme.",
+
+    "Select your preferred language for the application.",
+
+    "In-App Notifications",
+
+    "Receive alerts regarding donations, pickups, and deliveries."
 
 ],
 

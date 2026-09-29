@@ -446,6 +446,7 @@
 .history-page,
 .beneficiaries-page,
 .reports-page,
+.ngo-settings-page,
 .ngo-page {
     margin-left: 260px;
     min-height: 100vh;
@@ -463,6 +464,7 @@ body.ngo-sidebar-collapsed .pickup-page,
 body.ngo-sidebar-collapsed .history-page,
 body.ngo-sidebar-collapsed .beneficiaries-page,
 body.ngo-sidebar-collapsed .reports-page,
+body.ngo-sidebar-collapsed .ngo-settings-page,
 body.ngo-sidebar-collapsed .ngo-page {
     margin-left: 80px !important;
 }
@@ -492,6 +494,7 @@ body.ngo-sidebar-collapsed .ngo-page {
     .history-page,
     .beneficiaries-page,
     .reports-page,
+    .ngo-settings-page,
     .ngo-page {
         margin-left: 0 !important;
         width: 100% !important;
@@ -506,6 +509,7 @@ body.ngo-sidebar-collapsed .ngo-page {
     body.ngo-sidebar-collapsed .history-page,
     body.ngo-sidebar-collapsed .beneficiaries-page,
     body.ngo-sidebar-collapsed .reports-page,
+    body.ngo-sidebar-collapsed .ngo-settings-page,
     body.ngo-sidebar-collapsed .ngo-page {
         margin-left: 0 !important;
         width: 100% !important;

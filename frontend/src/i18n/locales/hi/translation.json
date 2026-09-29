@@ -587,5 +587,12 @@
   "Account Details": "खाता विवरण",
   "Contact Information": "संपर्क जानकारी",
   "Verified NGO": "सत्यापित एनजीओ",
-  "Profile information is managed through your verified FoodBridge AI account.": "प्रोफ़ाइल जानकारी आपके सत्यापित FoodBridge AI खाते के माध्यम से प्रबंधित की जाती है।"
+  "Profile information is managed through your verified FoodBridge AI account.": "प्रोफ़ाइल जानकारी आपके सत्यापित FoodBridge AI खाते के माध्यम से प्रबंधित की जाती है।",
+  "Manage your NGO preferences and application settings.": "अपनी एनजीओ प्राथमिकताएं और एप्लिकेशन सेटिंग्स प्रबंधित करें।",
+  "Settings Saved Successfully": "सेटिंग्स सफलतापूर्वक सहेजी गईं",
+  "Appearance": "दिखावट",
+  "Choose your preferred interface theme.": "अपनी पसंदीदा इंटरफ़ेस थीम चुनें।",
+  "Select your preferred language for the application.": "एप्लिकेशन के लिए अपनी पसंदीदा भाषा चुनें।",
+  "In-App Notifications": "इन-ऐप सूचनाएं",
+  "Receive alerts regarding donations, pickups, and deliveries.": "दान, पिकअप और डिलीवरी से संबंधित अलर्ट प्राप्त करें।"
 }

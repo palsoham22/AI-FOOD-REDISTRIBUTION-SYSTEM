@@ -587,5 +587,12 @@
   "Account Details": "Account Details",
   "Contact Information": "Contact Information",
   "Verified NGO": "Verified NGO",
-  "Profile information is managed through your verified FoodBridge AI account.": "Profile information is managed through your verified FoodBridge AI account."
+  "Profile information is managed through your verified FoodBridge AI account.": "Profile information is managed through your verified FoodBridge AI account.",
+  "Manage your NGO preferences and application settings.": "Manage your NGO preferences and application settings.",
+  "Settings Saved Successfully": "Settings Saved Successfully",
+  "Appearance": "Appearance",
+  "Choose your preferred interface theme.": "Choose your preferred interface theme.",
+  "Select your preferred language for the application.": "Select your preferred language for the application.",
+  "In-App Notifications": "In-App Notifications",
+  "Receive alerts regarding donations, pickups, and deliveries.": "Receive alerts regarding donations, pickups, and deliveries."
 }

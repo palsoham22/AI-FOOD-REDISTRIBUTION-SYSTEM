@@ -1,0 +1,374 @@
+/* ==========================================================================
+   FoodBridge AI — NGO Settings Page Styles
+   Theme: Light Blue + Pure White SaaS Design System
+   Primary Blue: #2563EB | Dark Blue: #1D4ED8 | Light Blue: #EFF6FF
+   Background: #F8FAFC | Card: #FFFFFF | Text: #0F172A | Border: #E2E8F0
+========================================================================== */
+
+/* Prevent horizontal overflow and ensure single unified frame */
+.ngo-settings-page {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.ngo-settings-page .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.ngo-settings-page .col-lg-6,
+.ngo-settings-page .col-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ==========================================================================
+   1. PAGE HEADER CARD
+========================================================================== */
+
+.ngo-settings-header-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ngo-settings-header-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2563EB;
+}
+
+.ngo-settings-header-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.ngo-settings-avatar-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 14px;
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ngo-settings-avatar-icon {
+    line-height: 1;
+}
+
+.ngo-settings-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ngo-settings-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+}
+
+.ngo-settings-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.ngo-settings-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.ngo-settings-subtitle {
+    font-size: 0.92rem;
+    color: #64748B;
+}
+
+.ngo-settings-alert {
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+/* ==========================================================================
+   2. SETTINGS CARDS
+========================================================================== */
+
+.ngo-settings-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ngo-settings-card-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #E2E8F0;
+    background: #F8FAFC;
+}
+
+.ngo-settings-section-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #EFF6FF;
+    color: #2563EB;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.ngo-settings-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.ngo-settings-card-subtitle {
+    font-size: 0.82rem;
+    color: #64748B;
+}
+
+.ngo-settings-card-body {
+    padding: 24px;
+    flex: 1;
+}
+
+.ngo-settings-control-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0F172A;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.ngo-settings-control-desc {
+    font-size: 0.84rem;
+    color: #64748B;
+    line-height: 1.4;
+}
+
+.ngo-settings-select {
+    border-radius: 10px !important;
+    border: 1px solid #CBD5E1 !important;
+    padding: 10px 14px !important;
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+    color: #0F172A !important;
+    transition: all 0.2s ease;
+}
+
+.ngo-settings-select:focus {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* ==========================================================================
+   3. THEME SELECTION TILES
+========================================================================== */
+
+.ngo-theme-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.ngo-theme-card {
+    background: #F8FAFC;
+    border: 2px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    position: relative;
+}
+
+.ngo-theme-card:hover {
+    border-color: #CBD5E1;
+    background: #F1F5F9;
+    transform: translateY(-2px);
+}
+
+.ngo-theme-card.active {
+    border-color: #2563EB;
+    background: #EFF6FF;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+.ngo-theme-card-icon {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.ngo-theme-card-info {
+    flex: 1;
+}
+
+.ngo-theme-card-name {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.ngo-theme-card-desc {
+    font-size: 0.78rem;
+    color: #64748B;
+}
+
+.ngo-theme-card-check {
+    color: #2563EB;
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   4. FOOTER ACTION CARD
+========================================================================== */
+
+.ngo-settings-footer-card {
+    padding: 18px 24px;
+}
+
+.ngo-settings-save-btn {
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+    font-weight: 700 !important;
+    font-size: 0.92rem !important;
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25) !important;
+    transition: all 0.2s ease;
+}
+
+.ngo-settings-save-btn:hover {
+    background: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   5. DARK MODE ([data-theme="dark"])
+========================================================================== */
+
+[data-theme="dark"] .ngo-settings-page {
+    background-color: #0B132B !important;
+}
+
+[data-theme="dark"] .ngo-settings-header-card,
+[data-theme="dark"] .ngo-settings-card {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .ngo-settings-avatar-box {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-settings-card-header {
+    background-color: #1A2436 !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-settings-section-icon {
+    background-color: #243247 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-settings-title,
+[data-theme="dark"] .ngo-settings-card-title,
+[data-theme="dark"] .ngo-settings-control-label,
+[data-theme="dark"] .ngo-theme-card-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-settings-subtitle,
+[data-theme="dark"] .ngo-settings-card-subtitle,
+[data-theme="dark"] .ngo-settings-control-desc,
+[data-theme="dark"] .ngo-theme-card-desc {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-settings-status-pill {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-settings-pulse-dot {
+    background-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-theme-card {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card:hover {
+    background-color: #2A3B54 !important;
+    border-color: #475569 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card.active {
+    background-color: #1E3A5F !important;
+    border-color: #3B82F6 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card-check {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-settings-select {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-settings-select:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25) !important;
+}
