@@ -1,129 +1,360 @@
-.pickup-page{
+/* ==========================================================================
+   FoodBridge AI — NGO Pickup Schedule Page Styles
+   Theme: Light Blue + Pure White SaaS Design System
+   Primary Blue: #2563EB | Dark Blue: #1D4ED8 | Light Blue: #EFF6FF
+   Background: #F8FAFC | Card: #FFFFFF | Text: #0F172A | Border: #E2E8F0
+========================================================================== */
 
-margin-left:260px;
-padding:25px;
-min-height:100vh;
-background:linear-gradient(135deg,#eef4ff,#f7f2ff);
+/* ==========================================================================
+   1. PAGE HEADER CARD
+========================================================================== */
 
+.pickup-header-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.pickup-header{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:30px;
-flex-wrap:wrap;
-gap:20px;
-
+.pickup-header-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2563EB;
 }
 
-.pickup-title{
-
-font-size:34px;
-font-weight:700;
-color:#3b5bdb;
-
+.pickup-header-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
 }
 
-.pickup-subtitle{
-
-color:#6c757d;
-margin-top:6px;
-
+.pickup-avatar-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 14px;
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.pickup-card{
-
-background:white;
-border-radius:22px;
-padding:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-margin-bottom:25px;
-
+.pickup-avatar-icon {
+    line-height: 1;
 }
 
-.pickup-card h5{
-
-color:#3b5bdb;
-margin-bottom:18px;
-
+.pickup-header-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.pickup-card .form-control,
-.pickup-card .form-select{
-
-border-radius:12px;
-padding:12px;
-
+.pickup-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
 }
 
-.pickup-card label{
-
-font-weight:600;
-margin-bottom:8px;
-
+.pickup-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
 
-.vehicle-card{
-
-background:linear-gradient(135deg,#3b82f6,#7c3aed);
-color:white;
-border-radius:18px;
-padding:20px;
-margin-bottom:20px;
-
+.pickup-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-.driver-card{
-
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-
+.pickup-subtitle {
+    font-size: 0.92rem;
+    color: #64748B;
 }
 
-.driver-card .card-header{
-
-background:linear-gradient(135deg,#3b82f6,#7c3aed);
-color:white;
-font-weight:700;
-
+.pickup-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.map-card{
+/* ==========================================================================
+   2. CARDS & SECTIONS
+========================================================================== */
 
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-
+.pickup-info-card,
+.pickup-form-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
 }
 
-.map-card .card-header{
-
-background:#3b82f6;
-color:white;
-font-weight:700;
-
+.pickup-card-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.save-btn{
-
-width:100%;
-padding:14px;
-border-radius:14px;
-font-weight:700;
-font-size:17px;
-
+.pickup-card-title {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #0F172A;
+    display: flex;
+    align-items: center;
 }
 
-@media(max-width:992px){
-
-.pickup-page{
-
-margin-left:0;
-padding:90px 16px 20px;
-
+.pickup-card-body {
+    padding: 22px 24px;
 }
 
+/* Details Grid */
+.pickup-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.pickup-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.detail-value {
+    font-size: 0.95rem;
+    color: #0F172A;
+}
+
+.category-badge {
+    background: #F1F5F9;
+    color: #334155;
+    border: 1px solid #E2E8F0;
+    font-weight: 600;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+.storage-badge {
+    background: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+    font-weight: 600;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    align-self: flex-start;
+}
+
+/* Recommended Vehicle Box */
+.vehicle-recommend-box {
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 8px;
+}
+
+.recommend-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.recommend-kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1D4ED8;
+    letter-spacing: 0.03em;
+}
+
+.recommend-vehicle-name {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #1E40AF;
+}
+
+/* Map Body */
+.map-container-body {
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   3. FORM INPUTS & BUTTONS
+========================================================================== */
+
+.pickup-form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.pickup-input {
+    border-radius: 10px !important;
+    border: 1px solid #CBD5E1 !important;
+    padding: 10px 14px !important;
+    font-size: 0.9rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.pickup-input:focus {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+.save-btn {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    padding: 12px 24px !important;
+    border-radius: 10px !important;
+    transition: all 0.15s ease !important;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2) !important;
+}
+
+.save-btn:hover:not(:disabled) {
+    background: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25) !important;
+}
+
+.save-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   4. RESPONSIVE DESIGN
+========================================================================== */
+
+@media (max-width: 992px) {
+    .pickup-page {
+        margin-left: 0 !important;
+        padding: 75px 16px 30px !important;
+    }
+
+    .pickup-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   5. DARK MODE OVERRIDES (Scoped via [data-theme="dark"])
+========================================================================== */
+
+[data-theme="dark"] .pickup-header-card,
+[data-theme="dark"] .pickup-info-card,
+[data-theme="dark"] .pickup-form-card {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .pickup-title,
+[data-theme="dark"] .pickup-card-title,
+[data-theme="dark"] .detail-value,
+[data-theme="dark"] .text-main {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .pickup-subtitle,
+[data-theme="dark"] .detail-label {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .pickup-avatar-box {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .pickup-status-pill {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .pickup-card-header {
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .vehicle-recommend-box {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .recommend-kicker,
+[data-theme="dark"] .recommend-vehicle-name {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .pickup-form-label {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .pickup-input {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .pickup-input.bg-light {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .category-badge {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .storage-badge {
+    background-color: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-color: #334155 !important;
 }
