@@ -864,7 +864,19 @@ NGO_REPORTS: [
 
     "February",
 
-    "March"
+    "March",
+
+    "View donation, pickup, and impact reports when data is available.",
+
+    "No Report Data Available",
+
+    "Reports will appear here once sufficient donation, pickup, and impact data is available.",
+
+    "Donation & Impact Summaries",
+
+    "Pickup & Delivery Metrics",
+
+    "Monthly Performance Analytics"
 
 ],
 

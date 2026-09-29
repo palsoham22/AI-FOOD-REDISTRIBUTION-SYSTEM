@@ -574,5 +574,11 @@
   "No Beneficiaries Registered": "No Beneficiaries Registered",
   "Beneficiary records will appear here once registered.": "Beneficiary records will appear here once registered.",
   "Total Beneficiaries": "Total Beneficiaries",
-  "Active Beneficiaries": "Active Beneficiaries"
+  "Active Beneficiaries": "Active Beneficiaries",
+  "View donation, pickup, and impact reports when data is available.": "View donation, pickup, and impact reports when data is available.",
+  "No Report Data Available": "No Report Data Available",
+  "Reports will appear here once sufficient donation, pickup, and impact data is available.": "Reports will appear here once sufficient donation, pickup, and impact data is available.",
+  "Donation & Impact Summaries": "Donation & Impact Summaries",
+  "Pickup & Delivery Metrics": "Pickup & Delivery Metrics",
+  "Monthly Performance Analytics": "Monthly Performance Analytics"
 }

@@ -574,5 +574,11 @@
   "No Beneficiaries Registered": "பயனாளிகள் யாரும் பதிவு செய்யப்படவில்லை",
   "Beneficiary records will appear here once registered.": "பதிவு செய்யப்பட்டவுடன் பயனாளியின் விவரங்கள் இங்கே தோன்றும்.",
   "Total Beneficiaries": "மொத்த பயனாளிகள்",
-  "Active Beneficiaries": "செயலில் உள்ள பயனாளிகள்"
+  "Active Beneficiaries": "செயலில் உள்ள பயனாளிகள்",
+  "View donation, pickup, and impact reports when data is available.": "தரவு கிடைக்கும் போது நன்கொடை, பிக்கப் மற்றும் தாக்க அறிக்கைகளைப் பார்க்கவும்.",
+  "No Report Data Available": "அறிக்கை தரவு எதுவும் கிடைக்கவில்லை",
+  "Reports will appear here once sufficient donation, pickup, and impact data is available.": "போதுமான நன்கொடை, பிக்கப் மற்றும் தாக்கத் தரவு கிடைத்தவுடன் அறிக்கைகள் இங்கே தோன்றும்.",
+  "Donation & Impact Summaries": "நன்கொடை மற்றும் தாக்க சுருக்கங்கள்",
+  "Pickup & Delivery Metrics": "பிக்கப் மற்றும் டெலிவரி அளவீடுகள்",
+  "Monthly Performance Analytics": "மாதாந்திர செயல்திறன் பகுப்பாய்வு"
 }

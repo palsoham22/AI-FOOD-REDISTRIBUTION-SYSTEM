@@ -574,5 +574,11 @@
   "No Beneficiaries Registered": "ഗുണഭോക്താക്കൾ ആരും രജിസ്റ്റർ ചെയ്തിട്ടില്ല",
   "Beneficiary records will appear here once registered.": "രജിസ്റ്റർ ചെയ്തുകഴിഞ്ഞാൽ ഗുണഭോക്തൃ രേഖകൾ ഇവിടെ കാണാം.",
   "Total Beneficiaries": "ആകെ ഗുണഭോക്താക്കൾ",
-  "Active Beneficiaries": "സജീവ ഗുണഭോക്താക്കൾ"
+  "Active Beneficiaries": "സജീവ ഗുണഭോക്താക്കൾ",
+  "View donation, pickup, and impact reports when data is available.": "ഡാറ്റ ലഭ്യമാകുമ്പോൾ സംഭാവന, പിക്കപ്പ്, ഇംപാക്റ്റ് റിപ്പോർട്ടുകൾ കാണുക.",
+  "No Report Data Available": "റിപ്പോർട്ട് ഡാറ്റ ലഭ്യമല്ല",
+  "Reports will appear here once sufficient donation, pickup, and impact data is available.": "ആവശ്യത്തിന് സംഭാവന, പിക്കപ്പ്, ഇംപാക്റ്റ് ഡാറ്റ ലഭ്യമായാൽ റിപ്പോർട്ടുകൾ ഇവിടെ ദൃശ്യമാകും.",
+  "Donation & Impact Summaries": "സംഭാവനയും സ്വാധീന സംഗ്രഹങ്ങളും",
+  "Pickup & Delivery Metrics": "പിക്കപ്പ് & ഡെലിവറി അളവുകൾ",
+  "Monthly Performance Analytics": "പ്രതിമാസ പ്രകടന അനലിറ്റിക്‌സ്"
 }

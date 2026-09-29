@@ -574,5 +574,11 @@
   "No Beneficiaries Registered": "কোনো সুবিধাভোগী নিবন্ধিত নেই",
   "Beneficiary records will appear here once registered.": "নিবন্ধিত হওয়ার পরে সুবিধাভোগীদের রেকর্ড এখানে উপস্থিত হবে।",
   "Total Beneficiaries": "মোট সুবিধাভোগী",
-  "Active Beneficiaries": "সক্রিয় সুবিধাভোগী"
+  "Active Beneficiaries": "সক্রিয় সুবিধাভোগী",
+  "View donation, pickup, and impact reports when data is available.": "ডেটা উপলব্ধ হলে দান, পিকআপ এবং প্রভাব প্রতিবেদন দেখুন।",
+  "No Report Data Available": "কোনো রিপোর্ট ডেটা উপলব্ধ নেই",
+  "Reports will appear here once sufficient donation, pickup, and impact data is available.": "পর্যাপ্ত দান, পিকআপ এবং প্রভাব ডেটা উপলব্ধ হলে প্রতিবেদনগুলি এখানে উপস্থিত হবে।",
+  "Donation & Impact Summaries": "দান এবং প্রভাবের সংক্ষিপ্ত বিবরণ",
+  "Pickup & Delivery Metrics": "পিকআপ এবং ডেলিভারি মেট্রিক্স",
+  "Monthly Performance Analytics": "মাসিক কর্মক্ষমতা অ্যানালিটিক্স"
 }
