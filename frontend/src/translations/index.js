@@ -828,7 +828,15 @@ NGO_BENEFICIARIES: [
 
     "Active",
 
-    "Pending"
+    "Pending",
+
+    "No Beneficiaries Registered",
+
+    "Beneficiary records will appear here once registered.",
+
+    "Total Beneficiaries",
+
+    "Active Beneficiaries"
 
 ],
 

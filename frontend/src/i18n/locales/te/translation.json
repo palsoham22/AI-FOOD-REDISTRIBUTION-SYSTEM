@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "పరిమాణం తప్పనిసరిగా సానుకూల సంఖ్య అయి ఉండాలి.",
   "Please select an expiry date.": "దయచేసి గడువు తేదీని ఎంచుకోండి.",
   "Light Mode": "లైట్ మోడ్",
-  "Dark Mode": "డార్క్ మోడ్"
+  "Dark Mode": "డార్క్ మోడ్",
+  "No Beneficiaries Registered": "లబ్ధిదారులు ఎవరూ నమోదు కాలేదు",
+  "Beneficiary records will appear here once registered.": "నమోదైన తర్వాత లబ్ధిదారుల రికార్డులు ఇక్కడ కనిపిస్తాయి.",
+  "Total Beneficiaries": "మొత్తం లబ్ధిదారులు",
+  "Active Beneficiaries": "క్రియాశీల లబ్ధిదారులు"
 }

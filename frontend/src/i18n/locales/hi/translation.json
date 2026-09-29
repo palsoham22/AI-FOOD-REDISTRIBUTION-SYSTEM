@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "मात्रा एक धनात्मक संख्या होनी चाहिए।",
   "Please select an expiry date.": "कृपया समाप्ति तिथि चुनें।",
   "Light Mode": "लाइट मोड",
-  "Dark Mode": "डार्क मोड"
+  "Dark Mode": "डार्क मोड",
+  "No Beneficiaries Registered": "कोई लाभार्थी पंजीकृत नहीं है",
+  "Beneficiary records will appear here once registered.": "पंजीकृत होने के बाद लाभार्थी रिकॉर्ड यहां दिखाई देंगे।",
+  "Total Beneficiaries": "कुल लाभार्थी",
+  "Active Beneficiaries": "सक्रिय लाभार्थी"
 }

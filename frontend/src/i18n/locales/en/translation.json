@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "Quantity must be a positive number.",
   "Please select an expiry date.": "Please select an expiry date.",
   "Light Mode": "Light Mode",
-  "Dark Mode": "Dark Mode"
+  "Dark Mode": "Dark Mode",
+  "No Beneficiaries Registered": "No Beneficiaries Registered",
+  "Beneficiary records will appear here once registered.": "Beneficiary records will appear here once registered.",
+  "Total Beneficiaries": "Total Beneficiaries",
+  "Active Beneficiaries": "Active Beneficiaries"
 }

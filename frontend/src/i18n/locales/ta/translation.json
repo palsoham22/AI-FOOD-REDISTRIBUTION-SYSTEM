@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "அளவு ஒரு நேர்மறை எண்ணாக இருக்க வேண்டும்.",
   "Please select an expiry date.": "தயவுசெய்து காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்.",
   "Light Mode": "லைட் பயன்முறை",
-  "Dark Mode": "டார்க் பயன்முறை"
+  "Dark Mode": "டார்க் பயன்முறை",
+  "No Beneficiaries Registered": "பயனாளிகள் யாரும் பதிவு செய்யப்படவில்லை",
+  "Beneficiary records will appear here once registered.": "பதிவு செய்யப்பட்டவுடன் பயனாளியின் விவரங்கள் இங்கே தோன்றும்.",
+  "Total Beneficiaries": "மொத்த பயனாளிகள்",
+  "Active Beneficiaries": "செயலில் உள்ள பயனாளிகள்"
 }

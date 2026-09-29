@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "അളവ് ഒരു പോസിറ്റീവ് സംഖ്യയായിരിക്കണം.",
   "Please select an expiry date.": "ദയവായി കാലഹരണപ്പെടുന്ന തീയതി തിരഞ്ഞെടുക്കുക.",
   "Light Mode": "ലൈറ്റ് മോഡ്",
-  "Dark Mode": "ഡാർക്ക് മോഡ്"
+  "Dark Mode": "ഡാർക്ക് മോഡ്",
+  "No Beneficiaries Registered": "ഗുണഭോക്താക്കൾ ആരും രജിസ്റ്റർ ചെയ്തിട്ടില്ല",
+  "Beneficiary records will appear here once registered.": "രജിസ്റ്റർ ചെയ്തുകഴിഞ്ഞാൽ ഗുണഭോക്തൃ രേഖകൾ ഇവിടെ കാണാം.",
+  "Total Beneficiaries": "ആകെ ഗുണഭോക്താക്കൾ",
+  "Active Beneficiaries": "സജീവ ഗുണഭോക്താക്കൾ"
 }

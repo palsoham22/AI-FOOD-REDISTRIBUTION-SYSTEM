@@ -570,5 +570,9 @@
   "Quantity must be a positive number.": "পরিমাণ অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে।",
   "Please select an expiry date.": "অনুগ্রহ করে মেয়াদ শেষ হওয়ার তারিখ নির্বাচন করুন।",
   "Light Mode": "লাইট মোড",
-  "Dark Mode": "ডার্ক মোড"
+  "Dark Mode": "ডার্ক মোড",
+  "No Beneficiaries Registered": "কোনো সুবিধাভোগী নিবন্ধিত নেই",
+  "Beneficiary records will appear here once registered.": "নিবন্ধিত হওয়ার পরে সুবিধাভোগীদের রেকর্ড এখানে উপস্থিত হবে।",
+  "Total Beneficiaries": "মোট সুবিধাভোগী",
+  "Active Beneficiaries": "সক্রিয় সুবিধাভোগী"
 }

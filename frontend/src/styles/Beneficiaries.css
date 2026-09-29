@@ -1,115 +1,426 @@
-.beneficiaries-page{
+/* ==========================================================================
+   FoodBridge AI — NGO Beneficiaries Page Styles
+   Theme: Light Blue + Pure White SaaS Design System
+   Primary Blue: #2563EB | Dark Blue: #1D4ED8 | Light Blue: #EFF6FF
+   Background: #F8FAFC | Card: #FFFFFF | Text: #0F172A | Border: #E2E8F0
+========================================================================== */
 
-    margin-left:260px;
-    padding:25px;
-    min-height:100vh;
-    background:linear-gradient(135deg,#eef4ff,#f7f2ff);
+/* ==========================================================================
+   1. PAGE HEADER CARD
+========================================================================== */
 
+.beneficiaries-header-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.beneficiaries-header{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-bottom:25px;
-
+.beneficiaries-header-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2563EB;
 }
 
-.beneficiaries-title{
-
-    font-size:34px;
-    font-weight:700;
-    color:#3b5bdb;
-
+.beneficiaries-header-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
 }
 
-.beneficiaries-subtitle{
-
-    color:#6c757d;
-    margin-top:6px;
-
+.beneficiaries-avatar-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 14px;
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.beneficiaries-badge{
-
-    background:linear-gradient(135deg,#3b82f6,#7c3aed);
-    color:white;
-    padding:10px 22px;
-    border-radius:30px;
-    font-weight:700;
-
+.beneficiaries-avatar-icon {
+    line-height: 1;
 }
 
-.beneficiary-table-card{
-
-    background:white;
-    border-radius:22px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    overflow:hidden;
-
+.beneficiaries-header-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.beneficiary-table-card .card-header{
-
-    background:linear-gradient(135deg,#3b82f6,#7c3aed);
-    color:white;
-    border:none;
-    font-size:18px;
-    font-weight:700;
-    padding:18px 24px;
-
+.beneficiaries-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
 }
 
-.beneficiary-table{
-
-    margin-bottom:0;
-
+.beneficiaries-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
 
-.beneficiary-table thead{
-
-    background:#eef4ff;
-
+.beneficiaries-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-.beneficiary-table th{
-
-    border:none;
-    padding:16px;
-    color:#3b5bdb;
-    font-weight:700;
-
+.beneficiaries-subtitle {
+    font-size: 0.92rem;
+    color: #64748B;
 }
 
-.beneficiary-table td{
+/* ==========================================================================
+   2. KPI STAT CARDS (Rendered if real data exists)
+========================================================================== */
 
-    padding:16px;
-    vertical-align:middle;
-
+.beneficiaries-kpi-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 135px;
+    transition: all 0.2s ease;
 }
 
-.beneficiary-table tbody tr{
-
-    transition:.25s;
-
+.beneficiaries-kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.08);
 }
 
-.beneficiary-table tbody tr:hover{
-
-    background:#f8fbff;
-
+.beneficiaries-kpi-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-@media(max-width:992px){
-
-.beneficiaries-page{
-
-margin-left:0;
-padding:90px 16px 20px;
-
+.beneficiaries-kpi-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
+.beneficiaries-kpi-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.beneficiaries-kpi-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.beneficiaries-kpi-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #64748B;
+}
+
+/* KPI Accent Variants */
+.beneficiaries-kpi-blue {
+    border-top: 3px solid #2563EB;
+}
+.beneficiaries-kpi-blue .beneficiaries-kpi-icon-wrap {
+    background: #EFF6FF;
+    color: #2563EB;
+}
+
+.beneficiaries-kpi-green {
+    border-top: 3px solid #16A34A;
+}
+.beneficiaries-kpi-green .beneficiaries-kpi-icon-wrap {
+    background: #F0FDF4;
+    color: #16A34A;
+}
+
+.beneficiaries-kpi-orange {
+    border-top: 3px solid #F59E0B;
+}
+.beneficiaries-kpi-orange .beneficiaries-kpi-icon-wrap {
+    background: #FFFBEB;
+    color: #D97706;
+}
+
+/* ==========================================================================
+   3. TABLE CARD
+========================================================================== */
+
+.beneficiaries-table-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+}
+
+.beneficiaries-card-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.beneficiaries-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.beneficiaries-count-badge {
+    background: #EFF6FF;
+    color: #1D4ED8;
+    border: 1px solid #DBEAFE;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 9999px;
+}
+
+/* ==========================================================================
+   4. TABLE STYLING
+========================================================================== */
+
+.beneficiaries-table {
+    margin-bottom: 0;
+}
+
+.beneficiaries-table th {
+    background: #F8FAFC !important;
+    color: #475569 !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    padding: 14px 20px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-top: none !important;
+}
+
+.beneficiaries-table td {
+    padding: 16px 20px !important;
+    vertical-align: middle !important;
+    color: #0F172A;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #F1F5F9 !important;
+    border-top: none !important;
+}
+
+.beneficiaries-table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.beneficiaries-table tbody tr:hover {
+    background-color: #F8FAFC;
+}
+
+.beneficiaries-org-title {
+    font-size: 0.95rem;
+}
+
+.beneficiaries-category-badge {
+    background: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #DBEAFE;
+    font-weight: 600;
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.beneficiaries-status-badge {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.status-active {
+    background-color: #F0FDF4;
+    color: #16A34A;
+    border: 1px solid #BBF7D0;
+}
+
+.status-pending {
+    background-color: #FEF3C7;
+    color: #D97706;
+    border: 1px solid #FDE68A;
+}
+
+/* ==========================================================================
+   5. POLISHED EMPTY STATE
+========================================================================== */
+
+.beneficiaries-empty-state {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficiaries-empty-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #EFF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.beneficiaries-empty-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 6px;
+}
+
+.beneficiaries-empty-sub {
+    font-size: 0.9rem;
+    color: #64748B;
+    max-width: 420px;
+}
+
+/* ==========================================================================
+   6. DARK MODE ([data-theme="dark"])
+========================================================================== */
+
+[data-theme="dark"] .beneficiaries-page {
+    background-color: #0B132B !important;
+}
+
+[data-theme="dark"] .beneficiaries-header-card,
+[data-theme="dark"] .beneficiaries-kpi-card,
+[data-theme="dark"] .beneficiaries-table-card {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .beneficiaries-avatar-box {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-title,
+[data-theme="dark"] .beneficiaries-kpi-value,
+[data-theme="dark"] .beneficiaries-card-title,
+[data-theme="dark"] .beneficiaries-empty-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .beneficiaries-subtitle,
+[data-theme="dark"] .beneficiaries-kpi-label,
+[data-theme="dark"] .beneficiaries-kpi-bottom,
+[data-theme="dark"] .beneficiaries-empty-sub {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .beneficiaries-status-pill {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .beneficiaries-pulse-dot {
+    background-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .beneficiaries-card-header {
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-count-badge {
+    background-color: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-table th {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-table td {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-table tbody tr:hover td {
+    background-color: #26364A !important;
+}
+
+[data-theme="dark"] .beneficiaries-category-badge {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .beneficiaries-empty-icon {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .status-active {
+    background-color: #064E3B !important;
+    color: #86EFAC !important;
+    border-color: #047857 !important;
+}
+
+[data-theme="dark"] .status-pending {
+    background-color: #78350F !important;
+    color: #FCD34D !important;
+    border-color: #B45309 !important;
 }
