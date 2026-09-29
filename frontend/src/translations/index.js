@@ -898,7 +898,21 @@ NGO_PROFILE: [
 
     "Operating Hours:",
 
-    "Edit Profile"
+    "Edit Profile",
+
+    "Manage your NGO profile and organization details.",
+
+    "Role",
+
+    "Not Provided",
+
+    "Account Details",
+
+    "Contact Information",
+
+    "Verified NGO",
+
+    "Profile information is managed through your verified FoodBridge AI account."
 
 ],
 

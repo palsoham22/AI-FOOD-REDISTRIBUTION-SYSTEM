@@ -580,5 +580,12 @@
   "Reports will appear here once sufficient donation, pickup, and impact data is available.": "पर्याप्त दान, पिकअप और प्रभाव डेटा उपलब्ध होने पर रिपोर्ट यहां दिखाई देंगी।",
   "Donation & Impact Summaries": "दान और प्रभाव सारांश",
   "Pickup & Delivery Metrics": "पिकअप और डिलीवरी मेट्रिक्स",
-  "Monthly Performance Analytics": "मासिक प्रदर्शन एनालिटिक्स"
+  "Monthly Performance Analytics": "मासिक प्रदर्शन एनालिटिक्स",
+  "Manage your NGO profile and organization details.": "अपनी एनजीओ प्रोफ़ाइल और संगठन के विवरण प्रबंधित करें।",
+  "Role": "भूमिका",
+  "Not Provided": "प्रदान नहीं किया गया",
+  "Account Details": "खाता विवरण",
+  "Contact Information": "संपर्क जानकारी",
+  "Verified NGO": "सत्यापित एनजीओ",
+  "Profile information is managed through your verified FoodBridge AI account.": "प्रोफ़ाइल जानकारी आपके सत्यापित FoodBridge AI खाते के माध्यम से प्रबंधित की जाती है।"
 }

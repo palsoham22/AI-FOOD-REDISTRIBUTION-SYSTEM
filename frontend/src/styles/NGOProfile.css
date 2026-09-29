@@ -1,0 +1,372 @@
+/* ==========================================================================
+   FoodBridge AI — NGO Profile Page Styles
+   Theme: Light Blue + Pure White SaaS Design System
+   Primary Blue: #2563EB | Dark Blue: #1D4ED8 | Light Blue: #EFF6FF
+   Background: #F8FAFC | Card: #FFFFFF | Text: #0F172A | Border: #E2E8F0
+========================================================================== */
+
+/* ==========================================================================
+   1. PAGE HEADER CARD
+========================================================================== */
+
+.profile-header-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-header-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2563EB;
+}
+
+.profile-header-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-avatar-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 14px;
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.profile-avatar-icon {
+    line-height: 1;
+}
+
+.profile-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+}
+
+.profile-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.profile-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.profile-subtitle {
+    font-size: 0.92rem;
+    color: #64748B;
+}
+
+/* ==========================================================================
+   2. IDENTITY CARD (Left Column)
+========================================================================== */
+
+.profile-identity-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-card-top-accent {
+    height: 6px;
+    background: linear-gradient(90deg, #2563EB, #3B82F6);
+    width: 100%;
+}
+
+.profile-identity-body {
+    padding: 32px 24px;
+}
+
+.profile-identity-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #EFF6FF;
+    border: 3px solid #DBEAFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+.profile-org-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.3;
+}
+
+.profile-username-tag {
+    font-size: 0.88rem;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.profile-role-badge {
+    background: #EFF6FF;
+    color: #2563EB;
+    border: 1px solid #BFDBFE;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.profile-meta-list {
+    border-top: 1px solid #F1F5F9;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-meta-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.88rem;
+}
+
+.profile-meta-label {
+    color: #64748B;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   3. SECTION CARDS (Right Column)
+========================================================================== */
+
+.profile-section-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+}
+
+.profile-section-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #E2E8F0;
+    background: #F8FAFC;
+}
+
+.profile-section-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #EFF6FF;
+    color: #2563EB;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.profile-section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.profile-section-body {
+    padding: 24px;
+}
+
+.profile-field-box {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    transition: all 0.2s ease;
+}
+
+.profile-field-box:hover {
+    border-color: #CBD5E1;
+}
+
+.profile-field-label {
+    display: block;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+}
+
+.profile-field-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+/* ==========================================================================
+   4. NOTICE CARD
+========================================================================== */
+
+.profile-notice-card {
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 14px;
+    padding: 20px 24px;
+}
+
+.profile-notice-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 10px;
+    background: #DBEAFE;
+    color: #1D4ED8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.profile-notice-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1E3A8A;
+}
+
+.profile-notice-desc {
+    font-size: 0.88rem;
+    color: #1E40AF;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   5. DARK MODE ([data-theme="dark"])
+========================================================================== */
+
+[data-theme="dark"] .profile-page {
+    background-color: #0B132B !important;
+}
+
+[data-theme="dark"] .profile-header-card,
+[data-theme="dark"] .profile-identity-card,
+[data-theme="dark"] .profile-section-card {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .profile-avatar-box,
+[data-theme="dark"] .profile-identity-avatar {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .profile-section-header {
+    background-color: #1A2436 !important;
+    border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .profile-section-icon {
+    background-color: #243247 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .profile-title,
+[data-theme="dark"] .profile-org-name,
+[data-theme="dark"] .profile-section-title,
+[data-theme="dark"] .profile-field-value {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .profile-subtitle,
+[data-theme="dark"] .profile-username-tag,
+[data-theme="dark"] .profile-meta-label,
+[data-theme="dark"] .profile-field-label {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .profile-status-pill,
+[data-theme="dark"] .profile-role-badge {
+    background-color: #1E3A5F !important;
+    border-color: #334155 !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .profile-pulse-dot {
+    background-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .profile-field-box {
+    background-color: #243247 !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .profile-field-box:hover {
+    border-color: #475569 !important;
+}
+
+[data-theme="dark"] .profile-meta-list {
+    border-top-color: #334155 !important;
+}
+
+[data-theme="dark"] .profile-notice-card {
+    background-color: #172554 !important;
+    border-color: #1E3A8A !important;
+}
+
+[data-theme="dark"] .profile-notice-icon {
+    background-color: #1E3A8A !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .profile-notice-title {
+    color: #DBEAFE !important;
+}
+
+[data-theme="dark"] .profile-notice-desc {
+    color: #BFDBFE !important;
+}
