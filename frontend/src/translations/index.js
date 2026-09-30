@@ -979,49 +979,62 @@ DELIVERY_SIDEBAR: [
 ],
 
 DELIVERY_DASHBOARD: [
-
     "Delivery Partner Dashboard",
-
     "Welcome Delivery Partner",
-
     "Delivery Partner",
-
+    "Active Driver",
+    "Name",
     "Name:",
-
+    "Vehicle Number",
     "Vehicle Number:",
-
+    "Vehicle Type",
+    "Phone",
     "Phone:",
-
+    "Status",
     "Status:",
-
     "AVAILABLE",
-
     "BUSY",
-
     "OFFLINE",
-
     "Assigned",
-
+    "Total Assigned",
+    "Pending Pickups",
     "Out For Pickup",
-
+    "In Transit",
     "Completed",
-
-    "Distance Covered",
-
+    "Completed Deliveries",
     "Notifications",
-
     "Live Driver Location",
-
     "You have new pickup assignments.",
-
     "You are currently delivering food.",
-
     "Great job! Deliveries completed successfully.",
-
     "No pending pickups. Waiting for next assignment.",
-
-    "Km"
-
+    "Active Pickup Assignments",
+    "No active pickups assigned",
+    "When new food donations are assigned to your vehicle, they will appear here in real time.",
+    "View All Pickups",
+    "Quick Actions",
+    "Start Navigation",
+    "Vehicle & Profile",
+    "View Completed",
+    "Item Name",
+    "Category",
+    "Quantity",
+    "Pickup Schedule",
+    "Verification",
+    "Action",
+    "Pickup OTP Verified",
+    "Delivery OTP Verified",
+    "Pending Verification",
+    "Navigate",
+    "View Details",
+    "Live Location",
+    "Coordinates",
+    "System Ready",
+    "Active Assignments",
+    "View History",
+    "Units",
+    "Not Specified",
+    "Standard Vehicle"
 ],
 
 ASSIGNED_PICKUPS: [
