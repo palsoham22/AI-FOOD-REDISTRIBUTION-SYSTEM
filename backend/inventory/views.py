@@ -500,7 +500,8 @@ class OutForPickupListView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-
+        if hasattr(self.request.user, "role") and self.request.user.role == "DELIVERY":
+            return Inventory.objects.filter(assigned_driver=self.request.user, status="Out For Pickup")
         return Inventory.objects.filter(status="Out For Pickup")
     
 class MarkDeliveredView(APIView):

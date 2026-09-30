@@ -1086,37 +1086,42 @@ ASSIGNED_PICKUPS: [
 ],
 
 DELIVERY_NAVIGATION: [
-
     "Navigation",
-
     "Active Delivery",
-
     "Product",
-
     "Quantity",
-
     "Volunteer",
-
     "Vehicle",
-
     "Status",
-
     "Action",
-
     "No Active Deliveries",
-
     "Navigate",
-
     "Delivered",
-
     "Out For Pickup",
-
     "Completed",
-
     "Delivery Completed Successfully 🎉",
-
-    "Failed"
-
+    "Failed",
+    "Navigate active deliveries and complete them successfully.",
+    "Live Navigation & Route Map",
+    "Live GPS Tracking",
+    "GPS Active",
+    "GPS Unavailable",
+    "Open Navigation",
+    "Destination",
+    "Donor & Address",
+    "Contact Phone",
+    "Location data unavailable",
+    "Pickup locations will appear here when location information is available.",
+    "Active Deliveries",
+    "Out For Delivery",
+    "Completed Deliveries",
+    "View Assigned Pickups",
+    "Dashboard",
+    "Units",
+    "Mark Delivered",
+    "Active Deliveries en route will appear here with live navigation.",
+    "Live Driver Location",
+    "Address specified upon arrival"
 ],
 
 COMPLETED_DELIVERIES: [

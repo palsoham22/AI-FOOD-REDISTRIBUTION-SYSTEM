@@ -635,5 +635,20 @@
   "Please enter the 6-digit OTP provided by the recipient NGO.": "Please enter the 6-digit OTP provided by the recipient NGO.",
   "Invalid Pickup OTP": "Invalid Pickup OTP",
   "Invalid Delivery OTP": "Invalid Delivery OTP",
-  "Pickup OTP must be verified before Delivery OTP.": "Pickup OTP must be verified before Delivery OTP."
+  "Pickup OTP must be verified before Delivery OTP.": "Pickup OTP must be verified before Delivery OTP.",
+  "Navigate active deliveries and complete them successfully.": "Navigate active deliveries and complete them successfully.",
+  "Live Navigation & Route Map": "Live Navigation & Route Map",
+  "Live GPS Tracking": "Live GPS Tracking",
+  "GPS Active": "GPS Active",
+  "GPS Unavailable": "GPS Unavailable",
+  "Open Navigation": "Open Navigation",
+  "Destination": "Destination",
+  "Donor & Address": "Donor & Address",
+  "Contact Phone": "Contact Phone",
+  "Location data unavailable": "Location data unavailable",
+  "Pickup locations will appear here when location information is available.": "Pickup locations will appear here when location information is available.",
+  "View Assigned Pickups": "View Assigned Pickups",
+  "Mark Delivered": "Mark Delivered",
+  "Active Deliveries en route will appear here with live navigation.": "Active deliveries en route will appear here with live navigation.",
+  "Address specified upon arrival": "Address specified upon arrival"
 }
