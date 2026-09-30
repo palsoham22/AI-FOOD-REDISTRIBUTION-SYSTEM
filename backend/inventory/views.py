@@ -641,12 +641,20 @@ class MyAssignedPickupsView(APIView):
         data = []
 
         for pickup in pickups:
+            donor_name = ""
+            if pickup.owner:
+                donor_name = pickup.owner.business_name or pickup.owner.owner_name or pickup.owner.username
 
             data.append({
                 "id": pickup.id,
                 "product_name": pickup.product_name,
                 "category": pickup.category,
                 "quantity": pickup.quantity,
+                "unit": pickup.unit or "Units",
+                "pickup_address": pickup.pickup_address or "",
+                "contact_number": pickup.contact_number or "",
+                "donor_name": donor_name,
+                "volunteer_name": pickup.volunteer_name or "",
                 "pickup_date": pickup.pickup_date,
                 "pickup_time": pickup.pickup_time,
                 "status": pickup.status,

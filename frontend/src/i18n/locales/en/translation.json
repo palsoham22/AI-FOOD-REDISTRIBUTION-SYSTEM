@@ -618,5 +618,22 @@
   "View History": "View History",
   "Units": "Units",
   "Not Specified": "Not Specified",
-  "Standard Vehicle": "Standard Vehicle"
+  "Standard Vehicle": "Standard Vehicle",
+  "Assigned pickup requests will appear here when they are available.": "Assigned pickup requests will appear here when they are available.",
+  "Manage all assigned pickups and complete OTP verification.": "Manage all assigned pickups and complete OTP verification.",
+  "Filter by Status": "Filter by Status",
+  "Search pickups...": "Search pickups...",
+  "Pending Pickup": "Pending Pickup",
+  "Pickup OTP Pending": "Pickup OTP Pending",
+  "Delivery OTP Pending": "Delivery OTP Pending",
+  "Clear Filters": "Clear Filters",
+  "Retry": "Retry",
+  "Location & Contact": "Location & Contact",
+  "Verification Status": "Verification Status",
+  "Active Pickups": "Active Pickups",
+  "Please enter the 6-digit OTP provided by the donor.": "Please enter the 6-digit OTP provided by the donor.",
+  "Please enter the 6-digit OTP provided by the recipient NGO.": "Please enter the 6-digit OTP provided by the recipient NGO.",
+  "Invalid Pickup OTP": "Invalid Pickup OTP",
+  "Invalid Delivery OTP": "Invalid Delivery OTP",
+  "Pickup OTP must be verified before Delivery OTP.": "Pickup OTP must be verified before Delivery OTP."
 }

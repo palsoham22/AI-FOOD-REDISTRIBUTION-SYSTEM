@@ -1038,57 +1038,51 @@ DELIVERY_DASHBOARD: [
 ],
 
 ASSIGNED_PICKUPS: [
-
     "Assigned Pickups",
-
     "Assigned",
-
     "Product",
-
     "Quantity",
-
     "Pickup Date",
-
     "Pickup Time",
-
     "Volunteer",
-
     "Vehicle",
-
     "Status",
-
     "Action",
-
     "No Assigned Pickups",
-
     "Scheduled",
-
     "Out For Pickup",
-
     "Delivered",
-
     "Completed",
-
     "Start Pickup",
-
     "Verify Pickup OTP",
-
     "Verify Delivery OTP",
-
     "Enter Pickup OTP",
-
     "Enter Delivery OTP",
-
     "Pickup Started Successfully 🚚",
-
     "Failed to Start Pickup",
-
     "Pickup OTP Verified",
-
     "Delivery Completed Successfully",
-
-    "Verification Failed"
-
+    "Verification Failed",
+    "Assigned pickup requests will appear here when they are available.",
+    "Manage all assigned pickups and complete OTP verification.",
+    "Filter by Status",
+    "Search pickups...",
+    "All",
+    "Donor",
+    "Pickup Address",
+    "Navigate",
+    "Pending Pickup",
+    "Pickup OTP Pending",
+    "Delivery OTP Pending",
+    "Clear Filters",
+    "Retry",
+    "Dashboard",
+    "Units",
+    "Location & Contact",
+    "Verification Status",
+    "Total Assigned",
+    "Active Pickups",
+    "Completed Deliveries"
 ],
 
 DELIVERY_NAVIGATION: [

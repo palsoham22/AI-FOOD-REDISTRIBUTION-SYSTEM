@@ -618,5 +618,22 @@
   "View History": "ചരിത്രം കാണുക",
   "Units": "യൂണിറ്റുകൾ",
   "Not Specified": "വ്യക്തമാക്കിയിട്ടില്ല",
-  "Standard Vehicle": "സാധാരണ വാഹനം"
+  "Standard Vehicle": "സാധാരണ വാഹനം",
+  "Assigned pickup requests will appear here when they are available.": "അനുവദിച്ച പിക്കപ്പ് അഭ്യർത്ഥനകൾ ലഭ്യമാകുമ്പോൾ ഇവിടെ കാണപ്പെടും.",
+  "Manage all assigned pickups and complete OTP verification.": "എല്ലാ അനുവദിച്ച പിക്കപ്പുകളും കൈകാര്യം ചെയ്യുകയും ഒടിപി സ്ഥിരീകരണം പൂർത്തിയാക്കുകയും ചെയ്യുക.",
+  "Filter by Status": "നില അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക",
+  "Search pickups...": "പിക്കപ്പുകൾ തിരയുക...",
+  "Pending Pickup": "തീർപ്പുകൽപ്പിക്കാത്ത പിക്കപ്പ്",
+  "Pickup OTP Pending": "പിക്കപ്പ് ഒടിപി ബാക്കി",
+  "Delivery OTP Pending": "ഡെലിവറി ഒടിപി ബാക്കി",
+  "Clear Filters": "ഫിൽട്ടറുകൾ നീക്കുക",
+  "Retry": "വീണ്ടും ശ്രമിക്കുക",
+  "Location & Contact": "ലൊക്കേഷനും ബന്ധപ്പെടാനുള്ള വിവരങ്ങളും",
+  "Verification Status": "സ്ഥിരീകരണ നില",
+  "Active Pickups": "സജീവ പിക്കപ്പുകൾ",
+  "Please enter the 6-digit OTP provided by the donor.": "ദാതാവ് നൽകിയ 6 അക്ക ഒടിപി നൽകുക.",
+  "Please enter the 6-digit OTP provided by the recipient NGO.": "സ്വീകർത്താവ് എൻജിഒ നൽകിയ 6 അക്ക ഒടിപി നൽകുക.",
+  "Invalid Pickup OTP": "അസാധുവായ പിക്കപ്പ് ഒടിപി",
+  "Invalid Delivery OTP": "അസാധുവായ ഡെലിവറി ഒടിപി",
+  "Pickup OTP must be verified before Delivery OTP.": "ഡെലിവറി ഒടിപിക്ക് മുമ്പ് പിക്കപ്പ് ഒടിപി സ്ഥിരീകരിക്കണം."
 }
