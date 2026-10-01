@@ -686,5 +686,20 @@
   "Bike": "Bike",
   "Auto": "Auto",
   "Refrigerated Van": "Refrigerated Van",
-  "Mini Van": "Mini Van"
+  "Mini Van": "Mini Van",
+  "Manage your delivery preferences, appearance, language, and security settings.": "Manage your delivery preferences, appearance, language, and security settings.",
+  "SaaS Pure White": "SaaS Pure White",
+  "High-Contrast Slate": "High-Contrast Slate",
+  "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.": "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.",
+  "Security": "Security",
+  "Update your account password to maintain security.": "Update your account password to maintain security.",
+  "Confirm New Password": "Confirm New Password",
+  "Updating...": "Updating...",
+  "Password changed successfully": "Password changed successfully",
+  "Passwords do not match.": "Passwords do not match.",
+  "Password must be at least 6 characters long.": "Password must be at least 6 characters long.",
+  "Current password is required.": "Current password is required.",
+  "Account & Session": "Account & Session",
+  "Signed in as": "Signed in as",
+  "Log Out": "Log Out"
 }

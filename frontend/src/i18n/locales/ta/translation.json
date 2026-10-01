@@ -686,5 +686,20 @@
   "Bike": "பைக்",
   "Auto": "ஆட்டோ",
   "Refrigerated Van": "குளிரூட்டப்பட்ட வேன்",
-  "Mini Van": "மினி வேன்"
+  "Mini Van": "மினி வேன்",
+  "Manage your delivery preferences, appearance, language, and security settings.": "உங்கள் டெலிவரி விருப்பத்தேர்வுகள், தோற்றம், மொழி மற்றும் பாதுகாப்பு அமைப்புகளை நிர்வகிக்கவும்.",
+  "SaaS Pure White": "SaaS பியூர் வெள்ளை",
+  "High-Contrast Slate": "உயர் மாறுபட்ட ஸ்லேட்",
+  "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.": "ஒதுக்கப்பட்ட பிக்கப்புகள், வழிசெலுத்தல் புதுப்பிப்புகள் மற்றும் டெலிவரி உறுதிப்படுத்தல்கள் குறித்த விழிப்பூட்டல்களைப் பெறுங்கள்.",
+  "Security": "பாதுகாப்பு",
+  "Update your account password to maintain security.": "பாதுகாப்பைப் பராமரிக்க உங்கள் கணக்கு கடவுச்சொல்லைப் புதுப்பிக்கவும்.",
+  "Confirm New Password": "புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+  "Updating...": "புதுப்பிக்கப்படுகிறது...",
+  "Password changed successfully": "கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது",
+  "Passwords do not match.": "கடவுச்சொற்கள் பொருந்தவில்லை.",
+  "Password must be at least 6 characters long.": "கடவுச்சொல் குறைந்தபட்சம் 6 எழுத்துகள் நீளமாக இருக்க வேண்டும்.",
+  "Current password is required.": "தற்போதைய கடவுச்சொல் தேவை.",
+  "Account & Session": "கணக்கு மற்றும் அமர்வு",
+  "Signed in as": "உள்நுழைந்துள்ள கணக்கு",
+  "Log Out": "வெளியேறு"
 }

@@ -686,5 +686,20 @@
   "Bike": "ബൈക്ക്",
   "Auto": "ഓട്ടോ",
   "Refrigerated Van": "റഫ്രിജറേറ്റഡ് വാൻ",
-  "Mini Van": "മിനി വാൻ"
+  "Mini Van": "മിനി വാൻ",
+  "Manage your delivery preferences, appearance, language, and security settings.": "നിങ്ങളുടെ ഡെലിവറി മുൻഗണനകൾ, രൂപം, ഭാഷ, സുരക്ഷാ ക്രമീകരണങ്ങൾ എന്നിവ കൈകാര്യം ചെയ്യുക.",
+  "SaaS Pure White": "SaaS പ്യുവർ വൈറ്റ്",
+  "High-Contrast Slate": "ഹൈ-കോൺട്രാസ്റ്റ് സ്ലേറ്റ്",
+  "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.": "നിയുക്ത പിക്കപ്പുകൾ, നാവിഗേഷൻ അപ്‌ഡേറ്റുകൾ, ഡെലിവറി സ്ഥിരീകരണങ്ങൾ എന്നിവ സംബന്ധിച്ച അലേർട്ടുകൾ സ്വീകരിക്കുക.",
+  "Security": "സുരക്ഷ",
+  "Update your account password to maintain security.": "സുരക്ഷ നിലനിർത്താൻ നിങ്ങളുടെ അക്കൗണ്ട് പാസ്‌വേഡ് അപ്‌ഡേറ്റ് ചെയ്യുക.",
+  "Confirm New Password": "പുതിയ പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക",
+  "Updating...": "അപ്‌ഡേറ്റ് ചെയ്യുന്നു...",
+  "Password changed successfully": "പാസ്‌വേഡ് വിജയകരമായി മാറ്റി",
+  "Passwords do not match.": "പാസ്‌വേഡുകൾ പൊരുത്തപ്പെടുന്നില്ല.",
+  "Password must be at least 6 characters long.": "പാസ്‌വേഡിന് കുറഞ്ഞത് 6 പ്രതീകങ്ങൾ ദൈർഘ്യമുണ്ടായിരിക്കണം.",
+  "Current password is required.": "നിലവിലെ പാസ്‌വേഡ് ആവശ്യമാണ്.",
+  "Account & Session": "അക്കൗണ്ടും സെഷനും",
+  "Signed in as": "സൈൻ ഇൻ ചെയ്തത്",
+  "Log Out": "ലോഗ് ഔട്ട്"
 }

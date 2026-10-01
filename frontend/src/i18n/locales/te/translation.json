@@ -686,5 +686,20 @@
   "Bike": "బైక్",
   "Auto": "ఆటో",
   "Refrigerated Van": "రిఫ్రిజిరేటెడ్ వ్యాన్",
-  "Mini Van": "మినీ వ్యాన్"
+  "Mini Van": "మినీ వ్యాన్",
+  "Manage your delivery preferences, appearance, language, and security settings.": "మీ డెలివరీ ప్రాధాన్యతలు, రూపురేఖలు, భాష మరియు భద్రతా సెట్టింగ్‌లను నిర్వహించండి.",
+  "SaaS Pure White": "సాస్ స్వచ్ఛమైన తెలుపు",
+  "High-Contrast Slate": "హై-కాంట్రాస్ట్ స్లేట్",
+  "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.": "కేటాయించిన పికప్‌లు, నావిగేషన్ అప్‌డేట్‌లు మరియు డెలివరీ నిర్ధారణలకు సంబంధించిన హెచ్చరికలను స్వీకరించండి.",
+  "Security": "భద్రత",
+  "Update your account password to maintain security.": "భద్రతను కొనసాగించడానికి మీ ఖాతా పాస్‌వర్డ్‌ను అప్‌డేట్ చేయండి.",
+  "Confirm New Password": "కొత్త పాస్‌వర్డ్‌ను నిర్ధారించండి",
+  "Updating...": "అప్‌డేట్ అవుతోంది...",
+  "Password changed successfully": "పాస్‌వర్డ్ విజయవంతంగా మార్చబడింది",
+  "Passwords do not match.": "పాస్‌వర్డ్‌లు సరిపోలడం లేదు.",
+  "Password must be at least 6 characters long.": "పాస్‌వర్డ్ కనీసం 6 అక్షరాలు ఉండాలి.",
+  "Current password is required.": "ప్రస్తుత పాస్‌వర్డ్ అవసరం.",
+  "Account & Session": "ఖాతా & సెషన్",
+  "Signed in as": "సైన్ ఇన్ చేసినది",
+  "Log Out": "లాగ్ అవుట్"
 }

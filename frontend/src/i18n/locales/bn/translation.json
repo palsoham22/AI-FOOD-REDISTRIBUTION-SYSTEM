@@ -686,5 +686,20 @@
   "Bike": "বাইক",
   "Auto": "অটো",
   "Refrigerated Van": "রেফ্রিজারেটেড ভ্যান",
-  "Mini Van": "মিনি ভ্যান"
+  "Mini Van": "মিনি ভ্যান",
+  "Manage your delivery preferences, appearance, language, and security settings.": "আপনার ডেলিভারি পছন্দ, উপস্থিতি, ভাষা এবং নিরাপত্তা সেটিংস পরিচালনা করুন।",
+  "SaaS Pure White": "স্যাস পিওর হোয়াইট",
+  "High-Contrast Slate": "হাই-কন্ট্রাস্ট স্লেট",
+  "Receive alerts regarding assigned pickups, navigation updates, and delivery confirmations.": "বরাদ্দকৃত পিকআপ, নেভিগেশন আপডেট এবং ডেলিভারি নিশ্চিতকরণ সম্পর্কিত সতর্কতা গ্রহণ করুন।",
+  "Security": "নিরাপত্তা",
+  "Update your account password to maintain security.": "নিরাপত্তা বজায় রাখতে আপনার অ্যাকাউন্টের পাসওয়ার্ড আপডেট করুন।",
+  "Confirm New Password": "নতুন পাসওয়ার্ড নিশ্চিত করুন",
+  "Updating...": "আপডেট হচ্ছে...",
+  "Password changed successfully": "পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে",
+  "Passwords do not match.": "পাসওয়ার্ড মিলছে না।",
+  "Password must be at least 6 characters long.": "পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।",
+  "Current password is required.": "বর্তমান পাসওয়ার্ড প্রয়োজন।",
+  "Account & Session": "অ্যাকাউন্ট ও সেশন",
+  "Signed in as": "হিসাবে সাইন ইন করেছেন",
+  "Log Out": "লগ আউট"
 }
