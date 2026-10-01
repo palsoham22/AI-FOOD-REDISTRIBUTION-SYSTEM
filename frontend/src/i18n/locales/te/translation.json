@@ -650,5 +650,22 @@
   "View Assigned Pickups": "కేటాయించిన పికప్‌లను చూడండి",
   "Mark Delivered": "డెలివరీ చేసినట్లు గుర్తించండి",
   "Active Deliveries en route will appear here with live navigation.": "మార్గంలో ఉన్న యాక్టివ్ డెలివరీలు లైవ్ నావిగేషన్‌తో ఇక్కడ కనిపిస్తాయి.",
-  "Address specified upon arrival": "రాగానే చిరునామా పేర్కొనబడుతుంది"
+  "Address specified upon arrival": "రాగానే చిరునామా పేర్కొనబడుతుంది",
+  "Review all successfully completed food deliveries.": "విజయవంతంగా పూర్తయిన అన్ని ఆహార డెలివరీలను సమీక్షించండి.",
+  "Total Completed": "మొత్తం పూర్తయినవి",
+  "OTP Verified": "OTP ధృవీకరించబడింది",
+  "Categories Served": "సేవ అందించిన వర్గాలు",
+  "Unique Donors": "ప్రత్యేక దాతలు",
+  "Search deliveries...": "డెలివరీలను శోధించండి...",
+  "All Categories": "అన్ని వర్గాలు",
+  "Filter by Category": "వర్గం వారీగా ఫిల్టర్ చేయండి",
+  "Reset Filters": "ఫిల్టర్లను రీసెట్ చేయండి",
+  "Refresh": "రిఫ్రెష్ చేయండి",
+  "Date & Time": "తేదీ మరియు సమయం",
+  "Verified": "ధృవీకరించబడింది",
+  "Delivery Details": "డెలివరీ వివరాలు",
+  "Close": "మూసివేయి",
+  "No Completed Deliveries Yet": "ఇంకా పూర్తయిన డెలివరీలు లేవు",
+  "Deliveries will appear here once pickup and delivery OTPs are verified.": "పికప్ మరియు డెలివరీ OTPలు ధృవీకరించబడిన తర్వాత డెలివరీలు ఇక్కడ కనిపిస్తాయి.",
+  "No Deliveries Found": "డెలివరీలు ఏవీ కనుగొనబడలేదు"
 }

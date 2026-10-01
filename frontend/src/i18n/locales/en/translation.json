@@ -650,5 +650,22 @@
   "View Assigned Pickups": "View Assigned Pickups",
   "Mark Delivered": "Mark Delivered",
   "Active Deliveries en route will appear here with live navigation.": "Active deliveries en route will appear here with live navigation.",
-  "Address specified upon arrival": "Address specified upon arrival"
+  "Address specified upon arrival": "Address specified upon arrival",
+  "Review all successfully completed food deliveries.": "Review all successfully completed food deliveries.",
+  "Total Completed": "Total Completed",
+  "OTP Verified": "OTP Verified",
+  "Categories Served": "Categories Served",
+  "Unique Donors": "Unique Donors",
+  "Search deliveries...": "Search deliveries...",
+  "All Categories": "All Categories",
+  "Filter by Category": "Filter by Category",
+  "Reset Filters": "Reset Filters",
+  "Refresh": "Refresh",
+  "Date & Time": "Date & Time",
+  "Verified": "Verified",
+  "Delivery Details": "Delivery Details",
+  "Close": "Close",
+  "No Completed Deliveries Yet": "No Completed Deliveries Yet",
+  "Deliveries will appear here once pickup and delivery OTPs are verified.": "Deliveries will appear here once pickup and delivery OTPs are verified.",
+  "No Deliveries Found": "No Deliveries Found"
 }

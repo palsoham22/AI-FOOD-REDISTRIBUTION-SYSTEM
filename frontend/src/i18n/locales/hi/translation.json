@@ -650,5 +650,22 @@
   "View Assigned Pickups": "आवंटित पिकअप देखें",
   "Mark Delivered": "वितरित चिह्नित करें",
   "Active Deliveries en route will appear here with live navigation.": "मार्ग में सक्रिय वितरण लाइव नेविगेशन के साथ यहां दिखाई देंगे।",
-  "Address specified upon arrival": "आगमन पर पता निर्दिष्ट"
+  "Address specified upon arrival": "आगमन पर पता निर्दिष्ट",
+  "Review all successfully completed food deliveries.": "सभी सफलतापूर्वक पूरी की गई भोजन डिलीवरी की समीक्षा करें।",
+  "Total Completed": "कुल पूर्ण",
+  "OTP Verified": "ओटीपी सत्यापित",
+  "Categories Served": "सेवा की गई श्रेणियां",
+  "Unique Donors": "विशिष्ट दाता",
+  "Search deliveries...": "डिलीवरी खोजें...",
+  "All Categories": "सभी श्रेणियां",
+  "Filter by Category": "श्रेणी के अनुसार फ़िल्टर करें",
+  "Reset Filters": "फ़िल्टर रीसेट करें",
+  "Refresh": "रीफ्रेश करें",
+  "Date & Time": "दिनांक और समय",
+  "Verified": "सत्यापित",
+  "Delivery Details": "डिलीवरी विवरण",
+  "Close": "बंद करें",
+  "No Completed Deliveries Yet": "अभी तक कोई पूर्ण डिलीवरी नहीं",
+  "Deliveries will appear here once pickup and delivery OTPs are verified.": "पिकअप और डिलीवरी ओटीपी सत्यापित होने के बाद डिलीवरी यहां दिखाई देंगी।",
+  "No Deliveries Found": "कोई डिलीवरी नहीं मिली"
 }

@@ -650,5 +650,22 @@
   "View Assigned Pickups": "ஒதுக்கப்பட்ட பிக்கப்களைக் காண்க",
   "Mark Delivered": "விநியோகிக்கப்பட்டதாகக் குறிக்கவும்",
   "Active Deliveries en route will appear here with live navigation.": "வழியில் உள்ள செயலில் உள்ள விநியோகங்கள் நேரலை வழிசெலுத்தலுடன் இங்கே காண்பிக்கப்படும்.",
-  "Address specified upon arrival": "வந்தவுடன் முகவரி குறிப்பிடப்படும்"
+  "Address specified upon arrival": "வந்தவுடன் முகவரி குறிப்பிடப்படும்",
+  "Review all successfully completed food deliveries.": "வெற்றிகரமாக முடிக்கப்பட்ட அனைத்து உணவு விநியோகங்களையும் மதிப்பாய்வு செய்யவும்.",
+  "Total Completed": "மொத்தம் முடிந்தது",
+  "OTP Verified": "OTP சரிபார்க்கப்பட்டது",
+  "Categories Served": "வழங்கப்பட்ட பிரிவுகள்",
+  "Unique Donors": "தனித்துவமான நன்கொடையாளர்கள்",
+  "Search deliveries...": "டெலிவரிகளைத் தேடுங்கள்...",
+  "All Categories": "அனைத்து பிரிவுகளும்",
+  "Filter by Category": "பிரிவு வாரியாக வடிகட்டு",
+  "Reset Filters": "வடிகட்டிகளை மீட்டமை",
+  "Refresh": "புதுப்பி",
+  "Date & Time": "தேதி மற்றும் நேரம்",
+  "Verified": "சரிபார்க்கப்பட்டது",
+  "Delivery Details": "டெலிவரி விவரங்கள்",
+  "Close": "மூடு",
+  "No Completed Deliveries Yet": "இதுவரை பூர்த்தி செய்யப்பட்ட டெலிவரிகள் இல்லை",
+  "Deliveries will appear here once pickup and delivery OTPs are verified.": "பிக்கப் மற்றும் டெலிவரி OTP சரிபார்க்கப்பட்டதும் டெலிவரிகள் இங்கே தோன்றும்.",
+  "No Deliveries Found": "டெலிவரிகள் எதுவும் கிடைக்கவில்லை"
 }
