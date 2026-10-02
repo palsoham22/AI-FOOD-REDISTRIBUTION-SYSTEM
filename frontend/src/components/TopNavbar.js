@@ -34,9 +34,14 @@ else if (role === "NGO") {
     businessName = t("NGO");
 }
 
+// If Individual Donor
+else if (role === "INDIVIDUAL") {
+    businessName = t("Individual Donor");
+}
+
 // If Business
 else {
-    businessName = t("FoodBridge");
+    businessName = businessName || t("FoodBridge");
 }
 
     const [count, setCount] = useState(0);
@@ -315,7 +320,8 @@ item.notification_type==="ERROR"
 
 <small>
 
-🏪 {businessName}
+{role === "DELIVERY" ? "🚚 " : role === "NGO" ? "🏛️ " : role === "INDIVIDUAL" ? "🤝 " : "🏪 "}
+{businessName}
 
 </small>
 

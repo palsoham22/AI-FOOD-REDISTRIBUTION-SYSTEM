@@ -1,0 +1,631 @@
+/* ==========================================================================
+   FoodBridge AI — Individual Donor Navigation Sidebar
+   Design System: Consistent Clean Light-Blue + White Professional Theme
+   Sidebar Background: #E2ECFA | Border: #CBD5E1 | Text: #0F172A | Icon: #2563EB
+   Active Background: #2563EB | Active Text/Icon: #FFFFFF
+   Matches Business, NGO & Delivery Global Design Architecture
+   ========================================================================== */
+
+:root {
+    --individual-sidebar-width: 260px;
+    --individual-sidebar-collapsed-width: 80px;
+}
+
+/* ==========================================================================
+   MAIN SIDEBAR CONTAINER
+   ========================================================================== */
+
+.individual-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--individual-sidebar-width);
+    height: 100vh;
+    background: #E2ECFA !important;
+    color: #0F172A !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 4px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.06) !important;
+    border-right: 1px solid #CBD5E1 !important;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1200;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   COLLAPSED STATE (Icon-Only Mode - 80px)
+   ========================================================================== */
+
+.individual-sidebar.collapsed {
+    width: var(--individual-sidebar-collapsed-width) !important;
+}
+
+.individual-sidebar.collapsed .brand-text {
+    display: none !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-header {
+    padding: 16px 8px !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    flex-direction: column !important;
+    background: #E2ECFA !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-menu {
+    padding: 16px 8px !important;
+    align-items: center !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-link {
+    width: 50px !important;
+    height: 46px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    border-left: none !important;
+    transform: none !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-link:hover {
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-link:hover .sidebar-icon {
+    color: #1D4ED8 !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-link.active {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3) !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-link.active .sidebar-icon {
+    color: #FFFFFF !important;
+}
+
+.individual-sidebar.collapsed .sidebar-link-text {
+    display: none !important;
+}
+
+.individual-sidebar.collapsed .individual-sidebar-footer {
+    padding: 14px 8px !important;
+    align-items: center !important;
+    background: #E2ECFA !important;
+}
+
+.individual-sidebar.collapsed .logout-btn {
+    width: 48px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+}
+
+.individual-sidebar.collapsed .logout-btn .sidebar-link-text {
+    display: none !important;
+}
+
+.individual-sidebar.collapsed .user-box {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.individual-sidebar.collapsed .user-details {
+    display: none !important;
+}
+
+/* ==========================================================================
+   HEADER / BRAND
+   ========================================================================== */
+
+.individual-sidebar-header {
+    padding: 18px 16px !important;
+    border-bottom: 1px solid #CBD5E1 !important;
+    background: #E2ECFA !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 72px;
+}
+
+.individual-sidebar .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none !important;
+    color: #0F172A !important;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+    min-width: 0;
+}
+
+.individual-sidebar .brand-logo:hover {
+    color: #0F172A !important;
+}
+
+.individual-sidebar .brand-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-sidebar .brand-text {
+    font-weight: 800;
+    color: #0F172A;
+    white-space: nowrap;
+}
+
+.individual-sidebar .brand-accent {
+    color: #1D4ED8 !important;
+}
+
+/* Collapse / Hamburger Button (Inside Header) */
+.individual-sidebar .sidebar-collapse-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #1D4ED8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.individual-sidebar .sidebar-collapse-btn:hover {
+    background: #2563EB;
+    color: #FFFFFF;
+    border-color: #2563EB;
+}
+
+.individual-sidebar .sidebar-close-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.individual-sidebar .sidebar-close-btn:hover {
+    background: #FEE2E2;
+    color: #DC2626;
+    border-color: #FECACA;
+}
+
+/* ==========================================================================
+   MENU LIST & LINKS
+   ========================================================================== */
+
+.individual-sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 12px !important;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.individual-sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none !important;
+    color: #0F172A !important;
+    padding: 10px 14px !important;
+    border-radius: 10px !important;
+    transition: all 0.15s ease;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-left: 3px solid transparent !important;
+}
+
+.individual-sidebar-link .sidebar-icon {
+    width: 24px;
+    min-width: 24px;
+    text-align: center;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563EB;
+    transition: color 0.15s ease;
+}
+
+.individual-sidebar-link:hover {
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
+    transform: translateX(2px);
+}
+
+.individual-sidebar-link:hover .sidebar-icon {
+    color: #1D4ED8 !important;
+}
+
+.individual-sidebar-link.active {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    border-left: 3px solid #1D4ED8 !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+}
+
+.individual-sidebar-link.active .sidebar-icon {
+    color: #FFFFFF !important;
+}
+
+.individual-sidebar-link .sidebar-link-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+.individual-sidebar-footer {
+    padding: 14px 12px !important;
+    border-top: 1px solid #CBD5E1 !important;
+    background: #E2ECFA !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Logout Button */
+.individual-sidebar .logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 9px 14px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 10px !important;
+    color: #334155 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.individual-sidebar .logout-btn .sidebar-icon {
+    color: #475569;
+}
+
+.individual-sidebar .logout-btn:hover {
+    background: #FEF2F2 !important;
+    color: #DC2626 !important;
+    border-color: #FECACA !important;
+}
+
+.individual-sidebar .logout-btn:hover .sidebar-icon {
+    color: #DC2626 !important;
+}
+
+/* User Profile Box */
+.individual-sidebar .user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 10px !important;
+}
+
+.individual-sidebar .user-avatar {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 8px;
+    background: #2563EB;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-sidebar .user-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.individual-sidebar .user-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0F172A;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.individual-sidebar .user-badge {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1D4ED8;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ==========================================================================
+   MOBILE TOGGLE & BACKDROP OVERLAY
+   ========================================================================== */
+
+.individual-mobile-toggle {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 1300;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #E2ECFA;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    color: #1D4ED8;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.individual-mobile-toggle:hover {
+    background: #DBEAFE;
+    color: #2563EB;
+}
+
+.individual-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 1150;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.individual-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==========================================================================
+   PAGE CONTAINER MARGIN EXPANSION / COLLAPSE
+   Centrally controls all Individual Donor Module pages:
+   - IndividualDashboard (.individual-page)
+   - DonateFood (.donate-page)
+   - MyDonations (.my-donations-page)
+   - IndividualSettings (.individual-settings-page)
+   ========================================================================== */
+
+.individual-page,
+.donate-page,
+.my-donations-page,
+.individual-settings-page {
+    margin-left: var(--individual-sidebar-width);
+    min-height: 100vh;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+body.individual-sidebar-collapsed .individual-page,
+body.individual-sidebar-collapsed .donate-page,
+body.individual-sidebar-collapsed .my-donations-page,
+body.individual-sidebar-collapsed .individual-settings-page {
+    margin-left: var(--individual-sidebar-collapsed-width) !important;
+}
+
+body.individual-sidebar-collapsed .my-donations-page,
+body.individual-sidebar-collapsed .individual-settings-page {
+    width: calc(100% - var(--individual-sidebar-collapsed-width)) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE (Max-width: 992px)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .individual-mobile-toggle {
+        display: flex !important;
+    }
+
+    .individual-sidebar {
+        transform: translateX(-100%);
+        width: 280px !important;
+        background: #E2ECFA !important;
+        border-right: 1px solid #CBD5E1 !important;
+        box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15) !important;
+    }
+
+    .individual-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .individual-page,
+    .donate-page,
+    .my-donations-page,
+    .individual-settings-page {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    body.individual-sidebar-collapsed .individual-page,
+    body.individual-sidebar-collapsed .donate-page,
+    body.individual-sidebar-collapsed .my-donations-page,
+    body.individual-sidebar-collapsed .individual-settings-page {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+/* ==========================================================================
+   DARK THEME SPECIFIC OVERRIDES
+   ========================================================================== */
+
+[data-theme="dark"] .individual-sidebar {
+    background: #111827 !important;
+    border-right: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .individual-sidebar-header {
+    background: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .brand-logo,
+[data-theme="dark"] .individual-sidebar .brand-text {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .individual-sidebar .brand-accent {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .individual-sidebar .sidebar-collapse-btn,
+[data-theme="dark"] .individual-sidebar .sidebar-close-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .individual-sidebar .sidebar-collapse-btn:hover {
+    background: #3B82F6 !important;
+    color: #FFFFFF !important;
+    border-color: #3B82F6 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .sidebar-close-btn:hover {
+    background: #450A0A !important;
+    color: #F87171 !important;
+    border-color: #7F1D1D !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link .sidebar-icon {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link:hover {
+    background: #1E293B !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link:hover .sidebar-icon {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link.active {
+    background: #1E3A5F !important;
+    color: #93C5FD !important;
+    border-left: 3px solid #60A5FA !important;
+    box-shadow: none !important;
+}
+
+[data-theme="dark"] .individual-sidebar-link.active .sidebar-icon {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .individual-sidebar.collapsed .individual-sidebar-link.active {
+    background: #1E3A5F !important;
+    color: #93C5FD !important;
+    box-shadow: 0 0 0 2px #60A5FA inset !important;
+}
+
+[data-theme="dark"] .individual-sidebar.collapsed .individual-sidebar-header,
+[data-theme="dark"] .individual-sidebar.collapsed .individual-sidebar-footer {
+    background: #111827 !important;
+}
+
+[data-theme="dark"] .individual-sidebar-footer {
+    background: #111827 !important;
+    border-top: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .logout-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .logout-btn .sidebar-icon {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .logout-btn:hover {
+    background: #450A0A !important;
+    border-color: #7F1D1D !important;
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .logout-btn:hover .sidebar-icon {
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .user-box {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .individual-sidebar .user-avatar {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .individual-sidebar .user-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .individual-sidebar .user-badge {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .individual-mobile-toggle {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .individual-mobile-toggle:hover {
+    background: #243247 !important;
+    color: #93C5FD !important;
+}
+

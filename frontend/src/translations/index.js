@@ -1417,13 +1417,21 @@ INDIVIDUAL_SIDEBAR: [
 
     "Individual",
 
+    "Individual Donor",
+
     "Dashboard",
 
     "Donate Food",
 
     "My Donations",
 
-    "Settings"
+    "Settings",
+
+    "Expand Sidebar",
+
+    "Collapse Sidebar",
+
+    "Logout"
 
 ],
 INDIVIDUAL_DASHBOARD: [
