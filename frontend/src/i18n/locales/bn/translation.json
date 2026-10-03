@@ -738,5 +738,11 @@
   "Unable to load donations.": "দান লোড করা যায়নি।",
   "Submitted On": "জমা দেওয়া হয়েছে",
   "Actions": "পদক্ষেপ",
-  "Loading donations...": "দান লোড হচ্ছে..."
+  "Loading donations...": "দান লোড হচ্ছে...",
+  "Changing Password...": "পাসওয়ার্ড পরিবর্তন করা হচ্ছে...",
+  "Failed to update password.": "পাসওয়ার্ড আপডেট করতে ব্যর্থ হয়েছে।",
+  "Unable to load profile data.": "প্রোফাইল ডেটা লোড করা যায়নি।",
+  "Profile information could not be loaded.": "প্রোফাইল তথ্য লোড করা যায়নি।",
+  "Receive alerts regarding donations, pickups, and status updates.": "দান, পিকআপ এবং স্থিতি আপডেট সম্পর্কিত সতর্কতা গ্রহণ করুন।",
+  "Manage your profile, security, and account preferences.": "আপনার প্রোফাইল, নিরাপত্তা এবং অ্যাকাউন্ট পছন্দগুলি পরিচালনা করুন।"
 }

@@ -1547,40 +1547,45 @@ MY_DONATIONS: [
     "Loading donations..."
 ],
 INDIVIDUAL_SETTINGS: [
-
     "Individual Settings",
-
+    "Settings",
+    "Manage your profile, security, and account preferences.",
     "Profile",
-
-    "Username:",
-
-    "Email:",
-
-    "Role:",
-
-    "Individual Donor",
-
-    "Change Password",
-
-    "Old Password",
-
-    "New Password",
-
-    "Confirm Password",
-
-    "Update Password",
-
     "Account Information",
-
-    "Total Donations:",
-
-    "Logout",
-
+    "Appearance",
+    "Language",
+    "Notifications",
+    "In-App Notifications",
+    "Receive alerts regarding donations, pickups, and status updates.",
+    "Theme",
+    "Light",
+    "Dark",
+    "Enabled",
+    "Disabled",
+    "Username",
+    "Email",
+    "Phone",
+    "Role",
+    "Individual Donor",
+    "Total Donations",
+    "Change Password",
+    "Current Password",
+    "New Password",
+    "Confirm Password",
+    "Confirm New Password",
+    "Update Password",
+    "Changing Password...",
+    "Password changed successfully",
+    "Current password is incorrect",
+    "Current password is required.",
+    "Password must be at least 6 characters long.",
     "Passwords do not match",
-
-    "Password Updated Successfully",
-
-    "Failed to Update Password"
-
+    "Failed to update password.",
+    "Settings Saved Successfully",
+    "Unable to load profile data.",
+    "Profile information could not be loaded.",
+    "Retry",
+    "Logout",
+    "Sign out of your FoodBridge AI account. You can log in again anytime."
 ],
 };

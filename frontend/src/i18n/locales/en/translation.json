@@ -738,5 +738,11 @@
   "Unable to load donations.": "Unable to load donations.",
   "Submitted On": "Submitted On",
   "Actions": "Actions",
-  "Loading donations...": "Loading donations..."
+  "Loading donations...": "Loading donations...",
+  "Changing Password...": "Changing Password...",
+  "Failed to update password.": "Failed to update password.",
+  "Unable to load profile data.": "Unable to load profile data.",
+  "Profile information could not be loaded.": "Profile information could not be loaded.",
+  "Receive alerts regarding donations, pickups, and status updates.": "Receive alerts regarding donations, pickups, and status updates.",
+  "Manage your profile, security, and account preferences.": "Manage your profile, security, and account preferences."
 }

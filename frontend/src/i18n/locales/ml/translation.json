@@ -738,5 +738,11 @@
   "Unable to load donations.": "സംഭാവനകൾ ലോഡുചെയ്യാനായില്ല.",
   "Submitted On": "സമർപ്പിച്ചത്",
   "Actions": "പ്രവർത്തനങ്ങൾ",
-  "Loading donations...": "സംഭാവനകൾ ലോഡുചെയ്യുന്നു..."
+  "Loading donations...": "സംഭാവനകൾ ലോഡുചെയ്യുന്നു...",
+  "Changing Password...": "പാസ്‌വേഡ് മാറ്റുന്നു...",
+  "Failed to update password.": "പാസ്‌വേഡ് അപ്‌ഡേറ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.",
+  "Unable to load profile data.": "പ്രൊഫൈൽ ഡാറ്റ ലോഡുചെയ്യാനായില്ല.",
+  "Profile information could not be loaded.": "പ്രൊഫൈൽ വിവരങ്ങൾ ലോഡുചെയ്യാനായില്ല.",
+  "Receive alerts regarding donations, pickups, and status updates.": "സംഭാവനകൾ, പിക്കപ്പുകൾ, സ്റ്റാറ്റസ് അപ്‌ഡേറ്റുകൾ എന്നിവ സംബന്ധിച്ച അലേർട്ടുകൾ സ്വീകരിക്കുക.",
+  "Manage your profile, security, and account preferences.": "നിങ്ങളുടെ പ്രൊഫൈൽ, സുരക്ഷ, അക്കൗണ്ട് മുൻഗണനകൾ എന്നിവ നിയന്ത്രിക്കുക."
 }

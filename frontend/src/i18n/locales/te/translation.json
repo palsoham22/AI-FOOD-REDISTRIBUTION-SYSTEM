@@ -738,5 +738,11 @@
   "Unable to load donations.": "విరాళాలను లోడ్ చేయడం సాధ్యపడలేదు.",
   "Submitted On": "సమర్పించబడింది",
   "Actions": "చర్యలు",
-  "Loading donations...": "విరాళాలు లోడ్ అవుతున్నాయి..."
+  "Loading donations...": "విరాళాలు లోడ్ అవుతున్నాయి...",
+  "Changing Password...": "పాస్‌వర్డ్ మార్చబడుతోంది...",
+  "Failed to update password.": "పాస్‌వర్డ్ అప్‌డేట్ చేయడంలో విఫలమైంది.",
+  "Unable to load profile data.": "ప్రొఫైల్ డేటాను లోడ్ చేయడం సాధ్యపడలేదు.",
+  "Profile information could not be loaded.": "ప్రొఫైల్ సమాచారాన్ని లోడ్ చేయడం సాధ్యపడలేదు.",
+  "Receive alerts regarding donations, pickups, and status updates.": "విరాళాలు, పికప్‌లు మరియు స్థితి నవీకరణల గురించి హెచ్చరికలను స్వీకరించండి.",
+  "Manage your profile, security, and account preferences.": "మీ ప్రొఫైల్, భద్రత మరియు ఖాతా ప్రాధాన్యతలను నిర్వహించండి."
 }
