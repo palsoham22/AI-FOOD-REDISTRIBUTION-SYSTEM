@@ -727,5 +727,16 @@
   "e.g. 5 or 10": "e.g. 5 or 10",
   "Please enter a valid contact number (at least 7 digits).": "Please enter a valid contact number (at least 7 digits).",
   "Please fix the highlighted errors before submitting.": "Please fix the highlighted errors before submitting.",
-  "Donation submitted and recorded successfully! It is now listed for community pickup.": "Donation submitted and recorded successfully! It is now listed for community pickup."
+  "Donation submitted and recorded successfully! It is now listed for community pickup.": "Donation submitted and recorded successfully! It is now listed for community pickup.",
+  "Track and manage all your submitted food donations.": "Track and manage all your submitted food donations.",
+  "Search donations...": "Search donations...",
+  "All Statuses": "All Statuses",
+  "No donations found": "No donations found",
+  "You have not submitted any food donations yet.": "You have not submitted any food donations yet.",
+  "No matching donations": "No matching donations",
+  "No donations match your search or filter criteria.": "No donations match your search or filter criteria.",
+  "Unable to load donations.": "Unable to load donations.",
+  "Submitted On": "Submitted On",
+  "Actions": "Actions",
+  "Loading donations...": "Loading donations..."
 }

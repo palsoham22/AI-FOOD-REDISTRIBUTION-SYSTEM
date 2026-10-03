@@ -727,5 +727,16 @@
   "e.g. 5 or 10": "எ.கா. 5 அல்லது 10",
   "Please enter a valid contact number (at least 7 digits).": "தயவுசெய்து சரியான தொடர்பு எண்ணை உள்ளிடவும் (குறைந்தது 7 இலக்கங்கள்).",
   "Please fix the highlighted errors before submitting.": "சமர்ப்பிக்கும் முன் ஹைலைட் செய்யப்பட்ட பிழைகளை சரிசெய்யவும்.",
-  "Donation submitted and recorded successfully! It is now listed for community pickup.": "நன்கொடை வெற்றிகரமாக பதிவு செய்யப்பட்டது! இப்போது சமூக பிக்கப்பிற்காக பட்டியலிடப்பட்டுள்ளது."
+  "Donation submitted and recorded successfully! It is now listed for community pickup.": "நன்கொடை வெற்றிகரமாக பதிவு செய்யப்பட்டது! இப்போது சமூக பிக்கப்பிற்காக பட்டியலிடப்பட்டுள்ளது.",
+  "Track and manage all your submitted food donations.": "நீங்கள் சமர்ப்பித்த அனைத்து உணவு நன்கொடைகளையும் கண்காணித்து நிர்வகிக்கவும்.",
+  "Search donations...": "நன்கொடைகளைத் தேடுங்கள்...",
+  "All Statuses": "அனைத்து நிலைகளும்",
+  "No donations found": "நன்கொடைகள் எதுவும் கிடைக்கவில்லை",
+  "You have not submitted any food donations yet.": "நீங்கள் இன்னும் எந்த உணவு நன்கொடைகளையும் சமர்ப்பிக்கவில்லை.",
+  "No matching donations": "பொருந்தும் நன்கொடைகள் இல்லை",
+  "No donations match your search or filter criteria.": "உங்கள் தேடல் அல்லது வடிகட்டி அளவுகோல்களுடன் எந்த நன்கொடைகளும் பொருந்தவில்லை.",
+  "Unable to load donations.": "நன்கொடைகளை ஏற்ற முடியவில்லை.",
+  "Submitted On": "சமர்ப்பிக்கப்பட்டது",
+  "Actions": "செயல்கள்",
+  "Loading donations...": "நன்கொடைகள் ஏற்றப்படுகின்றன..."
 }

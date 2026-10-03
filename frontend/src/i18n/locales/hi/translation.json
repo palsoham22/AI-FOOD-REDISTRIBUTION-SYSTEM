@@ -727,5 +727,16 @@
   "e.g. 5 or 10": "उदा. 5 या 10",
   "Please enter a valid contact number (at least 7 digits).": "कृपया एक मान्य संपर्क नंबर दर्ज करें (कम से कम 7 अंक)।",
   "Please fix the highlighted errors before submitting.": "सबमिट करने से पहले कृपया हाइलाइट की गई त्रुटियों को ठीक करें।",
-  "Donation submitted and recorded successfully! It is now listed for community pickup.": "दान सफलतापूर्वक दर्ज किया गया! अब यह सामुदायिक पिकअप के लिए सूचीबद्ध है।"
+  "Donation submitted and recorded successfully! It is now listed for community pickup.": "दान सफलतापूर्वक दर्ज किया गया! अब यह सामुदायिक पिकअप के लिए सूचीबद्ध है।",
+  "Track and manage all your submitted food donations.": "अपने सभी सबमिट किए गए भोजन दानों को ट्रैक और प्रबंधित करें।",
+  "Search donations...": "दान खोजें...",
+  "All Statuses": "सभी स्थितियाँ",
+  "No donations found": "कोई दान नहीं मिला",
+  "You have not submitted any food donations yet.": "आपने अभी तक कोई भोजन दान सबमिट नहीं किया है।",
+  "No matching donations": "कोई मेल खाने वाला दान नहीं",
+  "No donations match your search or filter criteria.": "कोई भी दान आपकी खोज या फ़िल्टर मानदंडों से मेल नहीं खाता।",
+  "Unable to load donations.": "दान लोड करने में असमर्थ।",
+  "Submitted On": "सबमिट किया गया",
+  "Actions": "कार्रवाई",
+  "Loading donations...": "दान लोड हो रहे हैं..."
 }

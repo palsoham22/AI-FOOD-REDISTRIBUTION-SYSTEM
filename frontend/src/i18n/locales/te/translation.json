@@ -727,5 +727,16 @@
   "e.g. 5 or 10": "ఉదా. 5 లేదా 10",
   "Please enter a valid contact number (at least 7 digits).": "దయచేసి చెల్లుబాటు అయ్యే సంప్రదింపు సంఖ్యను నమోదు చేయండి (కనీసం 7 అంకెలు).",
   "Please fix the highlighted errors before submitting.": "సమర్పించే ముందు హైలైట్ చేసిన లోపాలను సరిచేయండి.",
-  "Donation submitted and recorded successfully! It is now listed for community pickup.": "విరాళం విజయవంతంగా నమోదు చేయబడింది! ఇది ఇప్పుడు సమాజ పికప్ కోసం జాబితా చేయబడింది."
+  "Donation submitted and recorded successfully! It is now listed for community pickup.": "విరాళం విజయవంతంగా నమోదు చేయబడింది! ఇది ఇప్పుడు సమాజ పికప్ కోసం జాబితా చేయబడింది.",
+  "Track and manage all your submitted food donations.": "మీరు సమర్పించిన అన్ని ఆహార విరాళాలను ట్రాక్ చేయండి మరియు నిర్వహించండి.",
+  "Search donations...": "విరాళాలను శోధించండి...",
+  "All Statuses": "అన్ని స్థితులు",
+  "No donations found": "విరాళాలు కనుగొనబడలేదు",
+  "You have not submitted any food donations yet.": "మీరు ఇంకా ఎలాంటి ఆహార విరాళాలను సమర్పించలేదు.",
+  "No matching donations": "సరిపోలే విరాళాలు లేవు",
+  "No donations match your search or filter criteria.": "మీ శోధన లేదా ఫిల్టర్ ప్రమాణాలకు సరిపోయే విరాళాలు లేవు.",
+  "Unable to load donations.": "విరాళాలను లోడ్ చేయడం సాధ్యపడలేదు.",
+  "Submitted On": "సమర్పించబడింది",
+  "Actions": "చర్యలు",
+  "Loading donations...": "విరాళాలు లోడ్ అవుతున్నాయి..."
 }

@@ -1506,27 +1506,45 @@ DONATE_FOOD: [
     "Retry"
 ],
 MY_DONATIONS: [
-
     "My Donations",
-
+    "Track and manage all your submitted food donations.",
+    "Donate Food",
     "Food",
-
+    "Food Name",
     "Category",
-
     "Quantity",
-
+    "Unit",
+    "Storage Type",
     "Status",
-
     "Expiry",
-
+    "Expiry Date",
+    "Submitted On",
+    "Pickup Address",
+    "Contact Number",
+    "Description",
+    "Actions",
+    "View Details",
+    "Donation Details",
+    "Close",
+    "Search donations...",
+    "All Statuses",
+    "Filter by Status",
+    "Clear Filters",
+    "Available",
     "Accepted",
-
     "Scheduled",
-
+    "Out For Pickup",
     "Delivered",
-
-    "Pending"
-
+    "Expired",
+    "Pending",
+    "Total Donations",
+    "No donations found",
+    "You have not submitted any food donations yet.",
+    "No matching donations",
+    "No donations match your search or filter criteria.",
+    "Unable to load donations.",
+    "Retry",
+    "Loading donations..."
 ],
 INDIVIDUAL_SETTINGS: [
 

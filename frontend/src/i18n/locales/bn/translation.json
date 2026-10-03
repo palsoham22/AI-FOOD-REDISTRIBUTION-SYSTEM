@@ -727,5 +727,16 @@
   "e.g. 5 or 10": "যেমন ৫ বা ১০",
   "Please enter a valid contact number (at least 7 digits).": "অনুগ্রহ করে একটি বৈধ যোগাযোগের নম্বর লিখুন (কমপক্ষে ৭টি অঙ্ক)।",
   "Please fix the highlighted errors before submitting.": "জমা দেওয়ার আগে হাইলাইট করা ত্রুটিগুলি সংশোধন করুন।",
-  "Donation submitted and recorded successfully! It is now listed for community pickup.": "দান সফলভাবে রেকর্ড করা হয়েছে! এটি এখন সম্প্রদায়ের পিকআপের জন্য তালিকাভুক্ত।"
+  "Donation submitted and recorded successfully! It is now listed for community pickup.": "দান সফলভাবে রেকর্ড করা হয়েছে! এটি এখন সম্প্রদায়ের পিকআপের জন্য তালিকাভুক্ত।",
+  "Track and manage all your submitted food donations.": "আপনার জমা দেওয়া সমস্ত খাদ্য দান ট্র্যাক এবং পরিচালনা করুন।",
+  "Search donations...": "দান অনুসন্ধান করুন...",
+  "All Statuses": "সমস্ত স্থিতি",
+  "No donations found": "কোনো দান পাওয়া যায়নি",
+  "You have not submitted any food donations yet.": "আপনি এখনও কোনো খাবার দান জমা দেননি।",
+  "No matching donations": "কোনো মিল থাকা দান নেই",
+  "No donations match your search or filter criteria.": "আপনার অনুসন্ধান বা ফিল্টার মানদণ্ডের সাথে কোনো দান মেলেনি।",
+  "Unable to load donations.": "দান লোড করা যায়নি।",
+  "Submitted On": "জমা দেওয়া হয়েছে",
+  "Actions": "পদক্ষেপ",
+  "Loading donations...": "দান লোড হচ্ছে..."
 }
