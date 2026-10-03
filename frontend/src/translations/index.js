@@ -1452,27 +1452,58 @@ INDIVIDUAL_DASHBOARD: [
 
 ],
 DONATE_FOOD: [
-
     "Donate Food",
-
     "Food Name",
-
     "Category",
-
     "Quantity",
-
+    "Unit",
+    "Storage Type",
     "Expiry Date",
-
     "Pickup Address",
-
     "Contact Number",
-
     "Description",
-
+    "Food Information",
+    "Expiry & Storage",
+    "Pickup Information",
+    "Additional Information",
+    "Submit Donation",
+    "Submitting...",
+    "Select Category",
+    "Select Unit",
+    "Select Storage Type",
+    "Dairy",
+    "Fruits",
+    "Vegetables",
+    "Bakery",
+    "Beverages",
+    "Others",
+    "Kg",
+    "Litre",
+    "Packet",
+    "Piece",
+    "Room Temperature",
+    "Refrigerated",
+    "Frozen",
+    "View My Donations",
+    "Reset Form",
+    "Donate Another Item",
+    "Make an Impact",
+    "Share surplus food and help make a difference in your community.",
+    "Your donation can help reduce food waste and support someone in need.",
+    "Donation Details",
+    "Enter the details of the food you would like to donate.",
+    "Please enter the food name.",
+    "Please provide a valid quantity greater than zero.",
+    "Please select an expiry date.",
+    "Expiry date cannot be in the past.",
+    "Please enter a pickup address.",
+    "Please enter a contact number.",
+    "Please enter a valid contact number (at least 7 digits).",
+    "Please fix the highlighted errors before submitting.",
     "Donation Submitted Successfully!",
-
-    "Failed to submit donation."
-
+    "Donation submitted and recorded successfully! It is now listed for community pickup.",
+    "Failed to submit donation.",
+    "Retry"
 ],
 MY_DONATIONS: [
 
