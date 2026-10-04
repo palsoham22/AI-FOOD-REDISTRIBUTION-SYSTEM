@@ -744,5 +744,10 @@
   "Unable to load profile data.": "சுயவிவரத் தரவை ஏற்ற முடியவில்லை.",
   "Profile information could not be loaded.": "சுயவிவரத் தகவலை ஏற்ற முடியவில்லை.",
   "Receive alerts regarding donations, pickups, and status updates.": "நன்கொடைகள், பிக்கப்கள் மற்றும் நிலை புதுப்பிப்புகள் தொடர்பான விழிப்பூட்டல்களைப் பெறுங்கள்.",
-  "Manage your profile, security, and account preferences.": "உங்கள் சுயவிவரம், பாதுகாப்பு மற்றும் கணக்கு விருப்பங்களை நிர்வகிக்கவும்."
+  "Manage your profile, security, and account preferences.": "உங்கள் சுயவிவரம், பாதுகாப்பு மற்றும் கணக்கு விருப்பங்களை நிர்வகிக்கவும்.",
+  "Administrator": "நிர்வாகி",
+  "Expand Sidebar": "பக்கப்பட்டியை விரிவாக்கு",
+  "Collapse Sidebar": "பக்கப்பட்டியை சுருக்கு",
+  "Close Menu": "மெனுவை மூடு",
+  "Open Menu": "மெனுவை திறக்கவும்"
 }

@@ -744,5 +744,10 @@
   "Unable to load profile data.": "प्रोफ़ाइल डेटा लोड करने में असमर्थ।",
   "Profile information could not be loaded.": "प्रोफ़ाइल जानकारी लोड नहीं की जा सकी।",
   "Receive alerts regarding donations, pickups, and status updates.": "दान, पिकअप और स्थिति अपडेट के बारे में अलर्ट प्राप्त करें।",
-  "Manage your profile, security, and account preferences.": "अपनी प्रोफ़ाइल, सुरक्षा और खाता प्राथमिकताएं प्रबंधित करें।"
+  "Manage your profile, security, and account preferences.": "अपनी प्रोफ़ाइल, सुरक्षा और खाता प्राथमिकताएं प्रबंधित करें।",
+  "Administrator": "प्रशासक",
+  "Expand Sidebar": "साइडबार विस्तृत करें",
+  "Collapse Sidebar": "साइडबार संक्षिप्त करें",
+  "Close Menu": "मेनू बंद करें",
+  "Open Menu": "मेनू खोलें"
 }

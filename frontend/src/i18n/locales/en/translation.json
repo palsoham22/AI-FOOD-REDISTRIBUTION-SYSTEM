@@ -744,5 +744,10 @@
   "Unable to load profile data.": "Unable to load profile data.",
   "Profile information could not be loaded.": "Profile information could not be loaded.",
   "Receive alerts regarding donations, pickups, and status updates.": "Receive alerts regarding donations, pickups, and status updates.",
-  "Manage your profile, security, and account preferences.": "Manage your profile, security, and account preferences."
+  "Manage your profile, security, and account preferences.": "Manage your profile, security, and account preferences.",
+  "Administrator": "Administrator",
+  "Expand Sidebar": "Expand Sidebar",
+  "Collapse Sidebar": "Collapse Sidebar",
+  "Close Menu": "Close Menu",
+  "Open Menu": "Open Menu"
 }

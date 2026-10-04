@@ -126,12 +126,7 @@ function Footer() {
                   {t("Individual Donor")}
                 </Link>
               </li>
-              <li>
-                <Link to="/admin-dashboard" className="fb-footer-link">
-                  <i className="bi bi-speedometer2 small text-primary"></i>
-                  {t("Admin Portal")}
-                </Link>
-              </li>
+
             </ul>
           </div>
 

@@ -4,6 +4,7 @@ import inventory
 from .models import Inventory, Notification
 from .serializers import InventorySerializer, NotificationSerializer
 from rest_framework.permissions import IsAuthenticated
+from .permissions import IsAdminRole
 from rest_framework.views import APIView
 from rest_framework.response import Response
 import random
@@ -150,7 +151,7 @@ class AcceptedDonationListView(APIView):
 
 class AdminDashboardView(APIView):
 
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsAdminRole]
 
     def get(self, request):
 
@@ -874,7 +875,7 @@ class MarkNotificationReadView(APIView):
 
 class AdminInventoryView(APIView):
 
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsAdminRole]
 
     def get(self, request):
         inventories = Inventory.objects.all().order_by("-id")
@@ -883,7 +884,7 @@ class AdminInventoryView(APIView):
 
 class AdminDonationsView(APIView):
 
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsAdminRole]
 
     def get(self, request):
 
@@ -902,7 +903,7 @@ class AdminDonationsView(APIView):
 
 class AdminAnalyticsView(APIView):
 
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsAdminRole]
 
     def get(self, request):
 
@@ -932,7 +933,7 @@ class AdminAnalyticsView(APIView):
 
 class AdminTransactionsView(APIView):
 
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsAdminRole]
 
     def get(self, request):
 

@@ -39,6 +39,11 @@ else if (role === "INDIVIDUAL") {
     businessName = t("Individual Donor");
 }
 
+// If Admin
+else if (role === "ADMIN") {
+    businessName = t("Administrator");
+}
+
 // If Business
 else {
     businessName = businessName || t("FoodBridge");
@@ -49,7 +54,13 @@ else {
     const [showDropdown, setShowDropdown] = useState(false);
 
     const logout = () => {
-        localStorage.clear();
+        localStorage.removeItem("access");
+        localStorage.removeItem("refresh");
+        localStorage.removeItem("role");
+        localStorage.removeItem("username");
+        localStorage.removeItem("owner_name");
+        localStorage.removeItem("business_name");
+        localStorage.removeItem("business_type");
         window.location.href = "/login";
     };
 

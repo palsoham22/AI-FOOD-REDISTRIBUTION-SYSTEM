@@ -744,5 +744,10 @@
   "Unable to load profile data.": "പ്രൊഫൈൽ ഡാറ്റ ലോഡുചെയ്യാനായില്ല.",
   "Profile information could not be loaded.": "പ്രൊഫൈൽ വിവരങ്ങൾ ലോഡുചെയ്യാനായില്ല.",
   "Receive alerts regarding donations, pickups, and status updates.": "സംഭാവനകൾ, പിക്കപ്പുകൾ, സ്റ്റാറ്റസ് അപ്‌ഡേറ്റുകൾ എന്നിവ സംബന്ധിച്ച അലേർട്ടുകൾ സ്വീകരിക്കുക.",
-  "Manage your profile, security, and account preferences.": "നിങ്ങളുടെ പ്രൊഫൈൽ, സുരക്ഷ, അക്കൗണ്ട് മുൻഗണനകൾ എന്നിവ നിയന്ത്രിക്കുക."
+  "Manage your profile, security, and account preferences.": "നിങ്ങളുടെ പ്രൊഫൈൽ, സുരക്ഷ, അക്കൗണ്ട് മുൻഗണനകൾ എന്നിവ നിയന്ത്രിക്കുക.",
+  "Administrator": "അഡ്മിനിസ്ട്രേറ്റർ",
+  "Expand Sidebar": "സൈഡ്ബാർ വികസിപ്പിക്കുക",
+  "Collapse Sidebar": "സൈഡ്ബാർ ചുരുക്കുക",
+  "Close Menu": "മെനു അടയ്ക്കുക",
+  "Open Menu": "മെനു തുറക്കുക"
 }

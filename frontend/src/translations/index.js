@@ -1195,21 +1195,19 @@ DELIVERY_SETTINGS: [
 ],
 
 ADMIN_SIDEBAR: [
-
     "FoodBridge AI",
-
     "Dashboard",
-
     "Inventory",
-
     "Donations",
-
     "Transactions",
-
     "Analytics",
-
-    "Settings"
-
+    "Settings",
+    "Administrator",
+    "Logout",
+    "Expand Sidebar",
+    "Collapse Sidebar",
+    "Close Menu",
+    "Open Menu"
 ],
 
     ADMIN_DASHBOARD: [

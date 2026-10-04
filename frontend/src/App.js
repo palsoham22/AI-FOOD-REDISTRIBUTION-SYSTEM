@@ -37,7 +37,8 @@ import AdminSettings from "./pages/AdminSettings";
 import IndividualDashboard from "./pages/IndividualDashboard";
 import DonateFood from "./pages/DonateFood";
 import MyDonations from "./pages/MyDonations";
-import IndividualSettings from "./pages/IndividualSettings"
+import IndividualSettings from "./pages/IndividualSettings";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -64,7 +65,19 @@ function App() {
 
         <Route
           path="/admin-dashboard"
-          element={<AdminDashboard />}
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
         />
 
         <Route path="/add-product" element={<AddProduct />} />
@@ -196,15 +209,46 @@ function App() {
         <Route path="/business/donations" element={<BusinessDonations />}
 />
 
-<Route
-    path="/admin/inventory"
-    element={<AdminInventory />}
-/>
-
-<Route path="/admin/donations" element={<AdminDonations />} />
-<Route path="/admin/transactions" element={<AdminTransactions />} />
-<Route path="/admin/analytics" element={<AdminAnalytics />} />
-<Route path="/admin/settings" element={<AdminSettings />} />
+        <Route
+          path="/admin/inventory"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminInventory />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/donations"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminDonations />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/transactions"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminTransactions />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/analytics"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminAnalytics />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/settings"
+          element={
+            <ProtectedRoute allowedRoles={["ADMIN"]}>
+              <AdminSettings />
+            </ProtectedRoute>
+          }
+        />
 <Route
     path="/individual"
     element={<IndividualDashboard />}

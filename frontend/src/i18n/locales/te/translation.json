@@ -744,5 +744,10 @@
   "Unable to load profile data.": "ప్రొఫైల్ డేటాను లోడ్ చేయడం సాధ్యపడలేదు.",
   "Profile information could not be loaded.": "ప్రొఫైల్ సమాచారాన్ని లోడ్ చేయడం సాధ్యపడలేదు.",
   "Receive alerts regarding donations, pickups, and status updates.": "విరాళాలు, పికప్‌లు మరియు స్థితి నవీకరణల గురించి హెచ్చరికలను స్వీకరించండి.",
-  "Manage your profile, security, and account preferences.": "మీ ప్రొఫైల్, భద్రత మరియు ఖాతా ప్రాధాన్యతలను నిర్వహించండి."
+  "Manage your profile, security, and account preferences.": "మీ ప్రొఫైల్, భద్రత మరియు ఖాతా ప్రాధాన్యతలను నిర్వహించండి.",
+  "Administrator": "నిర్వాహకుడు",
+  "Expand Sidebar": "సైడ్‌బార్‌ను విస్తరించండి",
+  "Collapse Sidebar": "సైడ్‌బార్‌ను కుదించండి",
+  "Close Menu": "మెనూను మూసివేయండి",
+  "Open Menu": "మెనూను తెరవండి"
 }
