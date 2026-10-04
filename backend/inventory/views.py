@@ -165,6 +165,8 @@ class AdminDashboardView(APIView):
 
     "delivery_partners": User.objects.filter(role="DELIVERY").count(),
 
+    "individual_donors": User.objects.filter(role="INDIVIDUAL").count(),
+
     "products": Inventory.objects.count(),
 
     "donated": Inventory.objects.filter(status="Donated").count(),
