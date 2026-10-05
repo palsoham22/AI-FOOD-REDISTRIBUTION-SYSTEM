@@ -1531,55 +1531,58 @@ ADMIN_ANALYTICS: [
     "Delivery"
 ],
 ADMIN_SETTINGS: [
-
     "Admin Settings",
-
     "Manage your profile and application settings.",
-
     "Admin Profile",
-
-    "Username :",
-
-    "Email :",
-
-    "Role :",
-
-    "Phone :",
-
+    "Administrator",
+    "Username",
+    "Email",
+    "Role",
+    "Phone",
     "Not Available",
-
+    "Security Privileges",
+    "Full Administrative Access",
     "Change Password",
-
     "Current Password",
-
     "New Password",
-
     "Confirm Password",
-
-    "System Information",
-
-    "Application :",
-
-    "Version :",
-
-    "Backend :",
-
-    "Running",
-
-    "Database :",
-
-    "Connected",
-
-    "Logout",
-
-    "Click below to securely logout.",
-
+    "Current password is required.",
+    "Password must be at least 6 characters long.",
     "Passwords do not match",
-
-    "Password Changed Successfully",
-
-    "Current password is incorrect"
-
+    "Current password is incorrect",
+    "Password changed successfully",
+    "Failed to update password.",
+    "Show password",
+    "Hide password",
+    "Updating Password...",
+    "Appearance & Theme",
+    "Choose your preferred visual theme for the admin portal.",
+    "Light Mode",
+    "Dark Mode",
+    "Light",
+    "Dark",
+    "Language Preferences",
+    "Select your display language for the platform interface.",
+    "Notification Preferences",
+    "Configure how you receive administrative and activity notices.",
+    "In-App Notifications",
+    "Enabled",
+    "Disabled",
+    "Local preference for administrative system and dispatch alerts.",
+    "System Information",
+    "Platform Details",
+    "Application",
+    "Version",
+    "System Health Monitoring",
+    "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.",
+    "Account Session",
+    "Click below to securely end your current administrative session.",
+    "Logout",
+    "Settings updated successfully.",
+    "Unable to load profile data.",
+    "Retry",
+    "Save",
+    "Cancel"
 ],
 INDIVIDUAL_SIDEBAR: [
 
