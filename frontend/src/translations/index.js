@@ -1271,27 +1271,70 @@ ADMIN_SIDEBAR: [
     ],
 
 ADMIN_INVENTORY: [
-
     "Inventory Management",
-
-    "View all products available in the system.",
-
+    "Monitor and manage all inventory items across the FoodBridge AI platform.",
     "Total Products",
-
-    "Search Product...",
-
+    "Available / Donated",
+    "Accepted",
+    "Scheduled",
+    "Out For Pickup",
+    "Delivered",
+    "Completed",
+    "Expired",
+    "Available Products",
+    "Categories",
+    "Items",
+    "Search products, donors, categories...",
+    "All Statuses",
+    "All Categories",
+    "Reset Filters",
+    "Clear Filters",
+    "Clear All",
+    "Sort By",
+    "Ascending",
+    "Descending",
+    "Items per page",
+    "Showing",
+    "to",
+    "of",
+    "items",
+    "Previous",
+    "Next",
+    "Page",
+    "No inventory records available.",
+    "No inventory records match your filters.",
+    "Unable to load inventory data.",
+    "Retry",
+    "Product Details",
+    "Close",
+    "Donor / Business",
+    "Storage Type",
+    "Pickup Address",
+    "Contact Number",
+    "Description",
+    "Created Date",
+    "View Details",
+    "Room Temperature",
+    "Refrigerated",
+    "Frozen",
+    "Dairy",
+    "Fruits",
+    "Vegetables",
+    "Bakery",
+    "Beverages",
+    "Others",
+    "Kg",
+    "Litre",
+    "Packet",
+    "Piece",
     "Product",
-
     "Category",
-
     "Quantity",
-
     "Status",
-
     "Expiry",
-
-    "ID"
-
+    "ID",
+    "Actions",
+    "Individual Donor"
 ],
 ADMIN_DONATIONS: [
 
