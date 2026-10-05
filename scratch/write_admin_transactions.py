@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import os
+
+js_content = '''import React, { useState, useEffect, useMemo, useCallback } from "react";
 import axios from "axios";
 import AdminSidebar from "../components/AdminSidebar";
 import TopNavbar from "../components/TopNavbar";
@@ -913,3 +915,13 @@ function AdminTransactions() {
 }
 
 export default AdminTransactions;
+'''
+
+filepath = 'frontend/src/pages/AdminTransactions.js'
+with open(filepath, 'w', encoding='utf-8') as f:
+    f.write(js_content.strip() + '\n')
+    f.flush()
+    os.fsync(f.fileno())
+
+print('Successfully updated frontend/src/pages/AdminTransactions.js')
+

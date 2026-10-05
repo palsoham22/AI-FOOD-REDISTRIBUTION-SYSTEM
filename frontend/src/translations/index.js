@@ -1390,39 +1390,91 @@ ADMIN_DONATIONS: [
     "Refreshing..."
 ],
 ADMIN_TRANSACTIONS: [
-
     "Transactions",
-
-    "Complete history of all food donation transactions.",
-
-    "Total Transactions",
-
-    "Accepted",
-
-    "Scheduled",
-
-    "Delivered",
-
-    "Search Product...",
-
-    "ID",
-
-    "Product",
-
-    "Business",
-
-    "Category",
-
-    "Quantity",
-
-    "Status",
-
+    "Operational Ledger",
+    "Donation & Activity Ledger",
+    "Complete operational ledger of all food redistribution and inventory lifecycle events.",
+    "Operational Notice: FoodBridge tracks food redistribution lifecycle events. No financial payments or fees are processed on this platform.",
+    "Total Ledger Records",
+    "Delivered & Completed",
+    "Accepted & Scheduled",
+    "Available / Listed",
+    "Search ledger by product, donor, address, ID...",
+    "All Statuses",
+    "All Categories",
+    "Reset Filters",
+    "Clear Filters",
+    "Clear All",
+    "Sort By",
+    "Ascending",
+    "Descending",
+    "Items per page",
+    "Showing",
+    "to",
+    "of",
+    "records",
+    "items",
+    "Previous",
+    "Next",
+    "Page",
+    "No ledger records available.",
+    "Operational records will appear here as food is listed, accepted, and redistributed.",
+    "No ledger records match your filters.",
+    "Try adjusting your search terms or reset applied filters.",
+    "Unable to load ledger records.",
+    "Retry",
+    "Ledger Record Details",
+    "Record Information",
+    "Logistics & Lifecycle",
+    "Close",
+    "Donor / Business",
+    "Donor Type",
+    "Storage Type",
+    "Pickup Address",
+    "Contact Number",
+    "Description",
+    "Created Date",
     "Expiry Date",
-
-    "Pending",
-
-    "No transactions found."
-
+    "View Details",
+    "Product",
+    "Category",
+    "Quantity",
+    "Status",
+    "Lifecycle Status",
+    "Record ID",
+    "ID",
+    "Actions",
+    "Individual Donor",
+    "Business",
+    "Individual",
+    "Refresh",
+    "Refreshing...",
+    "Assigned Driver",
+    "Vehicle Number",
+    "Pickup Schedule",
+    "Verification Status",
+    "Pickup Verified",
+    "Delivery Verified",
+    "Pending Verification",
+    "Not Specified",
+    "Available",
+    "Donated",
+    "Accepted",
+    "Scheduled",
+    "Out For Pickup",
+    "Delivered",
+    "Completed",
+    "Expired",
+    "Dairy",
+    "Fruits",
+    "Vegetables",
+    "Bakery",
+    "Beverages",
+    "Others",
+    "Room Temperature",
+    "Refrigerated",
+    "Frozen",
+    "Operational Note: This record represents a physical food redistribution lifecycle event on FoodBridge."
 ],
 ADMIN_ANALYTICS: [
 
