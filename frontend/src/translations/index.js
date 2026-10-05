@@ -1477,39 +1477,58 @@ ADMIN_TRANSACTIONS: [
     "Operational Note: This record represents a physical food redistribution lifecycle event on FoodBridge."
 ],
 ADMIN_ANALYTICS: [
-
+    "Analytics",
     "Analytics Dashboard",
-
-    "Monitor platform performance and donation insights.",
-
+    "Platform Performance & Analytics",
+    "Real-time operational metrics, donation status distributions, and stakeholder insights.",
+    "Operational Notice: Analytics are calculated directly from live database records. No simulated growth projections or payment metrics exist.",
+    "Operational Food Metrics",
+    "Total Products",
+    "Delivered & Completed",
+    "Active Allocations",
+    "Available Surplus",
+    "Community & Stakeholders",
     "Total Businesses",
-
     "Total NGOs",
-
-    "Products",
-
     "Delivery Partners",
-
+    "Individual Donors",
+    "Pending Actions",
+    "Status Distribution",
+    "Food Category Breakdown",
+    "Stakeholder Ecosystem",
+    "Breakdown of food items across their operational redistribution lifecycle.",
+    "Total volume of food items categorized by product classification.",
+    "Active platform participants registered across operational roles.",
+    "Items",
+    "Count",
+    "Percentage",
+    "Historical Trend Notice",
+    "Time-series trend tracking will become available as historical logs accumulate over time. The charts above reflect 100% live verified platform aggregates.",
+    "Unable to load analytics data.",
+    "Retry",
+    "Refresh",
+    "Refreshing...",
+    "No analytics data available yet.",
+    "No items recorded in this distribution.",
+    "Platform metrics will update in real time as surplus items are donated and claimed.",
+    "Available",
+    "Donated",
     "Accepted",
-
     "Scheduled",
-
+    "Out For Pickup",
     "Delivered",
-
+    "Completed",
+    "Expired",
     "Pending",
-
-    "Donation Status",
-
-    "Platform Overview",
-
-    "Donation Progress",
-
+    "Dairy",
+    "Fruits",
+    "Vegetables",
+    "Bakery",
+    "Beverages",
+    "Others",
     "Businesses",
-
     "NGOs",
-
     "Delivery"
-
 ],
 ADMIN_SETTINGS: [
 

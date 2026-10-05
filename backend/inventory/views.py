@@ -912,26 +912,45 @@ class AdminAnalyticsView(APIView):
 
     def get(self, request):
 
+        category_counts = {
+            cat[0]: Inventory.objects.filter(category=cat[0]).count()
+            for cat in Inventory.CATEGORY_CHOICES
+        }
+
+        all_statuses = [
+            "Available",
+            "Donated",
+            "Accepted",
+            "Scheduled",
+            "Out For Pickup",
+            "Delivered",
+            "Completed",
+            "Expired"
+        ]
+        status_counts = {
+            st: Inventory.objects.filter(status=st).count()
+            for st in all_statuses
+        }
+
         data = {
-
             "businesses": User.objects.filter(role="BUSINESS").count(),
-
             "ngos": User.objects.filter(role="NGO").count(),
-
             "delivery": User.objects.filter(role="DELIVERY").count(),
-
+            "individual_donors": User.objects.filter(role="INDIVIDUAL").count(),
             "products": Inventory.objects.count(),
-
             "accepted": Inventory.objects.filter(status="Accepted").count(),
-
             "scheduled": Inventory.objects.filter(status="Scheduled").count(),
-
             "delivered": Inventory.objects.filter(status="Delivered").count(),
-
+            "completed": Inventory.objects.filter(status="Completed").count(),
+            "available": Inventory.objects.filter(status="Available").count(),
+            "donated": Inventory.objects.filter(status="Donated").count(),
+            "out_for_pickup": Inventory.objects.filter(status="Out For Pickup").count(),
+            "expired": Inventory.objects.filter(status="Expired").count(),
             "pending": Inventory.objects.exclude(
-                status="Delivered"
+                status__in=["Delivered", "Completed"]
             ).count(),
-
+            "category_distribution": category_counts,
+            "status_distribution": status_counts,
         }
 
         return Response(data)
