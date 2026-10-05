@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "சரக்கு தரவை ஏற்ற முடியவில்லை.",
   "Product Details": "தயாரிப்பு விவரங்கள்",
   "Created Date": "உருவாக்கப்பட்ட தேதி",
-  "Clear All": "அனைத்தையும் அழிக்கவும்"
+  "Clear All": "அனைத்தையும் அழிக்கவும்",
+  "Search donations, donors, categories...": "நன்கொடைகள், நன்கொடையாளர்கள், வகைகளைத் தேடுங்கள்...",
+  "donations": "நன்கொடைகள்",
+  "No donation records available.": "நன்கொடை பதிவுகள் எதுவும் கிடைக்கவில்லை.",
+  "No donation records match your filters.": "உங்கள் வடிப்பான்களுடன் எந்த நன்கொடை பதிவும் பொருந்தவில்லை.",
+  "Unable to load donation records.": "நன்கொடை பதிவுகளை ஏற்ற முடியவில்லை.",
+  "Donor Type": "நன்கொடையாளர் வகை"
 }

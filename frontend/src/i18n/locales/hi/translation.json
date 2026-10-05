@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "इन्वेंट्री डेटा लोड करने में असमर्थ।",
   "Product Details": "उत्पाद विवरण",
   "Created Date": "बनाने की तिथि",
-  "Clear All": "सभी साफ़ करें"
+  "Clear All": "सभी साफ़ करें",
+  "Search donations, donors, categories...": "दान, दाता, श्रेणियां खोजें...",
+  "donations": "दान",
+  "No donation records available.": "कोई दान रिकॉर्ड उपलब्ध नहीं है।",
+  "No donation records match your filters.": "कोई भी दान रिकॉर्ड आपके फ़िल्टर से मेल नहीं खाता।",
+  "Unable to load donation records.": "दान रिकॉर्ड लोड करने में असमर्थ।",
+  "Donor Type": "दाता का प्रकार"
 }

@@ -1337,35 +1337,57 @@ ADMIN_INVENTORY: [
     "Individual Donor"
 ],
 ADMIN_DONATIONS: [
-
     "Donations Management",
-
     "Monitor all donated food across the platform.",
-
     "Total Donations",
-
+    "Donated",
     "Accepted",
-
     "Scheduled",
-
+    "Out For Pickup",
     "Delivered",
-
-    "Search Product...",
-
-    "ID",
-
+    "Search donations, donors, categories...",
+    "All Statuses",
+    "All Categories",
+    "Reset Filters",
+    "Clear Filters",
+    "Clear All",
+    "Sort By",
+    "Ascending",
+    "Descending",
+    "Items per page",
+    "Showing",
+    "to",
+    "of",
+    "donations",
+    "items",
+    "Previous",
+    "Next",
+    "Page",
+    "No donation records available.",
+    "No donation records match your filters.",
+    "Unable to load donation records.",
+    "Retry",
+    "Donation Details",
+    "Close",
+    "Donor / Business",
+    "Donor Type",
+    "Storage Type",
+    "Pickup Address",
+    "Contact Number",
+    "Description",
+    "Created Date",
+    "View Details",
     "Product",
-
-    "Business",
-
     "Category",
-
     "Quantity",
-
     "Status",
-
-    "Expiry"
-
+    "Expiry",
+    "ID",
+    "Actions",
+    "Individual Donor",
+    "Business",
+    "Refresh",
+    "Refreshing..."
 ],
 ADMIN_TRANSACTIONS: [
 

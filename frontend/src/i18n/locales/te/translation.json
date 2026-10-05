@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "ఇన్వెంటరీ డేటాను లోడ్ చేయడం సాధ్యపడలేదు.",
   "Product Details": "ఉత్పత్తి వివరాలు",
   "Created Date": "సృష్టించిన తేదీ",
-  "Clear All": "అన్నీ క్లియర్ చేయండి"
+  "Clear All": "అన్నీ క్లియర్ చేయండి",
+  "Search donations, donors, categories...": "విరాళాలు, దాతలు, వర్గాలను శోధించండి...",
+  "donations": "విరాళాలు",
+  "No donation records available.": "విరాళ రికార్డులు అందుబాటులో లేవు.",
+  "No donation records match your filters.": "మీ ఫిల్టర్‌లతో సరిపోలే విరాళ రికార్డులు లేవు.",
+  "Unable to load donation records.": "విరాళ రికార్డులను లోడ్ చేయడం సాధ్యపడలేదు.",
+  "Donor Type": "దాత రకం"
 }

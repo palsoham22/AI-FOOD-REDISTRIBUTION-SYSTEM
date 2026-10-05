@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "Unable to load inventory data.",
   "Product Details": "Product Details",
   "Created Date": "Created Date",
-  "Clear All": "Clear All"
+  "Clear All": "Clear All",
+  "Search donations, donors, categories...": "Search donations, donors, categories...",
+  "donations": "donations",
+  "No donation records available.": "No donation records available.",
+  "No donation records match your filters.": "No donation records match your filters.",
+  "Unable to load donation records.": "Unable to load donation records.",
+  "Donor Type": "Donor Type"
 }

@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "ഇൻവെന്ററി ഡാറ്റ ലോഡുചെയ്യാനാകുന്നില്ല.",
   "Product Details": "ഉൽപ്പന്ന വിശദാംശങ്ങൾ",
   "Created Date": "സൃഷ്ടിച്ച തീയതി",
-  "Clear All": "എല്ലാം മായ്‌ക്കുക"
+  "Clear All": "എല്ലാം മായ്‌ക്കുക",
+  "Search donations, donors, categories...": "സംഭാവനകൾ, ദാതാക്കൾ, വിഭാഗങ്ങൾ തിരയുക...",
+  "donations": "സംഭാവനകൾ",
+  "No donation records available.": "സംഭാവന രേഖകളൊന്നും ലഭ്യമല്ല.",
+  "No donation records match your filters.": "നിങ്ങളുടെ ഫിൽട്ടറുകളുമായി പൊരുത്തപ്പെടുന്ന സംഭാവന രേഖകളൊന്നുമില്ല.",
+  "Unable to load donation records.": "സംഭാവന രേഖകൾ ലോഡുചെയ്യാനാകുന്നില്ല.",
+  "Donor Type": "ദാതാവിന്റെ തരം"
 }

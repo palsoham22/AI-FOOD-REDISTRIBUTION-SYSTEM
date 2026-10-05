@@ -803,5 +803,11 @@
   "Unable to load inventory data.": "ইনভেন্টরি ডেটা লোড করা যাচ্ছে না।",
   "Product Details": "পণ্যের বিবরণ",
   "Created Date": "তৈরির তারিখ",
-  "Clear All": "সব মুছুন"
+  "Clear All": "সব মুছুন",
+  "Search donations, donors, categories...": "দান, দাতা, বিভাগ খুঁজুন...",
+  "donations": "দান",
+  "No donation records available.": "কোনো দান রেকর্ড উপলব্ধ নেই।",
+  "No donation records match your filters.": "কোনো দান রেকর্ড আপনার ফিল্টারের সাথে মেলে না।",
+  "Unable to load donation records.": "দান রেকর্ড লোড করা যাচ্ছে না।",
+  "Donor Type": "দাতার ধরন"
 }

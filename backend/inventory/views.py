@@ -892,10 +892,13 @@ class AdminDonationsView(APIView):
 
         donations = Inventory.objects.filter(
             status__in=[
+                "Donated",
                 "Accepted",
                 "Scheduled",
+                "Out For Pickup",
                 "Out For Delivery",
-                "Delivered"
+                "Delivered",
+                "Completed"
             ]
         ).order_by("-id")
 
