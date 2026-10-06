@@ -71,7 +71,7 @@ else {
     try {
 
         const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/notifications/",
+                process.env.REACT_APP_API_URL + "/api/inventory/notifications/",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -102,7 +102,7 @@ const markAsRead = async (id) => {
     try {
 
         await axios.post(
-            `http://127.0.0.1:8000/api/inventory/notifications/${id}/read/`,
+            `${process.env.REACT_APP_API_URL}/api/inventory/notifications/${id}/read/`,
             {},
             {
                 headers: {

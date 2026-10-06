@@ -33,7 +33,7 @@ function InventoryPage() {
     const loadProducts = () => {
         const token = localStorage.getItem("access");
         axios
-            .get("http://127.0.0.1:8000/api/inventory/list/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/list/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -72,7 +72,7 @@ function InventoryPage() {
         const token = localStorage.getItem("access");
         try {
             await axios.delete(
-                `http://127.0.0.1:8000/api/inventory/delete/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/delete/${id}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -92,7 +92,7 @@ function InventoryPage() {
         const token = localStorage.getItem("access");
         try {
             await axios.post(
-                `http://127.0.0.1:8000/api/inventory/donate/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/donate/${id}/`,
                 {},
                 {
                     headers: {

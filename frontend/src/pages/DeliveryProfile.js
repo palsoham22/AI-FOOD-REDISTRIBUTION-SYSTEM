@@ -77,10 +77,10 @@ function DeliveryProfile() {
 
             try {
                 const [profileRes, statsRes] = await Promise.all([
-                    axios.get("http://127.0.0.1:8000/api/delivery/profile/", {
+                    axios.get(process.env.REACT_APP_API_URL + "/api/delivery/profile/", {
                         headers,
                     }),
-                    axios.get("http://127.0.0.1:8000/api/delivery/dashboard/", {
+                    axios.get(process.env.REACT_APP_API_URL + "/api/delivery/dashboard/", {
                         headers,
                     }),
                 ]);

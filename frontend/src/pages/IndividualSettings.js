@@ -72,8 +72,8 @@ function IndividualSettings() {
 
         try {
             const [profileRes, dashRes] = await Promise.all([
-                axios.get("http://127.0.0.1:8000/api/inventory/profile/", { headers }),
-                axios.get("http://127.0.0.1:8000/api/inventory/individual/dashboard/", { headers })
+                axios.get(process.env.REACT_APP_API_URL + "/api/inventory/profile/", { headers }),
+                axios.get(process.env.REACT_APP_API_URL + "/api/inventory/individual/dashboard/", { headers })
             ]);
 
             if (profileRes.data) {
@@ -154,7 +154,7 @@ function IndividualSettings() {
         try {
             // Fix: Use correct endpoint /api/inventory/change-password/
             const response = await axios.post(
-                "http://127.0.0.1:8000/api/inventory/change-password/",
+                process.env.REACT_APP_API_URL + "/api/inventory/change-password/",
                 {
                     old_password: oldPassword,
                     new_password: newPassword,

@@ -28,7 +28,7 @@ function EditProduct() {
 
     axios.get(
 
-        "http://127.0.0.1:8000/api/inventory/list/",
+        process.env.REACT_APP_API_URL + "/api/inventory/list/",
 
         {
             headers: {
@@ -89,7 +89,7 @@ function EditProduct() {
 
 await axios.put(
 
-    `http://127.0.0.1:8000/api/inventory/update/${id}/`,
+    `${process.env.REACT_APP_API_URL}/api/inventory/update/${id}/`,
 
     {
 

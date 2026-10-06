@@ -59,7 +59,7 @@ function AdminAnalytics() {
         try {
             const token = localStorage.getItem("access");
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/admin/analytics/",
+                process.env.REACT_APP_API_URL + "/api/inventory/admin/analytics/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

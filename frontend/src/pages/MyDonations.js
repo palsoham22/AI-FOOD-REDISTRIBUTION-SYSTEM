@@ -56,7 +56,7 @@ function MyDonations() {
         try {
             const token = localStorage.getItem("access");
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/individual/my-donations/",
+                process.env.REACT_APP_API_URL + "/api/inventory/individual/my-donations/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

@@ -98,7 +98,7 @@ function DeliverySettings() {
         setPasswordLoading(true);
         try {
             const response = await axios.post(
-                "http://127.0.0.1:8000/api/inventory/change-password/",
+                process.env.REACT_APP_API_URL + "/api/inventory/change-password/",
                 {
                     old_password: oldPassword,
                     new_password: newPassword,

@@ -19,7 +19,7 @@ function BusinessDonations() {
         const token = localStorage.getItem("access");
 
         axios.get(
-            "http://127.0.0.1:8000/api/inventory/list/",
+            process.env.REACT_APP_API_URL + "/api/inventory/list/",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

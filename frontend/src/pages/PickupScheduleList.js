@@ -48,7 +48,7 @@ function PickupScheduleList() {
         const token = localStorage.getItem("access");
 
         axios
-            .get("http://127.0.0.1:8000/api/inventory/scheduled/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/scheduled/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -86,7 +86,7 @@ function PickupScheduleList() {
 
         try {
             await axios.post(
-                `http://127.0.0.1:8000/api/inventory/confirm/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/confirm/${id}/`,
                 {},
                 {
                     headers: {

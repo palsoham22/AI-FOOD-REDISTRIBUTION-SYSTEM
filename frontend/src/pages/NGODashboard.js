@@ -54,7 +54,7 @@ function NGODashboard() {
 
     const loadDonations = () => {
         const token = localStorage.getItem("access");
-        axios.get("http://127.0.0.1:8000/api/inventory/donations/", {
+        axios.get(process.env.REACT_APP_API_URL + "/api/inventory/donations/", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -72,7 +72,7 @@ function NGODashboard() {
 
     const loadDashboard = () => {
         const token = localStorage.getItem("access");
-        axios.get("http://127.0.0.1:8000/api/inventory/ngo/dashboard/", {
+        axios.get(process.env.REACT_APP_API_URL + "/api/inventory/ngo/dashboard/", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -105,7 +105,7 @@ function NGODashboard() {
         const token = localStorage.getItem("access");
         try {
             await axios.post(
-                `http://127.0.0.1:8000/api/inventory/accept/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/accept/${id}/`,
                 {},
                 {
                     headers: {

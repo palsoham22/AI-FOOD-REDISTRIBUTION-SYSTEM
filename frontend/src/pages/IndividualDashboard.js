@@ -44,7 +44,7 @@ function IndividualDashboard() {
         try {
             // 1. Fetch real KPI metrics from existing backend endpoint
             const dashResponse = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/individual/dashboard/",
+                process.env.REACT_APP_API_URL + "/api/inventory/individual/dashboard/",
                 { headers }
             );
 
@@ -61,7 +61,7 @@ function IndividualDashboard() {
             // 2. Safely fetch recent donation records if available
             try {
                 const donResponse = await axios.get(
-                    "http://127.0.0.1:8000/api/inventory/individual/my-donations/",
+                    process.env.REACT_APP_API_URL + "/api/inventory/individual/my-donations/",
                     { headers }
                 );
                 if (Array.isArray(donResponse.data)) {

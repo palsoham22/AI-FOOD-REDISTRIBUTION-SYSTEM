@@ -64,7 +64,7 @@ function BarcodeScanner() {
             console.log("Token:", token);
 
             const response = await axios.get(
-                `http://127.0.0.1:8000/api/inventory/barcode/${barcode}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/barcode/${barcode}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

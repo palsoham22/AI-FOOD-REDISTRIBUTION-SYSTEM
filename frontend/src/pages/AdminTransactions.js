@@ -79,7 +79,7 @@ function AdminTransactions() {
         try {
             const token = localStorage.getItem("access");
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/admin/transactions/",
+                process.env.REACT_APP_API_URL + "/api/inventory/admin/transactions/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

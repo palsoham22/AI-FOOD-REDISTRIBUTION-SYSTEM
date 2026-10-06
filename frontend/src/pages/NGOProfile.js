@@ -51,7 +51,7 @@ function NGOProfile() {
         const localOwner = localStorage.getItem("owner_name") || "";
 
         axios
-            .get("http://127.0.0.1:8000/api/inventory/profile/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/profile/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

@@ -35,7 +35,7 @@ function BusinessDashboard() {
   const loadProducts = () => {
     const token = localStorage.getItem("access");
     axios
-      .get("http://127.0.0.1:8000/api/inventory/list/", {
+      .get(process.env.REACT_APP_API_URL + "/api/inventory/list/", {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -206,7 +206,7 @@ function BusinessDashboard() {
     }
     const token = localStorage.getItem("access");
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/inventory/delete/${id}/`, {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/inventory/delete/${id}/`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -224,7 +224,7 @@ function BusinessDashboard() {
     const token = localStorage.getItem("access");
     try {
       await axios.post(
-        `http://127.0.0.1:8000/api/inventory/donate/${id}/`,
+        `${process.env.REACT_APP_API_URL}/api/inventory/donate/${id}/`,
         {},
         {
           headers: {
@@ -250,7 +250,7 @@ function BusinessDashboard() {
 
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/inventory/upload-csv/",
+        process.env.REACT_APP_API_URL + "/api/inventory/upload-csv/",
         formData,
         {
           headers: {
@@ -271,7 +271,7 @@ function BusinessDashboard() {
     try {
       const token = localStorage.getItem("access");
       await axios.post(
-        "http://127.0.0.1:8000/api/pos/import/",
+        process.env.REACT_APP_API_URL + "/api/pos/import/",
         {},
         {
           headers: {

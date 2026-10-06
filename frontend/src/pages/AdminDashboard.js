@@ -51,8 +51,8 @@ function AdminDashboard() {
 
         try {
             const [dashResponse, donationsResponse] = await Promise.all([
-                axios.get("http://127.0.0.1:8000/api/inventory/admin-dashboard/", { headers }),
-                axios.get("http://127.0.0.1:8000/api/inventory/admin/donations/", { headers })
+                axios.get(process.env.REACT_APP_API_URL + "/api/inventory/admin-dashboard/", { headers }),
+                axios.get(process.env.REACT_APP_API_URL + "/api/inventory/admin/donations/", { headers })
             ]);
 
             if (dashResponse.data) {

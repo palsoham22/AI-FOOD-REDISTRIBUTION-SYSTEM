@@ -60,7 +60,7 @@ function Navigation() {
 
         axios
             .post(
-                "http://127.0.0.1:8000/api/delivery/update-location/",
+                process.env.REACT_APP_API_URL + "/api/delivery/update-location/",
                 { latitude, longitude },
                 {
                     headers: {
@@ -83,7 +83,7 @@ function Navigation() {
 
         try {
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/out-for-pickup/",
+                process.env.REACT_APP_API_URL + "/api/inventory/out-for-pickup/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -163,7 +163,7 @@ function Navigation() {
 
             try {
                 await axios.post(
-                    `http://127.0.0.1:8000/api/inventory/mark-delivered/${id}/`,
+                    `${process.env.REACT_APP_API_URL}/api/inventory/mark-delivered/${id}/`,
                     {},
                     {
                         headers: {

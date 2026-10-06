@@ -47,7 +47,7 @@ function DonationHistory() {
         const token = localStorage.getItem("access");
 
         axios
-            .get("http://127.0.0.1:8000/api/inventory/history/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/history/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

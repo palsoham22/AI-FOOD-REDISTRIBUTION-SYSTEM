@@ -40,7 +40,7 @@ function NGOMap({ driverId }) {
             try {
 
                 const response = await axios.get(
-                    `http://127.0.0.1:8000/api/delivery/location/${driverId}/`,
+                    `${process.env.REACT_APP_API_URL}/api/delivery/location/${driverId}/`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

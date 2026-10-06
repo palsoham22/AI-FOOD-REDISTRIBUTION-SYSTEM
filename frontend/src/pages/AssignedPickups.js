@@ -56,7 +56,7 @@ function AssignedPickups() {
 
         try {
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/inventory/delivery/my-pickups/",
+                process.env.REACT_APP_API_URL + "/api/inventory/delivery/my-pickups/",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -100,7 +100,7 @@ function AssignedPickups() {
 
             try {
                 await axios.post(
-                    `http://127.0.0.1:8000/api/inventory/start-pickup/${id}/`,
+                    `${process.env.REACT_APP_API_URL}/api/inventory/start-pickup/${id}/`,
                     {},
                     {
                         headers: {
@@ -137,7 +137,7 @@ function AssignedPickups() {
 
             try {
                 await axios.post(
-                    `http://127.0.0.1:8000/api/inventory/verify-pickup-otp/${id}/`,
+                    `${process.env.REACT_APP_API_URL}/api/inventory/verify-pickup-otp/${id}/`,
                     { pickup_otp: otpVal },
                     {
                         headers: {
@@ -176,7 +176,7 @@ function AssignedPickups() {
 
             try {
                 await axios.post(
-                    `http://127.0.0.1:8000/api/inventory/verify-delivery-otp/${id}/`,
+                    `${process.env.REACT_APP_API_URL}/api/inventory/verify-delivery-otp/${id}/`,
                     { delivery_otp: otpVal },
                     {
                         headers: {

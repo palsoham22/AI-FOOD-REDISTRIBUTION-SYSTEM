@@ -65,7 +65,7 @@ function DonateFood() {
 
             try {
                 const response = await axios.get(
-                    "http://127.0.0.1:8000/api/inventory/profile/",
+                    process.env.REACT_APP_API_URL + "/api/inventory/profile/",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -186,7 +186,7 @@ function DonateFood() {
             };
 
             await axios.post(
-                "http://127.0.0.1:8000/api/inventory/individual/donate/",
+                process.env.REACT_APP_API_URL + "/api/inventory/individual/donate/",
                 payload,
                 {
                     headers: {

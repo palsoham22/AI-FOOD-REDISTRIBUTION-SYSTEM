@@ -50,7 +50,7 @@ function AcceptedDonations() {
         const token = localStorage.getItem("access");
 
         axios
-            .get("http://127.0.0.1:8000/api/inventory/accepted/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/accepted/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

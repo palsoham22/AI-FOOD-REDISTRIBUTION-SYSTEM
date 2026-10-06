@@ -103,7 +103,7 @@ if (!navigator.onLine) {
 
             await axios.post(
 
-    "http://127.0.0.1:8000/api/inventory/add/",
+    process.env.REACT_APP_API_URL + "/api/inventory/add/",
 
     {
     product_name,

@@ -33,7 +33,7 @@ function PickupSchedule() {
             const token = localStorage.getItem("access");
             try {
                 const res = await axios.get(
-                    `http://127.0.0.1:8000/api/inventory/schedule/${id}/`,
+                    `${process.env.REACT_APP_API_URL}/api/inventory/schedule/${id}/`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -57,7 +57,7 @@ function PickupSchedule() {
             const token = localStorage.getItem("access");
             try {
                 const res = await axios.get(
-                    "http://127.0.0.1:8000/api/available-delivery-partners/",
+                    process.env.REACT_APP_API_URL + "/api/available-delivery-partners/",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -87,7 +87,7 @@ function PickupSchedule() {
 
         try {
             const response = await axios.post(
-                `http://127.0.0.1:8000/api/inventory/schedule/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/schedule/${id}/`,
                 {
                     pickup_date: pickupDate,
                     pickup_time: pickupTime,

@@ -36,7 +36,7 @@ function DeliveryDashboard() {
 
         axios
             .post(
-                "http://127.0.0.1:8000/api/delivery/update-location/",
+                process.env.REACT_APP_API_URL + "/api/delivery/update-location/",
                 { latitude, longitude },
                 {
                     headers: {
@@ -64,9 +64,9 @@ function DeliveryDashboard() {
 
         try {
             const [profileRes, statsRes, pickupsRes] = await Promise.all([
-                axios.get("http://127.0.0.1:8000/api/delivery/profile/", { headers }).catch(() => ({ data: {} })),
-                axios.get("http://127.0.0.1:8000/api/delivery/dashboard/", { headers }).catch(() => ({ data: {} })),
-                axios.get("http://127.0.0.1:8000/api/inventory/delivery/my-pickups/", { headers }).catch(() => ({ data: [] })),
+                axios.get(process.env.REACT_APP_API_URL + "/api/delivery/profile/", { headers }).catch(() => ({ data: {} })),
+                axios.get(process.env.REACT_APP_API_URL + "/api/delivery/dashboard/", { headers }).catch(() => ({ data: {} })),
+                axios.get(process.env.REACT_APP_API_URL + "/api/inventory/delivery/my-pickups/", { headers }).catch(() => ({ data: [] })),
             ]);
 
             if (profileRes.data) {

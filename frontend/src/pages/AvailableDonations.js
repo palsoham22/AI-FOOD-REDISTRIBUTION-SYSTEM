@@ -49,7 +49,7 @@ function AvailableDonations() {
         const token = localStorage.getItem("access");
 
         axios
-            .get("http://127.0.0.1:8000/api/inventory/donations/", {
+            .get(process.env.REACT_APP_API_URL + "/api/inventory/donations/", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -94,7 +94,7 @@ function AvailableDonations() {
 
         try {
             await axios.post(
-                `http://127.0.0.1:8000/api/inventory/accept/${id}/`,
+                `${process.env.REACT_APP_API_URL}/api/inventory/accept/${id}/`,
                 {},
                 {
                     headers: {
