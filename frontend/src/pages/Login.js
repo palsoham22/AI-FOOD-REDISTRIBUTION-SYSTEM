@@ -1,6 +1,6 @@
 import ThemeToggle from "../components/ThemeToggle";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import { useTranslate } from "../hooks/useTranslate";
 import { usePageTranslation } from "../hooks/usePageTranslation";
@@ -9,12 +9,21 @@ import { LABELS } from "../translations";
 import "./Login.css";
 
 function Login() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const intendedRole = location.state?.intendedRole;
+  const redirectTo = location.state?.redirectTo;
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("BUSINESS");
+  const [role, setRole] = useState(() => {
+    const validRoles = ["BUSINESS", "NGO", "DELIVERY", "INDIVIDUAL"];
+    if (intendedRole && validRoles.includes(intendedRole)) {
+      return intendedRole;
+    }
+    return "BUSINESS";
+  });
   const [showPassword, setShowPassword] = useState(false);
-
-  const navigate = useNavigate();
   const t = useTranslate();
   const { language, setLanguage } = useTranslationContext();
   usePageTranslation(LABELS.LOGIN);
@@ -22,31 +31,53 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(process.env.REACT_APP_API_URL + "/api/login/", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        process.env.REACT_APP_API_URL + "/api/login/",
+        {
+          username,
+          password,
+        }
+      );
+
+      const userRole = response.data.role;
+
       localStorage.setItem("access", response.data.access);
       localStorage.setItem("refresh", response.data.refresh);
-      alert(t("Login Successful 🎉"));
-      const role = response.data.role;
-      localStorage.setItem("role", role);
-      localStorage.setItem("username", username);
-      localStorage.setItem("owner_name", response.data.owner_name);
-      localStorage.setItem("business_name", response.data.business_name);
-      localStorage.setItem("business_type", response.data.business_type);
-      const userRole = response.data.role;
       localStorage.setItem("role", userRole);
-      if (userRole === "BUSINESS") {
-        navigate("/business-dashboard");
-      } else if (userRole === "NGO") {
-        navigate("/ngo-dashboard");
-      } else if (userRole === "DELIVERY") {
-        navigate("/delivery-dashboard");
-      } else if (userRole === "ADMIN") {
-        navigate("/admin-dashboard");
-      } else if (userRole === "INDIVIDUAL") {
-        navigate("/individual");
+      localStorage.setItem("username", username);
+      localStorage.setItem("owner_name", response.data.owner_name || "");
+      localStorage.setItem("business_name", response.data.business_name || "");
+      localStorage.setItem("business_type", response.data.business_type || "");
+
+      const roleDashboardMap = {
+        BUSINESS: "/business-dashboard",
+        NGO: "/ngo-dashboard",
+        DELIVERY: "/delivery-dashboard",
+        INDIVIDUAL: "/individual",
+        ADMIN: "/admin-dashboard",
+      };
+
+      // Check role matching if an intended role/portal was selected
+      const targetRole = intendedRole ? role : null;
+
+      if (targetRole && userRole !== targetRole) {
+        // Prevent unauthorized access to the intended portal
+        alert(
+          t(
+            "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard."
+          )
+        );
+        navigate(roleDashboardMap[userRole] || "/");
+        return;
+      }
+
+      // Successful login
+      alert(t("Login Successful 🎉"));
+
+      if (redirectTo && (!targetRole || userRole === targetRole)) {
+        navigate(redirectTo);
+      } else {
+        navigate(roleDashboardMap[userRole] || "/");
       }
     } catch (error) {
       console.log(error.response?.data);

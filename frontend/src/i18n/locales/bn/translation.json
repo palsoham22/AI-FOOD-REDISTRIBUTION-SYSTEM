@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "লাইভ সার্ভার টেলিমেট্রি এবং ব্যাকগ্রাউন্ড হার্টবিট পর্যবেক্ষণ বর্তমানে এই প্যানেলে সংযুক্ত নয়।",
   "Account Session": "অ্যাকাউন্ট সেশন",
   "Click below to securely end your current administrative session.": "আপনার বর্তমান প্রশাসনিক সেশন নিরাপদে শেষ করতে নিচে ক্লিক করুন।",
-  "Settings updated successfully.": "সেটিংস সফলভাবে আপডেট করা হয়েছে।"
+  "Settings updated successfully.": "সেটিংস সফলভাবে আপডেট করা হয়েছে।",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "অ্যাক্সেস সীমাবদ্ধ: আপনার অ্যাকাউন্টের ভূমিকা নির্বাচিত পোর্টালের সাথে মেলে না। আপনার ড্যাশবোর্ডে পুনঃনির্দেশ করা হচ্ছে।"
 }

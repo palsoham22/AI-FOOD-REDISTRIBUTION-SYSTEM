@@ -117,6 +117,7 @@ export const LABELS = {
         "Individual Donors",
         "Citizens and households listing surplus food and contributing directly to local hunger relief.",
         "Go to Individual Portal",
+        "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.",
         "Oversight",
         "System Administrators",
         "Platform administrators managing user registrations, system oversight, and redistribution records.",
@@ -260,6 +261,7 @@ LOGIN: [
     "Login Successful 🎉",
 
     "Invalid Credentials",
+    "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.",
 
     "Smarter food impact",
 

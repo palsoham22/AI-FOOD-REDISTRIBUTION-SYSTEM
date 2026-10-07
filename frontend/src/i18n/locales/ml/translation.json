@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "ലൈവ് സെർവർ ടെലിമെട്രിയും പശ്ചാത്തല ഹാർട്ട്ബീറ്റ് നിരീക്ഷണവും നിലവിൽ ഈ പാനലിലേക്ക് കണക്റ്റുചെയ്തിട്ടില്ല.",
   "Account Session": "അക്കൗണ്ട് സെഷൻ",
   "Click below to securely end your current administrative session.": "നിങ്ങളുടെ നിലവിലെ അഡ്മിനിസ്ട്രേറ്റീവ് സെഷൻ സുരക്ഷിതമായി അവസാനിപ്പിക്കാൻ താഴെ ക്ലിക്ക് ചെയ്യുക.",
-  "Settings updated successfully.": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റ് ചെയ്തു."
+  "Settings updated successfully.": "ക്രമീകരണങ്ങൾ വിജയകരമായി അപ്ഡേറ്റ് ചെയ്തു.",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "ആക്സസ് നിയന്ത്രിച്ചിരിക്കുന്നു: നിങ്ങളുടെ അക്കൗണ്ട് റോൾ തിരഞ്ഞെടുത്ത പോർട്ടലുമായി പൊരുത്തപ്പെടുന്നില്ല. നിങ്ങളുടെ ഡാഷ്‌ബോർഡിലേക്ക് റീഡയറക്ട് ചെയ്യുന്നു."
 }

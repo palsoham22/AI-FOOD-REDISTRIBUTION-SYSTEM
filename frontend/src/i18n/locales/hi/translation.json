@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "लाइव सर्वर टेलीमेट्री और बैकग्राउंड हार्टबीट मॉनिटरिंग वर्तमान में इस पैनल से कनेक्ट नहीं हैं।",
   "Account Session": "खाता सत्र",
   "Click below to securely end your current administrative session.": "अपने वर्तमान प्रशासनिक सत्र को सुरक्षित रूप से समाप्त करने के लिए नीचे क्लिक करें।",
-  "Settings updated successfully.": "सेटिंग्स सफलतापूर्वक अपडेट की गईं।"
+  "Settings updated successfully.": "सेटिंग्स सफलतापूर्वक अपडेट की गईं।",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "पहुंच प्रतिबंधित: आपके खाते की भूमिका चयनित पोर्टल से मेल नहीं खाती। आपके डैशबोर्ड पर पुनर्निर्देशित किया जा रहा है।"
 }

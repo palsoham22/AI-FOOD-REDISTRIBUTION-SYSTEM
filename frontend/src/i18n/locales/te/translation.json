@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "లైవ్ సర్వర్ టెలిమెట్రీ మరియు బ్యాక్‌గ్రౌండ్ హార్ట్‌బీట్ మానిటరింగ్ ప్రస్తుతం ఈ ప్యానెల్‌కు కనెక్ట్ చేయబడలేదు.",
   "Account Session": "ఖాతా సెషన్",
   "Click below to securely end your current administrative session.": "మీ ప్రస్తుత పరిపాలనా సెషన్‌ను సురక్షితంగా ముగించడానికి క్రింద క్లిక్ చేయండి.",
-  "Settings updated successfully.": "సెట్టింగ్‌లు విజయవంతంగా నవీకరించబడ్డాయి."
+  "Settings updated successfully.": "సెట్టింగ్‌లు విజయవంతంగా నవీకరించబడ్డాయి.",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "యాక్సెస్ పరిమితం చేయబడింది: మీ ఖాతా పాత్ర ఎంచుకున్న పోర్టల్‌తో సరిపోలడం లేదు. మీ డాష్‌బోర్డ్‌కు దారి మళ్లించబడుతోంది."
 }

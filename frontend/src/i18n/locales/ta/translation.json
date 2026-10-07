@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "நேரடி சேவையக தொலை அளவீடு மற்றும் பின்னணி இயக்க கண்காணிப்பு தற்போது இந்த பேனலுடன் இணைக்கப்படவில்லை.",
   "Account Session": "கணக்கு அமர்வு",
   "Click below to securely end your current administrative session.": "உங்கள் தற்போதைய நிர்வாக அமர்வைப் பாதுகாப்பாக முடிக்க கீழே கிளிக் செய்யவும்.",
-  "Settings updated successfully.": "அமைப்புகள் வெற்றிகரமாகப் புதுப்பிக்கப்பட்டன."
+  "Settings updated successfully.": "அமைப்புகள் வெற்றிகரமாகப் புதுப்பிக்கப்பட்டன.",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "அணுகல் தடைசெய்யப்பட்டுள்ளது: உங்கள் கணக்கின் பங்கு தேர்ந்தெடுக்கப்பட்ட போர்ட்டலுடன் பொருந்தவில்லை. உங்கள் டாஷ்போர்டிற்கு திருப்பி விடப்படுகிறீர்கள்."
 }

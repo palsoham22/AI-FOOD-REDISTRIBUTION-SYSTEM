@@ -53,14 +53,28 @@ function App() {
 
         <Route
           path="/business-dashboard"
-          element={<BusinessDashboard />}
+          element={
+            <ProtectedRoute allowedRoles={["BUSINESS"]}>
+              <BusinessDashboard />
+            </ProtectedRoute>
+          }
         />
-        <Route path="/business/dashboard" element={<BusinessDashboard />}
+        <Route
+          path="/business/dashboard"
+          element={
+            <ProtectedRoute allowedRoles={["BUSINESS"]}>
+              <BusinessDashboard />
+            </ProtectedRoute>
+          }
         />
 
         <Route
           path="/ngo-dashboard"
-          element={<NGODashboard />}
+          element={
+            <ProtectedRoute allowedRoles={["NGO"]}>
+              <NGODashboard />
+            </ProtectedRoute>
+          }
         />
 
         <Route
@@ -151,7 +165,11 @@ function App() {
 
 <Route
     path="/delivery-dashboard"
-    element={<DeliveryDashboard />}
+    element={
+      <ProtectedRoute allowedRoles={["DELIVERY"]}>
+        <DeliveryDashboard />
+      </ProtectedRoute>
+    }
 />
 
 <Route
@@ -251,7 +269,11 @@ function App() {
         />
 <Route
     path="/individual"
-    element={<IndividualDashboard />}
+    element={
+      <ProtectedRoute allowedRoles={["INDIVIDUAL"]}>
+        <IndividualDashboard />
+      </ProtectedRoute>
+    }
 />
 <Route
     path="/donate-food"

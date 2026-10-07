@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useTranslate } from "../hooks/useTranslate";
@@ -7,8 +7,45 @@ import { LABELS } from "../translations";
 import "../styles/Home.css";
 
 function Home() {
+  const navigate = useNavigate();
   const t = useTranslate();
   usePageTranslation(LABELS.HOME);
+
+  const handlePortalClick = (targetRole, targetPath) => {
+    const token = localStorage.getItem("access");
+    const currentRole = localStorage.getItem("role");
+
+    if (!token) {
+      navigate("/login", {
+        state: {
+          intendedRole: targetRole,
+          redirectTo: targetPath,
+        },
+      });
+      return;
+    }
+
+    if (currentRole === targetRole) {
+      navigate(targetPath);
+      return;
+    }
+
+    alert(
+      t(
+        "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard."
+      )
+    );
+
+    const roleDashboardMap = {
+      BUSINESS: "/business-dashboard",
+      NGO: "/ngo-dashboard",
+      DELIVERY: "/delivery-dashboard",
+      INDIVIDUAL: "/individual",
+      ADMIN: "/admin-dashboard",
+    };
+
+    navigate(roleDashboardMap[currentRole] || "/");
+  };
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -596,10 +633,14 @@ function Home() {
                       "Supermarkets, restaurants, and caterers managing inventory, tracking expiry, and donating surplus food."
                     )}
                   </p>
-                  <Link to="/business-dashboard" className="fb-role-link">
+                  <button
+                    type="button"
+                    onClick={() => handlePortalClick("BUSINESS", "/business-dashboard")}
+                    className="fb-role-link"
+                  >
                     <span>{t("Go to Business Portal")}</span>
                     <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  </button>
                 </div>
               </div>
 
@@ -613,10 +654,14 @@ function Home() {
                       "Community kitchens and food relief organizations reviewing surplus listings, requesting items, and managing rations."
                     )}
                   </p>
-                  <Link to="/ngo-dashboard" className="fb-role-link">
+                  <button
+                    type="button"
+                    onClick={() => handlePortalClick("NGO", "/ngo-dashboard")}
+                    className="fb-role-link"
+                  >
                     <span>{t("Go to NGO Portal")}</span>
                     <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  </button>
                 </div>
               </div>
 
@@ -630,10 +675,14 @@ function Home() {
                       "Logistics volunteers and drivers managing pickup queues and recording completed distributions."
                     )}
                   </p>
-                  <Link to="/delivery-dashboard" className="fb-role-link">
+                  <button
+                    type="button"
+                    onClick={() => handlePortalClick("DELIVERY", "/delivery-dashboard")}
+                    className="fb-role-link"
+                  >
                     <span>{t("Go to Delivery Portal")}</span>
                     <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  </button>
                 </div>
               </div>
 
@@ -647,10 +696,14 @@ function Home() {
                       "Citizens and households listing surplus food and contributing directly to local hunger relief."
                     )}
                   </p>
-                  <Link to="/individual" className="fb-role-link">
+                  <button
+                    type="button"
+                    onClick={() => handlePortalClick("INDIVIDUAL", "/individual")}
+                    className="fb-role-link"
+                  >
                     <span>{t("Go to Individual Portal")}</span>
                     <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

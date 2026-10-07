@@ -1,9 +1,46 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslate } from "../hooks/useTranslate";
 import "../styles/Footer.css";
 
 function Footer() {
+  const navigate = useNavigate();
   const t = useTranslate();
+
+  const handlePortalClick = (targetRole, targetPath) => {
+    const token = localStorage.getItem("access");
+    const currentRole = localStorage.getItem("role");
+
+    if (!token) {
+      navigate("/login", {
+        state: {
+          intendedRole: targetRole,
+          redirectTo: targetPath,
+        },
+      });
+      return;
+    }
+
+    if (currentRole === targetRole) {
+      navigate(targetPath);
+      return;
+    }
+
+    alert(
+      t(
+        "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard."
+      )
+    );
+
+    const roleDashboardMap = {
+      BUSINESS: "/business-dashboard",
+      NGO: "/ngo-dashboard",
+      DELIVERY: "/delivery-dashboard",
+      INDIVIDUAL: "/individual",
+      ADMIN: "/admin-dashboard",
+    };
+
+    navigate(roleDashboardMap[currentRole] || "/");
+  };
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -103,28 +140,44 @@ function Footer() {
             <h6 className="fb-footer-title">{t("Platform Roles")}</h6>
             <ul className="fb-footer-list">
               <li>
-                <Link to="/business-dashboard" className="fb-footer-link">
+                <button
+                  type="button"
+                  onClick={() => handlePortalClick("BUSINESS", "/business-dashboard")}
+                  className="fb-footer-link"
+                >
                   <i className="bi bi-building small text-primary"></i>
                   {t("Business Portal")}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/ngo-dashboard" className="fb-footer-link">
+                <button
+                  type="button"
+                  onClick={() => handlePortalClick("NGO", "/ngo-dashboard")}
+                  className="fb-footer-link"
+                >
                   <i className="bi bi-people small text-primary"></i>
                   {t("NGO & Food Banks")}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/delivery-dashboard" className="fb-footer-link">
+                <button
+                  type="button"
+                  onClick={() => handlePortalClick("DELIVERY", "/delivery-dashboard")}
+                  className="fb-footer-link"
+                >
                   <i className="bi bi-truck small text-primary"></i>
                   {t("Delivery Partner")}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/individual" className="fb-footer-link">
+                <button
+                  type="button"
+                  onClick={() => handlePortalClick("INDIVIDUAL", "/individual")}
+                  className="fb-footer-link"
+                >
                   <i className="bi bi-person-heart small text-primary"></i>
                   {t("Individual Donor")}
-                </Link>
+                </button>
               </li>
 
             </ul>

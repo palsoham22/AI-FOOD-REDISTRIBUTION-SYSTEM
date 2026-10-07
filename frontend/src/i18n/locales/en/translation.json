@@ -874,5 +874,6 @@
   "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.": "Live server telemetry and background heartbeat monitoring are not currently connected to this panel.",
   "Account Session": "Account Session",
   "Click below to securely end your current administrative session.": "Click below to securely end your current administrative session.",
-  "Settings updated successfully.": "Settings updated successfully."
+  "Settings updated successfully.": "Settings updated successfully.",
+  "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard.": "Access restricted: Your account role does not match the selected portal. Redirecting to your dashboard."
 }
