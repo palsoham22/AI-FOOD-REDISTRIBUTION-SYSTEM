@@ -159,4 +159,5 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://ai-food-redistribution-system-ashy.vercel.app",
 ]
