@@ -2,6 +2,23 @@
 
 > A full-stack platform for managing surplus food inventory, donations, claims, and delivery coordination to reduce food waste.
 
+<p align="center">
+  <a href="https://ai-food-redistribution-system-ashy.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20FoodBridge%20AI-059669?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/palsoham22/AI-FOOD-REDISTRIBUTION-SYSTEM">
+    <img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" />
+  </a>
+</p>
+
+## 🖥️ Application Preview
+
+<p align="center">
+  <a href="https://ai-food-redistribution-system-ashy.vercel.app/">
+    <img src="docs/screenshots/landing-page.png" alt="FoodBridge AI Landing Page Screenshot" width="900" />
+  </a>
+</p>
+
 ## 📌 Overview
 
 The **AI-Based Food Redistribution System** is a web application designed to streamline surplus food management and redistribution.
