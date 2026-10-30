@@ -199,12 +199,70 @@
     color: #F8FAFC !important;
 }
 
+[data-theme="dark"] .fb-brand-badge {
+    background: rgba(45, 212, 191, 0.15) !important;
+    color: #2DD4BF !important;
+    border: 1px solid rgba(45, 212, 191, 0.35) !important;
+}
+
 [data-theme="dark"] .fb-nav-link {
     color: #CBD5E1 !important;
 }
 
 [data-theme="dark"] .fb-nav-link:hover {
     color: #60A5FA !important;
+    background-color: #1E293B !important;
+}
+
+[data-theme="dark"] .fb-lang-select {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-lang-select:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] .fb-btn-login {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-btn-login:hover {
+    background-color: #243247 !important;
+    color: #60A5FA !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-btn-register {
+    background: #2563EB !important;
+    border-color: #1D4ED8 !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .fb-btn-register:hover {
+    background: #1D4ED8 !important;
+    border-color: #1E40AF !important;
+}
+
+[data-theme="dark"] .fb-mobile-toggle {
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-mobile-toggle:hover {
+    background-color: #1E293B !important;
+}
+
+[data-theme="dark"] .fb-mobile-menu {
+    border-top-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-mobile-actions {
+    border-top-color: #334155 !important;
 }
 
 [data-theme="dark"] .fb-mobile-nav {
@@ -679,53 +737,427 @@
    12. LANDING PAGE & PUBLIC SECTIONS
    ========================================================================== */
 
-[data-theme="dark"] .fb-hero-section {
-    background: linear-gradient(180deg, #0F172A 0%, #111827 100%) !important;
+/* Base container */
+[data-theme="dark"] .fb-landing {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
 }
 
-[data-theme="dark"] .fb-hero-title,
+/* Alternating Section Backgrounds: #0F172A and #111827 */
+[data-theme="dark"] .fb-hero-section {
+    background: linear-gradient(180deg, #0F172A 0%, #111827 100%) !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-about-section {
+    background-color: #0F172A !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-how-section {
+    background-color: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-features-section {
+    background-color: #0F172A !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-roles-section {
+    background-color: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-impact-section {
+    background-color: #0F172A !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-cta-section {
+    background-color: #111827 !important;
+}
+
+/* Section Headers */
 [data-theme="dark"] .fb-section-title {
     color: #F8FAFC !important;
 }
 
-[data-theme="dark"] .fb-hero-lead,
+[data-theme="dark"] .fb-section-subtitle,
 [data-theme="dark"] .fb-section-desc {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-section-tag {
+    background-color: #1E3A5F !important;
+    border-color: #2563EB !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-section-tag.teal {
+    background-color: #134E4A !important;
+    border-color: #115E59 !important;
+    color: #2DD4BF !important;
+}
+
+/* Hero Section */
+[data-theme="dark"] .fb-hero-eyebrow {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #60A5FA !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .fb-hero-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-hero-title .fb-highlight {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-hero-lead {
     color: #CBD5E1 !important;
 }
 
-[data-theme="dark"] .fb-hero-stat-card,
-[data-theme="dark"] .fb-about-card,
-[data-theme="dark"] .fb-feature-card,
-[data-theme="dark"] .fb-step-card,
-[data-theme="dark"] .fb-role-card,
-[data-theme="dark"] .fb-impact-card,
-[data-theme="dark"] .fb-stat-box {
+[data-theme="dark"] .fb-btn-hero-primary {
+    background-color: #3B82F6 !important;
+    border-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-btn-hero-primary:hover {
+    background-color: #2563EB !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .fb-btn-hero-secondary {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-btn-hero-secondary:hover {
+    background-color: #243247 !important;
+    color: #60A5FA !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-hero-proof {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-proof-item i {
+    color: #2DD4BF !important;
+}
+
+/* Hero Interactive Mockup Card */
+[data-theme="dark"] .fb-hero-card {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-mock-topbar {
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-hero-card .text-dark,
+[data-theme="dark"] .fb-mock-item .text-dark {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-hero-card .text-secondary,
+[data-theme="dark"] .fb-mock-item .text-secondary {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-hero-card .border-top {
+    border-top-color: #334155 !important;
+}
+
+[data-theme="dark"] .fb-mock-badge {
+    background: #064E3B !important;
+    color: #22C55E !important;
+}
+
+[data-theme="dark"] .fb-mock-item {
+    background: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-mock-item:hover {
+    background: #1E293B !important;
+    border-color: #60A5FA !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .fb-pill-expiry {
+    background: rgba(251, 191, 36, 0.15) !important;
+    color: #FBBF24 !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+}
+
+[data-theme="dark"] .fb-pill-matched {
+    background: rgba(45, 212, 191, 0.15) !important;
+    color: #2DD4BF !important;
+    border: 1px solid rgba(45, 212, 191, 0.3) !important;
+}
+
+[data-theme="dark"] .fb-pill-completed {
+    background: rgba(34, 197, 94, 0.15) !important;
+    color: #22C55E !important;
+    border: 1px solid rgba(34, 197, 94, 0.3) !important;
+}
+
+/* About Section */
+[data-theme="dark"] .fb-narrative-card {
     background-color: #1E293B !important;
     border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-narrative-card h4 {
     color: #F8FAFC !important;
 }
 
-[data-theme="dark"] .fb-feature-title,
-[data-theme="dark"] .fb-step-title,
-[data-theme="dark"] .fb-role-title,
-[data-theme="dark"] .fb-impact-stat {
-    color: #F8FAFC !important;
-}
-
-[data-theme="dark"] .fb-feature-text,
-[data-theme="dark"] .fb-step-desc,
-[data-theme="dark"] .fb-role-desc,
-[data-theme="dark"] .fb-impact-label {
+[data-theme="dark"] .fb-narrative-card p {
     color: #CBD5E1 !important;
 }
 
-[data-theme="dark"] .fb-cta-card {
-    background: linear-gradient(135deg, #1E3A5F 0%, #1E293B 100%) !important;
+[data-theme="dark"] .fb-pillar-card {
+    background-color: #1E293B !important;
     border: 1px solid #334155 !important;
 }
 
+[data-theme="dark"] .fb-pillar-card:hover {
+    border-color: #475569 !important;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-pillar-card h3 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-pillar-card p {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-pillar-icon.teal {
+    background: #134E4A !important;
+    color: #2DD4BF !important;
+}
+
+[data-theme="dark"] .fb-pillar-icon.blue {
+    background: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-pillar-icon.green {
+    background: #064E3B !important;
+    color: #22C55E !important;
+}
+
+/* How It Works Section */
+[data-theme="dark"] .fb-step-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-step-card:hover {
+    border-color: #60A5FA !important;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-step-card h3 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-step-card p {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-step-number {
+    background: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-step-icon {
+    background: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #60A5FA !important;
+}
+
+/* Features Section */
+[data-theme="dark"] .fb-feature-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-feature-card:hover {
+    border-color: #475569 !important;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-feature-card h3 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-feature-card p {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-feature-icon-box.blue {
+    background: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-feature-icon-box.teal {
+    background: #134E4A !important;
+    color: #2DD4BF !important;
+}
+
+[data-theme="dark"] .fb-feature-icon-box.green {
+    background: #064E3B !important;
+    color: #22C55E !important;
+}
+
+[data-theme="dark"] .fb-feature-icon-box.amber {
+    background: #451A03 !important;
+    color: #FBBF24 !important;
+}
+
+/* Roles Section */
+[data-theme="dark"] .fb-role-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-role-card:hover {
+    border-color: #475569 !important;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-role-card h3 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-role-card p {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-role-badge.business {
+    background: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-role-badge.ngo {
+    background: #134E4A !important;
+    color: #2DD4BF !important;
+}
+
+[data-theme="dark"] .fb-role-badge.delivery {
+    background: #451A03 !important;
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .fb-role-badge.individual {
+    background: #064E3B !important;
+    color: #22C55E !important;
+}
+
+[data-theme="dark"] .fb-role-badge.admin {
+    background: #1E293B !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-role-link {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-role-link:hover {
+    color: #93C5FD !important;
+}
+
+/* Impact Section */
+[data-theme="dark"] .fb-impact-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-impact-card:hover {
+    border-color: #475569 !important;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-impact-card h3 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-impact-card p {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-impact-icon.teal {
+    background: #134E4A !important;
+    color: #2DD4BF !important;
+}
+
+[data-theme="dark"] .fb-impact-icon.blue {
+    background: #1E3A5F !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-impact-icon.green {
+    background: #064E3B !important;
+    color: #22C55E !important;
+}
+
+/* CTA Box */
+[data-theme="dark"] .fb-cta-box {
+    background: linear-gradient(135deg, #1E293B 0%, #1E3A8A 55%, #0F766E 100%) !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-cta-tag {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .fb-cta-title {
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .fb-cta-lead {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-btn-cta-primary {
+    color: #0F172A !important;
+    background-color: #F8FAFC !important;
+    border-color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-btn-cta-primary:hover {
+    background-color: #E2E8F0 !important;
+    color: #0F172A !important;
+}
+
+[data-theme="dark"] .fb-btn-cta-secondary {
+    color: #F8FAFC !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-theme="dark"] .fb-btn-cta-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #FFFFFF !important;
+}
+
+/* Footer (ensured consistent) */
 [data-theme="dark"] .fb-footer {
-    background-color: #111827 !important;
+    background-color: #0F172A !important;
     border-top: 1px solid #334155 !important;
     color: #CBD5E1 !important;
 }
