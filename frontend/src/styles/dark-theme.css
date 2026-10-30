@@ -454,6 +454,8 @@
 [data-theme="dark"] .report-card,
 [data-theme="dark"] .fb-auth-card,
 [data-theme="dark"] .auth-card,
+[data-theme="dark"] .fb-login-card,
+[data-theme="dark"] .fb-register-card,
 [data-theme="dark"] .fb-action-card,
 [data-theme="dark"] .banner,
 [data-theme="dark"] .ngo-banner,
@@ -1174,6 +1176,11 @@
    13. LOGIN & REGISTER
    ========================================================================== */
 
+[data-theme="dark"] .fb-auth-page {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+}
+
 [data-theme="dark"] .fb-auth-header {
     background-color: #111827 !important;
     border-bottom: 1px solid #334155 !important;
@@ -1189,29 +1196,129 @@
 
 [data-theme="dark"] .fb-auth-nav-link:hover {
     color: #60A5FA !important;
+    background-color: #1E293B !important;
 }
 
+[data-theme="dark"] .fb-auth-nav-btn {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-auth-nav-btn:hover {
+    background-color: #243247 !important;
+    color: #60A5FA !important;
+    border-color: #60A5FA !important;
+}
+
+/* Auth Cards */
+[data-theme="dark"] .fb-login-card,
+[data-theme="dark"] .fb-register-card,
 [data-theme="dark"] .fb-auth-card {
     background-color: #1E293B !important;
     border: 1px solid #334155 !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
 }
 
-[data-theme="dark"] .fb-auth-brand-panel {
-    background-color: #111827 !important;
-    border-color: #334155 !important;
+/* Card Header & Headings */
+[data-theme="dark"] .fb-auth-kicker {
+    color: #60A5FA !important;
 }
 
-[data-theme="dark"] .fb-auth-title {
+[data-theme="dark"] .fb-auth-heading {
     color: #F8FAFC !important;
 }
 
-[data-theme="dark"] .fb-auth-subtitle {
+[data-theme="dark"] .fb-auth-subheading {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-auth-label {
     color: #CBD5E1 !important;
 }
 
-[data-theme="dark"] .fb-auth-switch-text {
+/* Role Segmented Toggle */
+[data-theme="dark"] .fb-role-toggle-group {
+    background: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-role-toggle-btn {
     color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-role-toggle-btn:hover {
+    color: #F8FAFC !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+}
+
+[data-theme="dark"] .fb-role-toggle-btn.active {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Form Inputs & Selects */
+[data-theme="dark"] .fb-auth-input-wrap > i {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-auth-input {
+    background-color: #111827 !important;
+    color: #F8FAFC !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-auth-input:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] select.fb-auth-input option {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-auth-pw-toggle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-auth-pw-toggle:hover {
+    color: #60A5FA !important;
+}
+
+/* Submit CTA */
+[data-theme="dark"] .fb-auth-submit-btn {
+    background: #2563EB !important;
+    border-color: #1D4ED8 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-auth-submit-btn:hover {
+    background: #1D4ED8 !important;
+    border-color: #1E40AF !important;
+}
+
+/* Auth Switch Link */
+[data-theme="dark"] .fb-auth-switch {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-auth-switch-link {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-auth-switch-link:hover {
+    color: #93C5FD !important;
+}
+
+/* Supporting Brand Panels */
+[data-theme="dark"] .fb-login-brand-panel,
+[data-theme="dark"] .fb-register-brand-panel,
+[data-theme="dark"] .fb-auth-brand-panel {
+    border: 1px solid #334155 !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* ==========================================================================
