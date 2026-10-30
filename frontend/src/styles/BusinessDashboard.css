@@ -54,7 +54,7 @@
 ========================================================================== */
 
 .fb-welcome-card {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     border: 1px solid #E2E8F0 !important;
     border-radius: 16px;
     padding: 24px 28px;
@@ -273,7 +273,7 @@
 }
 
 .fb-kpi-card {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     border: 1px solid #E2E8F0 !important;
     border-radius: 16px;
     padding: 20px 22px;
@@ -363,7 +363,7 @@
 ========================================================================== */
 
 .fb-toolbar-card {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     border: 1px solid #E2E8F0 !important;
     border-radius: 16px;
     padding: 16px 22px;
@@ -422,7 +422,7 @@
 }
 
 .fb-btn-secondary-action {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     color: #0F172A !important;
     border: 1px solid #E2E8F0 !important;
     font-weight: 600;
@@ -452,7 +452,7 @@
 }
 
 .fb-analytics-card {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     border: 1px solid #E2E8F0 !important;
     border-radius: 16px;
     padding: 22px;
@@ -564,7 +564,7 @@
 ========================================================================== */
 
 .fb-table-card {
-    background: #FFFFFF !important;
+    background: var(--fb-card, #FFFFFF) !important;
     border: 1px solid #E2E8F0 !important;
     border-radius: 16px;
     box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05) !important;
@@ -663,7 +663,7 @@
 .fb-table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    background: #FFFFFF !important;
+    background: transparent !important;
 }
 
 .fb-table {
@@ -672,7 +672,7 @@
     border-spacing: 0;
     width: 100%;
     min-width: 820px;
-    background: #FFFFFF !important;
+    background: transparent !important;
 }
 
 .fb-table thead tr {
@@ -698,12 +698,12 @@
     vertical-align: middle;
     color: #0F172A;
     border-bottom: 1px solid #F1F5F9;
-    background: #FFFFFF !important;
+    background: transparent !important;
 }
 
 .fb-table tbody tr {
     transition: background-color 0.15s ease;
-    background: #FFFFFF !important;
+    background: transparent !important;
 }
 
 .fb-table tbody tr:hover td {

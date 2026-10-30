@@ -164,9 +164,9 @@ if (!navigator.onLine) {
                 <div className="container py-4">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
-                            <div className="card shadow-sm p-4 border-0" style={{ borderRadius: "16px", background: "#ffffff" }}>
+                            <div className="card shadow-sm p-4 border-0" style={{ borderRadius: "16px", background: "var(--fb-card, #ffffff)" }}>
             <div className="d-flex align-items-center justify-content-between mb-4">
-                                    <h2 className="m-0 fw-bold" style={{ color: "#0F172A", fontSize: "1.5rem" }}>
+                                    <h2 className="m-0 fw-bold" style={{ color: "var(--fb-text, #0F172A)", fontSize: "1.5rem" }}>
                                         {t("📦 Add New Product")}
                                     </h2>
                                     <button

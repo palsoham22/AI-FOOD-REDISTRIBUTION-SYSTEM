@@ -1343,3 +1343,891 @@
     fill: #94A3B8 !important;
     color: #94A3B8 !important;
 }
+
+
+/* ==========================================================================
+   15. BUSINESS PORTAL MODULES & GLOBAL UTILITIES
+   ========================================================================== */
+
+/* Universal Bootstrap / Utility Overrides in Dark Mode */
+[data-theme="dark"] .text-dark {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .text-secondary {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] .badge.bg-light {
+    background-color: #111827 !important;
+    color: #F8FAFC !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .bg-success-subtle {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+}
+
+[data-theme="dark"] .bg-warning-subtle {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .bg-danger-subtle {
+    background-color: rgba(239, 68, 68, 0.2) !important;
+    color: #F87171 !important;
+}
+
+/* Top Navbar in Business Portal */
+[data-theme="dark"] .fb-top-navbar {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-top-navbar .btn-outline-danger {
+    background-color: rgba(220, 38, 38, 0.15) !important;
+    border-color: rgba(220, 38, 38, 0.4) !important;
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .fb-top-navbar .btn-outline-danger:hover {
+    background-color: #DC2626 !important;
+    border-color: #DC2626 !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .fb-language select {
+    background-color: #111827 !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-language select:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] .fb-icon-btn {
+    background-color: #111827 !important;
+    border-color: #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-icon-btn:hover {
+    background-color: #1E3A5F !important;
+    border-color: #60A5FA !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .fb-dropdown {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .fb-dropdown .card-header {
+    background-color: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-dropdown-body > div {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-dropdown-body > div:hover {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .fb-user .fw-bold {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-user small {
+    color: #94A3B8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.1 Business Dashboard (/business-dashboard)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .fb-welcome-card {
+    background-color: #1E293B !important;
+    border-color: #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-welcome-card::before {
+    background: linear-gradient(90deg, #3B82F6 0%, #60A5FA 50%, #93C5FD 100%) !important;
+}
+
+[data-theme="dark"] .fb-welcome-eyebrow {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border-color: rgba(96, 165, 250, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .fb-welcome-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-welcome-meta-item {
+    background-color: #111827 !important;
+    border-color: #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-welcome-meta-item strong {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-welcome-meta-item i {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-welcome-badge-status {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border-color: rgba(96, 165, 250, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .fb-welcome-badge-status .pulse-dot {
+    background-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3) !important;
+}
+
+/* Alert Banners */
+[data-theme="dark"] .fb-alert-banner-success {
+    background-color: rgba(22, 163, 74, 0.15) !important;
+    border: 1px solid rgba(34, 197, 94, 0.35) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .fb-alert-icon-success {
+    background-color: rgba(34, 197, 94, 0.25) !important;
+    color: #4ADE80 !important;
+}
+
+[data-theme="dark"] .fb-healthy-pill {
+    background-color: rgba(34, 197, 94, 0.25) !important;
+    border: 1px solid rgba(34, 197, 94, 0.4) !important;
+    color: #4ADE80 !important;
+}
+
+[data-theme="dark"] .fb-alert-banner-warning {
+    background-color: rgba(245, 158, 11, 0.15) !important;
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .fb-alert-icon-warning {
+    background-color: rgba(245, 158, 11, 0.25) !important;
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .fb-alert-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-alert-text {
+    color: #CBD5E1 !important;
+}
+
+/* KPI Cards */
+[data-theme="dark"] .fb-kpi-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-kpi-card:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+    transform: translateY(-3px);
+}
+
+[data-theme="dark"] .fb-kpi-label {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-kpi-value {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-kpi-bottom {
+    border-top: 1px solid #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-kpi-link {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-kpi-blue .fb-kpi-icon-wrap {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .fb-kpi-amber .fb-kpi-icon-wrap {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .fb-kpi-indigo .fb-kpi-icon-wrap {
+    background-color: rgba(99, 102, 241, 0.2) !important;
+    color: #A5B4FC !important;
+}
+
+[data-theme="dark"] .fb-kpi-teal .fb-kpi-icon-wrap {
+    background-color: rgba(20, 184, 166, 0.2) !important;
+    color: #5EEAD4 !important;
+}
+
+/* Quick Action Toolbar */
+[data-theme="dark"] .fb-toolbar-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-toolbar-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-btn-secondary-action {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-btn-secondary-action:hover {
+    background-color: #1E293B !important;
+    border-color: #60A5FA !important;
+    color: #F8FAFC !important;
+}
+
+/* Category Distribution & Risk Analytics */
+[data-theme="dark"] .fb-analytics-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-analytics-header {
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-analytics-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-progress-label {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .fb-progress-label small {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-progress-bar-bg {
+    background-color: #111827 !important;
+}
+
+[data-theme="dark"] .fb-risk-row {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+/* Recent Products Table Card */
+[data-theme="dark"] .fb-table-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-table-card-header {
+    background-color: #1E293B !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-table-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-search-input {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-search-input:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] .fb-filter-tabs {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-filter-btn {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .fb-filter-btn.active {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .fb-table-responsive,
+[data-theme="dark"] .fb-table {
+    background-color: #1E293B !important;
+}
+
+[data-theme="dark"] .fb-table thead tr,
+[data-theme="dark"] .fb-table thead th {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-table tbody td {
+    background-color: #1E293B !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-table tbody tr {
+    background-color: #1E293B !important;
+}
+
+[data-theme="dark"] .fb-table tbody tr:hover td {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .fb-product-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .fb-category-chip {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-qty-pill {
+    background-color: #111827 !important;
+    color: #93C5FD !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .fb-status-available {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border-color: rgba(34, 197, 94, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-status-donated {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #93C5FD !important;
+    border-color: rgba(37, 99, 235, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-status-accepted {
+    background-color: rgba(168, 85, 247, 0.2) !important;
+    color: #C084FC !important;
+    border-color: rgba(168, 85, 247, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-expiry-safe {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border-color: rgba(34, 197, 94, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-expiry-warning {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+    border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-expiry-critical {
+    background-color: rgba(239, 68, 68, 0.2) !important;
+    color: #F87171 !important;
+    border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-expiry-expired {
+    background-color: rgba(148, 163, 184, 0.15) !important;
+    color: #94A3B8 !important;
+    border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+[data-theme="dark"] .fb-btn-edit {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+    border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-btn-edit:hover {
+    background-color: rgba(245, 158, 11, 0.3) !important;
+    color: #FDE68A !important;
+}
+
+[data-theme="dark"] .fb-btn-donate {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #93C5FD !important;
+    border-color: rgba(37, 99, 235, 0.35) !important;
+}
+
+[data-theme="dark"] .fb-btn-donate:hover {
+    background-color: rgba(37, 99, 235, 0.3) !important;
+    color: #BFDBFE !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.2 Inventory Page (/inventory)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .inventory-header {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .inventory-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .inventory-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .inventory-count {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border: 1px solid rgba(96, 165, 250, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+/* Summary KPI Cards across all Business pages */
+[data-theme="dark"] .summary-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .summary-card:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .summary-card h6 {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .summary-card h2 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .summary-total {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #3B82F6 !important;
+}
+
+[data-theme="dark"] .summary-total h2 {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .summary-red {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #EF4444 !important;
+}
+
+[data-theme="dark"] .summary-red h2 {
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .summary-yellow {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #F59E0B !important;
+}
+
+[data-theme="dark"] .summary-yellow h2 {
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .summary-green {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #22C55E !important;
+}
+
+[data-theme="dark"] .summary-green h2 {
+    color: #4ADE80 !important;
+}
+
+[data-theme="dark"] .summary-blue {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #3B82F6 !important;
+}
+
+[data-theme="dark"] .summary-blue h2 {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .summary-purple {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #A855F7 !important;
+}
+
+[data-theme="dark"] .summary-purple h2 {
+    color: #C084FC !important;
+}
+
+[data-theme="dark"] .summary-warning {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #F59E0B !important;
+}
+
+[data-theme="dark"] .summary-warning h2 {
+    color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .summary-success {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-left: 4px solid #22C55E !important;
+}
+
+[data-theme="dark"] .summary-success h2 {
+    color: #4ADE80 !important;
+}
+
+/* Inventory Card & Controls */
+[data-theme="dark"] .inventory-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .inventory-search-input {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .inventory-search-input:focus {
+    background-color: #111827 !important;
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] .inventory-cat-select {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .inventory-cat-select:focus {
+    background-color: #111827 !important;
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+[data-theme="dark"] .inventory-table {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .inventory-table th {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border-bottom: 2px solid #334155 !important;
+}
+
+[data-theme="dark"] .inventory-table td {
+    background-color: transparent !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .inventory-table tbody tr:hover td {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .product-image {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .no-image-badge {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .status-available {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #93C5FD !important;
+    border: 1px solid rgba(96, 165, 250, 0.35) !important;
+}
+
+[data-theme="dark"] .status-expired {
+    background-color: rgba(239, 68, 68, 0.2) !important;
+    color: #F87171 !important;
+    border: 1px solid rgba(239, 68, 68, 0.35) !important;
+}
+
+[data-theme="dark"] .status-donated {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border: 1px solid rgba(34, 197, 94, 0.35) !important;
+}
+
+[data-theme="dark"] .risk-high {
+    background-color: rgba(239, 68, 68, 0.2) !important;
+    color: #F87171 !important;
+    border: 1px solid rgba(239, 68, 68, 0.35) !important;
+}
+
+[data-theme="dark"] .risk-medium {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+}
+
+[data-theme="dark"] .risk-low {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border: 1px solid rgba(34, 197, 94, 0.35) !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.3 Business Donations Page (/business-donations)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .donation-header {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .donation-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .donation-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .donation-summary .summary-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .donation-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .donation-table {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .donation-table th {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border-bottom: 2px solid #334155 !important;
+}
+
+[data-theme="dark"] .donation-table td {
+    background-color: transparent !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .donation-table tbody tr:hover td {
+    background-color: #243247 !important;
+}
+
+[data-theme="dark"] .status-accepted {
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border: 1px solid rgba(34, 197, 94, 0.35) !important;
+}
+
+[data-theme="dark"] .status-pending {
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+    border: 1px solid rgba(245, 158, 11, 0.35) !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.4 Transaction History Page (/transactions)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .transaction-header {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .transaction-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .transaction-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .transaction-summary .summary-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .transaction-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .transaction-table {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .transaction-table th {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border-bottom: 2px solid #334155 !important;
+}
+
+[data-theme="dark"] .transaction-table td {
+    background-color: transparent !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .transaction-table tbody tr:hover td {
+    background-color: #243247 !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.5 Analytics Page (/analytics)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .analytics-header {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .analytics-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .analytics-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .analytics-cards .analytics-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .analytics-cards .analytics-card:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .analytics-cards .analytics-card h6 {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .analytics-cards .analytics-card h2 {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .chart-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .chart-card h5 {
+    color: #F8FAFC !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.6 Settings Page (/settings)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .settings-header {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .settings-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .settings-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .settings-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .settings-card label {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .settings-card input,
+[data-theme="dark"] .settings-card select {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .settings-card input:focus,
+[data-theme="dark"] .settings-card select:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+}
+
+/* --------------------------------------------------------------------------
+   15.7 Add / Edit Product Forms (/add-product, /edit-product/:id)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .product-form-page .card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .product-form-page h2 {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .product-form-page .form-label {
+    color: #CBD5E1 !important;
+}
