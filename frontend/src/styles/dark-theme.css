@@ -316,6 +316,7 @@
 
 [data-theme="dark"] .sidebar-header,
 [data-theme="dark"] .ngo-header,
+[data-theme="dark"] .ngo-sidebar-header,
 [data-theme="dark"] .delivery-header,
 [data-theme="dark"] .admin-header {
     background: #111827 !important;
@@ -347,6 +348,7 @@
 
 [data-theme="dark"] .sidebar-link,
 [data-theme="dark"] .ngo-link,
+[data-theme="dark"] .ngo-sidebar-link,
 [data-theme="dark"] .delivery-link,
 [data-theme="dark"] .admin-link,
 [data-theme="dark"] .individual-sidebar a {
@@ -359,6 +361,7 @@
 
 [data-theme="dark"] .sidebar-link:hover,
 [data-theme="dark"] .ngo-link:hover,
+[data-theme="dark"] .ngo-sidebar-link:hover,
 [data-theme="dark"] .delivery-link:hover,
 [data-theme="dark"] .admin-link:hover,
 [data-theme="dark"] .individual-sidebar a:hover {
@@ -372,6 +375,7 @@
 
 [data-theme="dark"] .sidebar-link.active,
 [data-theme="dark"] .ngo-link.active,
+[data-theme="dark"] .ngo-sidebar-link.active,
 [data-theme="dark"] .delivery-link.active,
 [data-theme="dark"] .admin-link.active {
     background: #1E3A5F !important;
@@ -392,6 +396,7 @@
 
 [data-theme="dark"] .sidebar-footer,
 [data-theme="dark"] .ngo-footer,
+[data-theme="dark"] .ngo-sidebar-footer,
 [data-theme="dark"] .delivery-footer,
 [data-theme="dark"] .admin-footer {
     background: #111827 !important;
@@ -2230,4 +2235,811 @@
 
 [data-theme="dark"] .product-form-page .form-label {
     color: #CBD5E1 !important;
+}
+
+/* ==========================================================================
+   16. NGO PORTAL MODULES & NAVIGATION
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   16.1 NGO Page Container Backgrounds
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-dashboard,
+[data-theme="dark"] .available-page,
+[data-theme="dark"] .accepted-page,
+[data-theme="dark"] .pickup-list-page,
+[data-theme="dark"] .pickup-page,
+[data-theme="dark"] .history-page,
+[data-theme="dark"] .beneficiaries-page,
+[data-theme="dark"] .reports-page,
+[data-theme="dark"] .ngo-settings-page,
+[data-theme="dark"] .ngo-page {
+    background-color: #0F172A !important;
+    color: #F8FAFC !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.2 NGO Sidebar (Dark Mode)
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-sidebar {
+    background: #111827 !important;
+    background-color: #111827 !important;
+    border-right: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-header {
+    background: #111827 !important;
+    background-color: #111827 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar.collapsed .ngo-sidebar-header {
+    background: #111827 !important;
+    background-color: #111827 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .brand-logo,
+[data-theme="dark"] .ngo-sidebar .brand-text {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .brand-accent {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .sidebar-collapse-btn {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .sidebar-collapse-btn:hover {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .sidebar-close-btn {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-mobile-toggle {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-menu {
+    background: transparent !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link {
+    background: transparent !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link .sidebar-icon {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link .sidebar-link-text {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link:hover {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link:hover .sidebar-icon {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link:hover .sidebar-link-text {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link.active {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border-left: 3px solid #60A5FA !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4) !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-link.active .sidebar-icon,
+[data-theme="dark"] .ngo-sidebar-link.active .sidebar-link-text {
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .ngo-sidebar.collapsed .ngo-sidebar-link.active {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 0 2px #60A5FA inset !important;
+}
+
+[data-theme="dark"] .ngo-sidebar.collapsed .ngo-sidebar-link:hover {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-sidebar-footer {
+    background: #111827 !important;
+    background-color: #111827 !important;
+    border-top: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar.collapsed .ngo-sidebar-footer {
+    background: #111827 !important;
+    background-color: #111827 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .logout-btn {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .logout-btn .sidebar-icon {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .logout-btn:hover {
+    background: rgba(220, 38, 38, 0.15) !important;
+    border-color: rgba(220, 38, 38, 0.4) !important;
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .logout-btn:hover .sidebar-icon {
+    color: #F87171 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .user-box {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .user-avatar {
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .user-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .user-biz {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-sidebar .user-badge {
+    color: #60A5FA !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.3 Universal NGO KPI Stat Cards & Icon Wrappers (Fix White Icon Boxes)
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-kpi-card,
+[data-theme="dark"] .available-kpi-card,
+[data-theme="dark"] .accepted-kpi-card,
+[data-theme="dark"] .pickup-kpi-card,
+[data-theme="dark"] .history-kpi-card,
+[data-theme="dark"] .beneficiaries-kpi-card,
+[data-theme="dark"] .reports-kpi-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .ngo-kpi-card:hover,
+[data-theme="dark"] .available-kpi-card:hover,
+[data-theme="dark"] .accepted-kpi-card:hover,
+[data-theme="dark"] .pickup-kpi-card:hover,
+[data-theme="dark"] .history-kpi-card:hover,
+[data-theme="dark"] .beneficiaries-kpi-card:hover,
+[data-theme="dark"] .reports-kpi-card:hover {
+    background-color: #243247 !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-kpi-value,
+[data-theme="dark"] .available-kpi-value,
+[data-theme="dark"] .accepted-kpi-value,
+[data-theme="dark"] .pickup-kpi-value,
+[data-theme="dark"] .history-kpi-value,
+[data-theme="dark"] .beneficiaries-kpi-value,
+[data-theme="dark"] .reports-kpi-value {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-kpi-label,
+[data-theme="dark"] .available-kpi-label,
+[data-theme="dark"] .accepted-kpi-label,
+[data-theme="dark"] .pickup-kpi-label,
+[data-theme="dark"] .history-kpi-label,
+[data-theme="dark"] .beneficiaries-kpi-label,
+[data-theme="dark"] .reports-kpi-label {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-kpi-bottom,
+[data-theme="dark"] .available-kpi-bottom,
+[data-theme="dark"] .accepted-kpi-bottom,
+[data-theme="dark"] .pickup-kpi-bottom,
+[data-theme="dark"] .history-kpi-bottom,
+[data-theme="dark"] .beneficiaries-kpi-bottom,
+[data-theme="dark"] .reports-kpi-bottom {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-kpi-link,
+[data-theme="dark"] .available-kpi-link,
+[data-theme="dark"] .accepted-kpi-link,
+[data-theme="dark"] .pickup-kpi-link,
+[data-theme="dark"] .history-kpi-link {
+    color: #60A5FA !important;
+}
+
+/* Blue KPI Icon Wrappers */
+[data-theme="dark"] .ngo-kpi-blue .ngo-kpi-icon-wrap,
+[data-theme="dark"] .available-kpi-blue .available-kpi-icon-wrap,
+[data-theme="dark"] .pickup-kpi-blue .pickup-kpi-icon-wrap,
+[data-theme="dark"] .history-kpi-blue .history-kpi-icon-wrap,
+[data-theme="dark"] .beneficiaries-kpi-blue .beneficiaries-kpi-icon-wrap,
+[data-theme="dark"] .reports-kpi-blue .reports-kpi-icon-wrap {
+    background: rgba(37, 99, 235, 0.2) !important;
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #60A5FA !important;
+    border: 1px solid rgba(96, 165, 250, 0.3) !important;
+}
+
+/* Green KPI Icon Wrappers */
+[data-theme="dark"] .ngo-kpi-green .ngo-kpi-icon-wrap,
+[data-theme="dark"] .accepted-kpi-green .accepted-kpi-icon-wrap,
+[data-theme="dark"] .pickup-kpi-green .pickup-kpi-icon-wrap,
+[data-theme="dark"] .history-kpi-green .history-kpi-icon-wrap,
+[data-theme="dark"] .beneficiaries-kpi-green .beneficiaries-kpi-icon-wrap,
+[data-theme="dark"] .reports-kpi-green .reports-kpi-icon-wrap {
+    background: rgba(34, 197, 94, 0.2) !important;
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #4ADE80 !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+/* Amber / Orange KPI Icon Wrappers */
+[data-theme="dark"] .ngo-kpi-amber .ngo-kpi-icon-wrap,
+[data-theme="dark"] .available-kpi-amber .available-kpi-icon-wrap,
+[data-theme="dark"] .pickup-kpi-amber .pickup-kpi-icon-wrap,
+[data-theme="dark"] .beneficiaries-kpi-orange .beneficiaries-kpi-icon-wrap {
+    background: rgba(245, 158, 11, 0.2) !important;
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FBBF24 !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+}
+
+/* Purple KPI Icon Wrappers */
+[data-theme="dark"] .ngo-kpi-purple .ngo-kpi-icon-wrap,
+[data-theme="dark"] .available-kpi-purple .available-kpi-icon-wrap,
+[data-theme="dark"] .accepted-kpi-purple .accepted-kpi-icon-wrap,
+[data-theme="dark"] .history-kpi-purple .history-kpi-icon-wrap {
+    background: rgba(168, 85, 247, 0.2) !important;
+    background-color: rgba(168, 85, 247, 0.2) !important;
+    color: #C084FC !important;
+    border: 1px solid rgba(192, 132, 252, 0.3) !important;
+}
+
+/* Teal KPI Icon Wrappers */
+[data-theme="dark"] .accepted-kpi-teal .accepted-kpi-icon-wrap {
+    background: rgba(20, 184, 166, 0.2) !important;
+    background-color: rgba(20, 184, 166, 0.2) !important;
+    color: #5EEAD4 !important;
+    border: 1px solid rgba(94, 234, 212, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.4 Operational Alert Banners & Icon Boxes
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-alert-banner-neutral {
+    background: #1E293B !important;
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .ngo-alert-banner-neutral .ngo-alert-icon-box {
+    background: #111827 !important;
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-alert-banner-info {
+    background: rgba(37, 99, 235, 0.15) !important;
+    background-color: rgba(37, 99, 235, 0.15) !important;
+    border: 1px solid rgba(37, 99, 235, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-alert-banner-info .ngo-alert-icon-box {
+    background: rgba(37, 99, 235, 0.25) !important;
+    background-color: rgba(37, 99, 235, 0.25) !important;
+    border: 1px solid rgba(96, 165, 250, 0.3) !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-alert-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-alert-text {
+    color: #CBD5E1 !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.5 Header Cards, Hero Cards, Avatar Boxes & Status Pills
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-welcome-card,
+[data-theme="dark"] .available-header-card,
+[data-theme="dark"] .accepted-header-card,
+[data-theme="dark"] .pickup-header-card,
+[data-theme="dark"] .pickup-list-header-card,
+[data-theme="dark"] .history-header-card,
+[data-theme="dark"] .beneficiaries-header-card,
+[data-theme="dark"] .reports-header-card,
+[data-theme="dark"] .profile-header-card,
+[data-theme="dark"] .ngo-settings-header-card {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .ngo-welcome-title,
+[data-theme="dark"] .available-title,
+[data-theme="dark"] .accepted-title,
+[data-theme="dark"] .pickup-title,
+[data-theme="dark"] .pickup-list-title,
+[data-theme="dark"] .history-title,
+[data-theme="dark"] .beneficiaries-title,
+[data-theme="dark"] .reports-title,
+[data-theme="dark"] .profile-title,
+[data-theme="dark"] .ngo-settings-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-welcome-sub,
+[data-theme="dark"] .available-subtitle,
+[data-theme="dark"] .accepted-subtitle,
+[data-theme="dark"] .pickup-subtitle,
+[data-theme="dark"] .pickup-list-subtitle,
+[data-theme="dark"] .history-subtitle,
+[data-theme="dark"] .beneficiaries-subtitle,
+[data-theme="dark"] .reports-subtitle,
+[data-theme="dark"] .profile-subtitle,
+[data-theme="dark"] .ngo-settings-subtitle {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-meta-row,
+[data-theme="dark"] .ngo-meta-item,
+[data-theme="dark"] .available-date-text,
+[data-theme="dark"] .accepted-date-text,
+[data-theme="dark"] .pickup-date-text,
+[data-theme="dark"] .pickup-time-badge,
+[data-theme="dark"] .history-date-text {
+    color: #CBD5E1 !important;
+}
+
+[data-theme="dark"] .ngo-avatar-box,
+[data-theme="dark"] .available-avatar-box,
+[data-theme="dark"] .accepted-avatar-box,
+[data-theme="dark"] .pickup-avatar-box,
+[data-theme="dark"] .pickup-list-avatar-box,
+[data-theme="dark"] .history-avatar-box,
+[data-theme="dark"] .beneficiaries-avatar-box,
+[data-theme="dark"] .reports-avatar-box,
+[data-theme="dark"] .profile-avatar-box,
+[data-theme="dark"] .ngo-settings-avatar-box {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border: 1px solid rgba(96, 165, 250, 0.3) !important;
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-status-pill,
+[data-theme="dark"] .available-status-pill,
+[data-theme="dark"] .accepted-status-pill,
+[data-theme="dark"] .pickup-status-pill,
+[data-theme="dark"] .pickup-list-status-pill,
+[data-theme="dark"] .history-status-pill,
+[data-theme="dark"] .beneficiaries-status-pill,
+[data-theme="dark"] .reports-status-pill,
+[data-theme="dark"] .profile-status-pill,
+[data-theme="dark"] .ngo-settings-status-pill,
+[data-theme="dark"] .ngo-verified-badge {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border: 1px solid rgba(96, 165, 250, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .ngo-pulse-dot,
+[data-theme="dark"] .available-pulse-dot,
+[data-theme="dark"] .accepted-pulse-dot,
+[data-theme="dark"] .pickup-pulse-dot,
+[data-theme="dark"] .pickup-list-pulse-dot,
+[data-theme="dark"] .history-pulse-dot,
+[data-theme="dark"] .beneficiaries-pulse-dot,
+[data-theme="dark"] .profile-pulse-dot,
+[data-theme="dark"] .ngo-settings-pulse-dot {
+    background-color: #60A5FA !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.6 Content Cards, Toolbars & Badges
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-content-card,
+[data-theme="dark"] .available-content-card,
+[data-theme="dark"] .accepted-content-card,
+[data-theme="dark"] .pickup-table-card,
+[data-theme="dark"] .history-table-card,
+[data-theme="dark"] .beneficiaries-table-card,
+[data-theme="dark"] .reports-main-card,
+[data-theme="dark"] .ngo-settings-card,
+[data-theme="dark"] .ngo-summary-box {
+    background-color: #1E293B !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .ngo-card-header,
+[data-theme="dark"] .available-card-header,
+[data-theme="dark"] .accepted-card-header,
+[data-theme="dark"] .pickup-card-header,
+[data-theme="dark"] .history-card-header,
+[data-theme="dark"] .beneficiaries-card-header,
+[data-theme="dark"] .reports-card-header,
+[data-theme="dark"] .ngo-settings-card-header,
+[data-theme="dark"] .profile-section-header {
+    background-color: #162032 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-card-title,
+[data-theme="dark"] .available-card-title,
+[data-theme="dark"] .accepted-card-title,
+[data-theme="dark"] .pickup-card-title,
+[data-theme="dark"] .history-card-title,
+[data-theme="dark"] .beneficiaries-card-title,
+[data-theme="dark"] .reports-card-title,
+[data-theme="dark"] .ngo-settings-card-title,
+[data-theme="dark"] .ngo-box-title,
+[data-theme="dark"] .profile-section-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-count-badge,
+[data-theme="dark"] .available-count-badge,
+[data-theme="dark"] .accepted-count-badge,
+[data-theme="dark"] .pickup-count-badge,
+[data-theme="dark"] .history-count-badge,
+[data-theme="dark"] .beneficiaries-count-badge,
+[data-theme="dark"] .reports-count-badge {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border: 1px solid rgba(96, 165, 250, 0.35) !important;
+    color: #93C5FD !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.7 Search Inputs, Filter Dropdowns & Form Controls
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-search-input,
+[data-theme="dark"] .ngo-filter-select,
+[data-theme="dark"] .available-search-input,
+[data-theme="dark"] .available-filter-select,
+[data-theme="dark"] .accepted-search-input,
+[data-theme="dark"] .accepted-filter-select,
+[data-theme="dark"] .pickup-search-input,
+[data-theme="dark"] .pickup-filter-select,
+[data-theme="dark"] .history-search-input,
+[data-theme="dark"] .history-filter-select,
+[data-theme="dark"] .pickup-input,
+[data-theme="dark"] .ngo-settings-select {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-search-input:focus,
+[data-theme="dark"] .ngo-filter-select:focus,
+[data-theme="dark"] .available-search-input:focus,
+[data-theme="dark"] .available-filter-select:focus,
+[data-theme="dark"] .accepted-search-input:focus,
+[data-theme="dark"] .accepted-filter-select:focus,
+[data-theme="dark"] .pickup-search-input:focus,
+[data-theme="dark"] .pickup-filter-select:focus,
+[data-theme="dark"] .history-search-input:focus,
+[data-theme="dark"] .history-filter-select:focus,
+[data-theme="dark"] .pickup-input:focus,
+[data-theme="dark"] .ngo-settings-select:focus {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25) !important;
+    outline: none !important;
+}
+
+[data-theme="dark"] .ngo-search-input::placeholder,
+[data-theme="dark"] .available-search-input::placeholder,
+[data-theme="dark"] .accepted-search-input::placeholder,
+[data-theme="dark"] .pickup-search-input::placeholder,
+[data-theme="dark"] .history-search-input::placeholder {
+    color: #64748B !important;
+}
+
+[data-theme="dark"] .ngo-search-icon,
+[data-theme="dark"] .available-search-icon,
+[data-theme="dark"] .accepted-search-icon,
+[data-theme="dark"] .pickup-search-icon,
+[data-theme="dark"] .history-search-icon {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-filter-select option,
+[data-theme="dark"] .available-filter-select option,
+[data-theme="dark"] .accepted-filter-select option,
+[data-theme="dark"] .pickup-filter-select option,
+[data-theme="dark"] .history-filter-select option,
+[data-theme="dark"] .ngo-settings-select option {
+    background-color: #1E293B !important;
+    color: #F8FAFC !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.8 NGO Tables (Dashboard, Available, Accepted, Pickups, History, Beneficiaries)
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-table th,
+[data-theme="dark"] .available-table th,
+[data-theme="dark"] .accepted-table th,
+[data-theme="dark"] .pickup-table th,
+[data-theme="dark"] .history-table th,
+[data-theme="dark"] .beneficiaries-table th {
+    background-color: #111827 !important;
+    color: #94A3B8 !important;
+    border-bottom: 2px solid #334155 !important;
+    border-top: none !important;
+}
+
+[data-theme="dark"] .ngo-table td,
+[data-theme="dark"] .available-table td,
+[data-theme="dark"] .accepted-table td,
+[data-theme="dark"] .pickup-table td,
+[data-theme="dark"] .history-table td,
+[data-theme="dark"] .beneficiaries-table td {
+    background-color: transparent !important;
+    color: #CBD5E1 !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-table tbody tr:hover td,
+[data-theme="dark"] .available-table tbody tr:hover td,
+[data-theme="dark"] .accepted-table tbody tr:hover td,
+[data-theme="dark"] .pickup-table tbody tr:hover td,
+[data-theme="dark"] .history-table tbody tr:hover td,
+[data-theme="dark"] .beneficiaries-table tbody tr:hover td {
+    background-color: #243247 !important;
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .text-main {
+    color: #F8FAFC !important;
+}
+
+/* Category & Vehicle Badges in Tables */
+[data-theme="dark"] .ngo-category-badge,
+[data-theme="dark"] .available-category-badge,
+[data-theme="dark"] .accepted-category-badge,
+[data-theme="dark"] .pickup-vehicle-badge,
+[data-theme="dark"] .history-category-badge,
+[data-theme="dark"] .history-vehicle-badge,
+[data-theme="dark"] .beneficiaries-category-badge,
+[data-theme="dark"] .category-badge {
+    background-color: #243247 !important;
+    color: #CBD5E1 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .storage-badge {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #93C5FD !important;
+    border: 1px solid rgba(96, 165, 250, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.9 Status Badges & Expiry Risk Indicators
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .status-donated {
+    background: rgba(37, 99, 235, 0.2) !important;
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    color: #93C5FD !important;
+    border: 1px solid rgba(96, 165, 250, 0.3) !important;
+}
+
+[data-theme="dark"] .status-accepted {
+    background: rgba(99, 102, 241, 0.2) !important;
+    background-color: rgba(99, 102, 241, 0.2) !important;
+    color: #C7D2FE !important;
+    border: 1px solid rgba(165, 180, 252, 0.3) !important;
+}
+
+[data-theme="dark"] .status-scheduled {
+    background: rgba(20, 184, 166, 0.2) !important;
+    background-color: rgba(20, 184, 166, 0.2) !important;
+    color: #99F6E4 !important;
+    border: 1px solid rgba(94, 234, 212, 0.3) !important;
+}
+
+[data-theme="dark"] .status-delivered {
+    background: rgba(34, 197, 94, 0.2) !important;
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #86EFAC !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+[data-theme="dark"] .status-confirmed {
+    background: rgba(34, 197, 94, 0.2) !important;
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #86EFAC !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+[data-theme="dark"] .status-pending {
+    background: rgba(245, 158, 11, 0.2) !important;
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FCD34D !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+}
+
+[data-theme="dark"] .status-active {
+    background: rgba(34, 197, 94, 0.2) !important;
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #86EFAC !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+[data-theme="dark"] .status-other {
+    background: rgba(148, 163, 184, 0.15) !important;
+    background-color: rgba(148, 163, 184, 0.15) !important;
+    color: #CBD5E1 !important;
+    border: 1px solid #334155 !important;
+}
+
+/* Expiry Risk Badges */
+[data-theme="dark"] .risk-critical {
+    background: rgba(239, 68, 68, 0.2) !important;
+    background-color: rgba(239, 68, 68, 0.2) !important;
+    color: #FCA5A5 !important;
+    border: 1px solid rgba(248, 113, 113, 0.3) !important;
+}
+
+[data-theme="dark"] .risk-warning {
+    background: rgba(245, 158, 11, 0.2) !important;
+    background-color: rgba(245, 158, 11, 0.2) !important;
+    color: #FCD34D !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+}
+
+[data-theme="dark"] .risk-safe {
+    background: rgba(34, 197, 94, 0.2) !important;
+    background-color: rgba(34, 197, 94, 0.2) !important;
+    color: #86EFAC !important;
+    border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.10 Empty States & Informational Cards
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .ngo-empty-title,
+[data-theme="dark"] .available-empty-title,
+[data-theme="dark"] .accepted-empty-title,
+[data-theme="dark"] .pickup-empty-title,
+[data-theme="dark"] .history-empty-title,
+[data-theme="dark"] .beneficiaries-empty-title,
+[data-theme="dark"] .reports-empty-title {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .ngo-empty-sub,
+[data-theme="dark"] .available-empty-sub,
+[data-theme="dark"] .accepted-empty-sub,
+[data-theme="dark"] .pickup-empty-sub,
+[data-theme="dark"] .history-empty-sub,
+[data-theme="dark"] .beneficiaries-empty-sub,
+[data-theme="dark"] .reports-empty-desc {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-box-text {
+    color: #94A3B8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.11 Single Pickup View & Forms (/schedule-pickup/:id)
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .vehicle-recommend-box {
+    background-color: rgba(37, 99, 235, 0.15) !important;
+    border: 1px solid rgba(37, 99, 235, 0.35) !important;
+}
+
+[data-theme="dark"] .recommend-kicker,
+[data-theme="dark"] .recommend-vehicle-name {
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .pickup-form-label,
+[data-theme="dark"] .detail-label {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .detail-value {
+    color: #F8FAFC !important;
+}
+
+/* --------------------------------------------------------------------------
+   16.12 Profile & Settings Cards (/ngo-profile, /ngo-settings)
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] .profile-field-box {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .profile-field-box:hover {
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .profile-field-value,
+[data-theme="dark"] .ngo-settings-control-label,
+[data-theme="dark"] .ngo-theme-card-name {
+    color: #F8FAFC !important;
+}
+
+[data-theme="dark"] .profile-field-label,
+[data-theme="dark"] .ngo-settings-control-desc,
+[data-theme="dark"] .ngo-theme-card-desc {
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card {
+    background-color: #111827 !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card:hover {
+    background-color: #1E293B !important;
+    border-color: #60A5FA !important;
+}
+
+[data-theme="dark"] .ngo-theme-card.active {
+    background-color: rgba(37, 99, 235, 0.2) !important;
+    border-color: #3B82F6 !important;
+}
+
+[data-theme="dark"] .ngo-theme-card-check {
+    color: #60A5FA !important;
+}
+
+[data-theme="dark"] .profile-notice-card {
+    background-color: rgba(37, 99, 235, 0.15) !important;
+    border-color: rgba(37, 99, 235, 0.35) !important;
+}
+
+[data-theme="dark"] .profile-notice-icon {
+    background-color: rgba(37, 99, 235, 0.25) !important;
+    color: #93C5FD !important;
+}
+
+[data-theme="dark"] .profile-notice-title {
+    color: #DBEAFE !important;
+}
+
+[data-theme="dark"] .profile-notice-desc {
+    color: #BFDBFE !important;
 }
